@@ -1,8 +1,29 @@
 // Generated from stitch/c_contact.html by scripts/stitch-to-jsx.mjs (npm run convert).
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { sendContactForm } from '../lib/web3forms.js'
 import './Contact.css'
 
 export default function Contact() {
+  // status: idle | sending | sent | error
+  const [status, setStatus] = useState('idle')
+  const [error, setError] = useState('')
+
+  const onSubmit = async (e) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    setStatus('sending')
+    setError('')
+    try {
+      await sendContactForm(form)
+      form.reset()
+      setStatus('sent')
+    } catch (err) {
+      setError(err.message)
+      setStatus('error')
+    }
+  }
+
   return (
     <div className="pg-contact bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col font-body-md text-body-md relative overflow-x-hidden">
       <title>{"Contact Us | Horizon - Enterprise AI & ERP Orchestration"}</title>
@@ -125,21 +146,22 @@ export default function Contact() {
                   Provide your parameters to receive a technical scoping response within one business day.
                 </p>
               </div>
-              <form action="#" className="space-y-6" method="POST" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={onSubmit}>
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
                     <label className="block font-label-md text-label-md text-on-surface font-semibold" htmlFor="first-name">
                       First name *
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="first-name" placeholder="Alex" required type="text" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="first-name" name="first_name" placeholder="Alex" required type="text" />
                   </div>
                   <div className="space-y-1.5">
                     <label className="block font-label-md text-label-md text-on-surface font-semibold" htmlFor="last-name">
                       Last name *
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="last-name" placeholder="Vance" required type="text" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="last-name" name="last_name" placeholder="Vance" required type="text" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -148,14 +170,14 @@ export default function Contact() {
                       Work email *
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="work-email" placeholder="alex@enterprise.com" required type="email" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="work-email" name="email" placeholder="alex@enterprise.com" required type="email" />
                   </div>
                   <div className="space-y-1.5">
                     <label className="block font-label-md text-label-md text-on-surface font-semibold" htmlFor="phone">
                       Phone number
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="phone" placeholder="Phone number" type="tel" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="phone" name="phone" placeholder="Phone number" type="tel" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -164,14 +186,14 @@ export default function Contact() {
                       Company name *
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="company" placeholder="Horizon Dynamics Ltd." required type="text" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="company" name="company" placeholder="Horizon Dynamics Ltd." required type="text" />
                   </div>
                   <div className="space-y-1.5">
                     <label className="block font-label-md text-label-md text-on-surface font-semibold" htmlFor="team-size">
                       Team / Fleet size
                     </label>
                     {' '}
-                    <select className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="team-size">
+                    <select className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="team-size" name="team_size">
                       <option value="1-50">
                         1 - 50 members
                       </option>
@@ -193,7 +215,7 @@ export default function Contact() {
                       Service required
                     </label>
                     {' '}
-                    <select className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="service">
+                    <select className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="service" name="service">
                       <option value="AI Automation">
                         AI Automation
                       </option>
@@ -225,7 +247,7 @@ export default function Contact() {
                       Product of interest
                     </label>
                     {' '}
-                    <select className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="product">
+                    <select className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="product" name="product">
                       <option value="AI QC Agent">
                         AI QC Agent
                       </option>
@@ -252,7 +274,7 @@ export default function Contact() {
                     Message / Project Scope
                   </label>
                   {' '}
-                  <textarea className="w-full p-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="project-scope" placeholder="Describe your operational bottlenecks, existing tech stack, and expected target delivery date..." rows="4" />
+                  <textarea className="w-full p-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="project-scope" name="message" placeholder="Describe your operational bottlenecks, existing tech stack, and expected target delivery date..." rows="4" />
                 </div>
                 <div className="flex items-start gap-2.5 text-on-surface-variant font-body-sm text-body-sm bg-surface-container/50 p-3 rounded-[10px] border border-outline-variant/20">
                   <span className="material-symbols-outlined text-[18px] text-primary mt-0.5">
@@ -264,15 +286,27 @@ export default function Contact() {
                   </span>
                 </div>
                 {' '}
-                <button className="w-full py-4 px-6 rounded-[10px] bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold hover:bg-primary-container shadow-md transition-all duration-200 active:scale-[0.99] flex items-center justify-center gap-2" type="submit">
+                <button className="w-full py-4 px-6 rounded-[10px] bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold hover:bg-primary-container shadow-md transition-all duration-200 active:scale-[0.99] flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed" type="submit" disabled={status === 'sending'}>
                   <span>
-                    Submit details
+                    {status === 'sending' ? 'Sending…' : 'Submit details'}
                   </span>
                   {' '}
                   <span className="material-symbols-outlined text-[20px]">
                     send
                   </span>
                 </button>
+                <div aria-live="polite">
+                  {status === 'sent' && (
+                    <p className="font-body-sm text-body-sm text-on-surface bg-secondary-container/40 border border-secondary/20 p-3 rounded-[10px]">
+                      Thanks — your details were sent. We'll reply within one business day.
+                    </p>
+                  )}
+                  {status === 'error' && (
+                    <p className="font-body-sm text-body-sm text-error bg-error-container/40 border border-error/20 p-3 rounded-[10px]">
+                      {error}
+                    </p>
+                  )}
+                </div>
               </form>
             </div>
           </div>
@@ -370,85 +404,6 @@ export default function Contact() {
                   check_circle
                 </span>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="glass-surface rounded-2xl p-8 border border-outline-variant/40 space-y-6">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <div className="inline-block px-2.5 py-0.5 rounded-[6px] bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-sm text-label-sm mb-1">
-                Global Engineering Matrix
-              </div>
-              <h2 className="font-headline-md text-headline-md font-bold text-on-surface">
-                Active Deployment Presence
-              </h2>
-            </div>
-            <div className="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-primary" />
-                {' '}
-                Primary Hub
-              </span>
-              {' '}
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-secondary" />
-                {' '}
-                Operational Cluster
-              </span>
-              {' '}
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-tertiary" />
-                {' '}
-                Direct Cloud Gateway
-              </span>
-            </div>
-          </div>
-          <div className="relative w-full h-80 rounded-xl overflow-hidden bg-surface-container-high border border-outline-variant/30 flex items-center justify-center">
-            <div className="absolute inset-0 opacity-20" style={{"backgroundImage":"radial-gradient(#a9371d 1px, transparent 1px)","backgroundSize":"24px 24px"}} />
-            <div className="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-              <span className="flex h-4 w-4 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-                {' '}
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-primary" />
-              </span>
-              {' '}
-              <div className="mt-2 px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant/40 text-on-surface font-label-sm text-label-sm shadow-sm">
-                Americas Cluster (EST / PST)
-              </div>
-            </div>
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-              <span className="flex h-4 w-4 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" />
-                {' '}
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-secondary" />
-              </span>
-              {' '}
-              <div className="mt-2 px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant/40 text-on-surface font-label-sm text-label-sm shadow-sm">
-                EMEA Gateway (GMT / CET)
-              </div>
-            </div>
-            <div className="absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-              <span className="flex h-4 w-4 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-                {' '}
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-primary" />
-              </span>
-              {' '}
-              <div className="mt-2 px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant/40 text-on-surface font-label-sm text-label-sm shadow-sm">
-                APAC Operations ([Office address])
-              </div>
-            </div>
-            <div className="text-center p-6 bg-surface-container-lowest/80 backdrop-blur-md rounded-xl border border-outline-variant/30 max-w-md shadow-md z-10">
-              <span className="material-symbols-outlined text-primary text-[32px] mb-1">
-                domain
-              </span>
-              {' '}
-              <div className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                Global Architecture Dispatch
-              </div>
-              <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
-                Engineers deployed seamlessly across all three primary corporate corridors with sub-millisecond cloud interconnectivity.
-              </p>
             </div>
           </div>
         </section>
