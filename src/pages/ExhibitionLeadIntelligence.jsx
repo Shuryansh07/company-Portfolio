@@ -172,7 +172,7 @@ export default function ExhibitionLeadIntelligence() {
                     Phone Number
                   </label>
                   {' '}
-                  <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/60 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="[phone]" type="tel" />
+                  <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/60 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Phone number" type="tel" />
                 </div>
                 <div>
                   <label className="block font-label-sm text-label-sm text-on-surface font-medium mb-1.5">

@@ -88,38 +88,7 @@ export default function Products() {
                   contactless
                 </span>
               </div>
-              <div className="bg-surface-container-low/70 rounded-2xl p-4 mb-6 border border-white/80 space-y-3">
-                <div className="flex items-center justify-between pb-2 border-b border-surface-container">
-                  <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary text-[18px]">
-                      document_scanner
-                    </span>
-                    <span className="text-label-sm font-label-sm text-on-surface font-medium">
-                      Card OCR Parsing
-                    </span>
-                  </div>
-                  <span className="text-[10px] font-label-sm text-tertiary font-bold bg-tertiary-fixed/30 px-2 py-0.5 rounded-[6px]">
-                    Score 98/100
-                  </span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-label-md font-label-md font-bold text-on-surface">
-                      Tier 1 Executive
-                    </p>
-                    <p className="text-[11px] text-on-surface-variant">
-                      VP Engineering • Fortune 500
-                    </p>
-                  </div>
-                  <span className="flex items-center gap-1 text-[11px] font-label-sm font-semibold text-secondary-container-on bg-secondary-fixed/50 px-2.5 py-1 rounded-[6px] text-secondary">
-                    <span className="material-symbols-outlined text-[14px]">
-                      cloud_sync
-                    </span>
-                    {' '}
-                    Instant CRM Push
-                  </span>
-                </div>
-              </div>
+              <img src="/images/products/exhibition-lead-intelligence.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
               <h3 className="text-headline-md font-headline-md text-on-surface mb-3 tracking-tight">
                 Exhibition Lead Intelligence
               </h3>
@@ -156,41 +125,7 @@ export default function Products() {
                   verified
                 </span>
               </div>
-              <div className="bg-surface-container-low/70 rounded-2xl p-4 mb-6 border border-white/80 space-y-3">
-                <div className="flex items-center justify-between pb-2 border-b border-surface-container">
-                  <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-tertiary text-[18px]">
-                      mic
-                    </span>
-                    <span className="text-label-sm font-label-sm text-on-surface font-medium">
-                      Technician Query Voice
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-0.5">
-                    <span className="w-1 h-3 bg-tertiary rounded-full animate-pulse" />
-                    <span className="w-1 h-5 bg-tertiary rounded-full" />
-                    <span className="w-1 h-2 bg-tertiary rounded-full" />
-                    <span className="w-1 h-4 bg-tertiary rounded-full animate-pulse" />
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-label-md font-label-md font-bold text-on-surface">
-                      Turbine Spec #44-B
-                    </p>
-                    <p className="text-[11px] text-on-surface-variant">
-                      Validated against OEM Manual v4
-                    </p>
-                  </div>
-                  <span className="flex items-center gap-1 text-[11px] font-label-sm font-semibold bg-secondary-fixed/50 px-2.5 py-1 rounded-[6px] text-secondary">
-                    <span className="material-symbols-outlined text-[14px]">
-                      check_circle
-                    </span>
-                    {' '}
-                    Spec Verified
-                  </span>
-                </div>
-              </div>
+              <img src="/images/products/ai-qc-agent.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
               <h3 className="text-headline-md font-headline-md text-on-surface mb-3 tracking-tight">
                 AI QC Agent
               </h3>
@@ -227,38 +162,7 @@ export default function Products() {
                   flight_takeoff
                 </span>
               </div>
-              <div className="bg-surface-container-low/70 rounded-2xl p-4 mb-6 border border-white/80 space-y-3">
-                <div className="flex items-center justify-between pb-2 border-b border-surface-container">
-                  <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-secondary text-[18px]">
-                      calendar_month
-                    </span>
-                    <span className="text-label-sm font-label-sm text-on-surface font-medium">
-                      Deal Trip: SFO → LHR
-                    </span>
-                  </div>
-                  <span className="text-[10px] font-label-sm text-secondary font-bold bg-secondary-fixed/60 px-2 py-0.5 rounded-[6px]">
-                    100% Policy Match
-                  </span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-label-md font-label-md font-bold text-on-surface">
-                      Auto-Booked BA #284
-                    </p>
-                    <p className="text-[11px] text-on-surface-variant">
-                      Direct CRM Expense Pre-file
-                    </p>
-                  </div>
-                  <span className="flex items-center gap-1 text-[11px] font-label-sm font-semibold bg-primary-fixed/40 px-2.5 py-1 rounded-[6px] text-primary">
-                    <span className="material-symbols-outlined text-[14px]">
-                      confirmation_number
-                    </span>
-                    {' '}
-                    Confirmed
-                  </span>
-                </div>
-              </div>
+              <img src="/images/products/ai-travel-agent.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
               <h3 className="text-headline-md font-headline-md text-on-surface mb-3 tracking-tight">
                 AI Travel Agent
               </h3>
@@ -306,6 +210,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/products/inventory-control" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/inventory-control.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Logistics
@@ -332,6 +237,7 @@ export default function Products() {
             </Link>
             <Link to="/products/warehouse-operations" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/warehouse-operations.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Fulfillment
@@ -358,6 +264,7 @@ export default function Products() {
             </Link>
             <Link to="/products/production-floor-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/production-floor-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Manufacturing
@@ -384,6 +291,7 @@ export default function Products() {
             </Link>
             <Link to="/products/production-planning" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/production-planning.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Optimization
@@ -410,6 +318,7 @@ export default function Products() {
             </Link>
             <Link to="/products/rental-fleet-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/rental-fleet-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Assets
@@ -455,6 +364,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/products/business-accounting" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/business-accounting.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Ledger
@@ -481,6 +391,7 @@ export default function Products() {
             </Link>
             <Link to="/products/payroll-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/payroll-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Comp
@@ -507,6 +418,7 @@ export default function Products() {
             </Link>
             <Link to="/products/expense-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/expense-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Claims
@@ -533,6 +445,7 @@ export default function Products() {
             </Link>
             <Link to="/products/ecommerce-finance-sync" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/ecommerce-finance-sync.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Commerce
@@ -578,6 +491,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link to="/products/hr-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/hr-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Core HR
@@ -604,6 +518,7 @@ export default function Products() {
             </Link>
             <Link to="/products/recruitment-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/recruitment-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Talent
@@ -630,6 +545,7 @@ export default function Products() {
             </Link>
             <Link to="/products/applicant-tracking" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/applicant-tracking.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     AI Hiring
@@ -675,6 +591,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link to="/products/sales-crm" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/sales-crm.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Revenue
@@ -701,6 +618,7 @@ export default function Products() {
             </Link>
             <Link to="/products/support-ticketing" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/support-ticketing.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Omnichannel
@@ -727,6 +645,7 @@ export default function Products() {
             </Link>
             <Link to="/products/field-service-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/field-service-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Dispatch
@@ -772,6 +691,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/products/retail-pos" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/retail-pos.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Retail
@@ -798,6 +718,7 @@ export default function Products() {
             </Link>
             <Link to="/products/restaurant-operations" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/restaurant-operations.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Hospitality
@@ -824,6 +745,7 @@ export default function Products() {
             </Link>
             <Link to="/products/auto-workshop-manager" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/auto-workshop-manager.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Automotive
@@ -850,6 +772,7 @@ export default function Products() {
             </Link>
             <Link to="/products/online-store" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/online-store.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     E-Commerce
@@ -876,6 +799,7 @@ export default function Products() {
             </Link>
             <Link to="/products/yacht-charter-management" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/yacht-charter-management.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Maritime
@@ -902,6 +826,7 @@ export default function Products() {
             </Link>
             <Link to="/products/ship-to-ship-transfer" className="catalogue-card bg-surface-container-lowest/70 backdrop-blur-xl rounded-3xl p-6 glass-specular-border glass-card-hover flex flex-col justify-between group">
               <div>
+                <img src="/images/products/ship-to-ship-transfer.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-2.5 py-0.5 rounded-[6px] text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
                     Heavy Marine

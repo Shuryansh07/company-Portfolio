@@ -833,7 +833,7 @@ export default function Careers() {
                       </span>
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-[#ebe4de] focus:border-[#ff8a65] focus:ring-4 focus:ring-[#ff8a65]/15 text-body-md font-body-md text-on-surface placeholder:text-[#a8a19b] transition-all" id="phone" placeholder="[phone]" required type="tel" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-[#ebe4de] focus:border-[#ff8a65] focus:ring-4 focus:ring-[#ff8a65]/15 text-body-md font-body-md text-on-surface placeholder:text-[#a8a19b] transition-all" id="phone" placeholder="Phone number" required type="tel" />
                   </div>
                   <div className="space-y-2">
                     <label className="block text-label-md font-label-md text-on-surface font-semibold" htmlFor="experience">
@@ -1005,7 +1005,7 @@ export default function Careers() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto">
-              <a className="glass-raised px-5 py-3.5 rounded-[10px] border border-outline-variant/40 hover:bg-surface-container-lowest transition-all flex items-center gap-3 text-on-surface" href="mailto:[contact email]">
+              <a className="glass-raised px-5 py-3.5 rounded-[10px] border border-outline-variant/40 hover:bg-surface-container-lowest transition-all flex items-center gap-3 text-on-surface" href="mailto:shuryansh.dev.work@gmail.com">
                 <div className="w-8 h-8 rounded-[6px] bg-[#ff7555]/15 text-primary flex items-center justify-center">
                   <span className="material-symbols-outlined text-[18px]" data-icon="mail">
                     mail
@@ -1017,12 +1017,12 @@ export default function Careers() {
                   </span>
                   {' '}
                   <span className="text-label-md font-label-md font-bold text-on-surface">
-                    [contact email]
+                    shuryansh.dev.work@gmail.com
                   </span>
                 </div>
               </a>
               {' '}
-              <a className="glass-raised px-5 py-3.5 rounded-[10px] border border-outline-variant/40 hover:bg-surface-container-lowest transition-all flex items-center gap-3 text-on-surface" href="tel:[phone]">
+              <a className="glass-raised px-5 py-3.5 rounded-[10px] border border-outline-variant/40 hover:bg-surface-container-lowest transition-all flex items-center gap-3 text-on-surface" href="tel:9026139959">
                 <div className="w-8 h-8 rounded-[6px] bg-[#ceee93]/40 text-secondary flex items-center justify-center">
                   <span className="material-symbols-outlined text-[18px]" data-icon="phone_in_talk">
                     phone_in_talk
@@ -1034,7 +1034,7 @@ export default function Careers() {
                   </span>
                   {' '}
                   <span className="text-label-md font-label-md font-bold text-on-surface">
-                    [phone]
+                    9026139959
                   </span>
                 </div>
               </a>

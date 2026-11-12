@@ -1413,7 +1413,7 @@ export default function Solutions() {
                     </span>
                     {' '}
                     <span>
-                      [contact email]
+                      shuryansh.dev.work@gmail.com
                     </span>
                   </div>
                   <div className="flex items-center gap-3 text-on-surface font-body-md text-body-md">
@@ -1424,7 +1424,7 @@ export default function Solutions() {
                     </span>
                     {' '}
                     <span>
-                      [phone]
+                      9026139959
                     </span>
                   </div>
                 </div>

@@ -154,7 +154,7 @@ export default function IntegratedErp() {
                     Phone
                   </label>
                   {' '}
-                  <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition text-on-surface text-body-md" placeholder="[phone]" required type="tel" />
+                  <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition text-on-surface text-body-md" placeholder="Phone number" required type="tel" />
                 </div>
                 <div>
                   <label className="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">

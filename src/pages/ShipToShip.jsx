@@ -172,7 +172,7 @@ export default function ShipToShip() {
                       Phone Number
                     </label>
                     {' '}
-                    <input type="tel" placeholder="[phone]" className="w-full px-3.5 py-2.5 bg-white/90 border border-[#c7c6c1]/80 rounded-[10px] text-[14px] text-[#1b1c1b] placeholder:text-[#777773] focus:outline-none focus:ring-2 focus:ring-[#ff7555]/20 focus:border-[#ff7555] transition-all" />
+                    <input type="tel" placeholder="Phone number" className="w-full px-3.5 py-2.5 bg-white/90 border border-[#c7c6c1]/80 rounded-[10px] text-[14px] text-[#1b1c1b] placeholder:text-[#777773] focus:outline-none focus:ring-2 focus:ring-[#ff7555]/20 focus:border-[#ff7555] transition-all" />
                   </div>
                   <div>
                     <label className="block text-[12px] font-semibold text-[#1b1c1b] mb-1.5">

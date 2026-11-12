@@ -180,7 +180,7 @@ export default function OnlineStore() {
                         Phone Number
                       </label>
                       {' '}
-                      <input type="text" placeholder="[phone]" className="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all" />
+                      <input type="text" placeholder="Phone number" className="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all" />
                     </div>
                     <div>
                       <label className="block text-label-md font-label-md text-on-surface mb-1.5">

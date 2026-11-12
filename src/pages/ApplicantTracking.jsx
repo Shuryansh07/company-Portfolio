@@ -180,7 +180,7 @@ export default function ApplicantTracking() {
                         Phone Number
                       </label>
                       {' '}
-                      <input className="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all" placeholder="[phone]" type="text" />
+                      <input className="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all" placeholder="Phone number" type="text" />
                     </div>
                     <div>
                       <label className="block text-label-md font-label-md text-on-surface mb-1.5">

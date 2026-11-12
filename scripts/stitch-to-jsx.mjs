@@ -6,7 +6,7 @@ import path from 'node:path'
 import crypto from 'node:crypto'
 import { parse } from 'parse5'
 import postcss from 'postcss'
-import { allPages, products } from '../src/data/pages.js'
+import { allPages, contact, products } from '../src/data/pages.js'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const SRC = path.join(ROOT, 'stitch'), OUT = path.join(ROOT, 'src/pages'), IMG = path.join(ROOT, 'public/images')
@@ -17,7 +17,10 @@ const readConfig = (html) => {
   const m = html.match(/tailwind\.config\s*=\s*(\{[\s\S]*?\})\s*;?\s*<\/script>/)
   return m ? new Function(`return (${m[1]})`)().theme?.extend ?? {} : {} // our own exported files, not user input
 }
-const htmlOf = Object.fromEntries(allPages.map((p) => [p.key, fs.readFileSync(path.join(SRC, p.key + '.html'), 'utf8')]))
+const htmlOf = Object.fromEntries(allPages.map((p) => [p.key, fs.readFileSync(path.join(SRC, p.key + '.html'), 'utf8')
+  // The exports carry placeholders for the company's contact details; form hints stay generic.
+  .replaceAll('placeholder="[contact email]"', 'placeholder="you@company.com"').replaceAll('placeholder="[phone]"', 'placeholder="Phone number"')
+  .replaceAll('[contact email]', contact.email).replaceAll('[phone]', contact.phone)]))
 const configs = Object.fromEntries(allPages.map((p) => [p.key, readConfig(htmlOf[p.key])]))
 const theme = {}
 const groups = new Set(Object.values(configs).flatMap(Object.keys))
@@ -178,6 +181,23 @@ function wireLinks(body) {
   })
 }
 
+// Product cards show a cover photo (public/images/products/<slug>.jpg) instead of Stitch's mock UI panel.
+function addCovers(body) {
+  const cards = []
+  walk(body, (n) => { if (isEl(n) && (n.tagName === 'article' || /catalogue-card/.test(attr(n, 'class') ?? ''))) cards.push(n) })
+  for (const card of cards) {
+    const h = find(card, (x) => /^h[2-5]$/.test(x.tagName)); const p = h && productFor(textOf(h))
+    if (!p || !fs.existsSync(path.join(IMG, 'products', p.slug + '.jpg'))) continue
+    const box = h.parentNode, at = box.childNodes.indexOf(h)
+    const mock = box.childNodes.slice(0, at).find((x) => isEl(x) && /space-y-3/.test(attr(x, 'class') ?? ''))
+    const img = { nodeName: 'img', tagName: 'img', childNodes: [], parentNode: box, attrs: [
+      { name: 'src', value: `/images/products/${p.slug}.jpg` }, { name: 'alt', value: '' }, { name: 'loading', value: 'lazy' },
+      { name: 'class', value: 'w-full h-44 object-cover rounded-2xl mb-6' }] }
+    if (mock) box.childNodes[box.childNodes.indexOf(mock)] = img
+    else box.childNodes.unshift(img)
+  }
+}
+
 // Prefix every selector of a page's own <style> so it cannot leak into other pages.
 function scopeCss(css, scope) {
   const root = postcss.parse(css)
@@ -214,6 +234,7 @@ for (const page of allPages) {
   let footer = null; walk(body, (n) => { if (n.tagName === 'footer') footer = n }); if (footer) remove(footer)
 
   wireLinks(body)
+  addCovers(body)
 
   const images = {}
   const srcs = []; walk(body, (n) => { if (n.tagName === 'img' && /^https?:/.test(attr(n, 'src') ?? '')) srcs.push(attr(n, 'src')) })

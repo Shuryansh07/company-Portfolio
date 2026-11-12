@@ -157,7 +157,7 @@ export default function RetailPos() {
                       Phone Number
                     </label>
                     {' '}
-                    <input className="w-full rounded-[10px] border border-stone-300 bg-white/80 px-3.5 py-2.5 text-sm text-on-surface placeholder:text-stone-400 focus:border-[#ff7555] focus:ring-2 focus:ring-[#ff7555]/20 outline-none transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full rounded-[10px] border border-stone-300 bg-white/80 px-3.5 py-2.5 text-sm text-on-surface placeholder:text-stone-400 focus:border-[#ff7555] focus:ring-2 focus:ring-[#ff7555]/20 outline-none transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block font-label-md text-label-md text-stone-700 mb-1.5">

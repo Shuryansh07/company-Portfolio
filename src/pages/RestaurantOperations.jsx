@@ -181,7 +181,7 @@ export default function RestaurantOperations() {
                     Phone Number
                   </label>
                   {' '}
-                  <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="[phone]" type="tel" />
+                  <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Phone number" type="tel" />
                 </div>
                 <div>
                   <label className="block text-label-sm font-label-sm text-on-surface mb-1.5">

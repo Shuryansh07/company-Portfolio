@@ -166,7 +166,7 @@ export default function Payroll() {
                       Phone Number
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-body-md font-body-md text-on-surface placeholder:text-outline outline-none transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-body-md font-body-md text-on-surface placeholder:text-outline outline-none transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block text-label-md font-label-md text-on-surface mb-1.5">

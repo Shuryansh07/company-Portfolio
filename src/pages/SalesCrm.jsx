@@ -162,7 +162,7 @@ export default function SalesCrm() {
                       Phone Number
                     </label>
                     {' '}
-                    <input className="w-full glass-input rounded-[10px] px-3.5 py-2.5 text-body-md font-body-md text-on-surface placeholder:text-outline/70" placeholder="[phone]" type="tel" />
+                    <input className="w-full glass-input rounded-[10px] px-3.5 py-2.5 text-body-md font-body-md text-on-surface placeholder:text-outline/70" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block text-label-md font-label-md text-on-surface mb-1.5">

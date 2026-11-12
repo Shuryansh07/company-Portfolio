@@ -174,7 +174,7 @@ export default function FieldService() {
                         Phone Number
                       </label>
                       {' '}
-                      <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-sm outline-none transition-all" placeholder="[phone]" required type="text" />
+                      <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-sm outline-none transition-all" placeholder="Phone number" required type="text" />
                     </div>
                     <div>
                       <label className="block text-label-sm font-label-sm text-on-surface mb-1">

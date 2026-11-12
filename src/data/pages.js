@@ -40,4 +40,6 @@ export const products = [
   { key: 'pd_erp', slug: 'integrated-erp', component: 'IntegratedErp', name: 'Integrated Business Operations Platform', aliases: ['integrated business operations', 'integrated erp', 'integrated enterprise'] },
 ].map((p) => ({ ...p, path: `/products/${p.slug}` }))
 
+export const contact = { email: 'shuryansh.dev.work@gmail.com', phone: '9026139959' }
+
 export const allPages = [...sitePages, ...products]

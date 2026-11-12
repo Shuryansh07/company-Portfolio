@@ -173,7 +173,7 @@ export default function HrManagement() {
                       Phone
                     </label>
                     {' '}
-                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">

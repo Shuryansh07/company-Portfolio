@@ -184,7 +184,7 @@ export default function ProductionPlanning() {
                     Phone Number
                   </label>
                   {' '}
-                  <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary-container/30 focus:border-primary-container transition-all" placeholder="[phone]" type="tel" />
+                  <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary-container/30 focus:border-primary-container transition-all" placeholder="Phone number" type="tel" />
                 </div>
                 <div>
                   <label className="block text-label-sm font-label-sm text-on-surface mb-1.5">

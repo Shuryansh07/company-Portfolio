@@ -156,7 +156,7 @@ export default function WarehouseOperations() {
                       Phone Number
                     </label>
                     {' '}
-                    <input className="w-full h-11 px-3.5 rounded-[10px] border border-outline-variant/50 bg-surface/50 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-11 px-3.5 rounded-[10px] border border-outline-variant/50 bg-surface/50 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block font-label-md text-label-md text-on-surface mb-1.5">

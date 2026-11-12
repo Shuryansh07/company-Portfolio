@@ -139,7 +139,7 @@ export default function SupportTicketing() {
                         Phone
                       </label>
                       {' '}
-                      <input className="w-full h-12 px-4 rounded-[10px] bg-white/80 border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm transition-all" type="text" defaultValue="[phone]" />
+                      <input className="w-full h-12 px-4 rounded-[10px] bg-white/80 border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm transition-all" type="text" defaultValue="9026139959" />
                     </div>
                     <div>
                       <label className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">

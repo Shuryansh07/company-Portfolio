@@ -106,7 +106,7 @@ export default function BusinessAccounting() {
                         Phone Number
                       </label>
                       {' '}
-                      <input className="w-full h-12 px-3.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-colors" placeholder="[phone]" type="tel" />
+                      <input className="w-full h-12 px-3.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-colors" placeholder="Phone number" type="tel" />
                     </div>
                     <div>
                       <label className="block text-label-md font-label-md text-on-surface-variant mb-1">

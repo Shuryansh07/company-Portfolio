@@ -159,7 +159,7 @@ export default function AiQcAgent() {
                   <label className="block text-label-md font-label-md text-on-surface mb-1.5">
                     Phone Number
                   </label>
-                  <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/50 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-body-md font-body-md text-on-surface placeholder:text-outline/60 transition outline-none" placeholder="[phone]" type="tel" />
+                  <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/50 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-body-md font-body-md text-on-surface placeholder:text-outline/60 transition outline-none" placeholder="Phone number" type="tel" />
                 </div>
                 <div>
                   <label className="block text-label-md font-label-md text-on-surface mb-1.5">

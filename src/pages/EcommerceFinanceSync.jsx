@@ -173,7 +173,7 @@ export default function EcommerceFinanceSync() {
                       Phone Number
                     </label>
                     {' '}
-                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/60" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/60" placeholder="Phone number" type="tel" />
                   </div>
                   <div className="pt-2">
                     <button className="w-full h-12 specular-btn rounded-[10px] text-label-lg font-label-lg text-white font-bold tracking-wide transition-all transform active:scale-[0.99] flex items-center justify-center gap-2" type="submit">

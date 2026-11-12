@@ -129,7 +129,7 @@ export default function ExpenseManagement() {
                       Phone
                     </label>
                     {' '}
-                    <input className="w-full h-11 px-3.5 rounded-[10px] border border-outline-variant/60 bg-surface-container-low/50 text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-11 px-3.5 rounded-[10px] border border-outline-variant/60 bg-surface-container-low/50 text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block font-label-md text-label-md text-on-surface font-medium mb-1.5">

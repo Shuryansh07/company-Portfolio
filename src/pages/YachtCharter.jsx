@@ -156,7 +156,7 @@ export default function YachtCharter() {
                       Phone
                     </label>
                     {' '}
-                    <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-low/60 border border-outline-variant/50 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-low/60 border border-outline-variant/50 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">

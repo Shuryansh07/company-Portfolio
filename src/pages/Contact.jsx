@@ -52,7 +52,7 @@ export default function Contact() {
                       {"Inquiries & RFCs"}
                     </div>
                     <div className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                      [contact email]
+                      shuryansh.dev.work@gmail.com
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                       Direct Line
                     </div>
                     <div className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                      [phone]
+                      9026139959
                     </div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function Contact() {
                       Phone number
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="phone" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="phone" placeholder="Phone number" type="tel" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

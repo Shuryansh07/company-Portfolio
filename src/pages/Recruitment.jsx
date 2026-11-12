@@ -159,14 +159,14 @@ export default function Recruitment() {
                       Work Email
                     </label>
                     {' '}
-                    <input type="email" placeholder="[contact email]" className="w-full h-11 px-4 rounded-[10px] bg-white/80 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-[14px] text-on-surface placeholder:text-outline outline-none transition-all" />
+                    <input type="email" placeholder="you@company.com" className="w-full h-11 px-4 rounded-[10px] bg-white/80 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-[14px] text-on-surface placeholder:text-outline outline-none transition-all" />
                   </div>
                   <div>
                     <label className="block text-[13px] font-semibold text-on-surface mb-1.5">
                       Phone Number
                     </label>
                     {' '}
-                    <input type="tel" placeholder="[phone]" className="w-full h-11 px-4 rounded-[10px] bg-white/80 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-[14px] text-on-surface placeholder:text-outline outline-none transition-all" />
+                    <input type="tel" placeholder="Phone number" className="w-full h-11 px-4 rounded-[10px] bg-white/80 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-[14px] text-on-surface placeholder:text-outline outline-none transition-all" />
                   </div>
                   <div>
                     <label className="block text-[13px] font-semibold text-on-surface mb-1.5">

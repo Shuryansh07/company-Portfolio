@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { products, sitePages } from '../data/pages.js'
+import { contact, products, sitePages } from '../data/pages.js'
 
 const bySlug = (slug) => products.find((p) => p.slug === slug)
 const columns = [
@@ -44,10 +44,9 @@ export default function Footer() {
             ))}
             <div className="space-y-3">
               <div className="font-bold text-on-surface uppercase tracking-wider text-xs">Connect</div>
-              {/* Placeholders: replace with the real company details. */}
-              <ul className="space-y-2 text-on-surface-variant text-body-sm">
-                <li>[contact email]</li>
-                <li>[phone]</li>
+                            <ul className="space-y-2 text-on-surface-variant text-body-sm">
+                <li><a href={`mailto:${contact.email}`} className={`${linkClass} break-all`}>{contact.email}</a></li>
+                <li><a href={`tel:${contact.phone}`} className={linkClass}>{contact.phone}</a></li>
                 <li className="text-xs">[Office address]</li>
               </ul>
             </div>

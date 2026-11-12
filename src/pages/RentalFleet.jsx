@@ -161,7 +161,7 @@ export default function RentalFleet() {
                     Phone Number
                   </label>
                   {' '}
-                  <input className="w-full rounded-[10px] border border-outline-variant/50 bg-surface-container-lowest p-3 text-body-sm font-body-sm text-on-surface placeholder:text-outline-variant/80 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="[phone]" type="tel" />
+                  <input className="w-full rounded-[10px] border border-outline-variant/50 bg-surface-container-lowest p-3 text-body-sm font-body-sm text-on-surface placeholder:text-outline-variant/80 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="Phone number" type="tel" />
                 </div>
                 <div>
                   <label className="block text-label-md font-label-md text-on-surface mb-1.5">

@@ -416,6 +416,8 @@ export default function CaseStudies() {
             </article>
             <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
+                <img src="/images/products/production-planning.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
+                {' '}
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="Advanced industrial manufacturing scheduler interface displaying robotic constraint parameters, parallel assembly shift allocations, and cycle efficiency graphs in a warm minimalist layout." src="/images/1776a22831.jpg" />
                   {' '}

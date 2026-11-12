@@ -160,7 +160,7 @@ export default function InventoryControl() {
                       Phone
                     </label>
                     {' '}
-                    <input className="w-full h-11 px-3.5 rounded-[10px] bg-white border border-neutral-300 text-body-md text-on-surface placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#ff7555]/30 focus:border-[#ff7555] transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full h-11 px-3.5 rounded-[10px] bg-white border border-neutral-300 text-body-md text-on-surface placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#ff7555]/30 focus:border-[#ff7555] transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block text-label-md font-label-md text-on-surface mb-1.5">

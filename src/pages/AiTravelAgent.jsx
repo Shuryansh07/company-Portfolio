@@ -162,7 +162,7 @@ export default function AiTravelAgent() {
                       Direct Phone
                     </label>
                     {' '}
-                    <input className="w-full px-4 py-2.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="[phone]" type="tel" />
+                    <input className="w-full px-4 py-2.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Phone number" type="tel" />
                   </div>
                   <div>
                     <label className="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">

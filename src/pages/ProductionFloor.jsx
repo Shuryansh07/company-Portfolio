@@ -168,7 +168,7 @@ export default function ProductionFloor() {
                     Phone Number
                   </label>
                   {' '}
-                  <input type="tel" placeholder="[phone]" className="w-full px-3.5 py-2.5 text-sm bg-surface-container-low border border-[#c7c6c1]/50 rounded-[10px] focus:outline-none focus:border-[#ff7555] focus:ring-1 focus:ring-[#ff7555] text-[#1b1b1a] placeholder:text-[#787773]/70" />
+                  <input type="tel" placeholder="Phone number" className="w-full px-3.5 py-2.5 text-sm bg-surface-container-low border border-[#c7c6c1]/50 rounded-[10px] focus:outline-none focus:border-[#ff7555] focus:ring-1 focus:ring-[#ff7555] text-[#1b1b1a] placeholder:text-[#787773]/70" />
                 </div>
                 <div>
                   <label className="block text-xs font-semibold text-[#1b1b1a] mb-1">
