@@ -1,5 +1,5 @@
 // Restores the small interactions the Stitch pages shipped as inline scripts:
-// filter tabs, catalogue search and FAQ toggles. It works from the markup the page has,
+// filter tabs and FAQ toggles. It works from the markup the page has,
 // so regenerated pages keep working. Returns a cleanup function.
 export function enhance(root) {
   const filters = [...root.querySelectorAll('button[data-filter]')]
@@ -7,7 +7,7 @@ export function enhance(root) {
   const idleClass = filters[1]?.className
 
   const applyFilter = (key) => {
-    // Products catalogue filters whole category sections. Careers filters individual role rows.
+    // Products catalogue filters whole category sections.
     const wanted = key === 'ai-agents' ? 'ai-agents-section' : `category-${key}`
     root.querySelectorAll('.catalogue-category, #ai-agents-section').forEach((s) => {
       s.style.display = key === 'all' || s.id === wanted ? '' : 'none'
@@ -33,18 +33,8 @@ export function enhance(root) {
     }
   }
 
-  const onInput = (e) => {
-    if (e.target.id !== 'productSearchInput') return
-    const q = e.target.value.toLowerCase().trim()
-    root.querySelectorAll('.catalogue-card').forEach((c) => {
-      c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none'
-    })
-  }
-
   root.addEventListener('click', onClick)
-  root.addEventListener('input', onInput)
   return () => {
     root.removeEventListener('click', onClick)
-    root.removeEventListener('input', onInput)
   }
 }

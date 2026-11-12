@@ -69,7 +69,6 @@ const productFor = (text) => {
 }
 const ROUTE_WORDS = [
   ['/case-studies', /case stud/],
-  ['/careers', /career|open (position|role)|we.re hiring/],
   ['/products', /product|package|catalog|module/],
   ['/contact', /demo|scop|contact|talk|quote|consult|proposal|walk-?through|get started|sow|blueprint|spec sheet|brochure/],
   ['/solutions', /solution|service/],

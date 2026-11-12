@@ -72,21 +72,6 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-[10px] bg-primary-fixed/40 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0">
-                    <span className="material-symbols-outlined text-[20px]">
-                      location_on
-                    </span>
-                  </div>
-                  <div className="flex-grow">
-                    <div className="font-label-sm text-label-sm text-on-surface-variant">
-                      {"Global HQ & Innovation Lab"}
-                    </div>
-                    <div className="font-body-md text-body-md font-medium text-on-surface">
-                      [Office address]
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-[10px] bg-secondary-container/40 border border-secondary/20 flex items-center justify-center text-secondary flex-shrink-0">
                     <span className="material-symbols-outlined text-[20px]">
                       schedule
@@ -110,35 +95,6 @@ export default function Contact() {
                 <p className="font-body-sm text-body-sm text-on-surface-variant">
                   Remote-first engineering team actively serving clients across US, UK, and APAC time zones with guaranteed response windows.
                 </p>
-              </div>
-            </div>
-            <div className="glass-surface rounded-2xl p-6 border border-outline-variant/30 relative overflow-hidden">
-              <div className="flex items-center gap-1 text-primary mb-3">
-                <span className="material-symbols-outlined text-[16px] fill-icon">
-                  star
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[16px] fill-icon">
-                  star
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[16px] fill-icon">
-                  star
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[16px] fill-icon">
-                  star
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[16px] fill-icon">
-                  star
-                </span>
-              </div>
-              <blockquote className="font-body-md text-body-md italic text-on-surface mb-3">
-                "[Client quote] - [Name, role]"
-              </blockquote>
-              <div className="font-label-sm text-label-sm text-on-surface-variant">
-                Enterprise Client Verification Record [00+]
               </div>
             </div>
             <div className="p-6 rounded-2xl bg-surface-container-high/60 border border-outline-variant/30 space-y-2">
@@ -289,53 +245,6 @@ export default function Contact() {
                         Custom Enterprise Engagement
                       </option>
                     </select>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label className="block font-label-md text-label-md text-on-surface font-semibold">
-                    Estimated budget range
-                  </label>
-                  {' '}
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    <label className="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
-                      <input className="sr-only peer" name="budget" type="radio" defaultValue="< $25k" />
-                      {' '}
-                      <span className="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">
-                        {"< $25k"}
-                      </span>
-                      {' '}
-                      <span className="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity" />
-                    </label>
-                    {' '}
-                    <label className="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
-                      <input defaultChecked className="sr-only peer" name="budget" type="radio" defaultValue="$25k - $50k" />
-                      {' '}
-                      <span className="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">
-                        $25k - $50k
-                      </span>
-                      {' '}
-                      <span className="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity" />
-                    </label>
-                    {' '}
-                    <label className="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
-                      <input className="sr-only peer" name="budget" type="radio" defaultValue="$50k - $100k" />
-                      {' '}
-                      <span className="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">
-                        $50k - $100k
-                      </span>
-                      {' '}
-                      <span className="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity" />
-                    </label>
-                    {' '}
-                    <label className="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
-                      <input className="sr-only peer" name="budget" type="radio" defaultValue="$100k+" />
-                      {' '}
-                      <span className="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">
-                        $100k+
-                      </span>
-                      {' '}
-                      <span className="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity" />
-                    </label>
                   </div>
                 </div>
                 <div className="space-y-1.5">

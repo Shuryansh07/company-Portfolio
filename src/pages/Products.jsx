@@ -27,14 +27,8 @@ export default function Products() {
         <p className="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
           Fixed scope, fixed price, and a live date you can plan around. Battle-tested modules deployed into your operations without legacy bloat.
         </p>
-        <div className="max-w-3xl mx-auto bg-surface-container-lowest/70 backdrop-blur-xl rounded-[10px] p-2 border border-white/90 shadow-xl shadow-on-surface/5 flex flex-col md:flex-row items-center gap-2">
-          <div className="flex items-center gap-3 px-4 py-2 w-full md:w-auto md:flex-1">
-            <span className="material-symbols-outlined text-outline text-[20px]">
-              search
-            </span>
-            <input className="w-full bg-transparent border-none p-0 text-body-md font-body-md text-on-surface placeholder:text-outline focus:ring-0 focus:outline-none" id="productSearchInput" placeholder="Search packages, modules, or workflows..." type="text" />
-          </div>
-          <div className="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto px-2 pb-1 md:pb-0 scrollbar-none" id="filterContainer">
+        <div className="w-fit max-w-full mx-auto bg-surface-container-lowest/70 backdrop-blur-xl rounded-[10px] p-2 border border-white/90 shadow-xl shadow-on-surface/5 flex items-center">
+          <div className="flex items-center gap-1.5 overflow-x-auto min-w-0 scrollbar-none" id="filterContainer">
             <button className="filter-pill px-4 py-1.5 rounded-[10px] text-label-md font-label-md bg-gradient-to-r from-[#FF8A65] to-[#FF6B4A] text-white shadow-sm transition-all whitespace-nowrap" data-filter="all">
               All
             </button>

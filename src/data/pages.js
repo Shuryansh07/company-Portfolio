@@ -7,7 +7,6 @@ export const sitePages = [
   { key: 'c_solutions', path: '/solutions', component: 'Solutions', label: 'Solutions' },
   { key: 'c_casestudies', path: '/case-studies', component: 'CaseStudies', label: 'Case Studies' },
   { key: 'c_about', path: '/about', component: 'About', label: 'About' },
-  { key: 'c_careers', path: '/careers', component: 'Careers', label: 'Careers' },
   { key: 'c_contact', path: '/contact', component: 'Contact', label: 'Contact' },
 ]
 
