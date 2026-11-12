@@ -100,32 +100,6 @@ export default function SalesCrm() {
                   </span>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-4 p-4 rounded-2xl bg-surface-container-low/70 border border-outline-variant/30">
-                <div className="p-3">
-                  <div className="text-headline-md font-headline-md font-bold text-primary tracking-tight">
-                    [00] Days
-                  </div>
-                  <div className="text-label-md font-label-md text-on-surface-variant mt-0.5">
-                    Avg. sales cycle
-                  </div>
-                </div>
-                <div className="p-3 border-l border-outline-variant/30">
-                  <div className="text-headline-md font-headline-md font-bold text-secondary tracking-tight">
-                    [00.0%]
-                  </div>
-                  <div className="text-label-md font-label-md text-on-surface-variant mt-0.5">
-                    Win rate lift
-                  </div>
-                </div>
-                <div className="p-3 border-l border-outline-variant/30">
-                  <div className="text-headline-md font-headline-md font-bold text-on-surface tracking-tight">
-                    [00+]
-                  </div>
-                  <div className="text-label-md font-label-md text-on-surface-variant mt-0.5">
-                    Active deals tracked
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo-form">
               <div className="glass-card rounded-2xl p-8 shadow-xl relative overflow-hidden">
@@ -243,7 +217,7 @@ export default function SalesCrm() {
                     Click to Play Interactive Guided Runthrough
                   </p>
                   <p className="text-body-sm font-body-sm text-surface-variant max-w-xs mt-1">
-                    Duration: [00:00] min • Multi-tenant live sync breakdown
+                    Multi-tenant live sync breakdown
                   </p>
                 </div>
                 <div className="z-10 bg-inverse-surface/80 rounded-[10px] p-3 border border-outline/30 flex items-center gap-4">
@@ -256,7 +230,7 @@ export default function SalesCrm() {
                   </div>
                   {' '}
                   <span className="text-label-sm font-label-sm text-surface-variant font-mono">
-                    [00:42] / [03:15]
+                    00:42 / 03:15
                   </span>
                 </div>
                 <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
@@ -289,7 +263,7 @@ export default function SalesCrm() {
                       </span>
                       {' '}
                       <span className="rounded-[6px] px-2 py-1 bg-surface-container font-mono text-label-md font-label-md font-bold text-on-surface">
-                        [000%]
+                        128%
                       </span>
                     </div>
                   </div>
@@ -586,7 +560,7 @@ export default function SalesCrm() {
                         </span>
                         {' '}
                         <span className="text-label-md font-label-md font-bold text-primary font-mono">
-                          [000%]
+                          112%
                         </span>
                       </div>
                       <div className="w-full bg-surface-container-highest h-2 rounded-[4px] overflow-hidden">
@@ -599,7 +573,7 @@ export default function SalesCrm() {
                           Avg Stage Velocity
                         </div>
                         <div className="text-headline-sm font-headline-sm font-bold text-on-surface mt-0.5 font-mono">
-                          [00] Days
+                          18 Days
                         </div>
                         <div className="text-label-sm font-label-sm text-secondary font-medium mt-1">
                           Faster than median
@@ -634,7 +608,7 @@ export default function SalesCrm() {
                           </span>
                           {' '}
                           <span className="font-mono text-on-surface">
-                            [00+] deals ($[000]k)
+                            24 deals ($480k)
                           </span>
                         </div>
                         <div className="px-3 py-2 flex justify-between text-on-surface-variant">
@@ -643,7 +617,7 @@ export default function SalesCrm() {
                           </span>
                           {' '}
                           <span className="font-mono text-on-surface">
-                            [00+] deals ($[000]k)
+                            16 deals ($310k)
                           </span>
                         </div>
                         <div className="px-3 py-2 flex justify-between text-on-surface-variant">
@@ -652,7 +626,7 @@ export default function SalesCrm() {
                           </span>
                           {' '}
                           <span className="font-mono text-on-surface">
-                            [00+] deals ($[000]k)
+                            9 deals ($185k)
                           </span>
                         </div>
                       </div>
@@ -840,7 +814,7 @@ export default function SalesCrm() {
                   Reclaimed Selling Hours
                 </h3>
                 <p className="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                  Cut manual data entry and email logging by [00] hours per rep weekly, returning time to active customer conversations.
+                  Cut manual data entry and email logging for every rep, returning time to active customer conversations.
                 </p>
               </div>
               <div className="glass-card rounded-2xl p-6 border border-outline-variant/40">
@@ -1147,7 +1121,7 @@ export default function SalesCrm() {
                 </button>
                 {' '}
                 <div className="hidden px-6 pb-5 pt-1 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 leading-relaxed">
-                  Standard technical onboarding and data import are completed in [00] Days, including legacy CRM sanitization, field mapping, and rep training sprints.
+                  Standard technical onboarding and data import are completed within weeks, including legacy CRM sanitization, field mapping, and rep training sprints.
                 </div>
               </div>
               <div className="glass-card rounded-[10px] border border-outline-variant/40 overflow-hidden">
@@ -1181,7 +1155,7 @@ export default function SalesCrm() {
             {' '}
             <Link to="/products" className="text-primary font-label-lg text-label-lg font-semibold hover:underline inline-flex items-center gap-1 self-start md:self-auto">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]" data-icon="arrow_forward">

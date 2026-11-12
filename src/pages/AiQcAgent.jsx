@@ -101,32 +101,6 @@ export default function AiQcAgent() {
                 Role-Based Access
               </div>
             </div>
-            <div className="pt-6 grid grid-cols-3 gap-4 border-t border-outline-variant/30">
-              <div>
-                <div className="text-headline-md font-headline-md text-on-surface">
-                  [00] min
-                </div>
-                <div className="text-label-sm font-label-sm text-outline">
-                  Avg. saved per van
-                </div>
-              </div>
-              <div>
-                <div className="text-headline-md font-headline-md text-secondary">
-                  [0.00%]
-                </div>
-                <div className="text-label-sm font-label-sm text-outline">
-                  Hallucination rate
-                </div>
-              </div>
-              <div>
-                <div className="text-headline-md font-headline-md text-on-surface">
-                  [00] hr
-                </div>
-                <div className="text-label-sm font-label-sm text-outline">
-                  {"Setup & deployment"}
-                </div>
-              </div>
-            </div>
           </div>
           <div className="lg:col-span-5">
             <div className="glass-card p-8 md:p-10 shadow-xl shadow-on-surface/5 relative overflow-hidden">
@@ -139,7 +113,7 @@ export default function AiQcAgent() {
                   Book a free demo
                 </h2>
                 <p className="text-body-sm font-body-sm text-on-surface-variant">
-                  See how the AI QC Agent eliminates install callbacks in under [00] minutes.
+                  See how the AI QC Agent eliminates install callbacks.
                 </p>
               </div>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -193,7 +167,7 @@ export default function AiQcAgent() {
                     lock
                   </span>
                   <span>
-                    Guaranteed turnaround within [00] business hours · No spam
+                    Fast turnaround · No spam
                   </span>
                 </div>
               </form>
@@ -225,7 +199,7 @@ export default function AiQcAgent() {
                   </span>
                 </button>
                 <div className="mt-4 px-4 py-2 rounded-[10px] bg-surface-container-lowest/80 backdrop-blur-md border border-white/60 text-label-md font-label-md font-semibold text-on-surface shadow-md">
-                  Watch field test: [0]m [00]s
+                  Watch field test
                 </div>
               </div>
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white/90">
@@ -355,7 +329,7 @@ export default function AiQcAgent() {
             </span>
             {' '}
             <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2">
-              Technicians lose [0.0] hours every day thumbing through [000]-page service PDFs or waiting on hold for senior supervisors.
+              Technicians lose hours every day thumbing through lengthy service PDFs or waiting on hold for senior supervisors.
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant mt-4">
               When technicians hit ambiguous instructions, they make one of two choices: halt work to call dispatch, or guess. Both choices decimate operating margins and destroy customer trust.
@@ -529,24 +503,6 @@ export default function AiQcAgent() {
                   </p>
                 </div>
                 <div className="p-5 rounded-2xl bg-surface-container-low/80 border border-outline-variant/30 space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="p-3 bg-surface-container-lowest rounded-[3rem]">
-                      <div className="text-label-sm font-label-sm text-outline">
-                        Production Error Tolerance
-                      </div>
-                      <div className="text-headline-sm font-headline-sm text-primary font-bold">
-                        [0.00%] Unverified
-                      </div>
-                    </div>
-                    <div className="p-3 bg-surface-container-lowest rounded-[3rem]">
-                      <div className="text-label-sm font-label-sm text-outline">
-                        Audited Field Queries
-                      </div>
-                      <div className="text-headline-sm font-headline-sm text-on-surface font-bold">
-                        [00,000+] Logged
-                      </div>
-                    </div>
-                  </div>
                   <div className="text-label-sm font-label-sm text-on-surface flex items-center gap-2">
                     <span className="material-symbols-outlined text-secondary text-base" data-icon="shield_check">
                       format_image_left
@@ -693,10 +649,10 @@ export default function AiQcAgent() {
                 Faster installs
               </h3>
               <p className="text-body-md font-body-md text-on-surface-variant">
-                Reduce average field install time by [00] minutes per vehicle. Technicians finish shifts ahead of schedule without sacrificing harness precision or safety standards.
+                Reduce average field install time per vehicle. Technicians finish shifts ahead of schedule without sacrificing harness precision or safety standards.
               </p>
               <div className="text-label-md font-label-md text-primary font-semibold pt-1">
-                Avg ROI payback in [00] days →
+                Fast ROI payback →
               </div>
             </div>
           </div>
@@ -711,10 +667,10 @@ export default function AiQcAgent() {
                 Fewer mistakes
               </h3>
               <p className="text-body-md font-body-md text-on-surface-variant">
-                Cut warranty callbacks and faulty wiring rework to under [00%]. Eliminate blown auxiliary fuses and pinout mismatches before the fleet rolls out.
+                Cut warranty callbacks and faulty wiring rework. Eliminate blown auxiliary fuses and pinout mismatches before the fleet rolls out.
               </p>
               <div className="text-label-md font-label-md text-secondary font-semibold pt-1">
-                [00%] reduction in harness damage →
+                Less harness damage →
               </div>
             </div>
           </div>
@@ -826,7 +782,7 @@ export default function AiQcAgent() {
                   cancel
                 </span>
                 <span>
-                  [00]-minute supervisor phone queues while technicians sit idle in customer driveways.
+                  Long supervisor phone queues while technicians sit idle in customer driveways.
                 </span>
               </li>
               <li className="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
@@ -871,7 +827,7 @@ export default function AiQcAgent() {
                   check_circle
                 </span>
                 <span>
-                  Instant [0]-second verified citations directly with specific OEM page citations.
+                  Instant verified citations directly with specific OEM page citations.
                 </span>
               </li>
               <li className="flex items-start gap-3 text-body-md font-body-md text-on-surface font-medium">
@@ -966,7 +922,7 @@ export default function AiQcAgent() {
               </span>
             </summary>
             <p className="text-body-md font-body-md text-on-surface-variant mt-4 leading-relaxed border-t border-outline-variant/20 pt-4">
-              A standard corpus of [00,000] pages across [00] vehicle platforms typically processes, indexes, and passes our ground-truth vector benchmark within [00] to [00] business hours. Our deployment engineers supervise the semantic chunking of all complex fold-out schematics.
+              A standard corpus of service manuals across your vehicle platforms is processed, indexed, and validated against our ground-truth vector benchmark within a few business days. Our deployment engineers supervise the semantic chunking of all complex fold-out schematics.
             </p>
           </details>
           <details className="glass-card p-6 group rounded-2xl cursor-pointer">

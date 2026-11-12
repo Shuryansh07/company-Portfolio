@@ -113,32 +113,6 @@ export default function HrManagement() {
                   </span>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-outline-variant/30">
-                <div className="space-y-1">
-                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
-                    [00]%
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant font-medium">
-                    Attendance Precision
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
-                    [00] hrs
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant font-medium">
-                    Saved / Payroll Cycle
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
-                    [00] Days
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant font-medium">
-                    Onboarding Turnaround
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo-form">
               <div className="glass-panel p-8 rounded-[18px] relative border border-white/80">
@@ -151,7 +125,7 @@ export default function HrManagement() {
                   Book a live system walk-through
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6">
-                  See how Horizon centralizes employee lifecycle records and streamlines approvals under [00] minutes.
+                  See how Horizon centralizes employee lifecycle records and streamlines approvals.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
@@ -183,13 +157,13 @@ export default function HrManagement() {
                     <div className="relative">
                       <select className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all pr-10">
                         <option>
-                          [00] - [000] Employees
+                          Up to 100 Employees
                         </option>
                         <option>
-                          [000] - [0,000] Employees
+                          100 - 1,000 Employees
                         </option>
                         <option>
-                          [0,000]+ Enterprise Scale
+                          1,000+ Enterprise Scale
                         </option>
                       </select>
                       {' '}
@@ -384,7 +358,7 @@ export default function HrManagement() {
                       </span>
                       {' '}
                       <span>
-                        HQ North Tower — [09:02 AM]
+                        HQ North Tower — 09:02 AM
                       </span>
                     </div>
                     {' '}
@@ -600,30 +574,6 @@ export default function HrManagement() {
                     <span className="px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-mono text-[11px] rounded-[6px] font-bold">
                       SYSTEM ACTIVE
                     </span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 mb-6">
-                    <div className="p-4 bg-surface-container-lowest rounded-[12px] border border-outline-variant/20">
-                      <div className="font-label-sm text-label-sm text-on-surface-variant">
-                        Direct Resolution Rate
-                      </div>
-                      <div className="font-headline-md text-headline-md font-bold text-on-surface mt-1">
-                        [00.0%]
-                      </div>
-                      <div className="text-[12px] text-secondary font-medium mt-0.5">
-                        Automated resolution
-                      </div>
-                    </div>
-                    <div className="p-4 bg-surface-container-lowest rounded-[12px] border border-outline-variant/20">
-                      <div className="font-label-sm text-label-sm text-on-surface-variant">
-                        Unassisted Requests
-                      </div>
-                      <div className="font-headline-md text-headline-md font-bold text-on-surface mt-1">
-                        [00,000+]
-                      </div>
-                      <div className="text-[12px] text-tertiary font-medium mt-0.5">
-                        Zero HR intervention
-                      </div>
-                    </div>
                   </div>
                   <div className="p-4 bg-surface-container-low/70 border border-outline-variant/30 rounded-[14px] space-y-3">
                     <div className="flex items-center justify-between text-xs text-on-surface-variant font-mono">
@@ -1137,7 +1087,7 @@ export default function HrManagement() {
             {' '}
             <Link to="/products" className="inline-flex items-center gap-1.5 text-primary font-label-lg text-label-lg font-bold hover:underline shrink-0">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]">

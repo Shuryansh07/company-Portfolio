@@ -21,35 +21,9 @@ export default function CaseStudies() {
               <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface font-bold tracking-tight mb-6">
                 Measurable enterprise velocity, delivered with fixed-scope certainty.
               </h1>
-              <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-12">
+              <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
                 Horizon engineers production-grade AI agents and modernizes ERP foundations across heavily regulated, multi-entity operations. We eradicate execution risk by delivering architectural milestones on deterministic timelines with contractually guaranteed system performance.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30">
-                <div className="p-4 rounded-xl bg-surface-container-lowest/60 border border-white/70">
-                  <div className="font-display-lg text-headline-lg text-primary font-bold tracking-tight mb-1">
-                    [00+]
-                  </div>
-                  <div className="font-label-md text-label-md text-on-surface-variant">
-                    Deployments across enterprise hubs
-                  </div>
-                </div>
-                <div className="p-4 rounded-xl bg-surface-container-lowest/60 border border-white/70">
-                  <div className="font-display-lg text-headline-lg text-primary font-bold tracking-tight mb-1">
-                    [00%]
-                  </div>
-                  <div className="font-label-md text-label-md text-on-surface-variant">
-                    Average reduction in reconciliation cycles
-                  </div>
-                </div>
-                <div className="p-4 rounded-xl bg-surface-container-lowest/60 border border-white/70">
-                  <div className="font-display-lg text-headline-lg text-primary font-bold tracking-tight mb-1">
-                    [00] Days
-                  </div>
-                  <div className="font-label-md text-label-md text-on-surface-variant">
-                    Typical time-to-value milestone
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -84,9 +58,6 @@ export default function CaseStudies() {
                   {"HEAVY LOGISTICS & FLEET"}
                 </span>
                 {' '}
-                <span className="px-3 py-1 rounded-[6px] bg-secondary-container/50 text-secondary font-label-sm text-label-sm font-semibold">
-                  [00] Weeks to Go-Live
-                </span>
               </div>
               <div className="font-label-md text-label-md text-on-surface-variant">
                 {"[Client name] — Global Freight & Fleet Carrier"}
@@ -201,7 +172,7 @@ export default function CaseStudies() {
                         Payload Throughput
                       </div>
                       <div className="text-[18px] font-bold text-white font-mono">
-                        [00,000] units/hr
+                        12,400 units/hr
                       </div>
                     </div>
                     <div className="p-3 rounded-[8px] bg-white/5">
@@ -211,32 +182,6 @@ export default function CaseStudies() {
                       <div className="text-[18px] font-bold text-[#10B981] font-mono">
                         0.00% Zero-Loss
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="p-4 rounded-xl bg-surface border border-outline-variant/30 text-center">
-                    <div className="font-headline-md text-headline-md text-primary font-bold">
-                      [00%]
-                    </div>
-                    <div className="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">
-                      Idle Dispatch Latency Reduction
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-xl bg-surface border border-outline-variant/30 text-center">
-                    <div className="font-headline-md text-headline-md text-primary font-bold">
-                      [00%]
-                    </div>
-                    <div className="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">
-                      Automated Remittance Accuracy
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-xl bg-surface border border-outline-variant/30 text-center">
-                    <div className="font-headline-md text-headline-md text-primary font-bold">
-                      [00] hrs
-                    </div>
-                    <div className="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">
-                      Saved Per Dispatcher Weekly
                     </div>
                   </div>
                 </div>
@@ -268,14 +213,6 @@ export default function CaseStudies() {
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div>
-                  <div className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00%]
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant">
-                    Month-End Close Acceleration
-                  </div>
-                </div>
                 {' '}
                 <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
@@ -303,21 +240,13 @@ export default function CaseStudies() {
                   [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
-                  Company-Wide ERP Rollout Across [00+] Active Jobsites
+                  Company-Wide ERP Rollout Across Multiple Active Jobsites
                 </h3>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
                   Subcontractor procurement, heavy equipment tracking, and field work orders synchronized instantly to central ERP accounting.
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div>
-                  <div className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00%]
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant">
-                    Reduction in Material Overages
-                  </div>
-                </div>
                 {' '}
                 <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
@@ -345,21 +274,13 @@ export default function CaseStudies() {
                   [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
-                  Enterprise-Ready Multi-Tenant SaaS MVP Built in [00] Weeks
+                  Enterprise-Ready Multi-Tenant SaaS MVP Built in Weeks
                 </h3>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
                   Full-stack billing engine, role-based governance, and real-time event pipeline delivered on an immutable fixed-bid schedule.
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div>
-                  <div className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00] Days
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant">
-                    Contract to Production
-                  </div>
-                </div>
                 {' '}
                 <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
@@ -394,14 +315,6 @@ export default function CaseStudies() {
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div>
-                  <div className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00%]
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant">
-                    Reduction in Stockout Cancellations
-                  </div>
-                </div>
                 {' '}
                 <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
@@ -438,14 +351,6 @@ export default function CaseStudies() {
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div>
-                  <div className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00%]
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant">
-                    Assembly Line Utilization Lift
-                  </div>
-                </div>
                 {' '}
                 <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
@@ -480,14 +385,6 @@ export default function CaseStudies() {
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div>
-                  <div className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00] min
-                  </div>
-                  <div className="font-label-sm text-label-sm text-on-surface-variant">
-                    Saved Per Diagnostics Call
-                  </div>
-                </div>
                 {' '}
                 <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>

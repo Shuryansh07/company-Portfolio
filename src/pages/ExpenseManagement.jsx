@@ -107,7 +107,7 @@ export default function ExpenseManagement() {
                   Book a live product demo
                 </h2>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-5">
-                  See how Horizon digitizes receipt pipelines and accelerates employee payback within [00] minutes.
+                  See how Horizon digitizes receipt pipelines and accelerates employee payback.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
@@ -166,53 +166,6 @@ export default function ExpenseManagement() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-10">
-            <div className="p-5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-[10px] bg-secondary-fixed/50 flex items-center justify-center text-on-secondary-fixed">
-                <span className="material-symbols-outlined" data-icon="timer">
-                  timer
-                </span>
-              </div>
-              <div>
-                <div className="font-headline-md text-headline-md text-on-surface font-bold">
-                  [00] min
-                </div>
-                <div className="font-body-sm text-body-sm text-on-surface-variant">
-                  Avg. report completion
-                </div>
-              </div>
-            </div>
-            <div className="p-5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-[10px] bg-tertiary-fixed/60 flex items-center justify-center text-on-tertiary-fixed">
-                <span className="material-symbols-outlined" data-icon="verified_user">
-                  verified_user
-                </span>
-              </div>
-              <div>
-                <div className="font-headline-md text-headline-md text-on-surface font-bold">
-                  [0.00%]
-                </div>
-                <div className="font-body-sm text-body-sm text-on-surface-variant">
-                  Duplicate claim rate
-                </div>
-              </div>
-            </div>
-            <div className="p-5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-[10px] bg-primary-fixed/60 flex items-center justify-center text-on-primary-fixed">
-                <span className="material-symbols-outlined" data-icon="electric_bolt">
-                  electric_bolt
-                </span>
-              </div>
-              <div>
-                <div className="font-headline-md text-headline-md text-on-surface font-bold">
-                  [00] hrs
-                </div>
-                <div className="font-body-sm text-body-sm text-on-surface-variant">
-                  Reimbursement turnaround
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
         <section className="space-y-8">
           <div className="space-y-2">
@@ -248,7 +201,7 @@ export default function ExpenseManagement() {
                 </button>
                 {' '}
                 <div className="font-headline-sm text-headline-sm font-semibold">
-                  Watch receipt-to-ledger audit [00]:[00]
+                  Watch receipt-to-ledger audit
                 </div>
                 <div className="font-body-sm text-body-sm text-surface-dim">
                   Demonstrating OCR parsing with auto-match against Amex card feeds
@@ -575,24 +528,6 @@ export default function ExpenseManagement() {
                   {' '}
                   SCHEMA RECONCILIATION TELEMETRY
                 </div>
-                <div className="grid grid-cols-2 gap-3 text-center">
-                  <div className="p-3 rounded-[8px] bg-surface-container-lowest border border-outline-variant/20">
-                    <div className="font-headline-sm text-headline-sm font-bold text-on-surface">
-                      [0.00%]
-                    </div>
-                    <div className="font-label-sm text-label-sm text-on-surface-variant">
-                      Hallucination rate
-                    </div>
-                  </div>
-                  <div className="p-3 rounded-[8px] bg-surface-container-lowest border border-outline-variant/20">
-                    <div className="font-headline-sm text-headline-sm font-bold text-on-surface">
-                      [00,000+]
-                    </div>
-                    <div className="font-label-sm text-label-sm text-on-surface-variant">
-                      Receipts Scanned
-                    </div>
-                  </div>
-                </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">
                   Every captured receipt is converted into JSON-LD schema matching standard ERP chart of accounts structures prior to database persistence.
                 </p>
@@ -724,7 +659,7 @@ export default function ExpenseManagement() {
                 Rapid Reimbursement
               </h3>
               <p className="font-body-sm text-body-sm text-on-surface-variant">
-                Shorten settlement turnaround from weeks to [00] hours, boosting employee morale and trust across distributed teams.
+                Shorten settlement turnaround from weeks to hours, boosting employee morale and trust across distributed teams.
               </p>
             </div>
             <div className="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/40 space-y-3">
@@ -1019,7 +954,7 @@ export default function ExpenseManagement() {
             {' '}
             <Link to="/products" className="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary font-semibold hover:underline">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-sm" data-icon="arrow_forward">

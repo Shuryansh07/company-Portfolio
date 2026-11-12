@@ -100,32 +100,6 @@ export default function Payroll() {
                   </span>
                 </div>
               </div>
-              <div className="pt-6 border-t border-outline-variant/30 grid grid-cols-3 gap-6">
-                <div className="p-4 rounded-xl bg-surface-container-low/70 border border-white/60">
-                  <div className="text-headline-lg font-headline-lg text-primary font-bold tracking-tight">
-                    [00] min
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    Avg. pay run calculation time
-                  </div>
-                </div>
-                <div className="p-4 rounded-xl bg-surface-container-low/70 border border-white/60">
-                  <div className="text-headline-lg font-headline-lg text-secondary font-bold tracking-tight">
-                    [0.00%]
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    Discrepancy / error rate
-                  </div>
-                </div>
-                <div className="p-4 rounded-xl bg-surface-container-low/70 border border-white/60">
-                  <div className="text-headline-lg font-headline-lg text-on-surface font-bold tracking-tight">
-                    [00] hr
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    Cycle turnaround time
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5">
               <div className="glass-card-elevated rounded-2xl p-8 border border-white relative overflow-hidden">
@@ -175,13 +149,13 @@ export default function Payroll() {
                     {' '}
                     <select className="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-body-md font-body-md text-on-surface outline-none transition-all">
                       <option>
-                        [00–00] Employees
+                        10–100 Employees
                       </option>
                       <option>
-                        [000–000] Employees
+                        100–1,000 Employees
                       </option>
                       <option>
-                        [0,000+] Multi-Entity Enterprise
+                        1,000+ Multi-Entity Enterprise
                       </option>
                     </select>
                   </div>
@@ -245,7 +219,7 @@ export default function Payroll() {
                 </div>
                 {' '}
                 <span className="text-label-sm font-label-sm font-mono px-2 py-0.5 rounded-[6px] bg-white/10 text-white">
-                  [00]:[00]
+                  02:14
                 </span>
               </div>
               <div className="my-8 space-y-4">
@@ -267,7 +241,7 @@ export default function Payroll() {
                     </span>
                     {' '}
                     <span className="text-[#ceee93]">
-                      [000] records OK
+                      312 records OK
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -299,7 +273,7 @@ export default function Payroll() {
                   Batch processing speed:
                   {' '}
                   <strong className="text-white font-medium">
-                    [000] payslips/sec
+                    480 payslips/sec
                   </strong>
                 </div>
               </div>
@@ -308,7 +282,7 @@ export default function Payroll() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-outline-variant/30 gap-4">
                 <div>
                   <div className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                    October 2025 Regular Pay Run — [000] Active Employees
+                    October 2025 Regular Pay Run — 312 Active Employees
                   </div>
                   <div className="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-2 mt-0.5">
                     <span>
@@ -340,7 +314,7 @@ export default function Payroll() {
                     Total Gross
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-on-surface mt-1">
-                    $[000,000.00]
+                    $412,850.00
                   </div>
                   <div className="text-label-sm text-secondary font-medium mt-0.5">
                     +0.0% variance
@@ -351,10 +325,10 @@ export default function Payroll() {
                     Statutory Withholding
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-primary mt-1">
-                    $[00,000.00]
+                    $98,240.00
                   </div>
                   <div className="text-label-sm text-on-surface-variant mt-0.5">
-                    [00] Jurisdictions
+                    12 Jurisdictions
                   </div>
                 </div>
                 <div className="p-4 rounded-xl bg-surface-container-low/80 border border-white">
@@ -362,7 +336,7 @@ export default function Payroll() {
                     Employer Contributions
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-tertiary mt-1">
-                    $[00,000.00]
+                    $36,120.00
                   </div>
                   <div className="text-label-sm text-on-surface-variant mt-0.5">
                     Pension + Health
@@ -373,7 +347,7 @@ export default function Payroll() {
                     Net Disbursed
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-on-surface mt-1">
-                    $[000,000.00]
+                    $314,610.00
                   </div>
                   <div className="text-label-sm text-secondary font-medium mt-0.5">
                     ACH Direct Staged
@@ -422,16 +396,16 @@ export default function Payroll() {
                         Core Engineering
                       </td>
                       <td className="py-3 px-4 font-mono">
-                        $[0,000.00]
+                        $8,250.00
                       </td>
                       <td className="py-3 px-4 font-mono text-primary">
-                        -$[000.00]
+                        -$1,980.00
                       </td>
                       <td className="py-3 px-4 font-mono text-on-surface-variant">
-                        -$[000.00]
+                        -$412.50
                       </td>
                       <td className="py-3 px-4 font-mono font-semibold">
-                        $[0,000.00]
+                        $5,857.50
                       </td>
                       <td className="py-3 px-4 text-center">
                         <span className="material-symbols-outlined text-[#2D4A08] text-base">
@@ -453,16 +427,16 @@ export default function Payroll() {
                         Product Strategy
                       </td>
                       <td className="py-3 px-4 font-mono">
-                        $[0,000.00]
+                        $7,400.00
                       </td>
                       <td className="py-3 px-4 font-mono text-primary">
-                        -$[000.00]
+                        -$1,776.00
                       </td>
                       <td className="py-3 px-4 font-mono text-on-surface-variant">
-                        -$[000.00]
+                        -$370.00
                       </td>
                       <td className="py-3 px-4 font-mono font-semibold">
-                        $[0,000.00]
+                        $5,254.00
                       </td>
                       <td className="py-3 px-4 text-center">
                         <span className="material-symbols-outlined text-[#2D4A08] text-base">
@@ -484,16 +458,16 @@ export default function Payroll() {
                         Global Operations
                       </td>
                       <td className="py-3 px-4 font-mono">
-                        $[0,000.00]
+                        $6,900.00
                       </td>
                       <td className="py-3 px-4 font-mono text-primary">
-                        -$[000.00]
+                        -$1,656.00
                       </td>
                       <td className="py-3 px-4 font-mono text-on-surface-variant">
-                        -$[000.00]
+                        -$345.00
                       </td>
                       <td className="py-3 px-4 font-mono font-semibold">
-                        $[0,000.00]
+                        $4,899.00
                       </td>
                       <td className="py-3 px-4 text-center">
                         <span className="material-symbols-outlined text-[#2D4A08] text-base">
@@ -506,7 +480,7 @@ export default function Payroll() {
               </div>
               <div className="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
                 <span>
-                  Deterministic Cryptographic Hash: SHA-256 [0000...0000]
+                  Deterministic Cryptographic Hash: SHA-256 9f3a…c71e
                 </span>
                 {' '}
                 <a className="text-primary font-semibold hover:underline flex items-center gap-1" href="#">
@@ -716,7 +690,7 @@ export default function Payroll() {
                 </div>
                 {' '}
                 <span className="px-3 py-1 rounded-[6px] bg-[#D9F99D] text-[#2D4A08] text-label-sm font-label-sm font-bold">
-                  [00.0%] Ground Truth Match
+                  99.8% Ground Truth Match
                 </span>
               </div>
               <p className="text-body-md font-body-md text-on-surface-variant">
@@ -1250,7 +1224,7 @@ export default function Payroll() {
             </div>
             {' '}
             <Link to="/products" className="text-primary font-semibold text-label-lg font-label-lg hover:underline flex items-center gap-1">
-              Explore all [00+] product packages
+              Explore all product packages
               {' '}
               <span className="material-symbols-outlined text-base">
                 arrow_forward

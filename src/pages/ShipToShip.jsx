@@ -44,32 +44,6 @@ export default function ShipToShip() {
               <p className="text-lg sm:text-xl text-[#474744] leading-relaxed mb-8 max-w-2xl font-normal">
                 Coordinate cargo transfers between vessels at sea with the same discipline and cryptographic audit trail a premier port terminal demands on land.
               </p>
-              <div className="grid grid-cols-3 gap-4 p-4 rounded-[16px] bg-white/70 border border-[#c7c6c1]/40 mb-8 max-w-2xl">
-                <div>
-                  <div className="text-2xl font-black text-[#1b1c1b] tracking-tight">
-                    [00] min
-                  </div>
-                  <div className="text-[12px] font-medium text-[#474744]">
-                    Avg. plan sign-off
-                  </div>
-                </div>
-                <div>
-                  <div className="text-2xl font-black text-[#1b1c1b] tracking-tight">
-                    [0.00%]
-                  </div>
-                  <div className="text-[12px] font-medium text-[#474744]">
-                    Transfer discrepancy
-                  </div>
-                </div>
-                <div>
-                  <div className="text-2xl font-black text-[#1b1c1b] tracking-tight">
-                    [00+]
-                  </div>
-                  <div className="text-[12px] font-medium text-[#474744]">
-                    Active offshore transfers
-                  </div>
-                </div>
-              </div>
               <div className="space-y-2 mb-6 max-w-2xl">
                 <div className="text-[12px] font-bold text-[#777773] uppercase tracking-wider mb-2">
                   Platform Capabilities
@@ -150,7 +124,7 @@ export default function ShipToShip() {
                   Book a live platform demo
                 </h2>
                 <p className="text-[13px] text-[#474744] leading-relaxed mb-6">
-                  See how Horizon coordinates vessel telemetry, OCIMF compliance logs, and dual-master digital sign-offs in under [00] minutes.
+                  See how Horizon coordinates vessel telemetry, OCIMF compliance logs, and dual-master digital sign-offs.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
@@ -238,7 +212,7 @@ export default function ShipToShip() {
                   <span className="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping" />
                   {' '}
                   <span className="text-[12px] font-mono tracking-wider text-white/90 font-bold uppercase">
-                    LIVE FEED: GULF STS ZONE [00]
+                    LIVE FEED: GULF STS ZONE 04
                   </span>
                 </div>
                 {' '}
@@ -261,7 +235,7 @@ export default function ShipToShip() {
               </div>
               <div className="relative z-10 pt-4 border-t border-white/10 flex items-center justify-between text-[12px] text-white/70 font-mono">
                 <span>
-                  Manifold Pressure: [00.0] Bar
+                  Manifold Pressure: 10.4 Bar
                 </span>
                 {' '}
                 <span className="text-lime font-bold">
@@ -308,7 +282,7 @@ export default function ShipToShip() {
                       [Vessel Name 01] · VLCC
                     </div>
                     <div className="text-[12px] text-[#474744] font-mono mt-0.5">
-                      MMSI: [000000000] · Master: [Master Name 01]
+                      MMSI: 538007214 · Master: [Master Name 01]
                     </div>
                   </div>
                   <div className="p-3.5 rounded-[12px] bg-surface-container-low border border-[#c7c6c1]/50">
@@ -325,7 +299,7 @@ export default function ShipToShip() {
                       [Vessel Name 02] · Suezmax
                     </div>
                     <div className="text-[12px] text-[#474744] font-mono mt-0.5">
-                      MMSI: [000000000] · Master: [Master Name 02]
+                      MMSI: 636019582 · Master: [Master Name 02]
                     </div>
                   </div>
                 </div>
@@ -335,7 +309,7 @@ export default function ShipToShip() {
                       Flow Rate
                     </div>
                     <div className="text-[16px] font-black text-[#1b1c1b] font-mono">
-                      [0,000] m³/h
+                      2,400 m³/h
                     </div>
                     <div className="text-[10px] text-emerald-600 font-bold">
                       Nominal Rate
@@ -346,10 +320,10 @@ export default function ShipToShip() {
                       Transferred
                     </div>
                     <div className="text-[16px] font-black text-[#1b1c1b] font-mono">
-                      [00,000] MT
+                      42,500 MT
                     </div>
                     <div className="text-[10px] text-[#474744]">
-                      [00%] of Target
+                      68% of Target
                     </div>
                   </div>
                   <div className="p-2.5 rounded-[10px] bg-white border border-[#c7c6c1]/60">
@@ -357,7 +331,7 @@ export default function ShipToShip() {
                       Swell Height
                     </div>
                     <div className="text-[16px] font-black text-[#1b1c1b] font-mono">
-                      [0.0] m
+                      2.1 m
                     </div>
                     <div className="text-[10px] text-emerald-600 font-bold">
                       Limit: 2.5m (Safe)
@@ -368,7 +342,7 @@ export default function ShipToShip() {
                       Fender Deflection
                     </div>
                     <div className="text-[16px] font-black text-[#1b1c1b] font-mono">
-                      [00%]
+                      72%
                     </div>
                     <div className="text-[10px] text-emerald-600 font-bold">
                       Yokohama Primary
@@ -418,7 +392,7 @@ export default function ShipToShip() {
                           check_circle
                         </span>
                         {' '}
-                        Continuous Weather Alert Boundary Active (Next check [00] min)
+                        Continuous Weather Alert Boundary Active (Next check 15 min)
                       </span>
                       {' '}
                       <span className="text-[11px] font-mono text-emerald-700 font-semibold">
@@ -434,7 +408,7 @@ export default function ShipToShip() {
                 </span>
                 {' '}
                 <span className="font-mono text-[11px] text-[#777773]">
-                  Ledger Hash: [0x4f...92d1]
+                  Ledger Hash: 0x4f…92d1
                 </span>
               </div>
             </div>
@@ -629,7 +603,7 @@ export default function ShipToShip() {
                   </span>
                   {' '}
                   <span className="font-mono font-bold text-[#1b1c1b]">
-                    STS-OPS-[0000]-W
+                    STS-OPS-2481-W
                   </span>
                 </div>
                 <div className="flex justify-between items-center pb-2 border-b border-[#c7c6c1]/30">
@@ -673,7 +647,7 @@ export default function ShipToShip() {
                   </span>
                   {' '}
                   <span className="text-[#1b1c1b] font-mono">
-                    [00] Days Remaining
+                    42 Days Remaining
                   </span>
                 </div>
               </div>
@@ -1095,7 +1069,7 @@ export default function ShipToShip() {
             {' '}
             <Link to="/products" className="inline-flex items-center gap-1 text-[13px] font-bold text-[#ff7555] hover:underline">
               <span>
-                Browse all [00+] product packages
+                Browse all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[16px]">

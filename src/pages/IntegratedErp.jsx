@@ -98,32 +98,6 @@ export default function IntegratedErp() {
                   </span>
                 </div>
               </div>
-              <div className="pt-4 grid grid-cols-3 gap-6 border-t border-outline-variant/30">
-                <div>
-                  <p className="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">
-                    [00%]
-                  </p>
-                  <p className="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">
-                    Faster Close Times
-                  </p>
-                </div>
-                <div>
-                  <p className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
-                    [00+]
-                  </p>
-                  <p className="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">
-                    Native Workflows
-                  </p>
-                </div>
-                <div>
-                  <p className="font-headline-lg text-headline-lg font-bold text-secondary tracking-tight">
-                    [00%]
-                  </p>
-                  <p className="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">
-                    Real-Time Inventory Sync
-                  </p>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5 bg-white/90 backdrop-blur-xl border border-outline-variant/40 rounded-[20px] p-8 shadow-xl relative" id="demo-form">
               <div className="mb-6">
@@ -259,7 +233,7 @@ export default function IntegratedErp() {
                   </span>
                   {' '}
                   <span className="font-mono text-xs text-primary font-medium">
-                    [00,000] events/sec
+                    12,400 events/sec
                   </span>
                 </div>
               </div>
@@ -319,7 +293,7 @@ export default function IntegratedErp() {
                   </span>
                   {' '}
                   <span className="font-headline-sm text-headline-sm font-bold text-on-surface">
-                    [00.0%]
+                    42.6%
                   </span>
                 </div>
                 <div className="p-2.5 bg-surface-container-lowest rounded-[10px] border border-outline-variant/20 text-center">
@@ -337,7 +311,7 @@ export default function IntegratedErp() {
                   </span>
                   {' '}
                   <span className="font-headline-sm text-headline-sm font-bold text-primary">
-                    [00] Days
+                    32 Days
                   </span>
                 </div>
               </div>
@@ -911,7 +885,7 @@ export default function IntegratedErp() {
               </button>
               {' '}
               <div className="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
-                Because our core schema is pre-architected for multi-entity operations, typical migrations complete in [00] weeks. Our fixed-scope methodology guarantees strict delivery milestones with zero production disruption.
+                Because our core schema is pre-architected for multi-entity operations, typical migrations complete in a matter of weeks. Our fixed-scope methodology guarantees strict delivery milestones with zero production disruption.
               </div>
             </div>
             <div className="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
@@ -1003,7 +977,7 @@ export default function IntegratedErp() {
             </div>
             {' '}
             <Link to="/products" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[10px] bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-lg text-label-lg font-semibold transition">
-              Explore all [00+] product packages →
+              Explore all product packages →
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1099,7 +1073,7 @@ export default function IntegratedErp() {
               </Link>
               {' '}
               <span className="text-xs text-white/80 font-medium">
-                No open-ended hourly billing • Fixed delivery milestone • [00]-day average switchover guarantee
+                No open-ended hourly billing • Fixed delivery milestone • Guaranteed switchover timeline
               </span>
             </div>
           </div>

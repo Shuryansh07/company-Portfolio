@@ -22,13 +22,6 @@ export default function Footer() {
             <p className="text-body-md text-on-surface-variant max-w-md">
               AI automation and ERP solutions delivered as fixed-scope, fixed-price packages, plus custom engagements when a package is not the right fit.
             </p>
-            <form className="pt-2 max-w-md" onSubmit={(e) => e.preventDefault()}>
-              <label htmlFor="newsletter-email" className="block text-label-sm text-on-surface mb-2 font-semibold">Product updates by email</label>
-              <div className="flex items-center p-1 rounded-[10px] neo-glass border border-outline-variant/40 focus-within:border-primary-container">
-                <input id="newsletter-email" type="email" required placeholder="Enter your business email" className="w-full px-4 text-body-sm bg-transparent outline-none border-none focus:ring-0 text-on-surface placeholder:text-outline" />
-                <button type="submit" className="px-5 py-2 rounded-[10px] bg-primary-container text-white text-label-sm font-semibold hover:bg-primary transition-colors flex-shrink-0">Subscribe</button>
-              </div>
-            </form>
           </div>
 
           <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8 text-label-sm">
@@ -47,7 +40,7 @@ export default function Footer() {
                             <ul className="space-y-2 text-on-surface-variant text-body-sm">
                 <li><a href={`mailto:${contact.email}`} className={`${linkClass} break-all`}>{contact.email}</a></li>
                 <li><a href={`tel:${contact.phone}`} className={linkClass}>{contact.phone}</a></li>
-                <li className="text-xs">[Office address]</li>
+            
               </ul>
             </div>
           </div>

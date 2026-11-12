@@ -115,7 +115,7 @@ export default function SupportTicketing() {
                     Book a live product demo
                   </h2>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">
-                    See how Horizon unifies ticket queues and eliminates SLA breaches within [00] minutes.
+                    See how Horizon unifies ticket queues and eliminates SLA breaches.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -146,7 +146,7 @@ export default function SupportTicketing() {
                         Team / Volume
                       </label>
                       {' '}
-                      <input className="w-full h-12 px-3 rounded-[10px] bg-white/80 border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm transition-all" type="text" defaultValue="10 - 25 Agents / [000]+ Tickets/Day" />
+                      <input className="w-full h-12 px-3 rounded-[10px] bg-white/80 border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm transition-all" type="text" defaultValue="10 - 25 Agents / 500+ Tickets/Day" />
                     </div>
                   </div>
                   {' '}
@@ -206,7 +206,7 @@ export default function SupportTicketing() {
                   </span>
                 </div>
                 <p className="font-label-lg text-label-lg font-semibold tracking-wide text-white">
-                  Watch triage demo [00]:[00]
+                  Watch triage demo
                 </p>
                 <p className="font-body-sm text-body-sm text-neutral-400 mt-1">
                   {"Full walk-through of queue routing & macro dispatch"}
@@ -306,7 +306,7 @@ export default function SupportTicketing() {
                     </span>
                     {' '}
                     <span>
-                      [00:04] mins ago
+                      4 mins ago
                     </span>
                   </div>
                   {' '}
@@ -560,24 +560,6 @@ export default function SupportTicketing() {
                     <span className="text-primary font-bold">
                       SYNCED
                     </span>
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4 pt-2">
-                  <div className="p-4 bg-surface-container-low rounded-[10px] text-center border border-outline-variant/20">
-                    <p className="font-display-lg text-3xl font-extrabold text-primary">
-                      [00%]
-                    </p>
-                    <p className="font-label-sm text-label-sm text-on-surface-variant mt-1 font-semibold">
-                      Unification Rate
-                    </p>
-                  </div>
-                  <div className="p-4 bg-surface-container-low rounded-[10px] text-center border border-outline-variant/20">
-                    <p className="font-display-lg text-3xl font-extrabold text-on-surface">
-                      [00,000+]
-                    </p>
-                    <p className="font-label-sm text-label-sm text-on-surface-variant mt-1 font-semibold">
-                      Tickets Synced
-                    </p>
                   </div>
                 </div>
                 <div className="p-4 bg-orange-50 border border-orange-200 rounded-[10px] text-on-surface-variant font-body-sm">
@@ -1012,7 +994,7 @@ export default function SupportTicketing() {
             </div>
             {' '}
             <Link to="/products" className="font-label-lg text-label-lg font-semibold text-primary hover:underline flex items-center gap-1">
-              Explore all [00+] product packages →
+              Explore all product packages →
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

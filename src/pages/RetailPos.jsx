@@ -100,32 +100,6 @@ export default function RetailPos() {
                   {"Unified Inventory Across Storefront & Online Channels"}
                 </span>
               </div>
-              <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-stone-200/70">
-                <div className="p-3.5 rounded-[12px] bg-white/50 border border-stone-200/60">
-                  <div className="font-display-lg text-[28px] font-bold text-on-surface tracking-tight mb-0.5">
-                    [00] sec
-                  </div>
-                  <div className="font-label-md text-label-md text-stone-500">
-                    Avg. Scan-to-Tender
-                  </div>
-                </div>
-                <div className="p-3.5 rounded-[12px] bg-white/50 border border-stone-200/60">
-                  <div className="font-display-lg text-[28px] font-bold text-on-surface tracking-tight mb-0.5">
-                    [00.0%]
-                  </div>
-                  <div className="font-label-md text-label-md text-stone-500">
-                    Inventory Variance Rate
-                  </div>
-                </div>
-                <div className="p-3.5 rounded-[12px] bg-white/50 border border-stone-200/60">
-                  <div className="font-display-lg text-[28px] font-bold text-on-surface tracking-tight mb-0.5">
-                    [00+]
-                  </div>
-                  <div className="font-label-md text-label-md text-stone-500">
-                    Multi-Store Sync Window
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo-form">
               <div className="rounded-[18px] bg-white/95 border border-stone-200/80 p-7 shadow-xl shadow-stone-200/50 backdrop-blur-sm relative">
@@ -134,7 +108,7 @@ export default function RetailPos() {
                     Book a live product demo
                   </h2>
                   <p className="font-body-sm text-body-sm text-stone-600 leading-normal">
-                    See how Horizon POS unifies barcode scanning, hardware peripherals, and multi-location ledgers in under [00] minutes.
+                    See how Horizon POS unifies barcode scanning, hardware peripherals, and multi-location ledgers.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -245,7 +219,7 @@ export default function RetailPos() {
                   </span>
                   {' '}
                   <span>
-                    [00] ms
+                    42 ms
                   </span>
                 </div>
               </div>
@@ -1206,7 +1180,7 @@ export default function RetailPos() {
             {' '}
             <Link to="/products" className="inline-flex items-center gap-1.5 text-primary font-label-lg text-label-lg font-semibold hover:underline">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]" data-icon="arrow_forward">

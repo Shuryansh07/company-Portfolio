@@ -42,41 +42,6 @@ export default function Solutions() {
               </span>
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
-            <div className="glass-card rounded-2xl p-6 text-left border border-white/80">
-              <div className="font-display-lg text-headline-lg font-bold text-primary mb-1">
-                [00+]
-              </div>
-              <div className="font-label-lg text-label-lg text-on-surface mb-0.5">
-                Deployments Engineered
-              </div>
-              <div className="font-body-sm text-body-sm text-on-surface-variant">
-                Mission-critical enterprise production cutovers across global operations.
-              </div>
-            </div>
-            <div className="glass-card rounded-2xl p-6 text-left border border-white/80">
-              <div className="font-display-lg text-headline-lg font-bold text-primary mb-1">
-                [00]%
-              </div>
-              <div className="font-label-lg text-label-lg text-on-surface mb-0.5">
-                Manual Triage Elimination
-              </div>
-              <div className="font-body-sm text-body-sm text-on-surface-variant">
-                Deterministic workflows replacing tedious spreadsheet verifications.
-              </div>
-            </div>
-            <div className="glass-card rounded-2xl p-6 text-left border border-white/80">
-              <div className="font-display-lg text-headline-lg font-bold text-primary mb-1">
-                [00]-Day
-              </div>
-              <div className="font-label-lg text-label-lg text-on-surface mb-0.5">
-                Average Go-Live Guarantee
-              </div>
-              <div className="font-body-sm text-body-sm text-on-surface-variant">
-                Rapid milestone cadences from architecture discovery to zero-downtime launch.
-              </div>
-            </div>
-          </div>
         </section>
         <section className="scroll-mt-28" id="services-grid">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -547,7 +512,7 @@ export default function Solutions() {
                   </span>
                   {' '}
                   <span>
-                    Guaranteed [00]-minute critical response SLAs
+                    Guaranteed critical response SLAs
                   </span>
                 </div>
                 <div className="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
@@ -603,7 +568,7 @@ export default function Solutions() {
                     Delivery Timeline
                   </div>
                   <div className="font-headline-sm text-headline-sm font-bold text-on-surface mb-0.5">
-                    [00] weeks go-live
+                    Fixed go-live date
                   </div>
                   <div className="font-body-sm text-body-sm text-on-surface-variant">
                     Guaranteed delivery date and single transparent invoice.
@@ -646,7 +611,7 @@ export default function Solutions() {
                     </span>
                     {' '}
                     <span>
-                      [00]-day post-launch warranty
+                      Post-launch warranty
                     </span>
                   </div>
                 </div>
@@ -751,7 +716,7 @@ export default function Solutions() {
                     Immediate Onboarding
                   </div>
                   <div className="font-body-sm text-body-sm text-on-surface-variant">
-                    Within [00] business days. Flexible month-to-month contracts.
+                    Within days, not months. Flexible month-to-month contracts.
                   </div>
                 </div>
                 <div className="space-y-3 mb-8">
@@ -952,7 +917,7 @@ export default function Solutions() {
                   Client receives:
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant">
-                  {"Guaranteed [00]-minute SLA support coverage & quarterly optimization reviews."}
+                  {"Guaranteed SLA support coverage & quarterly optimization reviews."}
                 </p>
               </div>
             </div>
@@ -1305,7 +1270,7 @@ export default function Solutions() {
                 </span>
               </summary>
               <div className="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20 mt-4">
-                For productized packages and staff augmentation, engineering kickoff occurs within [00] business days. For bespoke custom architectures, initial discovery workshops begin within 48 hours of Statement of Work approval.
+                For productized packages and staff augmentation, engineering kickoff occurs within a few business days. For bespoke custom architectures, initial discovery workshops begin within 48 hours of Statement of Work approval.
               </div>
             </details>
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90" open>
@@ -1347,7 +1312,7 @@ export default function Solutions() {
                 </span>
               </summary>
               <div className="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20 mt-4">
-                Focused productized packages deploy in [00] to [00] weeks. Comprehensive multi-department ERP and custom agent ecosystems typically reach production cutover within [00] to [00] weeks.
+                Focused productized packages deploy in a matter of weeks. Comprehensive multi-department ERP and custom agent ecosystems typically reach production cutover on a fixed, agreed timeline.
               </div>
             </details>
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90">
@@ -1361,7 +1326,7 @@ export default function Solutions() {
                 </span>
               </summary>
               <div className="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20 mt-4">
-                We conduct dual-run simulations and parallel ledger verification where your existing system and Horizon run simultaneously until all balances and data points match at [00.00]% precision before final switchover.
+                We conduct dual-run simulations and parallel ledger verification where your existing system and Horizon run simultaneously until all balances and data points match exactly before final switchover.
               </div>
             </details>
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90">
@@ -1375,7 +1340,7 @@ export default function Solutions() {
                 </span>
               </summary>
               <div className="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20 mt-4">
-                Every engagement includes a mandatory [00]-day operational warranty. Following that, clients can select ongoing SLA support packages featuring guaranteed [00]-minute response windows and continuous monitoring.
+                Every engagement includes a mandatory operational warranty period. Following that, clients can select ongoing SLA support packages featuring guaranteed response windows and continuous monitoring.
               </div>
             </details>
           </div>
@@ -1394,17 +1359,6 @@ export default function Solutions() {
                   Connect directly with an engineering solutions architect. We review your architecture, diagnose operational friction points, and deliver a comprehensive Statement of Work within 48 hours.
                 </p>
                 <div className="space-y-4 mb-8">
-                  <div className="flex items-center gap-3 text-on-surface font-body-md text-body-md">
-                    <span className="w-8 h-8 rounded-[8px] bg-surface-container-high flex items-center justify-center text-primary">
-                      <span className="material-symbols-outlined text-base">
-                        location_on
-                      </span>
-                    </span>
-                    {' '}
-                    <span>
-                      [Office address]
-                    </span>
-                  </div>
                   <div className="flex items-center gap-3 text-on-surface font-body-md text-body-md">
                     <span className="w-8 h-8 rounded-[8px] bg-surface-container-high flex items-center justify-center text-primary">
                       <span className="material-symbols-outlined text-base">

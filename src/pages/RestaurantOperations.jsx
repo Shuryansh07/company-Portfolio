@@ -111,35 +111,6 @@ export default function RestaurantOperations() {
                 </div>
               </div>
             </div>
-            <div className="pt-4 border-t border-outline-variant/30 grid grid-cols-3 gap-4">
-              <div className="p-3.5 rounded-[12px] bg-surface-container-low/70 border border-outline-variant/20">
-                <span className="text-headline-md font-headline-md font-bold text-on-surface tracking-tight">
-                  [00] min
-                </span>
-                {' '}
-                <p className="text-body-sm font-body-sm text-on-surface-variant">
-                  Avg. Ticket Turnaround
-                </p>
-              </div>
-              <div className="p-3.5 rounded-[12px] bg-surface-container-low/70 border border-outline-variant/20">
-                <span className="text-headline-md font-headline-md font-bold text-secondary tracking-tight">
-                  [00.00%]
-                </span>
-                {' '}
-                <p className="text-body-sm font-body-sm text-on-surface-variant">
-                  Modifier Accuracy Rate
-                </p>
-              </div>
-              <div className="p-3.5 rounded-[12px] bg-surface-container-low/70 border border-outline-variant/20">
-                <span className="text-headline-md font-headline-md font-bold text-tertiary tracking-tight">
-                  [00] hr
-                </span>
-                {' '}
-                <p className="text-body-sm font-body-sm text-on-surface-variant">
-                  {"Setup & Kitchen Cutover"}
-                </p>
-              </div>
-            </div>
           </div>
           <div className="lg:col-span-5" id="demo">
             <div className="glass-card rounded-[16px] p-8 space-y-6 relative overflow-hidden">
@@ -272,7 +243,7 @@ export default function RestaurantOperations() {
               </div>
               <div className="z-10 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-label-sm">
                 <span className="text-secondary-fixed">
-                  Active Kitchen Session: Dinner Rush [00] | Station Verified
+                  Active Kitchen Session: Dinner Rush | Station Verified
                 </span>
                 {' '}
                 <span className="text-outline-variant">
@@ -1182,7 +1153,7 @@ export default function RestaurantOperations() {
             {' '}
             <Link to="/products" className="text-label-lg font-label-lg text-primary font-bold hover:underline flex items-center gap-1">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]" data-icon="arrow_forward">

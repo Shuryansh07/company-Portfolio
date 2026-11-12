@@ -98,32 +98,6 @@ export default function InventoryControl() {
                   </span>
                 </div>
               </div>
-              <div className="pt-6 grid grid-cols-3 gap-4 border-t border-outline-variant/30">
-                <div className="p-3 bg-surface-container-low/70 rounded-[10px] border border-outline-variant/20">
-                  <div className="text-headline-md font-headline-md font-bold text-on-surface">
-                    [00] min
-                  </div>
-                  <div className="text-label-sm font-label-sm text-on-surface-variant">
-                    Reorder cycle speed
-                  </div>
-                </div>
-                <div className="p-3 bg-surface-container-low/70 rounded-[10px] border border-outline-variant/20">
-                  <div className="text-headline-md font-headline-md font-bold text-on-surface">
-                    [00.00%]
-                  </div>
-                  <div className="text-label-sm font-label-sm text-on-surface-variant">
-                    Count discrepancy rate
-                  </div>
-                </div>
-                <div className="p-3 bg-surface-container-low/70 rounded-[10px] border border-outline-variant/20">
-                  <div className="text-headline-md font-headline-md font-bold text-on-surface">
-                    [00+]
-                  </div>
-                  <div className="text-label-sm font-label-sm text-on-surface-variant">
-                    Warehouses synced real time
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="walkthrough">
               <div className="glass-card rounded-[18px] p-8 shadow-md border border-neutral-200/90 relative overflow-hidden">
@@ -137,7 +111,7 @@ export default function InventoryControl() {
                     Book a live system walk-through
                   </h3>
                   <p className="text-body-sm font-body-sm text-on-surface-variant mt-1.5">
-                    See how Smart Inventory Control eliminates phantom inventory and automates reorders within [00] minutes.
+                    See how Smart Inventory Control eliminates phantom inventory and automates reorders.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -304,7 +278,7 @@ export default function InventoryControl() {
                     </div>
                   </div>
                   <div className="rounded-[6px] bg-surface-container-high px-2 py-1 text-label-sm font-label-sm font-mono text-on-surface-variant">
-                    Latency: [00] ms
+                    Latency: 42 ms
                   </div>
                 </div>
                 <div className="p-3.5 bg-surface-container-low/70 rounded-[10px] border border-neutral-200/60">
@@ -326,7 +300,7 @@ export default function InventoryControl() {
                   <div className="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-neutral-200/50 text-center">
                     <div>
                       <div className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                        [00,000]
+                        12,480
                       </div>
                       <div className="text-label-sm font-label-sm text-on-surface-variant">
                         Available
@@ -334,7 +308,7 @@ export default function InventoryControl() {
                     </div>
                     <div>
                       <div className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                        [000]
+                        640
                       </div>
                       <div className="text-label-sm font-label-sm text-on-surface-variant">
                         Reserved
@@ -342,7 +316,7 @@ export default function InventoryControl() {
                     </div>
                     <div>
                       <div className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                        [000]
+                        215
                       </div>
                       <div className="text-label-sm font-label-sm text-on-surface-variant">
                         In Transit
@@ -361,7 +335,7 @@ export default function InventoryControl() {
                       </span>
                       {' '}
                       <span className="font-mono text-on-surface">
-                        [00,000] units
+                        8,420 units
                       </span>
                       {' '}
                       <span className="rounded-[6px] px-2 py-0.5 text-label-sm bg-neutral-100 text-neutral-700">
@@ -374,7 +348,7 @@ export default function InventoryControl() {
                       </span>
                       {' '}
                       <span className="font-mono text-on-surface">
-                        [00,000] units
+                        3,150 units
                       </span>
                       {' '}
                       <span className="rounded-[6px] px-2 py-0.5 text-label-sm bg-neutral-100 text-neutral-700">
@@ -387,7 +361,7 @@ export default function InventoryControl() {
                       </span>
                       {' '}
                       <span className="font-mono text-on-surface">
-                        [000] units
+                        640 units
                       </span>
                       {' '}
                       <span className="rounded-[6px] px-2 py-0.5 text-label-sm bg-amber-100 text-amber-800">
@@ -400,7 +374,7 @@ export default function InventoryControl() {
                       </span>
                       {' '}
                       <span className="font-mono text-on-surface">
-                        [000] units
+                        215 units
                       </span>
                       {' '}
                       <span className="rounded-[6px] px-2 py-0.5 text-label-sm bg-cyan-100 text-cyan-800">
@@ -420,7 +394,7 @@ export default function InventoryControl() {
                     Vendor EDI Triggered:
                   </span>
                   {' '}
-                  Automatic PO #[00000] dispatched to approved tier-1 vendor based on consumption velocity.
+                  Automatic PO #48213 dispatched to approved tier-1 vendor based on consumption velocity.
                 </div>
               </div>
             </div>
@@ -1149,7 +1123,7 @@ export default function InventoryControl() {
             {' '}
             <Link to="/products" className="inline-flex items-center gap-1.5 text-label-md font-label-md font-bold text-[#ff7555] hover:text-[#e05e3f] transition-colors">
               <span>
-                Browse all [00+] product packages
+                Browse all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]" data-icon="arrow_forward">

@@ -51,19 +51,6 @@ export default function OnlineStore() {
               </p>
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <div className="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    shopping_cart_checkout
-                  </span>
-                  {' '}
-                  <span className="text-label-md font-label-md text-on-surface">
-                    <strong className="font-bold text-primary">
-                      [00%]
-                    </strong>
-                    {' '}
-                    Cart Recovery Rate
-                  </span>
-                </div>
-                <div className="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
                   <span className="material-symbols-outlined text-secondary text-xl">
                     sync_saved_locally
                   </span>
@@ -74,19 +61,6 @@ export default function OnlineStore() {
                     </strong>
                     {' '}
                     Multi-Channel Stock
-                  </span>
-                </div>
-                <div className="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
-                  <span className="material-symbols-outlined text-tertiary text-xl">
-                    speed
-                  </span>
-                  {' '}
-                  <span className="text-label-md font-label-md text-on-surface">
-                    <strong className="font-bold text-tertiary">
-                      [0.00]s
-                    </strong>
-                    {' '}
-                    Checkout Execution
                   </span>
                 </div>
               </div>
@@ -189,13 +163,13 @@ export default function OnlineStore() {
                       {' '}
                       <select className="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface outline-none transition-all">
                         <option>
-                          [00k] – [000k] / month
+                          $10k – $100k / month
                         </option>
                         <option>
-                          [000k] – [0M] / month
+                          $100k – $1M / month
                         </option>
                         <option>
-                          [0M+] Enterprise Volume
+                          $1M+ Enterprise Volume
                         </option>
                       </select>
                     </div>
@@ -252,7 +226,7 @@ export default function OnlineStore() {
                   play_circle
                 </span>
                 {' '}
-                Watch Storefront Engine [00] min
+                Watch Storefront Engine
               </button>
             </div>
           </div>
@@ -287,7 +261,7 @@ export default function OnlineStore() {
                     {"Live Ingestion & Checkout Stream"}
                   </div>
                   <div className="text-[11px] text-white/70">
-                    Click to preview interactive session ([00] mins)
+                    Click to preview interactive session
                   </div>
                 </div>
                 <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-[11px] text-white/60 z-10 border-t border-white/10 pt-2">
@@ -308,7 +282,7 @@ export default function OnlineStore() {
                 </span>
                 {' '}
                 <span className="font-bold text-primary">
-                  [000+] Orders / hr
+                  850+ Orders / hr
                 </span>
               </div>
             </div>
@@ -343,14 +317,14 @@ export default function OnlineStore() {
                     Active In-Cart Value
                   </div>
                   <div className="text-headline-sm font-headline-sm text-on-surface font-bold mt-0.5">
-                    $[00,000]
+                    $48,250
                   </div>
                   <div className="text-[11px] text-primary flex items-center gap-1 mt-1">
                     <span className="material-symbols-outlined text-xs">
                       trending_up
                     </span>
                     {' '}
-                    +[00%] vs benchmark
+                    +12% vs benchmark
                   </div>
                 </div>
                 <div className="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/30">
@@ -358,7 +332,7 @@ export default function OnlineStore() {
                     Recovery Sequence Active
                   </div>
                   <div className="text-headline-sm font-headline-sm text-secondary font-bold mt-0.5">
-                    [000] Shoppers
+                    320 Shoppers
                   </div>
                   <div className="text-[11px] text-secondary flex items-center gap-1 mt-1">
                     <span className="material-symbols-outlined text-xs">
@@ -387,7 +361,7 @@ export default function OnlineStore() {
                   </span>
                   {' '}
                   <span>
-                    UPDATED [00] SECONDS AGO
+                    UPDATED 12 SECONDS AGO
                   </span>
                 </div>
                 <div className="p-3.5 rounded-[10px] bg-white border border-outline-variant/30 flex items-center justify-between text-body-sm shadow-sm">
@@ -706,7 +680,7 @@ export default function OnlineStore() {
                         </div>
                         <div>
                           <div className="text-label-md font-label-md text-on-surface">
-                            1. Abandonment Detection (+[00] min)
+                            1. Abandonment Detection (+30 min)
                           </div>
                           <div className="text-[11px] text-outline">
                             Session telemetry flags stalled checkout payload
@@ -728,7 +702,7 @@ export default function OnlineStore() {
                         </div>
                         <div>
                           <div className="text-label-md font-label-md text-on-surface">
-                            2. Stage 1 Gentle Reminder (+[00] hours)
+                            2. Stage 1 Gentle Reminder (+4 hours)
                           </div>
                           <div className="text-[11px] text-outline">
                             {"Automated cart item summary & direct return link"}
@@ -737,7 +711,7 @@ export default function OnlineStore() {
                       </div>
                       {' '}
                       <span className="text-[11px] font-semibold text-secondary">
-                        [00%] Open Rate
+                        42% Open Rate
                       </span>
                     </div>
                     <div className="h-3 w-0.5 bg-outline-variant/40 ml-7" />
@@ -750,7 +724,7 @@ export default function OnlineStore() {
                         </div>
                         <div>
                           <div className="text-label-md font-label-md text-on-surface font-bold">
-                            3. Stage 2 Incentive Dispatch (+[00] hours)
+                            3. Stage 2 Incentive Dispatch (+24 hours)
                           </div>
                           <div className="text-[11px] text-outline">
                             {"Time-bounded personalized discount code & stock alert"}
@@ -769,7 +743,7 @@ export default function OnlineStore() {
                     </span>
                     {' '}
                     <span className="font-bold text-primary">
-                      +[00%] Recovered GMV
+                      +18% Recovered GMV
                     </span>
                   </div>
                 </div>
@@ -1236,7 +1210,7 @@ export default function OnlineStore() {
             {' '}
             <Link to="/products" className="text-label-lg font-label-lg font-semibold text-primary hover:text-primary-container transition-colors flex items-center gap-1.5">
               <span>
-                Browse all [00+] product packages
+                Browse all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-base">

@@ -104,32 +104,6 @@ export default function AutoWorkshop() {
                 </span>
               </div>
             </div>
-            <div className="pt-6 border-t border-outline-variant/30 grid grid-cols-3 gap-6">
-              <div>
-                <div className="text-headline-lg font-headline-lg text-primary tracking-tight font-bold">
-                  [00] min
-                </div>
-                <div className="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
-                  Avg. Check-in to Bay
-                </div>
-              </div>
-              <div>
-                <div className="text-headline-lg font-headline-lg text-secondary tracking-tight font-bold">
-                  [00%]
-                </div>
-                <div className="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
-                  Estimate Approval Rate
-                </div>
-              </div>
-              <div>
-                <div className="text-headline-lg font-headline-lg text-tertiary tracking-tight font-bold">
-                  [00+]
-                </div>
-                <div className="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
-                  Diagnostic Points Inspected
-                </div>
-              </div>
-            </div>
           </div>
           <div className="lg:col-span-5" id="book-demo">
             <div className="glass-card rounded-2xl p-7 lg:p-8 shadow-xl border border-white/80 relative">
@@ -468,7 +442,7 @@ export default function AutoWorkshop() {
                 </span>
                 {' '}
                 <span className="font-mono text-label-sm font-label-sm font-semibold text-primary">
-                  Latency: [00] ms
+                  Latency: 42 ms
                 </span>
               </div>
             </div>
@@ -1199,7 +1173,7 @@ export default function AutoWorkshop() {
             {' '}
             <Link to="/products" className="text-primary hover:text-on-primary-fixed-variant text-label-lg font-label-lg font-semibold inline-flex items-center gap-1.5 transition-colors">
               <span>
-                Browse all [00+] product packages
+                Browse all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]">

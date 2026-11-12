@@ -100,32 +100,6 @@ export default function Recruitment() {
                   </span>
                 </div>
               </div>
-              <div className="pt-6 border-t border-outline-variant/30 grid grid-cols-3 gap-6">
-                <div className="p-4 rounded-xl bg-surface-container-low/70 border border-white/60">
-                  <div className="text-3xl font-bold text-primary tracking-tight">
-                    [00] Days
-                  </div>
-                  <div className="text-[13px] text-on-surface-variant mt-1">
-                    Avg. requisition cycle time
-                  </div>
-                </div>
-                <div className="p-4 rounded-xl bg-surface-container-low/70 border border-white/60">
-                  <div className="text-3xl font-bold text-secondary tracking-tight">
-                    [00.0%]
-                  </div>
-                  <div className="text-[13px] text-on-surface-variant mt-1">
-                    Parsing accuracy rate
-                  </div>
-                </div>
-                <div className="p-4 rounded-xl bg-surface-container-low/70 border border-white/60">
-                  <div className="text-3xl font-bold text-tertiary tracking-tight">
-                    [000+]
-                  </div>
-                  <div className="text-[13px] text-on-surface-variant mt-1">
-                    Active talent pool records
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5">
               <div className="glass-card-elevated rounded-2xl p-8 border border-white relative overflow-hidden">
@@ -175,13 +149,13 @@ export default function Recruitment() {
                     {' '}
                     <select className="w-full h-11 px-4 rounded-[10px] bg-white/80 border border-outline-variant/60 focus:border-primary-container focus:ring-4 focus:ring-primary-container/15 text-[14px] text-on-surface outline-none transition-all">
                       <option>
-                        [01–05] Recruiters / Coordinators
+                        1–5 Recruiters / Coordinators
                       </option>
                       <option>
-                        [06–20] Mid-Market Agency or In-House Team
+                        6–20 Mid-Market Agency or In-House Team
                       </option>
                       <option>
-                        [20+] Multi-Branch Global Staffing Firm
+                        20+ Multi-Branch Global Staffing Firm
                       </option>
                     </select>
                   </div>
@@ -225,7 +199,7 @@ export default function Recruitment() {
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
               {' '}
               <span>
-                Bi-directional ATS synchronization active across [00+] job boards
+                Bi-directional ATS synchronization active across major job boards
               </span>
             </div>
           </div>
@@ -245,7 +219,7 @@ export default function Recruitment() {
                 </div>
                 {' '}
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-[6px] bg-white/10 text-white">
-                  [00]:[00]
+                  02:14
                 </span>
               </div>
               <div className="my-6 space-y-4">
@@ -267,7 +241,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="text-[#ceee93]">
-                      Extracted [00] skills
+                      Extracted 14 skills
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -276,7 +250,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="text-[#ceee93]">
-                      [00] Boards Synced
+                      12 Boards Synced
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -299,7 +273,7 @@ export default function Recruitment() {
                   Automated resume triage speed:
                   {' '}
                   <strong className="text-white font-medium">
-                    [0.0]s / candidate dossier
+                    1.8s / candidate dossier
                   </strong>
                 </div>
               </div>
@@ -313,7 +287,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="px-2 py-0.5 rounded-[6px] bg-[#D9F99D] text-[#2D4A08] text-[11px] font-bold uppercase">
-                      REQ-[000]
+                      REQ-214
                     </span>
                   </div>
                   <div className="text-[12px] text-on-surface-variant flex items-center gap-2 mt-0.5">
@@ -334,7 +308,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span>
-                      Fee Rate: [00%]
+                      Fee Rate: 20%
                     </span>
                   </div>
                 </div>
@@ -370,7 +344,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="px-1.5 py-0.5 rounded-[6px] bg-white text-on-surface-variant font-mono text-[11px]">
-                      [00]
+                      8
                     </span>
                   </div>
                   <div className="p-3 rounded-[10px] bg-white border border-outline-variant/30 shadow-xs space-y-2">
@@ -385,7 +359,7 @@ export default function Recruitment() {
                       </div>
                       {' '}
                       <span className="px-1.5 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold">
-                        [00]% Match
+                        94% Match
                       </span>
                     </div>
                     <div className="text-[11px] text-on-surface-variant flex items-center justify-between pt-1 border-t border-outline-variant/20">
@@ -410,7 +384,7 @@ export default function Recruitment() {
                       </div>
                       {' '}
                       <span className="px-1.5 py-0.5 rounded-[6px] bg-amber-100 text-amber-800 text-[10px] font-mono font-bold">
-                        [00]% Match
+                        81% Match
                       </span>
                     </div>
                     <div className="text-[11px] text-on-surface-variant flex items-center justify-between pt-1 border-t border-outline-variant/20">
@@ -433,7 +407,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="px-1.5 py-0.5 rounded-[6px] bg-white text-on-surface-variant font-mono text-[11px]">
-                      [00]
+                      5
                     </span>
                   </div>
                   <div className="p-3 rounded-[10px] bg-white border border-outline-variant/30 shadow-xs space-y-2">
@@ -453,7 +427,7 @@ export default function Recruitment() {
                     </div>
                     <div className="text-[11px] text-on-surface-variant flex items-center justify-between pt-1 border-t border-outline-variant/20">
                       <span>
-                        Submitted: [00] hrs ago
+                        Submitted: 6 hrs ago
                       </span>
                       {' '}
                       <span className="text-tertiary font-semibold">
@@ -471,7 +445,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="px-1.5 py-0.5 rounded-[6px] bg-white text-on-surface-variant font-mono text-[11px]">
-                      [00]
+                      3
                     </span>
                   </div>
                   <div className="p-3 rounded-[10px] bg-white border border-outline-variant/30 shadow-xs space-y-2">
@@ -481,7 +455,7 @@ export default function Recruitment() {
                           [Candidate Name 04]
                         </div>
                         <div className="text-[11px] text-on-surface-variant">
-                          Arch Panel • Score: [0.0]/5
+                          Arch Panel • Score: 4.6/5
                         </div>
                       </div>
                       {' '}
@@ -491,7 +465,7 @@ export default function Recruitment() {
                     </div>
                     <div className="text-[11px] text-on-surface-variant flex items-center justify-between pt-1 border-t border-outline-variant/20">
                       <span>
-                        Round [00] Completed
+                        Round 2 Completed
                       </span>
                       {' '}
                       <span className="text-secondary font-bold">
@@ -509,7 +483,7 @@ export default function Recruitment() {
                     </span>
                     {' '}
                     <span className="px-1.5 py-0.5 rounded-[6px] bg-white text-on-surface-variant font-mono text-[11px]">
-                      [00]
+                      2
                     </span>
                   </div>
                   <div className="p-3 rounded-[10px] bg-white border border-primary/30 shadow-xs space-y-2 bg-gradient-to-b from-primary/5 to-white">
@@ -533,7 +507,7 @@ export default function Recruitment() {
                       </span>
                       {' '}
                       <span className="font-bold text-primary">
-                        $[00,000]
+                        $24,000
                       </span>
                     </div>
                   </div>
@@ -546,7 +520,7 @@ export default function Recruitment() {
                       sync
                     </span>
                     {' '}
-                    Syndicated to [00] external boards
+                    Syndicated to 12 external boards
                   </span>
                   {' '}
                   <span>
@@ -554,7 +528,7 @@ export default function Recruitment() {
                   </span>
                   {' '}
                   <span>
-                    Bench Availability: [00] engineers staged
+                    Bench Availability: 6 engineers staged
                   </span>
                 </div>
                 {' '}
@@ -788,7 +762,7 @@ export default function Recruitment() {
                         Contract Fee Schedule
                       </div>
                       <div className="text-[11px] text-on-surface-variant">
-                        [00]% of first-year base salary; net-[00] terms
+                        20% of first-year base salary; net-30 terms
                       </div>
                     </div>
                     {' '}
@@ -802,7 +776,7 @@ export default function Recruitment() {
                         Candidate Ownership Lockout
                       </div>
                       <div className="text-[11px] text-on-surface-variant">
-                        [00]-month ownership exclusivity upon first portal submission
+                        12-month ownership exclusivity upon first portal submission
                       </div>
                     </div>
                     {' '}
@@ -816,7 +790,7 @@ export default function Recruitment() {
                         Maximum Concurrent Submissions
                       </div>
                       <div className="text-[11px] text-on-surface-variant">
-                        Cap of [0] screened candidates per open requisition slot
+                        Cap of 5 screened candidates per open requisition slot
                       </div>
                     </div>
                     {' '}

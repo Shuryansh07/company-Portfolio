@@ -107,32 +107,6 @@ export default function ExhibitionLeadIntelligence() {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/30">
-              <div>
-                <div className="font-display-lg text-[32px] leading-tight font-bold text-on-surface">
-                  [00] sec
-                </div>
-                <div className="font-label-sm text-label-sm text-on-surface-variant mt-1">
-                  {"Avg. Scan & Enrichment"}
-                </div>
-              </div>
-              <div>
-                <div className="font-display-lg text-[32px] leading-tight font-bold text-on-surface">
-                  [00%]
-                </div>
-                <div className="font-label-sm text-label-sm text-on-surface-variant mt-1">
-                  Lead Capture Rate
-                </div>
-              </div>
-              <div>
-                <div className="font-display-lg text-[32px] leading-tight font-bold text-on-surface">
-                  [00] hr
-                </div>
-                <div className="font-label-sm text-label-sm text-on-surface-variant mt-1">
-                  Event Deployment
-                </div>
-              </div>
-            </div>
           </div>
           <div className="lg:col-span-5" id="demo-form">
             <div className="glass-card-elevated rounded-2xl p-7 lg:p-8 border border-outline-variant/40 relative overflow-hidden">
@@ -150,7 +124,7 @@ export default function ExhibitionLeadIntelligence() {
                 Book a live product demo
               </h2>
               <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
-                See how Exhibition Lead Intelligence unifies floor conversations into scored CRM records in under [00] seconds.
+                See how Exhibition Lead Intelligence unifies floor conversations into scored CRM records.
               </p>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div>
@@ -288,7 +262,7 @@ export default function ExhibitionLeadIntelligence() {
                 </div>
                 {' '}
                 <span className="font-mono text-white/50 text-[11px]">
-                  [00:48 / 02:15]
+                  00:48 / 02:15
                 </span>
               </div>
             </div>
@@ -336,7 +310,7 @@ export default function ExhibitionLeadIntelligence() {
                   Leads Captured Today
                 </div>
                 <div className="font-label-lg text-label-lg font-bold text-primary mt-0.5">
-                  [000+] Leads Captured
+                  128 Leads Captured
                 </div>
               </div>
             </div>
@@ -582,30 +556,6 @@ export default function ExhibitionLeadIntelligence() {
                 ONLINE
               </span>
             </div>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="p-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/30">
-                <div className="font-label-sm text-xs text-on-surface-variant">
-                  OCR Parsing Latency
-                </div>
-                <div className="font-display-lg text-[28px] font-bold text-on-surface mt-1">
-                  [0.00]s
-                </div>
-                <div className="font-body-sm text-[11px] text-secondary mt-1">
-                  Hardware-accelerated edge engine
-                </div>
-              </div>
-              <div className="p-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/30">
-                <div className="font-label-sm text-xs text-on-surface-variant">
-                  Verified Confidence
-                </div>
-                <div className="font-display-lg text-[28px] font-bold text-primary mt-1">
-                  [00%]
-                </div>
-                <div className="font-body-sm text-[11px] text-on-surface-variant mt-1">
-                  Multi-vector lexical crosscheck
-                </div>
-              </div>
-            </div>
             <div className="space-y-3 mb-6">
               <div className="font-label-sm text-xs text-on-surface font-semibold tracking-wide">
                 AUTOMATED ENRICHMENT FIELDS
@@ -840,9 +790,6 @@ export default function ExhibitionLeadIntelligence() {
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                 AI handles research, data entry, transcription and scoring so reps stay on the floor pitching prospects.
               </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-outline-variant/20 font-label-sm text-xs text-primary font-semibold">
-              [00+] hrs manual admin saved
             </div>
           </div>
           <div className="glass-card-elevated rounded-2xl p-7 border border-outline-variant/30 flex flex-col justify-between">
@@ -1209,7 +1156,7 @@ export default function ExhibitionLeadIntelligence() {
           {' '}
           <Link to="/products" className="font-label-lg text-label-lg text-primary font-semibold hover:underline mt-4 sm:mt-0 flex items-center gap-1">
             <span>
-              Explore all [00+] product packages
+              Explore all product packages
             </span>
             {' '}
             <span className="material-symbols-outlined text-[16px]">

@@ -117,32 +117,6 @@ export default function ProductionPlanning() {
                   </span>
                 </div>
               </div>
-              <div className="pt-4 border-t border-outline-variant/20 grid grid-cols-3 gap-6">
-                <div className="space-y-1">
-                  <div className="text-headline-lg font-headline-lg font-bold text-primary tracking-tight">
-                    [00%]
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant font-medium">
-                    On-Time Job Completion
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-headline-lg font-headline-lg font-bold text-secondary tracking-tight">
-                    [00%]
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant font-medium">
-                    Stockout Reduction
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-headline-lg font-headline-lg font-bold text-tertiary tracking-tight">
-                    [00] hr
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant font-medium">
-                    Faster Reschedule Cycle
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5 bg-surface-container-lowest rounded-[16px] border border-outline-variant/35 p-8 shadow-sm backdrop-blur-xl space-y-6" id="demo-form">
               <div className="space-y-2">
@@ -161,7 +135,7 @@ export default function ProductionPlanning() {
                   Book a live product demo
                 </h2>
                 <p className="text-body-sm font-body-sm text-on-surface-variant">
-                  See finite capacity scheduling calibrated to your exact plant layout and ERP data within [00] minutes.
+                  See finite capacity scheduling calibrated to your exact plant layout and ERP data.
                 </p>
               </div>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -199,7 +173,7 @@ export default function ProductionPlanning() {
                       Multi-Line Facility (50 - 250 Work Centers)
                     </option>
                     <option value="enterprise">
-                      Global Enterprise Network ([00+] Sites)
+                      Global Enterprise Network (Multi-Site)
                     </option>
                   </select>
                 </div>
@@ -256,7 +230,7 @@ export default function ProductionPlanning() {
                   </span>
                   {' '}
                   <span>
-                    LIVE [00] FPS
+                    LIVE 30 FPS
                   </span>
                 </div>
               </div>
@@ -271,7 +245,7 @@ export default function ProductionPlanning() {
                     Interactive Run-Through
                   </div>
                   <div className="text-label-sm font-label-sm text-surface-variant">
-                    Runtime: [00]:[00] mins • Real-Time Work Center Audio Telemetry
+                    Real-Time Work Center Audio Telemetry
                   </div>
                 </div>
               </div>
@@ -287,7 +261,7 @@ export default function ProductionPlanning() {
                 </div>
                 <div className="flex items-center gap-2 font-mono">
                   <span>
-                    04:12 / [00]:[00]
+                    04:12 / 12:30
                   </span>
                   {' '}
                   <span className="material-symbols-outlined text-[18px]">
@@ -442,7 +416,7 @@ export default function ProductionPlanning() {
                     </span>
                   </div>
                   <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    Simulating PO #9012 queue jump: Reallocates Station 03 overload to Bay 5 in [00] min.
+                    Simulating PO #9012 queue jump: Reallocates Station 03 overload to Bay 5 in 4 min.
                   </div>
                 </div>
               </div>
@@ -662,7 +636,7 @@ export default function ProductionPlanning() {
                         0%
                       </td>
                       <td className="py-2.5 px-2">
-                        [00]d
+                        12d
                       </td>
                       <td className="py-2.5 px-3">
                         <span className="px-2 py-0.5 rounded-[6px] bg-secondary-container/40 text-on-secondary-fixed text-label-sm font-label-sm font-sans">
@@ -687,7 +661,7 @@ export default function ProductionPlanning() {
                         1.5%
                       </td>
                       <td className="py-2.5 px-2">
-                        [00]d
+                        8d
                       </td>
                       <td className="py-2.5 px-3">
                         <span className="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">
@@ -712,7 +686,7 @@ export default function ProductionPlanning() {
                         3%
                       </td>
                       <td className="py-2.5 px-2">
-                        [00]d
+                        15d
                       </td>
                       <td className="py-2.5 px-3">
                         <span className="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">
@@ -737,7 +711,7 @@ export default function ProductionPlanning() {
                         0.5%
                       </td>
                       <td className="py-2.5 px-2">
-                        [00]d
+                        6d
                       </td>
                       <td className="py-2.5 px-3">
                         <span className="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">
@@ -762,7 +736,7 @@ export default function ProductionPlanning() {
                         2%
                       </td>
                       <td className="py-2.5 px-2">
-                        [00]d
+                        10d
                       </td>
                       <td className="py-2.5 px-3">
                         <span className="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">
@@ -778,7 +752,7 @@ export default function ProductionPlanning() {
                   Calculated Lead Compression Buffer:
                   {' '}
                   <strong>
-                    [00] Days
+                    3 Days
                   </strong>
                 </span>
                 {' '}
@@ -1276,7 +1250,7 @@ export default function ProductionPlanning() {
             {' '}
             <Link to="/products" className="text-label-lg font-label-lg font-semibold text-primary hover:text-primary-container transition-colors inline-flex items-center gap-1.5 shrink-0">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]">

@@ -106,34 +106,6 @@ export default function FieldService() {
                   </span>
                 </div>
               </div>
-              <div className="pt-4 flex flex-wrap items-center gap-6 border-t border-outline-variant/20">
-                <div>
-                  <div className="text-headline-md font-headline-md text-on-surface font-bold text-primary">
-                    [00] min
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    Avg response latency
-                  </div>
-                </div>
-                <div className="w-px h-10 bg-outline-variant/30" />
-                <div>
-                  <div className="text-headline-md font-headline-md text-on-surface font-bold text-tertiary">
-                    [00%]
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    First-time fix rate
-                  </div>
-                </div>
-                <div className="w-px h-10 bg-outline-variant/30" />
-                <div>
-                  <div className="text-headline-md font-headline-md text-on-surface font-bold text-secondary">
-                    [00] hr
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    Deployment turnaround
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo">
               <div className="glass-card-elevated rounded-[20px] p-6 sm:p-8 space-y-6 relative overflow-hidden">
@@ -252,7 +224,7 @@ export default function FieldService() {
                   </span>
                   {' '}
                   <span>
-                    [00:14 / 02:40]
+                    00:14 / 02:40
                   </span>
                 </div>
               </div>
@@ -513,7 +485,7 @@ export default function FieldService() {
                 </span>
                 {' '}
                 <span>
-                  Cuts deadhead miles by [00%]
+                  Cuts deadhead miles
                 </span>
               </div>
             </div>
@@ -670,7 +642,7 @@ export default function FieldService() {
                   </span>
                   {' '}
                   <span className="text-label-sm font-label-sm text-secondary font-semibold">
-                    Priority: Emergency [00] min
+                    Priority: Emergency 30 min
                   </span>
                 </div>
                 <div className="space-y-2.5">
@@ -695,7 +667,7 @@ export default function FieldService() {
                       </span>
                       {' '}
                       <span className="text-primary font-semibold">
-                        [0.0] mi / 14 min ETA
+                        4.2 mi / 14 min ETA
                       </span>
                     </div>
                     <div className="w-full bg-outline-variant/30 h-2 rounded-[4px] overflow-hidden">
@@ -723,7 +695,7 @@ export default function FieldService() {
                   </span>
                   {' '}
                   <span className="text-headline-sm font-headline-sm font-bold text-primary">
-                    [00%] Optimal Match
+                    96% Optimal Match
                   </span>
                 </div>
               </div>
@@ -734,16 +706,16 @@ export default function FieldService() {
                 {' '}
                 <div className="p-3 rounded-[8px] bg-inverse-surface text-inverse-on-surface font-mono text-[12px] space-y-1">
                   <div className="text-white/60">
-                    [00:14:02] Engine evaluated 18 active field units in zone.
+                    14:02:11 Engine evaluated 18 active field units in zone.
                   </div>
                   <div className="text-secondary-fixed">
-                    [00:14:03] Filtered 12 units lacking Universal HVAC certification.
+                    14:02:12 Filtered 12 units lacking Universal HVAC certification.
                   </div>
                   <div className="text-tertiary-fixed">
-                    [00:14:03] Marcus Vance selected: Lowest deadhead miles + stock verified.
+                    14:02:12 Marcus Vance selected: Lowest deadhead miles + stock verified.
                   </div>
                   <div className="text-white/90">
-                    [00:14:04] Auto-dispatched. Mobile push token acknowledged by Van #04.
+                    14:02:13 Auto-dispatched. Mobile push token acknowledged by Van #04.
                   </div>
                 </div>
               </div>
@@ -1081,7 +1053,7 @@ export default function FieldService() {
                   </span>
                   {' '}
                   <p className="text-body-sm font-body-sm text-on-surface">
-                    Jobs automatically matched by verified skill certifications and GPS distance to trim deadhead transit by [00%].
+                    Jobs automatically matched by verified skill certifications and GPS distance to trim deadhead transit.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
@@ -1223,7 +1195,7 @@ export default function FieldService() {
                 </span>
               </div>
               <div className="hidden pt-2 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20">
-                Because Horizon uses fixed-scope engagement modules with pre-engineered ERP connectors, standard deployments for 15 to 100 technicians conclude within [00] to [00] business days, including fleet data imports and dispatcher training simulations.
+                Because Horizon uses fixed-scope engagement modules with pre-engineered ERP connectors, standard deployments for 15 to 100 technicians conclude within a few weeks, including fleet data imports and dispatcher training simulations.
               </div>
             </div>
             <div className="glass-card rounded-[14px] p-6 space-y-3">
@@ -1262,7 +1234,7 @@ export default function FieldService() {
             {' '}
             <Link to="/products" className="text-primary font-semibold text-label-lg hover:underline inline-flex items-center gap-1.5 shrink-0">
               <span>
-                Browse all [00+] product packages
+                Browse all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[18px]">

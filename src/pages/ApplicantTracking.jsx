@@ -51,32 +51,6 @@ export default function ApplicantTracking() {
               </p>
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <div className="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    timer
-                  </span>
-                  {' '}
-                  <span className="text-label-md font-label-md text-on-surface">
-                    <strong className="font-bold text-primary">
-                      [00] Days
-                    </strong>
-                    {' '}
-                    Avg. Time-to-Hire
-                  </span>
-                </div>
-                <div className="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
-                  <span className="material-symbols-outlined text-secondary text-xl">
-                    verified
-                  </span>
-                  {' '}
-                  <span className="text-label-md font-label-md text-on-surface">
-                    <strong className="font-bold text-secondary">
-                      [00%]
-                    </strong>
-                    {' '}
-                    Stage SLA Adherence
-                  </span>
-                </div>
-                <div className="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
                   <span className="material-symbols-outlined text-tertiary text-xl">
                     policy
                   </span>
@@ -252,7 +226,7 @@ export default function ApplicantTracking() {
                   play_circle
                 </span>
                 {' '}
-                Watch Candidate Journey Walkthrough [00] min
+                Watch Candidate Journey Walkthrough
               </button>
             </div>
           </div>
@@ -339,7 +313,7 @@ export default function ApplicantTracking() {
                           schedule
                         </span>
                         {' '}
-                        [02]d in stage
+                        2d in stage
                       </span>
                       {' '}
                       <span className="text-primary font-semibold">
@@ -366,7 +340,7 @@ export default function ApplicantTracking() {
                           schedule
                         </span>
                         {' '}
-                        [01]d in stage
+                        1d in stage
                       </span>
                       {' '}
                       <span className="text-secondary font-semibold">
@@ -482,7 +456,7 @@ export default function ApplicantTracking() {
                     schedule
                   </span>
                   {' '}
-                  SLA: [00] Days Avg
+                  SLA: 6 Days Avg
                 </button>
               </div>
               <div className="bg-surface-container-low/60 rounded-xl p-3.5 space-y-3 border border-outline-variant/20 flex flex-col justify-between">
@@ -824,7 +798,7 @@ export default function ApplicantTracking() {
                       </div>
                       {' '}
                       <span className="text-[11px] font-semibold text-secondary">
-                        Approved [00] min
+                        Approved 12 min ago
                       </span>
                     </div>
                     <div className="h-3 w-0.5 bg-outline-variant/40 ml-7" />
@@ -846,7 +820,7 @@ export default function ApplicantTracking() {
                       </div>
                       {' '}
                       <span className="text-[11px] font-semibold text-secondary">
-                        Approved [00]h
+                        Approved 3h ago
                       </span>
                     </div>
                     <div className="h-3 w-0.5 bg-outline-variant/40 ml-7" />
@@ -900,7 +874,7 @@ export default function ApplicantTracking() {
                     </span>
                     {' '}
                     <span className="font-bold text-primary">
-                      [00%] On Schedule
+                      On Schedule
                     </span>
                   </div>
                 </div>
@@ -1078,12 +1052,7 @@ export default function ApplicantTracking() {
                 Faster Processing
               </h3>
               <p className="text-body-sm font-body-sm text-on-surface-variant">
-                Streamlined batch evaluation and structured scorecards reduce overall requisition cycle times by
-                {' '}
-                <strong className="text-on-surface">
-                  [00%]
-                </strong>
-                .
+                Streamlined batch evaluation and structured scorecards reduce overall requisition cycle times.
               </p>
             </div>
             <div className="glass-card rounded-2xl p-6 space-y-3 border border-white">
@@ -1368,7 +1337,7 @@ export default function ApplicantTracking() {
             {' '}
             <Link to="/products" className="text-label-lg font-label-lg font-semibold text-primary hover:text-primary-container transition-colors flex items-center gap-1.5">
               <span>
-                Browse all [00+] product packages
+                Browse all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-base">

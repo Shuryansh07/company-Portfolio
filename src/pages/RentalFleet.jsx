@@ -98,32 +98,6 @@ export default function RentalFleet() {
                 </span>
               </div>
             </div>
-            <div className="w-full pt-6 border-t border-outline-variant/30 grid grid-cols-3 gap-6">
-              <div>
-                <div className="text-headline-lg font-headline-lg text-primary font-bold">
-                  [00%]
-                </div>
-                <div className="text-label-md font-label-md text-on-surface-variant mt-1">
-                  Double-Booking Rate
-                </div>
-              </div>
-              <div>
-                <div className="text-headline-lg font-headline-lg text-primary font-bold">
-                  [00] min
-                </div>
-                <div className="text-label-md font-label-md text-on-surface-variant mt-1">
-                  Turnaround Check-in
-                </div>
-              </div>
-              <div>
-                <div className="text-headline-lg font-headline-lg text-primary font-bold">
-                  [00+]
-                </div>
-                <div className="text-label-md font-label-md text-on-surface-variant mt-1">
-                  Fleet Utilization Units
-                </div>
-              </div>
-            </div>
           </div>
           <div className="lg:col-span-5 w-full" id="demo">
             <div className="rounded-[20px] bg-surface-container-lowest p-8 border border-outline-variant/30 shadow-sm relative overflow-hidden">
@@ -139,7 +113,7 @@ export default function RentalFleet() {
                 Book a live product demo
               </h2>
               <p className="text-body-sm font-body-sm text-on-surface-variant mb-6">
-                See how Rental Fleet Management syncs reservations, returns, and maintenance cycles in under [00] minutes.
+                See how Rental Fleet Management syncs reservations, returns, and maintenance cycles.
               </p>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div>
@@ -170,16 +144,16 @@ export default function RentalFleet() {
                   {' '}
                   <select className="w-full rounded-[10px] border border-outline-variant/50 bg-surface-container-lowest p-3 text-body-sm font-body-sm text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all">
                     <option>
-                      [00 - 00] Fleet Units
+                      1 - 50 Fleet Units
                     </option>
                     <option>
-                      [50 - 150] Heavy Units
+                      50 - 150 Heavy Units
                     </option>
                     <option>
-                      [150 - 500] Mixed Inventory
+                      150 - 500 Mixed Inventory
                     </option>
                     <option>
-                      [500+] Enterprise Fleet
+                      500+ Enterprise Fleet
                     </option>
                   </select>
                 </div>
@@ -226,7 +200,7 @@ export default function RentalFleet() {
               </button>
               {' '}
               <div className="absolute bottom-3 left-3 z-10 rounded-[6px] bg-inverse-surface/80 backdrop-blur-md px-2.5 py-1 text-label-sm font-label-sm text-white">
-                [00]:[00] Walkthrough
+                Walkthrough
               </div>
             </div>
             <div className="mt-6">
@@ -267,7 +241,7 @@ export default function RentalFleet() {
                   System Time:
                   {' '}
                   <span className="font-semibold text-on-surface">
-                    [00:00:00 UTC]
+                    08:42:15 UTC
                   </span>
                 </div>
               </div>
@@ -277,7 +251,7 @@ export default function RentalFleet() {
                     Active Fleet
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                    [000] Units
+                    240 Units
                   </div>
                 </div>
                 <div className="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/20">
@@ -285,7 +259,7 @@ export default function RentalFleet() {
                     Checked Out
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-primary">
-                    [00] Units
+                    86 Units
                   </div>
                 </div>
                 <div className="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/20">
@@ -293,7 +267,7 @@ export default function RentalFleet() {
                     In Transit / Return
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-tertiary">
-                    [00] Units
+                    18 Units
                   </div>
                 </div>
                 <div className="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/20">
@@ -301,7 +275,7 @@ export default function RentalFleet() {
                     Scheduled Maint.
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-on-surface-variant">
-                    [00] Units
+                    12 Units
                   </div>
                 </div>
               </div>
@@ -318,7 +292,7 @@ export default function RentalFleet() {
                       </span>
                     </div>
                     <div className="text-body-sm font-body-sm text-on-surface-variant mt-1">
-                      Contract #[00000] • Operator: [Client name] • Yard Bay: #B-14
+                      Contract #48213 • Operator: [Client name] • Yard Bay: #B-14
                     </div>
                   </div>
                   <div className="text-right sm:text-right text-label-sm font-label-sm text-on-surface-variant">
@@ -327,7 +301,7 @@ export default function RentalFleet() {
                     </span>
                     {' '}
                     <div className="text-outline">
-                      Due: [00/00 - 00:00]
+                      Due: 06/14 - 17:00
                     </div>
                   </div>
                 </div>
@@ -352,7 +326,7 @@ export default function RentalFleet() {
                     </span>
                     {' '}
                     <div className="text-outline">
-                      ETA Avail: [00] min
+                      ETA Avail: 25 min
                     </div>
                   </div>
                 </div>
@@ -654,7 +628,7 @@ export default function RentalFleet() {
                     Concurrent Queries
                   </div>
                   <div className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                    [00] ms Latency
+                    42 ms Latency
                   </div>
                 </div>
                 <div className="p-4 rounded-[12px] bg-surface border border-outline-variant/20">
@@ -676,7 +650,7 @@ export default function RentalFleet() {
                     Deterministic Mutex Lock Guaranteed
                   </div>
                   <p className="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
-                    When a checkout sequence initiates, the specific asset is hardware-locked across all channels for [00] minutes while signatures and deposits process.
+                    When a checkout sequence initiates, the specific asset is hardware-locked across all channels while signatures and deposits process.
                   </p>
                 </div>
               </div>
@@ -1153,7 +1127,7 @@ export default function RentalFleet() {
           </div>
           {' '}
           <Link to="/products" className="mt-4 md:mt-0 inline-flex items-center gap-1 text-primary font-semibold text-label-lg font-label-lg hover:underline">
-            Explore all [00+] product packages →
+            Explore all product packages →
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -104,32 +104,6 @@ export default function ProductionFloor() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 pt-4 border-t border-[#c7c6c1]/30">
-              <div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#1b1b1a] tracking-tight">
-                  [00%]
-                </div>
-                <div className="text-xs text-[#474744] font-medium mt-0.5">
-                  Average OEE Lift
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#1b1b1a] tracking-tight">
-                  [00] min
-                </div>
-                <div className="text-xs text-[#474744] font-medium mt-0.5">
-                  Downtime Triage Window
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#1b1b1a] tracking-tight">
-                  [00] hr
-                </div>
-                <div className="text-xs text-[#474744] font-medium mt-0.5">
-                  {"Work-Center Setup & Sync"}
-                </div>
-              </div>
-            </div>
           </div>
           <div id="demo-form" className="lg:col-span-5">
             <div className="bg-surface-container-lowest border border-[#c7c6c1]/40 rounded-2xl p-6 sm:p-8 shadow-sm">
@@ -269,7 +243,7 @@ export default function ProductionFloor() {
                 </span>
                 {' '}
                 <span className="font-mono text-[#1b1b1a] font-semibold">
-                  WO-[0000]-B9
+                  WO-4821-B9
                 </span>
               </div>
               <div className="flex items-center justify-between">
@@ -302,7 +276,7 @@ export default function ProductionFloor() {
                 </span>
                 {' '}
                 <span className="px-2.5 py-1 rounded-[6px] bg-[#efede9] text-[#1b1b1a] text-xs font-mono">
-                  OEE: [00]%
+                  OEE: 87%
                 </span>
               </div>
             </div>
@@ -330,7 +304,7 @@ export default function ProductionFloor() {
                     </span>
                     {' '}
                     <span className="font-mono font-semibold text-[#1b1b1a]">
-                      WO-[0001]
+                      WO-4822
                     </span>
                   </div>
                   <div>
@@ -385,7 +359,7 @@ export default function ProductionFloor() {
                     </span>
                     {' '}
                     <span className="font-mono font-semibold text-[#1b1b1a]">
-                      LOT-[00]-98
+                      LOT-17-98
                     </span>
                   </div>
                   <div>
@@ -467,7 +441,7 @@ export default function ProductionFloor() {
                     </span>
                     {' '}
                     <span className="font-mono text-rose-700 font-bold">
-                      [00] min elapsed
+                      18 min elapsed
                     </span>
                   </div>
                 </div>
@@ -478,7 +452,7 @@ export default function ProductionFloor() {
                 <span className="w-1.5 h-1.5 rounded-full bg-[#ff7555]" />
                 {' '}
                 <span>
-                  Live PLC / Terminal Link: [00] Work Centers Synced
+                  Live PLC / Terminal Link: 14 Work Centers Synced
                 </span>
               </div>
               {' '}
@@ -690,7 +664,7 @@ export default function ProductionFloor() {
                   </span>
                   {' '}
                   <span className="font-mono font-semibold text-[#1b1b1a]">
-                    WO-[0042]-Precision-Gear
+                    WO-4842-Precision-Gear
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 border-b border-[#c7c6c1]/20">
@@ -699,7 +673,7 @@ export default function ProductionFloor() {
                   </span>
                   {' '}
                   <span className="font-mono font-semibold text-[#1b1b1a]">
-                    [000] Finished Units
+                    640 Finished Units
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 border-b border-[#c7c6c1]/20">
@@ -717,7 +691,7 @@ export default function ProductionFloor() {
                   </span>
                   {' '}
                   <span className="font-mono text-emerald-700 font-bold">
-                    [0.00%] (Within Spec)
+                    0.42% (Within Spec)
                   </span>
                 </div>
               </div>
@@ -731,7 +705,7 @@ export default function ProductionFloor() {
               </span>
               {' '}
               <span className="font-bold text-[#1b1b1a]">
-                [00] ms
+                42 ms
               </span>
             </div>
           </div>
@@ -1216,7 +1190,7 @@ export default function ProductionFloor() {
             </button>
             {' '}
             <div className="hidden px-5 pb-5 text-xs sm:text-sm text-[#474744] leading-relaxed border-t border-[#c7c6c1]/20 pt-3">
-              Because Horizon deploys pre-compiled shop floor primitives and pre-tested hardware adapters, pilot lines typically go live within [00] weeks, followed by phased facility rollouts on fixed timelines.
+              Because Horizon deploys pre-compiled shop floor primitives and pre-tested hardware adapters, pilot lines typically go live within weeks, followed by phased facility rollouts on fixed timelines.
             </div>
           </div>
           <div className="border border-[#c7c6c1]/40 rounded-xl bg-white overflow-hidden shadow-xs">
@@ -1252,7 +1226,7 @@ export default function ProductionFloor() {
           {' '}
           <Link to="/products" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#ff7555] hover:text-primary-hover transition-colors">
             <span>
-              Explore all [00+] product packages
+              Explore all product packages
             </span>
             {' '}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

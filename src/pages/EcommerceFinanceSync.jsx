@@ -93,47 +93,6 @@ export default function EcommerceFinanceSync() {
                   </div>
                 </div>
               </div>
-              <div className="pt-4 flex items-center gap-6 text-label-md font-label-md text-on-surface-variant border-t border-outline-variant/20">
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-[18px]">
-                    verified
-                  </span>
-                  {' '}
-                  <span>
-                    <strong>
-                      [00] min
-                    </strong>
-                    {' '}
-                    average sync time
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-[18px]">
-                    check_circle
-                  </span>
-                  {' '}
-                  <span>
-                    <strong>
-                      [0.00%]
-                    </strong>
-                    {' '}
-                    mismatch rate
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-[18px]">
-                    schedule
-                  </span>
-                  {' '}
-                  <span>
-                    <strong>
-                      [00] hr
-                    </strong>
-                    {' '}
-                    onboarding
-                  </span>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo-form">
               <div className="glass-card rounded-2xl p-8 shadow-xl relative overflow-hidden">
@@ -232,7 +191,7 @@ export default function EcommerceFinanceSync() {
                 </button>
                 {' '}
                 <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-[6px] bg-inverse-surface/80 text-inverse-on-surface text-label-sm font-label-sm font-mono backdrop-blur-md">
-                  1080p • [00]:[00] mins
+                  1080p walkthrough
                 </div>
               </div>
               <div className="mt-6 space-y-2">
@@ -267,7 +226,7 @@ export default function EcommerceFinanceSync() {
                 <div className="px-2.5 py-1 rounded-[6px] bg-secondary-container/50 border border-secondary/30 text-secondary text-label-sm font-label-sm font-mono flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
                   {' '}
-                  Operational: Latency [00]ms
+                  Operational: Latency 42ms
                 </div>
               </div>
               <div className="space-y-2.5">
@@ -369,7 +328,7 @@ export default function EcommerceFinanceSync() {
                   </span>
                   {' '}
                   <span className="text-headline-sm font-headline-sm font-bold text-on-surface font-mono">
-                    $[00,000.00]
+                    $48,215.60
                   </span>
                   {' '}
                   <span className="text-label-sm text-secondary flex items-center gap-1 mt-0.5 font-sans">
@@ -386,7 +345,7 @@ export default function EcommerceFinanceSync() {
                   </span>
                   {' '}
                   <span className="text-headline-sm font-headline-sm font-bold text-on-surface font-mono">
-                    [00.00%]
+                    99.98%
                   </span>
                   {' '}
                   <span className="text-label-sm text-tertiary flex items-center gap-1 mt-0.5 font-sans">
@@ -496,22 +455,6 @@ export default function EcommerceFinanceSync() {
                 <h3 className="text-headline-lg font-headline-lg text-on-surface mt-1">
                   Automatic Order-to-Invoice Posting
                 </h3>
-              </div>
-              <div className="flex items-center gap-4 font-mono text-label-md">
-                <div className="px-3 py-1.5 rounded-[6px] bg-surface-container-high text-on-surface border border-outline-variant/30">
-                  Algorithm Confidence:
-                  {' '}
-                  <span className="text-secondary font-bold">
-                    [00.0%]
-                  </span>
-                </div>
-                <div className="px-3 py-1.5 rounded-[6px] bg-surface-container-high text-on-surface border border-outline-variant/30">
-                  Throughput:
-                  {' '}
-                  <span className="text-primary font-bold">
-                    [00,000+] Orders/hr
-                  </span>
-                </div>
               </div>
             </div>
             <p className="text-body-lg font-body-lg text-on-surface-variant max-w-4xl leading-relaxed">
@@ -813,7 +756,7 @@ export default function EcommerceFinanceSync() {
                 Cleaner Month-End Close
               </h3>
               <p className="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                Cut close cycle by [00%] with continuous real-time matching. The general ledger remains pre-reconciled every single hour.
+                Shorten the close cycle with continuous real-time matching. The general ledger remains pre-reconciled every single hour.
               </p>
             </div>
             <div className="glass-card rounded-xl p-6 space-y-4">
@@ -1158,7 +1101,7 @@ export default function EcommerceFinanceSync() {
             {' '}
             <Link to="/products" className="text-label-lg font-label-lg text-primary font-semibold hover:underline flex items-center gap-1">
               <span>
-                Browse all [00+] productized packages
+                Browse all productized packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[16px]">

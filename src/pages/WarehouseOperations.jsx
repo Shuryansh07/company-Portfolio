@@ -98,32 +98,6 @@ export default function WarehouseOperations() {
                   </span>
                 </div>
               </div>
-              <div className="pt-6 border-t border-outline-variant/20 grid grid-cols-3 gap-6">
-                <div className="space-y-1">
-                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
-                    [00] min
-                  </div>
-                  <div className="font-body-sm text-body-sm text-on-surface-variant font-medium">
-                    Avg. Order Dispatch Time
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">
-                    [00.00%]
-                  </div>
-                  <div className="font-body-sm text-body-sm text-on-surface-variant font-medium">
-                    Scan Pick Accuracy
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
-                    [00+]
-                  </div>
-                  <div className="font-body-sm text-body-sm text-on-surface-variant font-medium">
-                    Active Floor Terminals Synced
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo-section">
               <div className="rounded-2xl bg-surface-container-lowest border border-outline-variant/30 p-8 shadow-sm relative overflow-hidden">
@@ -133,7 +107,7 @@ export default function WarehouseOperations() {
                     Book a live product demo
                   </h3>
                   <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                    See how Warehouse Operations Platform eliminates search time and coordinates bin-level fulfillment in under [00] minutes.
+                    See how Warehouse Operations Platform eliminates search time and coordinates bin-level fulfillment.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -298,7 +272,7 @@ export default function WarehouseOperations() {
                   </div>
                   {' '}
                   <span className="rounded-[6px] bg-secondary-container text-on-secondary-container px-2.5 py-1 text-xs font-semibold">
-                    Active Bins Synced: [00,000]
+                    Active Bins Synced: 12,480
                   </span>
                 </div>
                 <div className="grid grid-cols-4 gap-2 mb-6">
@@ -317,7 +291,7 @@ export default function WarehouseOperations() {
                     </span>
                     {' '}
                     <span className="text-xs font-bold text-on-surface">
-                      [000]
+                      240
                     </span>
                   </div>
                   <div className="rounded-[8px] bg-surface-container-low p-2.5 text-center">
@@ -326,7 +300,7 @@ export default function WarehouseOperations() {
                     </span>
                     {' '}
                     <span className="text-xs font-bold text-on-surface">
-                      [00]
+                      18
                     </span>
                   </div>
                   <div className="rounded-[8px] bg-surface-container-low p-2.5 text-center">
@@ -599,10 +573,10 @@ export default function WarehouseOperations() {
                         Wave Batching
                       </td>
                       <td className="py-3 text-on-surface-variant">
-                        [00] Orders / Wave
+                        24 Orders / Wave
                       </td>
                       <td className="py-3 font-semibold text-primary">
-                        -[00.0%] distance
+                        -18.5% distance
                       </td>
                     </tr>
                     <tr>
@@ -610,10 +584,10 @@ export default function WarehouseOperations() {
                         Zone Pass-Through
                       </td>
                       <td className="py-3 text-on-surface-variant">
-                        [00] Pickers / Zone
+                        6 Pickers / Zone
                       </td>
                       <td className="py-3 font-semibold text-primary">
-                        -[00.0%] transit
+                        -12.0% transit
                       </td>
                     </tr>
                     <tr>
@@ -621,10 +595,10 @@ export default function WarehouseOperations() {
                         Cluster Tote Pick
                       </td>
                       <td className="py-3 text-on-surface-variant">
-                        [00] Totes / Cart
+                        8 Totes / Cart
                       </td>
                       <td className="py-3 font-semibold text-primary">
-                        -[00.0%] steps
+                        -22.4% steps
                       </td>
                     </tr>
                   </tbody>
@@ -637,7 +611,7 @@ export default function WarehouseOperations() {
                   </span>
                   {' '}
                   <div className="font-headline-sm text-headline-sm font-bold text-secondary">
-                    [00.0%] On Schedule
+                    98.6% On Schedule
                   </div>
                 </div>
                 {' '}
@@ -1051,7 +1025,7 @@ export default function WarehouseOperations() {
                 </span>
               </summary>
               <div className="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Typical fixed-scope floor deployments take between [00] and [00] weeks depending on physical facility square footage and ERP integration complexity.
+                Typical fixed-scope floor deployments take a matter of weeks depending on physical facility square footage and ERP integration complexity.
               </div>
             </details>
             <details className={"group rounded-xl border border-outline-variant/30 bg-surface-container-low/40 p-6 [&_summary::-webkit-details-marker]:hidden"}>
@@ -1083,7 +1057,7 @@ export default function WarehouseOperations() {
             {' '}
             <Link to="/products" className="font-label-lg text-label-lg font-semibold text-primary hover:underline whitespace-nowrap flex items-center gap-1">
               <span>
-                Explore all [00+] product packages
+                Explore all product packages
               </span>
               {' '}
               <span className="material-symbols-outlined text-[16px]">

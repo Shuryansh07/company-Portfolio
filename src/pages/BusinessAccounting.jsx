@@ -83,7 +83,7 @@ export default function BusinessAccounting() {
                       Book a live system walk-through
                     </h3>
                     <p className="text-body-sm font-body-sm text-on-surface-variant mt-1">
-                      See how Horizon reconciles bank transactions and accelerates your month-end close in [00] minutes.
+                      See how Horizon reconciles bank transactions and accelerates your month-end close.
                     </p>
                   </div>
                   <form className="space-y-4 pt-2" onSubmit={(e) => e.preventDefault()}>
@@ -115,13 +115,13 @@ export default function BusinessAccounting() {
                       {' '}
                       <select className="w-full h-12 px-3.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-colors">
                         <option>
-                          Single Entity • [000] - [0,000] monthly txns
+                          Single Entity • Under 1,000 monthly txns
                         </option>
                         <option>
-                          Multi-Entity • [0,000] - [00,000] monthly txns
+                          Multi-Entity • 1,000 - 10,000 monthly txns
                         </option>
                         <option>
-                          Global Enterprise • [00,000+] monthly txns
+                          Global Enterprise • 10,000+ monthly txns
                         </option>
                       </select>
                     </div>
@@ -184,7 +184,7 @@ export default function BusinessAccounting() {
                 </span>
                 {' '}
                 <span className="text-label-sm font-label-sm text-white/70">
-                  Duration: [00]:[00] mins
+                  Product walkthrough
                 </span>
               </div>
               <div className="my-auto text-center z-10 py-10">
@@ -226,7 +226,7 @@ export default function BusinessAccounting() {
                   <span className="w-2 h-2 rounded-full bg-secondary" />
                   {' '}
                   <span>
-                    Connected: [00] Bank Feeds Syncing
+                    Connected: 4 Bank Feeds Syncing
                   </span>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function BusinessAccounting() {
                     Quick Ratio
                   </p>
                   <p className="text-headline-sm font-headline-sm text-on-surface font-bold mt-0.5">
-                    [0.00]
+                    1.84
                   </p>
                 </div>
                 <div className="p-3 bg-surface-container rounded-[10px] border border-outline-variant/20">
@@ -244,7 +244,7 @@ export default function BusinessAccounting() {
                     Days Sales O/S
                   </p>
                   <p className="text-headline-sm font-headline-sm text-on-surface font-bold mt-0.5">
-                    [00] Days
+                    32 Days
                   </p>
                 </div>
                 <div className="p-3 bg-secondary-container/30 rounded-[10px] border border-secondary-container/60">
@@ -260,7 +260,7 @@ export default function BusinessAccounting() {
                     Cash Runway
                   </p>
                   <p className="text-headline-sm font-headline-sm text-on-surface font-bold mt-0.5">
-                    [00] Months
+                    18 Months
                   </p>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export default function BusinessAccounting() {
                         Stripe Daily Settlement Inflow
                       </p>
                       <p className="text-label-sm font-label-sm text-on-surface-variant">
-                        Batch [00] customer charges reconciled
+                        Batch of 48 customer charges reconciled
                       </p>
                     </div>
                   </div>
@@ -460,26 +460,6 @@ export default function BusinessAccounting() {
                 <p className="text-body-md font-body-md text-on-surface-variant">
                   Connected bank feeds suggest matches against invoices and bills daily, turning reconciliation into a quick verification click instead of manual ledger entry. No more comparing paper statements with late night journal adjustments.
                 </p>
-                <div className="grid grid-cols-2 gap-4 pt-2">
-                  <div className="p-3 bg-surface-container-lowest rounded-[10px] border border-outline-variant/30">
-                    <span className="text-label-sm font-label-sm text-on-surface-variant block">
-                      Schema Throughput
-                    </span>
-                    {' '}
-                    <span className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                      [00,000+] Transactions Reconciled
-                    </span>
-                  </div>
-                  <div className="p-3 bg-surface-container-lowest rounded-[10px] border border-outline-variant/30">
-                    <span className="text-label-sm font-label-sm text-on-surface-variant block">
-                      Deterministic Accuracy
-                    </span>
-                    {' '}
-                    <span className="text-headline-sm font-headline-sm font-bold text-secondary">
-                      [0.00%] Mismatch Rate
-                    </span>
-                  </div>
-                </div>
               </div>
               <div className="lg:col-span-5 bg-surface-container p-5 rounded-[14px] border border-outline-variant/40 space-y-3">
                 <div className="text-label-sm font-label-sm font-bold text-on-surface">
@@ -729,7 +709,7 @@ export default function BusinessAccounting() {
                 Faster Close
               </h4>
               <p className="text-body-sm font-body-sm text-on-surface-variant">
-                Cut month-end close time by [00%] with continuous algorithmic matching.
+                Cut month-end close time with continuous algorithmic matching.
               </p>
             </div>
             <div className="specular-border rounded-[18px] p-6 space-y-3 hover:border-primary/40 transition-all">
@@ -753,7 +733,7 @@ export default function BusinessAccounting() {
                 Faster Payment
               </h4>
               <p className="text-body-sm font-body-sm text-on-surface-variant">
-                Automated reminders and embedded payment rails accelerate debtor collection by [00] days.
+                Automated reminders and embedded payment rails accelerate debtor collection.
               </p>
             </div>
             <div className="specular-border rounded-[18px] p-6 space-y-3 hover:border-primary/40 transition-all">
@@ -1038,7 +1018,7 @@ export default function BusinessAccounting() {
             {' '}
             <Link to="/products" className="text-primary hover:text-on-primary-fixed-variant text-label-lg font-label-lg font-bold inline-flex items-center gap-1 group">
               <span>
-                Explore all [00+] productized packages
+                Explore all productized packages
               </span>
               {' '}
               <span className="group-hover:translate-x-1 transition-transform">

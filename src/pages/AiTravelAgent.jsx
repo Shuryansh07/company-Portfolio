@@ -101,32 +101,6 @@ export default function AiTravelAgent() {
                   CRM-connected from end to end
                 </span>
               </div>
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/30">
-                <div className="bg-surface-container-lowest/60 border border-outline-variant/30 p-4 rounded-[10px]">
-                  <div className="text-headline-lg font-headline-lg text-primary tracking-tight">
-                    [00] min
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    avg booking time
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest/60 border border-outline-variant/30 p-4 rounded-[10px]">
-                  <div className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-                    [0.00%]
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    policy drift
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest/60 border border-outline-variant/30 p-4 rounded-[10px]">
-                  <div className="text-headline-lg font-headline-lg text-tertiary tracking-tight">
-                    [00] hr
-                  </div>
-                  <div className="text-body-sm font-body-sm text-on-surface-variant">
-                    {"setup & deployment"}
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="lg:col-span-5" id="demo-form">
               <div className="glass-panel-elevated p-8 rounded-[20px] relative overflow-hidden border border-outline-variant/40">
@@ -139,7 +113,7 @@ export default function AiTravelAgent() {
                     Book a free demo
                   </h3>
                   <p className="text-body-sm font-body-sm text-on-surface-variant">
-                    See how AI Travel Agent automates enterprise business itineraries under [00] minutes.
+                    See how AI Travel Agent automates enterprise business itineraries.
                   </p>
                 </div>
                 <form className="space-y-4 relative z-10" onSubmit={(e) => e.preventDefault()}>
@@ -1267,7 +1241,7 @@ export default function AiTravelAgent() {
               </button>
               {' '}
               <div className="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
-                Standard deployments with existing Salesforce or HubSpot instances average [00] hours of engineering time. We configure your travel policy rules, connect your billing vouchers, and test live dummy runs within [00] business days.
+                Standard deployments with existing Salesforce or HubSpot instances require minimal engineering time. We configure your travel policy rules, connect your billing vouchers, and test live dummy runs within a few business days.
               </div>
             </div>
             <div className="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
@@ -1305,7 +1279,7 @@ export default function AiTravelAgent() {
             </div>
             {' '}
             <Link to="/products" className="text-primary font-semibold text-label-lg font-label-lg hover:underline flex items-center gap-1">
-              Explore all [00+] product packages →
+              Explore all product packages →
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

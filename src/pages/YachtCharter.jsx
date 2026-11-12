@@ -46,32 +46,6 @@ export default function YachtCharter() {
                   Every charter, from the first enquiry to the last owner payout, unified in one operational ledger.
                 </p>
               </div>
-              <div className="grid grid-cols-3 gap-4 pt-2">
-                <div className="p-4 rounded-[12px] bg-white/70 border border-outline-variant/30 shadow-sm">
-                  <div className="text-headline-md font-headline-md font-bold text-primary">
-                    [00] min
-                  </div>
-                  <div className="text-label-sm font-label-sm text-on-surface-variant mt-1">
-                    avg response time
-                  </div>
-                </div>
-                <div className="p-4 rounded-[12px] bg-white/70 border border-outline-variant/30 shadow-sm">
-                  <div className="text-headline-md font-headline-md font-bold text-secondary">
-                    [00%]
-                  </div>
-                  <div className="text-label-sm font-label-sm text-on-surface-variant mt-1">
-                    zero double-bookings
-                  </div>
-                </div>
-                <div className="p-4 rounded-[12px] bg-white/70 border border-outline-variant/30 shadow-sm">
-                  <div className="text-headline-md font-headline-md font-bold text-tertiary">
-                    [00] hr
-                  </div>
-                  <div className="text-label-sm font-label-sm text-on-surface-variant mt-1">
-                    {"setup & fleet sync"}
-                  </div>
-                </div>
-              </div>
               <div className="space-y-3 pt-2">
                 <div className="text-label-sm font-label-sm text-outline uppercase tracking-wider">
                   Included Core Engine Modules:
@@ -222,7 +196,7 @@ export default function YachtCharter() {
                   <span className="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping" />
                   {' '}
                   <span className="text-label-sm font-label-sm text-stone-300">
-                    {"Live Charter Stream: Mediterranean & Caribbean Fleet [00]:[00]"}
+                    {"Live Charter Stream: Mediterranean & Caribbean Fleet"}
                   </span>
                 </div>
                 <div className="px-2 py-0.5 rounded-[6px] bg-stone-800 text-stone-300 text-label-sm font-label-sm border border-stone-700">
@@ -333,7 +307,7 @@ export default function YachtCharter() {
                       APA Fund Balance
                     </div>
                     <div className="text-headline-md font-headline-md font-bold text-tertiary mt-1">
-                      $[00,000]
+                      $48,500
                     </div>
                     <div className="text-label-sm font-label-sm text-tertiary flex items-center gap-1 mt-1">
                       <span className="material-symbols-outlined text-[14px]" data-icon="check_circle">
@@ -348,7 +322,7 @@ export default function YachtCharter() {
                       Owner Net Remittance
                     </div>
                     <div className="text-headline-md font-headline-md font-bold text-on-surface mt-1">
-                      $[000,000]
+                      $312,000
                     </div>
                     <div className="text-label-sm font-label-sm text-primary flex items-center gap-1 mt-1">
                       <span className="material-symbols-outlined text-[14px]" data-icon="schedule">
@@ -547,7 +521,7 @@ export default function YachtCharter() {
                 </div>
                 {' '}
                 <span className="px-2 py-0.5 rounded-[6px] bg-tertiary-fixed text-on-tertiary-fixed font-bold text-label-sm font-label-sm">
-                  Confidence: [00%]
+                  Confidence: 96%
                 </span>
               </div>
               <div className="space-y-2">
@@ -907,12 +881,7 @@ export default function YachtCharter() {
                   </span>
                   {' '}
                   <p>
-                    Inquiries are ingested, parsed, and verified against fleet availability in under
-                    {' '}
-                    <strong className="text-primary font-bold">
-                      [00] minutes
-                    </strong>
-                    .
+                    Inquiries are ingested, parsed, and verified against fleet availability within minutes.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -1050,7 +1019,7 @@ export default function YachtCharter() {
             </div>
             {' '}
             <Link to="/products" className="text-label-lg font-label-lg font-semibold text-primary hover:underline inline-flex items-center gap-1.5 shrink-0">
-              Explore all [00+] product packages
+              Explore all product packages
               {' '}
               <span className="material-symbols-outlined text-[18px]" data-icon="arrow_forward">
                 arrow_forward
