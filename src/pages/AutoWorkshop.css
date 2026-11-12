@@ -1,0 +1,31 @@
+/* Generated from stitch/pd_garage-management.html. Scoped to this page. */
+
+    .pg-auto-workshop .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pg-auto-workshop .material-symbols-outlined.fill-1 {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle Neo-Glass refraction */
+    .pg-auto-workshop .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+    }
+    .pg-auto-workshop .glass-card-subtle {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(223, 191, 184, 0.35);
+    }
+    .pg-auto-workshop .brand-gradient {
+      background: linear-gradient(135deg, #FF8A65 0%, #FF6B4A 100%);
+    }
+    .pg-auto-workshop .brand-gradient-hover:hover {
+      background: linear-gradient(135deg, #FF7555 0%, #E65100 100%);
+    }
+  

@@ -1,0 +1,25 @@
+/* Generated from stitch/pd_inventory-management.html. Scoped to this page. */
+
+    .pg-inventory-control {
+      background-color: #fbf9f6;
+      color: #1b1c1a;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .pg-inventory-control .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pg-inventory-control .glass-card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(229, 231, 235, 0.85);
+    }
+    .pg-inventory-control .active-feature-tab {
+      border-left: 3px solid #ff7555;
+      background: rgba(255, 245, 242, 0.7);
+    }
+  

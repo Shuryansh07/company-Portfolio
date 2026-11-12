@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Auto Workshop Manager — Horizon Enterprise Solutions</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS Play CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim as required -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-surface": "#30312f",
+            "surface-container-high": "#eae8e5",
+            "on-primary": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#6d1200",
+            "inverse-primary": "#ffb4a3",
+            "on-primary-fixed": "#3d0600",
+            "on-secondary-container": "#536d22",
+            "primary-fixed-dim": "#ffb4a3",
+            "tertiary": "#026971",
+            "on-tertiary-fixed-variant": "#004f55",
+            "on-primary-fixed-variant": "#881f06",
+            "surface-tint": "#a9371d",
+            "on-secondary": "#ffffff",
+            "secondary": "#4d661c",
+            "primary-container": "#ff7555",
+            "on-secondary-fixed": "#131f00",
+            "on-surface": "#1b1c1a",
+            "surface": "#fbf9f6",
+            "on-secondary-fixed-variant": "#364e03",
+            "primary-fixed": "#ffdad2",
+            "surface-container-highest": "#e4e2df",
+            "secondary-container": "#ceee93",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#efeeeb",
+            "tertiary-fixed": "#a1eff8",
+            "outline": "#8c716b",
+            "surface-variant": "#e4e2df",
+            "outline-variant": "#dfbfb8",
+            "surface-bright": "#fbf9f6",
+            "error-container": "#ffdad6",
+            "surface-dim": "#dbdad7",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#58413c",
+            "secondary-fixed": "#ceee93",
+            "primary": "#a9371d",
+            "on-tertiary-container": "#003d42",
+            "tertiary-fixed-dim": "#85d3dc",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#002023",
+            "on-error": "#ffffff",
+            "background": "#fbf9f6",
+            "surface-container-low": "#f5f3f0",
+            "tertiary-container": "#5dabb4",
+            "inverse-on-surface": "#f2f0ed",
+            "on-background": "#1b1c1a",
+            "secondary-fixed-dim": "#b3d17a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "space-sm": "0.75rem",
+            "margin-sm": "1.25rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xs": "0.375rem",
+            "gutter-sm": "1rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-1 {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle Neo-Glass refraction */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+    }
+    .glass-card-subtle {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(223, 191, 184, 0.35);
+    }
+    .brand-gradient {
+      background: linear-gradient(135deg, #FF8A65 0%, #FF6B4A 100%);
+    }
+    .brand-gradient-hover:hover {
+      background: linear-gradient(135deg, #FF7555 0%, #E65100 100%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed relative overflow-x-hidden min-h-screen">
+<!-- Ambient Background Refraction Blobs -->
+<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-[600px] h-[600px] bg-primary-fixed/25 rounded-full blur-[140px] transform-gpu"></div>
+<div class="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-tertiary-fixed/30 rounded-full blur-[160px] transform-gpu"></div>
+<div class="absolute bottom-1/4 left-10 w-[550px] h-[550px] bg-secondary-fixed/20 rounded-full blur-[150px] transform-gpu"></div>
+</div>
+<!-- Shared Component: TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-8 py-3.5 max-w-[1600px] mx-auto w-full">
+<div class="w-full bg-surface-container-lowest/80 dark:bg-inverse-surface/80 backdrop-blur-md rounded-[14px] px-6 py-3.5 border border-outline-variant/30 dark:border-outline/20 shadow-sm backdrop-blur-xl flex items-center justify-between">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-9 h-9 rounded-[10px] brand-gradient flex items-center justify-center text-on-primary font-extrabold text-headline-sm shadow-sm transition-transform group-hover:scale-105 duration-200">
+<span>H</span>
+</div>
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-inverse-on-surface tracking-tight">Horizon</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<!-- Products marked active since this is a specific product page -->
+<a class="text-primary dark:text-primary-fixed font-semibold text-label-lg font-label-lg hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#products">Products</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-lg font-label-lg" href="#solutions">Solutions</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-lg font-label-lg" href="#case-studies">Case Studies</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-lg font-label-lg" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-lg font-label-lg" href="#careers">Careers</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-lg font-label-lg" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Primary Action -->
+<div class="flex items-center gap-4">
+<a class="brand-gradient hover:opacity-95 text-on-primary font-label-lg text-label-lg px-5 py-2.5 rounded-[10px] shadow-sm hover:shadow-md transition-all duration-150 inline-flex items-center gap-2" href="#book-demo">
+<span>Book a free demo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- SECTION 1: Breadcrumbs & Hero Section -->
+<main class="max-w-[1600px] mx-auto px-6 lg:px-8 pt-6 pb-20">
+<!-- 1. Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 mb-8 text-body-sm font-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Industry Systems</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-medium">Auto Workshop Manager</span>
+</nav>
+<!-- Hero Content & Demo Form Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+<!-- Left Column: Hero Copy & Chips -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<!-- Category Tag -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/40 border border-primary/20 text-on-primary-fixed-variant text-label-sm font-label-sm w-fit mb-5 tracking-wider uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          AUTOMOTIVE &amp; WORKSHOP OPERATIONS
+        </div>
+<!-- Product Title -->
+<h1 class="text-display-lg-mobile lg:text-display-lg font-display-lg text-on-surface tracking-tight mb-4 leading-none">
+          Auto Workshop Manager
+        </h1>
+<!-- One-line Promise -->
+<p class="text-headline-sm lg:text-headline-md font-headline-md text-on-surface-variant max-w-2xl mb-8 leading-snug">
+          Turn every walk-in, phone booking, and diagnostic query into an itemized, trackable job card from intake to final settlement.
+        </p>
+<!-- Six Rectangular Feature Chips -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
+<div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] glass-card-subtle text-on-surface text-label-md font-label-md shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span>Digital Inspection &amp; Evidence Vault</span>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] glass-card-subtle text-on-surface text-label-md font-label-md shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+<span>Live Labor &amp; Parts Cost Ledger</span>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] glass-card-subtle text-on-surface text-label-md font-label-md shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[20px]">sync_alt</span>
+<span>Real-Time Parts Vendor Catalog Sync</span>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] glass-card-subtle text-on-surface text-label-md font-label-md shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[20px]">sms</span>
+<span>Two-Way SMS Client Approvals</span>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] glass-card-subtle text-on-surface text-label-md font-label-md shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<span>Bay &amp; Technician Efficiency Metrics</span>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] glass-card-subtle text-on-surface text-label-md font-label-md shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[20px]">notifications_active</span>
+<span>Mileage-Based Service &amp; Inspection Triggers</span>
+</div>
+</div>
+<!-- Key Quantitative Metrics Row -->
+<div class="pt-6 border-t border-outline-variant/30 grid grid-cols-3 gap-6">
+<div>
+<div class="text-headline-lg font-headline-lg text-primary tracking-tight font-bold">[00] min</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Avg. Check-in to Bay</div>
+</div>
+<div>
+<div class="text-headline-lg font-headline-lg text-secondary tracking-tight font-bold">[00%]</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Estimate Approval Rate</div>
+</div>
+<div>
+<div class="text-headline-lg font-headline-lg text-tertiary tracking-tight font-bold">[00+]</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Diagnostic Points Inspected</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Hero Form Card -->
+<div class="lg:col-span-5" id="book-demo">
+<div class="glass-card rounded-2xl p-7 lg:p-8 shadow-xl border border-white/80 relative">
+<div class="absolute -top-3 right-6 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-[6px] text-label-sm font-label-sm uppercase tracking-wide font-semibold">
+            Zero Disruption Setup
+          </div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-2">Book a live workshop walk-through</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">See how your technicians, parts managers, and service advisors coordinate in a unified dashboard.</p>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5 font-medium">Full Name</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface transition-all outline-none" placeholder="e.g. Marcus Vance" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5 font-medium">Work Email</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface transition-all outline-none" placeholder="marcus@servicecenter.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5 font-medium">Phone Number</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface transition-all outline-none" placeholder="+1 (555) 019-2834" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5 font-medium">Workshop Fleet / Bay Volume</label>
+<select class="w-full h-12 px-4 rounded-[10px] bg-white/70 border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface transition-all outline-none">
+<option value="1-4">1 – 4 Active Bays (Independent Garage)</option>
+<option value="5-12">5 – 12 Bays (Multi-Tech Service Facility)</option>
+<option value="13+">13+ Bays (Multi-Location Dealership Network)</option>
+<option value="fleet">Fleet Maintenance Center</option>
+</select>
+</div>
+<button class="w-full h-12 brand-gradient brand-gradient-hover text-on-primary font-label-lg text-label-lg rounded-[10px] shadow-md hover:shadow-lg transition-all duration-150 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Request Tailored Demo</span>
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</button>
+<p class="text-center text-[12px] text-on-surface-variant flex items-center justify-center gap-1.5 pt-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span>Guaranteed response within 24 hours. No sales lock-in.</span>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Product Live Telemetry & Interactive Demo Screen -->
+<section class="mt-28">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-tertiary-fixed/40 border border-tertiary/20 text-on-tertiary-fixed-variant text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-3">
+          LIVE WORKSHOP DISPATCH ENGINE
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          Watch Auto Workshop Manager in action: Intake to closed job card
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+          Experience real-time orchestration across diagnostic bays, digital line-item pricing, and automated inventory sync.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Walkthrough Placeholder Card -->
+<div class="lg:col-span-5 glass-card rounded-2xl p-6 flex flex-col justify-between border border-white/80 shadow-lg relative overflow-hidden">
+<div class="relative w-full aspect-video rounded-[10px] overflow-hidden mb-6 bg-surface-container-high border border-outline-variant/30 flex items-center justify-center group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A modern, high-tech automotive service bay illuminated with clean overhead LED light tubes. A clean luxury sports car rests on a hydraulic lift while an automotive technician wearing pristine charcoal overalls interacts with a tablet showing diagnostic telemetry. The workshop environment is warm, luminous, and meticulously organized with sleek stainless-steel tool cabinets and warm peach accent highlights reflecting on polished concrete." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3ANmPUBOC2sOot65Qh7l7D_aEDBcfpApL-WXEek6Qpr4P7lIO-jBW-a7FyjD-Wfr9dgTDs-NMJX7B2efMGVNHiqvsKzBWpYnvq4EDYMrAij-KCOPNfoJIk9vY5W1YcvJ_2eTeKcTZBWYF2Stnrec7WGiqfGpnfzGe8BzwHsbBv19PElH9OoxgjalN6YuDgkWHR_o3w2IS8YJ_CgXFSs-QlaO7Nv19ghqWjOLFwfzus8zKh8pnGR5h1uqBPt5g5BueutCgcZUnhAY"/>
+<div class="absolute inset-0 bg-inverse-surface/30 backdrop-blur-[2px] flex items-center justify-center">
+<div class="w-16 h-16 rounded-[10px] brand-gradient flex items-center justify-center text-on-primary shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px] fill-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 flex items-center gap-2 bg-inverse-surface/80 text-inverse-on-surface px-2.5 py-1 rounded-[6px] text-label-sm font-label-sm backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>1080p Telemetry Overlay</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface/90 text-on-surface px-2.5 py-0.5 rounded-[6px] text-label-sm font-label-sm font-semibold">
+              04:18 Walkthrough
+            </div>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Key Walkthrough Milestones</h3>
+<div class="space-y-2">
+<div class="flex items-start gap-3 p-2.5 rounded-[10px] bg-white/60 border border-outline-variant/20">
+<span class="text-primary font-bold text-label-md font-label-md mt-0.5">00:42</span>
+<span class="text-body-sm font-body-sm text-on-surface">Instant VIN barcode scan and automatic maintenance recall lookup.</span>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-[10px] bg-white/60 border border-outline-variant/20">
+<span class="text-primary font-bold text-label-md font-label-md mt-0.5">01:50</span>
+<span class="text-body-sm font-body-sm text-on-surface">Technician brake pad photo capture with millimeter laser depth calibration.</span>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-[10px] bg-white/60 border border-outline-variant/20">
+<span class="text-primary font-bold text-label-md font-label-md mt-0.5">03:15</span>
+<span class="text-body-sm font-body-sm text-on-surface">One-click SMS authorization received; auto-requisition sent to parts room.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Realistic Dispatch Screen Mockup -->
+<div class="lg:col-span-7 glass-card rounded-2xl p-6 lg:p-7 border border-white/80 shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="text-headline-sm font-headline-sm text-on-surface">Live Bay Dispatch Matrix</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-[6px] bg-secondary-container text-on-secondary-container text-label-sm font-label-sm font-semibold">3 Active Bays</span>
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm">Shift #1</span>
+</div>
+</div>
+<!-- Bay Cards Container -->
+<div class="space-y-4 my-4">
+<!-- Bay 01 -->
+<div class="p-4 rounded-[10px] bg-white/80 border border-outline-variant/30 shadow-sm hover:border-primary/40 transition-colors">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded-[6px] text-label-sm font-label-sm font-bold">BAY 01</span>
+<span class="font-headline-sm text-label-lg font-label-lg text-on-surface">[2023 Audi RS6 Avant]</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-container text-label-sm font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Customer SMS Approved via Mobile Vault
+                </span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mb-3">
+                Scope: Brake Rotor Replacement &amp; Caliper Overhaul • Job Card #JC-9042
+              </div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-label-sm font-label-sm pt-2 border-t border-outline-variant/20">
+<div><span class="text-outline">Lead Tech:</span> <strong class="text-on-surface">Alex M. (Master Tier)</strong></div>
+<div><span class="text-outline">Parts Requisition:</span> <strong class="text-secondary font-semibold">Delivered to Bay</strong></div>
+<div><span class="text-outline">Live Timer:</span> <strong class="text-primary font-mono font-bold">01h 44m / 02h 30m</strong></div>
+</div>
+</div>
+<!-- Bay 02 -->
+<div class="p-4 rounded-[10px] bg-white/80 border border-outline-variant/30 shadow-sm hover:border-primary/40 transition-colors">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-[6px] text-label-sm font-label-sm font-bold">BAY 02</span>
+<span class="font-headline-sm text-label-lg font-label-lg text-on-surface">[2021 BMW M3 Competition]</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-[6px] bg-primary-fixed text-on-primary-fixed-variant text-label-sm font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+                  Diagnostic Awaiting Additional Scope
+                </span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mb-3">
+                Scope: Engine Diagnostic &amp; Sensor Harness Rewire • Job Card #JC-9045
+              </div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-label-sm font-label-sm pt-2 border-t border-outline-variant/20">
+<div><span class="text-outline">Lead Tech:</span> <strong class="text-on-surface">Devon K. (Diagnostic)</strong></div>
+<div><span class="text-outline">Parts Requisition:</span> <strong class="text-tertiary font-semibold">OEM Sensor In Stock</strong></div>
+<div><span class="text-outline">Live Timer:</span> <strong class="text-primary font-mono font-bold">00h 52m / 01h 15m</strong></div>
+</div>
+</div>
+<!-- Bay 03 -->
+<div class="p-4 rounded-[10px] bg-white/80 border border-outline-variant/30 shadow-sm hover:border-primary/40 transition-colors">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded-[6px] text-label-sm font-label-sm font-bold">BAY 03</span>
+<span class="font-headline-sm text-label-lg font-label-lg text-on-surface">[2022 Porsche Macan GTS]</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-container text-label-sm font-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                  Final Inspection In Progress
+                </span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mb-3">
+                Scope: Scheduled Milestone Maintenance (60k) • Job Card #JC-9038
+              </div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-label-sm font-label-sm pt-2 border-t border-outline-variant/20">
+<div><span class="text-outline">Lead Tech:</span> <strong class="text-on-surface">Elena S. (Service Spec.)</strong></div>
+<div><span class="text-outline">Parts Requisition:</span> <strong class="text-on-surface font-semibold">Complete / Fitted</strong></div>
+<div><span class="text-outline">Live Timer:</span> <strong class="text-secondary font-mono font-bold">02h 10m / 02h 15m</strong></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 rounded-[10px] bg-surface-container-low text-body-sm font-body-sm text-on-surface-variant">
+<span>Automated vendor link: <strong>14 parts suppliers connected via live EDI/API</strong></span>
+<span class="font-mono text-label-sm font-label-sm font-semibold text-primary">Latency: [00] ms</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: About Section -->
+<section class="mt-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/40 border border-primary/20 text-on-primary-fixed-variant text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-4">
+            OPERATIONAL BOTTLENECK
+          </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight mb-5 leading-tight">
+            Run the bays with total operational clarity, not just paper tickets and memory.
+          </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed mb-6">
+            Independent garages and multi-bay service centers hemorrhage margin every single day on untracked shop supplies, forgotten diagnostic hours, and delayed phone-tag approvals. When job cards live on clipboards resting on dashboards, grease marks replace accountability, customers contest unrecognized repair charges, and mechanics sit idle waiting for manual parts verification.
+          </p>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Horizon Auto Workshop Manager creates a synchronized digital loop that captures every minute spent, itemizes every consumable used, and transmits verifiable photo evidence directly to the car owner’s smartphone before work starts.
+          </p>
+</div>
+<div class="lg:col-span-7 space-y-4">
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">
+                Digital job cards from customer intake to invoice reconciliation
+              </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Every vehicle arrival triggers a single deterministic master record. Technicians log labor units with bay stopwatches while advisors link OEM parts directly from the warehouse catalog without double entry.
+              </p>
+</div>
+</div>
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">inventory</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">
+                Real-time parts inventory tracking with automated stockout triggers
+              </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Avoid stalled lifts. When a filter or brake fluid unit is assigned to a bay, it instantly deducts from inventory. If stock hits safety minimums, emergency reorders trigger across preferred vendor feeds.
+              </p>
+</div>
+</div>
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">calendar_view_week</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">
+                Dynamic bay and technician scheduling mapped by specialist skill tiers
+              </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Align complex transmission work with master electrical diagnostic techs and routine lube services with junior apprentices. Balance work orders to maximize billable hour realization per stall.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Core Features (01 to 06 List + Deep Dive Panel) -->
+<section class="mt-28">
+<div class="max-w-3xl mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/40 border border-primary/20 text-on-primary-fixed-variant text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-3">
+          ENGINEERED CAPABILITIES
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          Six integrated operational capabilities built around the job card.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-2">
+          Deterministic digital workflows engineered to eliminate unbilled labor and unapproved parts.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Side: 01 to 06 Interactive Cards -->
+<div class="lg:col-span-7 space-y-3">
+<!-- 01 Active Feature -->
+<div class="glass-card rounded-[14px] p-5 border-l-4 border-l-primary border border-white/80 shadow-md cursor-pointer transition-all">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-3">
+<span class="font-mono text-primary font-bold text-headline-sm">01.</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Digital Vehicle Inspection with Photo &amp; Video Evidence</h3>
+</div>
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-label-sm font-label-sm rounded-[6px] font-semibold">Active Inspector</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-9">
+              Technicians capture hi-res defect shots directly inside the inspection card. Customers see exact caliper wear, torn CV boots, or fluid leaks on their phones.
+            </p>
+</div>
+<!-- 02 -->
+<div class="glass-card-subtle rounded-[14px] p-5 border border-outline-variant/30 hover:bg-white/80 transition-all cursor-pointer">
+<div class="flex items-center gap-3 mb-1">
+<span class="font-mono text-on-surface-variant font-bold text-headline-sm">02.</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Real-Time Parts Vendor Sync &amp; Requisition</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-9">
+              Integrated parts catalogs show live vendor availability, wholesale pricing, and expected delivery windows before customer quotes are finalized.
+            </p>
+</div>
+<!-- 03 -->
+<div class="glass-card-subtle rounded-[14px] p-5 border border-outline-variant/30 hover:bg-white/80 transition-all cursor-pointer">
+<div class="flex items-center gap-3 mb-1">
+<span class="font-mono text-on-surface-variant font-bold text-headline-sm">03.</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Live Labor Tracking &amp; Dynamic Bay Scheduling</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-9">
+              Digital bay timers record actual vs. book hours with single-tap punches, providing clean operational data to eliminate labor slippage.
+            </p>
+</div>
+<!-- 04 -->
+<div class="glass-card-subtle rounded-[14px] p-5 border border-outline-variant/30 hover:bg-white/80 transition-all cursor-pointer">
+<div class="flex items-center gap-3 mb-1">
+<span class="font-mono text-on-surface-variant font-bold text-headline-sm">04.</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Itemized Two-Way SMS Remote Approvals</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-9">
+              Push estimates to customers via encrypted SMS links. Clients approve individual repairs with one touch, creating an unshakeable audit trail.
+            </p>
+</div>
+<!-- 05 -->
+<div class="glass-card-subtle rounded-[14px] p-5 border border-outline-variant/30 hover:bg-white/80 transition-all cursor-pointer">
+<div class="flex items-center gap-3 mb-1">
+<span class="font-mono text-on-surface-variant font-bold text-headline-sm">05.</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Technician Productivity &amp; Billing Efficiency</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-9">
+              Clear reporting on efficiency ratios, rework percentages, and diagnostic accuracy per mechanic to reward high performers and coach junior staff.
+            </p>
+</div>
+<!-- 06 -->
+<div class="glass-card-subtle rounded-[14px] p-5 border border-outline-variant/30 hover:bg-white/80 transition-all cursor-pointer">
+<div class="flex items-center gap-3 mb-1">
+<span class="font-mono text-on-surface-variant font-bold text-headline-sm">06.</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Mileage Triggers &amp; Preventative Recall Tracking</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-9">
+              Automated reminders based on odometer prediction and seasonal service intervals, driving recurring workshop revenue without manual telemarketing.
+            </p>
+</div>
+</div>
+<!-- Right Side: Deep Dive Feature 01 Detail Panel -->
+<div class="lg:col-span-5 glass-card rounded-2xl p-6 lg:p-7 border border-white/80 shadow-xl">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30 mb-5">
+<div>
+<span class="text-label-sm font-label-sm text-primary font-bold uppercase tracking-wider">Deep Dive Module</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Digital Vehicle Inspection (DVI)</h3>
+</div>
+<span class="px-2.5 py-1 bg-secondary-container text-on-secondary-container rounded-[6px] text-label-sm font-label-sm font-semibold">
+              Live Vault
+            </span>
+</div>
+<!-- Multi-point Health Matrix -->
+<div class="space-y-4">
+<div class="p-3.5 rounded-[10px] bg-white/70 border border-outline-variant/30">
+<div class="flex justify-between items-center mb-1">
+<span class="text-label-lg font-label-lg text-on-surface">Front Brake Pad Wear</span>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container rounded-[6px] text-label-sm font-label-sm font-bold">18% Remaining</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-2">Measured pad thickness: 2.1mm. High safety hazard. Replacement recommended immediately.</p>
+<div class="w-full bg-surface-container-high h-2 rounded-[6px] overflow-hidden">
+<div class="bg-error h-full rounded-[6px]" style="width: 18%"></div>
+</div>
+</div>
+<div class="p-3.5 rounded-[10px] bg-white/70 border border-outline-variant/30">
+<div class="flex justify-between items-center mb-1">
+<span class="text-label-lg font-label-lg text-on-surface">Tire Tread Depth (All 4 Axles)</span>
+<span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded-[6px] text-label-sm font-label-sm font-bold">3.2mm Average</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-2">Approaching legal replacement threshold. Customer alerted for seasonal replacement quote.</p>
+<div class="w-full bg-surface-container-high h-2 rounded-[6px] overflow-hidden">
+<div class="bg-primary h-full rounded-[6px]" style="width: 42%"></div>
+</div>
+</div>
+<div class="p-3.5 rounded-[10px] bg-white/70 border border-outline-variant/30">
+<div class="flex justify-between items-center mb-1">
+<span class="text-label-lg font-label-lg text-on-surface">Brake Fluid Moisture Boiling Point</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded-[6px] text-label-sm font-label-sm font-bold">Optimal (1.1%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-[6px] overflow-hidden mt-2">
+<div class="bg-secondary h-full rounded-[6px]" style="width: 88%"></div>
+</div>
+</div>
+<!-- Evidence Attachment Confirmation -->
+<div class="p-3.5 rounded-[10px] bg-surface-container-low border border-outline-variant/20 space-y-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">photo_camera</span>
+                  Photo attachment confirmed
+                </span>
+<strong class="text-on-surface">4 Raw JPEGs Attached</strong>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[18px]">send_to_mobile</span>
+                  Customer view link dispatched
+                </span>
+<strong class="text-tertiary font-mono">14:02:18 GMT</strong>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+                  Zero unverified defects
+                </span>
+<span class="text-secondary font-bold">ISO-compliant audit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: How It Works (Four Deterministic Steps) -->
+<section class="mt-28">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-secondary-container/60 border border-secondary/20 text-on-secondary-container text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-3">
+          EXECUTION WORKFLOW
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          From Initial Intake to Cleared Bay: Four Connected Stages.
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+          Eliminate lost paperwork and delayed phone approvals with a unified digital lifecycle.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Stage 01 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex flex-col justify-between relative group hover:border-primary/50 transition-all">
+<div>
+<div class="w-12 h-12 rounded-[10px] bg-primary-fixed text-primary font-bold font-mono text-headline-sm flex items-center justify-center mb-5">
+              01
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Intake &amp; Open Digital Job Card</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Customer arrives or books. Vehicle VIN, odometer, and reported symptoms are logged directly via tablet or mobile check-in kiosk.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold flex items-center gap-1">
+<span>VIN Decoder Verified</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<!-- Stage 02 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex flex-col justify-between relative group hover:border-primary/50 transition-all">
+<div>
+<div class="w-12 h-12 rounded-[10px] bg-tertiary-fixed text-tertiary font-bold font-mono text-headline-sm flex items-center justify-center mb-5">
+              02
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Bay Allocation &amp; Live Labor Logging</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Assigned technician performs the multi-point inspection, records time per operation, and requests parts straight from warehouse stock.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span>Real-Time Time Clock</span>
+<span class="material-symbols-outlined text-[16px]">timer</span>
+</div>
+</div>
+<!-- Stage 03 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex flex-col justify-between relative group hover:border-primary/50 transition-all">
+<div>
+<div class="w-12 h-12 rounded-[10px] bg-secondary-fixed text-secondary font-bold font-mono text-headline-sm flex items-center justify-center mb-5">
+              03
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Mobile Estimate Dispatch &amp; Client Sign-Off</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Itemized findings and photos are pushed to the vehicle owner via SMS. Customers authorize single repairs or the full estimate in 1 click.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-secondary font-semibold flex items-center gap-1">
+<span>Cryptographic SMS Vault</span>
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+</div>
+<!-- Stage 04 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-md flex flex-col justify-between relative group hover:border-primary/50 transition-all">
+<div>
+<div class="w-12 h-12 rounded-[10px] bg-primary-container/20 text-on-primary-container font-bold font-mono text-headline-sm flex items-center justify-center mb-5">
+              04
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Automated Ledger Posting &amp; Service History</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Settlement reconciles immediately to accounting software, inventory reorder triggers fire, and the vehicle's permanent digital book updates.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold flex items-center gap-1">
+<span>Zero Re-entry Invoicing</span>
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: Business Impact & Returns (Benefits) -->
+<section class="mt-28">
+<div class="max-w-3xl mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-tertiary-fixed/40 border border-tertiary/20 text-on-tertiary-fixed-variant text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-3">
+          OPERATIONAL ADVANTAGE
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          Why modern service centers replace paper tickets with Horizon.
+        </h2>
+</div>
+<!-- Four Benefit Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+<div class="glass-card rounded-2xl p-7 border border-white/80 shadow-md">
+<div class="w-11 h-11 rounded-[10px] brand-gradient flex items-center justify-center text-on-primary mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Fewer Billing Disputes</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Every bolt, shop supply charge, and diagnostic labor hour is backed by timestamped inspection photos and cryptographic customer authorizations. Friction at checkout disappears.
+          </p>
+</div>
+<div class="glass-card rounded-2xl p-7 border border-white/80 shadow-md">
+<div class="w-11 h-11 rounded-[10px] bg-secondary flex items-center justify-center text-on-secondary mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">published_with_changes</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Minimized Bay Downtime</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            No idle technicians waiting around for parts or telephone call-backs. Automated vendor replenishment feeds ensure required gaskets and brake pads arrive before the car is hoisted.
+          </p>
+</div>
+<div class="glass-card rounded-2xl p-7 border border-white/80 shadow-md">
+<div class="w-11 h-11 rounded-[10px] bg-tertiary flex items-center justify-center text-on-tertiary mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Frontline Accountability</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Establish transparent technician efficiency benchmarks and diagnostic accuracy scores. Give service advisors complete visibility into job card status without walking out to the workshop floor.
+          </p>
+</div>
+<div class="glass-card rounded-2xl p-7 border border-white/80 shadow-md">
+<div class="w-11 h-11 rounded-[10px] bg-inverse-surface flex items-center justify-center text-inverse-on-surface mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">loyalty</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Accelerated Turnaround &amp; Retention</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Delivering clean digital inspection videos builds long-term vehicle owner loyalty. Returning customers receive instant milestone alerts based on predicted mileage wear.
+          </p>
+</div>
+</div>
+<!-- Three-Item Assurance Row -->
+<div class="glass-card-subtle rounded-2xl p-6 lg:p-8 border border-outline-variant/30 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">shield</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold mb-1">Enterprise-Grade Security</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Encrypted hosting, role-based access control, regular backups. Data stays yours and fully exportable.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">price_check</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold mb-1">Transparent, Scoped Pricing</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Every deployment scoped with fixed price and timeline agreed upfront. Zero unexpected user licensing traps.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[24px] mt-0.5">groups</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold mb-1">Built for Your Whole Team</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Dedicated role-based views for service advisors, master technicians, parts managers, and shop owners.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: Operational Transformation (Before / After Comparison) -->
+<section class="mt-28">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/40 border border-primary/20 text-on-primary-fixed-variant text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-3">
+          OPERATIONAL CONTRAST
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          What Changes on Day One
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+          Comparing chaotic paper workshop workflows against Horizon Auto Workshop Manager.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Before Column -->
+<div class="glass-card-subtle rounded-2xl p-7 lg:p-8 border border-error/20 relative">
+<div class="flex items-center gap-2 text-error mb-4">
+<span class="material-symbols-outlined text-[24px]">cancel</span>
+<span class="text-label-lg font-label-lg font-bold uppercase tracking-wider">Before: The Paper Ticket Dilemma</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<span>Paper job cards get greasy and lost under windshields, obscuring critical customer notes and work authorization limits.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<span>Parts run out mid-repair without alert, leaving vehicles dismantled on active lifts while technicians wait on supply runs.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<span>Double-booked bays leave mechanics waiting while service advisors chase phone-tag voicemails for quote sign-offs.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<span>Re-typing handwritten estimates into separate invoicing accounting software introduces missed parts and billing friction.</span>
+</li>
+</ul>
+</div>
+<!-- After Column -->
+<div class="glass-card rounded-2xl p-7 lg:p-8 border border-secondary/40 shadow-lg relative bg-white/80">
+<div class="flex items-center gap-2 text-secondary mb-4">
+<span class="material-symbols-outlined text-[24px] fill-1">check_circle</span>
+<span class="text-label-lg font-label-lg font-bold uppercase tracking-wider">After: The Horizon Synchronized Shop</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Digital job card follows the car seamlessly through every bay on rugged tablets with live photo annotations.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Parts auto-decrement from stock with early warning thresholds and instant vendor EDI re-order integration.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Bay and specialist scheduling united in one live dispatch matrix with dynamic customer SMS approval updates.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Approved estimates convert to final invoices with zero manual re-entry, syncing ledger accounts automatically.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- SECTION 8: Frequently Asked Questions (FAQ) -->
+<section class="mt-28">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/40 border border-primary/20 text-on-primary-fixed-variant text-label-sm font-label-sm uppercase tracking-wide font-semibold mb-3">
+          SYSTEM ARCHITECTURE &amp; WORKSHOP OPERATIONS
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          Frequently Asked Questions
+        </h2>
+</div>
+<div class="max-w-4xl mx-auto space-y-4">
+<!-- FAQ 1: Expanded by default with thorough technical detail -->
+<div class="glass-card rounded-2xl p-6 border border-primary/30 shadow-sm">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">
+              1. Can customers see the real-time status of their car while it is in the shop?
+            </h3>
+<span class="material-symbols-outlined text-primary text-[24px]">expand_less</span>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/30 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+<p class="mb-3">
+              Yes. Auto Workshop Manager issues a secure, cryptographic web link via SMS showing live vehicle progress, inspected items with photos, technician notes, and an interactive quote approval slider.
+            </p>
+<p>
+              Customers do not need to download an application or create a password. The link expires automatically upon final billing settlement, ensuring customer privacy and protecting your workshop's internal operational notes.
+            </p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              2. What happens if a job requires a part we do not currently have in inventory?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              3. Can we track manufacturer warranty claims separately from regular customer billing?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              4. Does the platform support physical printed work orders if a customer or technician requests paper?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+<!-- FAQ 5 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              5. Can Auto Workshop Manager coordinate corporate fleet accounts with multi-vehicle billing?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+<!-- FAQ 6 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              6. Does the system issue automated reminders for upcoming scheduled maintenance, MOT, and manufacturer recalls?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+<!-- FAQ 7 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              7. How long does the workshop onboarding and catalog migration process typically take?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+<!-- FAQ 8 -->
+<div class="glass-card-subtle rounded-2xl p-6 border border-outline-variant/30">
+<div class="flex items-center justify-between cursor-pointer">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              8. Is our customer and repair data secure, and who owns the records?
+            </h3>
+<span class="material-symbols-outlined text-outline text-[24px]">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: More from the Horizon Ecosystem -->
+<section class="mt-28">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Looking for something else?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-2">
+            Browse productized software modules and autonomous enterprise packages.
+          </p>
+</div>
+<a class="text-primary hover:text-on-primary-fixed-variant text-label-lg font-label-lg font-semibold inline-flex items-center gap-1.5 transition-colors" href="#ecosystem">
+<span>Browse all [00+] product packages</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Ecosystem Card 1 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed/50 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">Smart Inventory Control</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Know exactly what is on your shelves, in your service trucks, and on backorder down to the unit.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center gap-1 text-label-sm font-label-sm text-primary font-semibold">
+<span>Explore Package</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Ecosystem Card 2 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[22px]">directions_car</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-secondary transition-colors">Field Service Management</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Get the right technician to the right job with the right parts, without a whiteboard or phone tag.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center gap-1 text-label-sm font-label-sm text-secondary font-semibold">
+<span>Explore Package</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Ecosystem Card 3 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed/50 text-tertiary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-tertiary transition-colors">AI QC Agent</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Centralised installation knowledge and schematic verification on your technician's phone.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center gap-1 text-label-sm font-label-sm text-tertiary font-semibold">
+<span>Explore Package</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Ecosystem Card 4 -->
+<div class="glass-card rounded-2xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-surface-container-high text-on-surface flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[22px]">warehouse</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">Warehouse Operations Platform</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Turn parts storage into a barcode-verified system your pickers and managers can trust.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center gap-1 text-label-sm font-label-sm text-on-surface font-semibold">
+<span>Explore Package</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 10: Final Call to Action Band -->
+<section class="mt-28">
+<div class="brand-gradient rounded-[20px] p-8 lg:p-14 text-on-primary shadow-2xl relative overflow-hidden">
+<!-- Abstract background ring -->
+<div class="absolute -right-16 -bottom-16 w-96 h-96 rounded-full border-[32px] border-white/10 pointer-events-none"></div>
+<div class="max-w-3xl relative z-10">
+<h2 class="text-display-lg-mobile lg:text-headline-lg font-headline-lg font-bold tracking-tight mb-4 text-white">
+            Ready to run your workshop with deterministic certainty?
+          </h2>
+<p class="text-headline-sm font-body-lg text-white/90 mb-8 max-w-2xl font-normal leading-relaxed">
+            Schedule a fixed-scope technical consultation with our automotive systems team within 48 hours.
+          </p>
+<div class="flex flex-wrap items-center gap-4 mb-6">
+<a class="bg-white text-on-primary-container hover:bg-surface transition-colors font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] font-bold shadow-md" href="#book-demo">
+              Book an Architectural Scoping Consultation
+            </a>
+<a class="bg-white/10 hover:bg-white/20 text-white border border-white/40 transition-colors font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] font-semibold" href="#spec">
+              Download Platform Specification
+            </a>
+</div>
+<p class="text-label-sm font-label-sm text-white/80 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+            Encrypted hosting, role-based access, and regular backups. Your data always remains fully yours and exportable.
+          </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Component: Footer (Editorial Multi-Column) -->
+<footer class="w-full border-t border-outline-variant/30 dark:border-outline/20 bg-surface-container-low dark:bg-inverse-surface mt-28">
+<div class="w-full max-w-[1600px] mx-auto px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+<!-- Col 1: Brand & Bio -->
+<div class="lg:col-span-4">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-8 h-8 rounded-[8px] brand-gradient flex items-center justify-center text-on-primary font-bold text-headline-sm">
+              H
+            </div>
+<span class="text-headline-md font-headline-md font-bold text-on-surface dark:text-inverse-on-surface tracking-tight">Horizon</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant leading-relaxed mb-6">
+            Architects of fixed-scope autonomous AI workers and high-velocity modular software systems for modern enterprises.
+          </p>
+<div class="space-y-1 text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant">
+<div><span class="font-semibold text-on-surface">HQ:</span> [Office address]</div>
+<div><span class="font-semibold text-on-surface">Desk:</span> [contact email]</div>
+<div><span class="font-semibold text-on-surface">Direct:</span> [phone]</div>
+</div>
+</div>
+<!-- Col 2: Products & Packages -->
+<div class="lg:col-span-2">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface dark:text-inverse-on-surface font-bold mb-4">Packages</h4>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Products</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">ERP Architecture</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">AI Automation</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Integrations</a></li>
+</ul>
+</div>
+<!-- Col 3: Solutions -->
+<div class="lg:col-span-2">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface dark:text-inverse-on-surface font-bold mb-4">Solutions</h4>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Solutions</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Supply Chain</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Financial Operations</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Case Studies</a></li>
+</ul>
+</div>
+<!-- Col 4: Company -->
+<div class="lg:col-span-2">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface dark:text-inverse-on-surface font-bold mb-4">Company</h4>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">About Horizon</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<!-- Col 5: System Updates Newsletter -->
+<div class="lg:col-span-2">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface dark:text-inverse-on-surface font-bold mb-4">System Updates</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant mb-3">
+            Receive monthly operational releases and architecture benchmarks.
+          </p>
+<form class="space-y-2" onsubmit="event.preventDefault();">
+<input class="w-full h-10 px-3 rounded-[10px] bg-white dark:bg-inverse-surface border border-outline-variant/40 text-body-sm font-body-sm text-on-surface outline-none focus:border-primary" placeholder="Work email" type="email"/>
+<button class="w-full h-10 brand-gradient text-on-primary font-label-sm text-label-sm font-semibold rounded-[10px] hover:opacity-90 transition-opacity" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 border-t border-outline-variant/20 dark:border-outline/20 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant">
+          © 2025 Horizon Enterprise Solutions. Encrypted hosting, role-based access and regular backups.
+        </p>
+<div class="flex items-center gap-6">
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Security</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

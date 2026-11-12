@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Horizon - Enterprise AI &amp; ERP Orchestration</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#a1eff8",
+            "on-primary": "#ffffff",
+            "background": "#fbf9f6",
+            "inverse-surface": "#30312f",
+            "secondary-container": "#ceee93",
+            "on-tertiary-fixed-variant": "#004f55",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "on-background": "#1b1c1a",
+            "secondary-fixed-dim": "#b3d17a",
+            "secondary": "#4d661c",
+            "surface-tint": "#a9371d",
+            "primary-fixed-dim": "#ffb4a3",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#131f00",
+            "surface-container-high": "#eae8e5",
+            "tertiary-fixed-dim": "#85d3dc",
+            "on-surface-variant": "#58413c",
+            "surface-container": "#efeeeb",
+            "surface-variant": "#e4e2df",
+            "on-secondary-container": "#536d22",
+            "on-primary-container": "#6d1200",
+            "on-primary-fixed-variant": "#881f06",
+            "primary": "#a9371d",
+            "tertiary-container": "#5dabb4",
+            "outline-variant": "#dfbfb8",
+            "surface": "#fbf9f6",
+            "surface-dim": "#dbdad7",
+            "surface-container-low": "#f5f3f0",
+            "on-error": "#ffffff",
+            "primary-container": "#ff7555",
+            "surface-container-highest": "#e4e2df",
+            "on-tertiary-container": "#003d42",
+            "on-surface": "#1b1c1a",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary": "#026971",
+            "on-tertiary-fixed": "#002023",
+            "secondary-fixed": "#ceee93",
+            "surface-bright": "#fbf9f6",
+            "inverse-on-surface": "#f2f0ed",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#ffdad2",
+            "inverse-primary": "#ffb4a3",
+            "outline": "#8c716b",
+            "on-primary-fixed": "#3d0600",
+            "on-secondary-fixed-variant": "#364e03"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-sm": "1rem",
+            "space-lg": "2rem",
+            "space-sm": "0.75rem",
+            "margin-sm": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "display-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "display-lg": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Ambient glow & glass card base */
+    .glass-surface {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 30px -10px rgba(169, 55, 29, 0.05), 0 20px 40px -15px rgba(27, 28, 26, 0.03);
+    }
+    .ambient-radial {
+      background: radial-gradient(circle at 50% 0%, rgba(255, 117, 85, 0.08) 0%, rgba(251, 249, 246, 0) 70%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col font-body-md text-body-md relative overflow-x-hidden">
+<!-- Atmospheric Background Glow Elements -->
+<div class="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+<div class="absolute -top-[20%] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-gradient-to-b from-primary-container/10 via-primary-fixed/20 to-transparent blur-3xl opacity-70"></div>
+<div class="absolute top-[35%] -left-[10%] w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-3xl opacity-60"></div>
+<div class="absolute top-[60%] -right-[10%] w-[600px] h-[600px] rounded-full bg-tertiary-fixed/30 blur-3xl opacity-50"></div>
+</div>
+<!-- Shared TopNavBar (JSON Conformance with Strict House Rules) -->
+<header class="sticky top-0 z-50 px-4 md:px-8 py-4">
+<div class="w-full max-w-7xl mx-auto rounded-[14px] px-6 py-3 border border-outline-variant/30 bg-surface/70 backdrop-blur-md shadow-sm flex items-center justify-between transition-all">
+<!-- Brand Logo Anchor -->
+<a class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-3 group" href="#">
+<img alt="Horizon" class="w-8 h-8 rounded-full shadow-sm group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/ALJJyrBIwmn9ztReGE7BPUWCsOazltSba7tnUXfSAWpnyguceuqIe5I2FlBSM_X1TGMnEeOAfU-BOp-CVRpADjHUPKjh3E01CtyNKbami39LpOGXb74XJ8s9qYROlocgMUywQXuV59fTwLa2ZLUh1J09xOOK6wSLaAYKhNnjjknDO6hJRZ9gsXNEFipfHeP-fEJoB9ZCMkk1osYr6UkdIwPuF5z6HaEgrhMk6pcKY01MOmdynYF6rxHXXfBnvNk"/>
+<span class="tracking-tight text-on-surface">Horizon</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium transition-colors hover:text-primary active:scale-[0.99] font-label-lg text-label-lg" href="#">Products</a>
+<a class="text-on-surface-variant font-medium transition-colors hover:text-primary active:scale-[0.99] font-label-lg text-label-lg" href="#">Solutions</a>
+<a class="text-on-surface-variant font-medium transition-colors hover:text-primary active:scale-[0.99] font-label-lg text-label-lg" href="#">Case Studies</a>
+<a class="text-on-surface-variant font-medium transition-colors hover:text-primary active:scale-[0.99] font-label-lg text-label-lg" href="#">About</a>
+<a class="text-on-surface-variant font-medium transition-colors hover:text-primary active:scale-[0.99] font-label-lg text-label-lg" href="#">Careers</a>
+<!-- Active link: Contact -->
+<a class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-label-lg text-label-lg" href="#">Contact</a>
+</nav>
+<!-- Trailing Action Button (strictly rounded-[10px]) -->
+<div class="flex items-center gap-3">
+<button class="bg-primary text-on-primary hover:bg-primary-container px-5 py-2.5 rounded-[10px] font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-150 active:scale-[0.98] flex items-center gap-2">
+<span>Book a free demo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative z-10 flex-grow max-w-7xl w-full mx-auto px-4 md:px-8 py-8 space-y-16">
+<!-- 1. Hero Section -->
+<section class="text-center max-w-3xl mx-auto space-y-4 pt-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/40 border border-outline-variant/40 text-on-primary-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Direct Channel</span>
+</div>
+<h1 class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">
+        Let's work together
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+        Connect directly with our solutions engineering team to scope your AI automation workflows, ERP migrations, or custom enterprise architecture.
+      </p>
+</section>
+<!-- 2. Two-Column Core Grid: Contact Details & Trust vs. Enquiry Form -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Contact Details, Trust & Guarantees (5 cols) -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Contact Details Card -->
+<div class="glass-surface rounded-2xl p-8 space-y-6">
+<div class="border-b border-surface-variant pb-4">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Direct Connectivity</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct communication lines to senior systems architects.</p>
+</div>
+<div class="space-y-4">
+<!-- Email -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed/40 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex-grow">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Inquiries &amp; RFCs</div>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">[contact email]</div>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed/40 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex-grow">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Direct Line</div>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">[phone]</div>
+</div>
+</div>
+<!-- Address -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed/40 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex-grow">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Global HQ &amp; Innovation Lab</div>
+<div class="font-body-md text-body-md font-medium text-on-surface">[Office address]</div>
+</div>
+</div>
+<!-- Operating Hours -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container/40 border border-secondary/20 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex-grow">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Active Operations Window</div>
+<div class="font-body-md text-body-md font-medium text-on-surface">09:00 am - 06:30 pm IST</div>
+</div>
+</div>
+</div>
+<!-- Global Coverage Badge -->
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/20 flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">public</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Remote-first engineering team actively serving clients across US, UK, and APAC time zones with guaranteed response windows.
+            </p>
+</div>
+</div>
+<!-- Testimonial Quote Card -->
+<div class="glass-surface rounded-2xl p-6 border border-outline-variant/30 relative overflow-hidden">
+<div class="flex items-center gap-1 text-primary mb-3">
+<span class="material-symbols-outlined text-[16px] fill-icon">star</span>
+<span class="material-symbols-outlined text-[16px] fill-icon">star</span>
+<span class="material-symbols-outlined text-[16px] fill-icon">star</span>
+<span class="material-symbols-outlined text-[16px] fill-icon">star</span>
+<span class="material-symbols-outlined text-[16px] fill-icon">star</span>
+</div>
+<blockquote class="font-body-md text-body-md italic text-on-surface mb-3">
+            "[Client quote] - [Name, role]"
+          </blockquote>
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+            Enterprise Client Verification Record [00+]
+          </div>
+</div>
+<!-- Security & Confidentiality Assurance -->
+<div class="p-6 rounded-2xl bg-surface-container-high/60 border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-2 text-on-surface font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span>Security &amp; Confidentiality Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            All discussions covered by mutual NDA. Zero proprietary data training, encrypted communications, and role-based access controls.
+          </p>
+</div>
+</div>
+<!-- Right Column: Detailed Enterprise Enquiry Form (7 cols) -->
+<div class="lg:col-span-7">
+<div class="glass-surface rounded-2xl p-8 md:p-10 border border-outline-variant/40 space-y-8">
+<div>
+<div class="inline-block px-2.5 py-0.5 rounded-[6px] bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm mb-2">
+              Fast-Track Technical Review
+            </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+              Initiate a project discussion
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Provide your parameters to receive a technical scoping response within one business day.
+            </p>
+</div>
+<form action="#" class="space-y-6" method="POST" onsubmit="event.preventDefault();">
+<!-- Row 1: First Name & Last Name -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="first-name">First name *</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="first-name" placeholder="Alex" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="last-name">Last name *</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="last-name" placeholder="Vance" required="" type="text"/>
+</div>
+</div>
+<!-- Row 2: Work Email & Phone Number -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="work-email">Work email *</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="work-email" placeholder="alex@enterprise.com" required="" type="email"/>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="phone">Phone number</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="phone" placeholder="[phone]" type="tel"/>
+</div>
+</div>
+<!-- Row 3: Company Name & Team Size -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="company">Company name *</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="company" placeholder="Horizon Dynamics Ltd." required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="team-size">Team / Fleet size</label>
+<select class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="team-size">
+<option value="1-50">1 - 50 members</option>
+<option value="51-250">51 - 250 members</option>
+<option value="251-1000">251 - 1,000 members</option>
+<option value="1000+">1,000+ enterprise scale</option>
+</select>
+</div>
+</div>
+<!-- Row 4: Service Required & Product of Interest -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="service">Service required</label>
+<select class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="service">
+<option value="AI Automation">AI Automation</option>
+<option value="ERP &amp; CRM Solutions">ERP &amp; CRM Solutions</option>
+<option value="Custom Software Development">Custom Software Development</option>
+<option value="Web Development">Web Development</option>
+<option value="App Development">App Development</option>
+<option value="IT Strategy &amp; Consulting">IT Strategy &amp; Consulting</option>
+<option value="Application Maintenance">Application Maintenance</option>
+<option value="Quality Assurance">Quality Assurance</option>
+</select>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="product">Product of interest</label>
+<select class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="product">
+<option value="AI QC Agent">AI QC Agent</option>
+<option value="Exhibition Lead Intelligence">Exhibition Lead Intelligence</option>
+<option value="AI Travel Agent">AI Travel Agent</option>
+<option value="Integrated Enterprise ERP">Integrated Enterprise ERP</option>
+<option value="Warehouse &amp; Logistics Platform">Warehouse &amp; Logistics Platform</option>
+<option value="Custom Enterprise Engagement">Custom Enterprise Engagement</option>
+</select>
+</div>
+</div>
+<!-- Row 5: Estimated Budget Range (Radio Matrix with rounded-[10px]) -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">Estimated budget range</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<label class="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
+<input class="sr-only peer" name="budget" type="radio" value="&lt; $25k"/>
+<span class="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">&lt; $25k</span>
+<span class="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity"></span>
+</label>
+<label class="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
+<input checked="" class="sr-only peer" name="budget" type="radio" value="$25k - $50k"/>
+<span class="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">$25k - $50k</span>
+<span class="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity"></span>
+</label>
+<label class="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
+<input class="sr-only peer" name="budget" type="radio" value="$50k - $100k"/>
+<span class="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">$50k - $100k</span>
+<span class="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity"></span>
+</label>
+<label class="relative flex flex-col items-center justify-center p-3 rounded-[10px] border border-outline-variant/40 bg-surface-container-lowest/60 hover:bg-surface-container-lowest cursor-pointer text-center transition-all peer-checked:border-primary">
+<input class="sr-only peer" name="budget" type="radio" value="$100k+"/>
+<span class="peer-checked:font-bold peer-checked:text-primary font-label-md text-label-md text-on-surface">$100k+</span>
+<span class="w-full h-0.5 bg-primary mt-1 opacity-0 peer-checked:opacity-100 rounded-[2px] transition-opacity"></span>
+</label>
+</div>
+</div>
+<!-- Row 6: Message / Project Scope -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="project-scope">Message / Project Scope</label>
+<textarea class="w-full p-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="project-scope" placeholder="Describe your operational bottlenecks, existing tech stack, and expected target delivery date..." rows="4"></textarea>
+</div>
+<!-- Confidentiality Note -->
+<div class="flex items-start gap-2.5 text-on-surface-variant font-body-sm text-body-sm bg-surface-container/50 p-3 rounded-[10px] border border-outline-variant/20">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">lock</span>
+<span>Confidentiality guaranteed. We sign bilateral non-disclosure agreements prior to reviewing proprietary schematics or databases.</span>
+</div>
+<!-- Submit Button (Strictly rectangular rounded-[10px]) -->
+<button class="w-full py-4 px-6 rounded-[10px] bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold hover:bg-primary-container shadow-md transition-all duration-200 active:scale-[0.99] flex items-center justify-center gap-2" type="submit">
+<span>Submit details</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- 3. "What happens next" Three-Step Strip -->
+<section class="space-y-8 pt-8">
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<div class="inline-block px-3 py-1 rounded-[6px] bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md font-semibold">
+          Execution Protocol
+        </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          Clear milestone progression from first touch to deployment.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Step 01 -->
+<div class="glass-surface rounded-2xl p-8 relative flex flex-col justify-between border border-outline-variant/30 group hover:border-primary/40 transition-colors">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-[6px] bg-primary text-on-primary font-headline-sm text-headline-sm font-bold">01</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+              Direct Response within 1 Business Day
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              A dedicated enterprise systems architect reviews your requirements and confirms feasibility.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-variant/60 font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span>Guaranteed triage SLA</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="glass-surface rounded-2xl p-8 relative flex flex-col justify-between border border-outline-variant/30 group hover:border-primary/40 transition-colors">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-variant text-on-surface font-headline-sm text-headline-sm font-bold">02</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+              Technical Scoping Call
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              A 30-minute deep dive examining technical architecture, data connections, and operational workflows.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-variant/60 font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 font-semibold">
+<span>Bilateral NDA included</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="glass-surface rounded-2xl p-8 relative flex flex-col justify-between border border-outline-variant/30 group hover:border-primary/40 transition-colors">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-variant text-on-surface font-headline-sm text-headline-sm font-bold">03</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">assignment_turned_in</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+              Tailored SOW in 48 Hours
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              A binding statement of work with guaranteed fixed-scope delivery timelines, fixed pricing, and milestone deliverables.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-variant/60 font-label-sm text-label-sm text-secondary flex items-center gap-1 font-semibold">
+<span>Fixed price &amp; deliverables</span>
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Map Placeholder & Global Presence Card -->
+<section class="glass-surface rounded-2xl p-8 border border-outline-variant/40 space-y-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="inline-block px-2.5 py-0.5 rounded-[6px] bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-sm text-label-sm mb-1">
+            Global Engineering Matrix
+          </div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Active Deployment Presence</h2>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Primary Hub</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Operational Cluster</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span> Direct Cloud Gateway</span>
+</div>
+</div>
+<!-- Stylized Architectural Map Canvas -->
+<div class="relative w-full h-80 rounded-xl overflow-hidden bg-surface-container-high border border-outline-variant/30 flex items-center justify-center">
+<!-- Abstract Topo Grid lines -->
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#a9371d 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Regional Pins -->
+<!-- US Node -->
+<div class="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<span class="flex h-4 w-4 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
+</span>
+<div class="mt-2 px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant/40 text-on-surface font-label-sm text-label-sm shadow-sm">
+            Americas Cluster (EST / PST)
+          </div>
+</div>
+<!-- UK/EMEA Node -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<span class="flex h-4 w-4 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-secondary"></span>
+</span>
+<div class="mt-2 px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant/40 text-on-surface font-label-sm text-label-sm shadow-sm">
+            EMEA Gateway (GMT / CET)
+          </div>
+</div>
+<!-- APAC Node -->
+<div class="absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<span class="flex h-4 w-4 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
+</span>
+<div class="mt-2 px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant/40 text-on-surface font-label-sm text-label-sm shadow-sm">
+            APAC Operations ([Office address])
+          </div>
+</div>
+<!-- Center watermark overlay -->
+<div class="text-center p-6 bg-surface-container-lowest/80 backdrop-blur-md rounded-xl border border-outline-variant/30 max-w-md shadow-md z-10">
+<span class="material-symbols-outlined text-primary text-[32px] mb-1">domain</span>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Global Architecture Dispatch</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Engineers deployed seamlessly across all three primary corporate corridors with sub-millisecond cloud interconnectivity.
+          </p>
+</div>
+</div>
+</section>
+<!-- 5. Secondary Actions Bar -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1: Technical Specs -->
+<div class="glass-surface rounded-2xl p-8 border border-outline-variant/30 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="w-10 h-10 rounded-[10px] bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">description</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            Looking for platform technical specifications?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Download our architectural whitepaper and agent capability index detailing security schemas and database integrations.
+          </p>
+</div>
+<div>
+<button class="px-5 py-3 rounded-[10px] border border-outline-variant text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container transition-all active:scale-[0.99] flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download brochure</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Guided Walkthrough -->
+<div class="glass-surface rounded-2xl p-8 border border-primary/20 bg-gradient-to-br from-primary-fixed/20 to-surface flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="w-10 h-10 rounded-[10px] bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            Prefer a live guided walkthrough of our agents?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Experience real-time AI QC inspection, exhibition lead synthesis, and automated ERP reconciliation on live test fixtures.
+          </p>
+</div>
+<div>
+<button class="px-6 py-3 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container shadow-sm transition-all active:scale-[0.99] flex items-center gap-2">
+<span>Book a free demo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 6. Enterprise FAQ Section -->
+<section class="max-w-4xl mx-auto space-y-8 pt-4">
+<div class="text-center space-y-2">
+<div class="inline-block px-3 py-1 rounded-[6px] bg-surface-variant text-on-surface-variant font-label-md text-label-md font-semibold">
+          Pre-Engagement Guidance
+        </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          Frequently Asked Questions
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Clear answers regarding deployment timelines, data sovereignty, and technical architecture.
+        </p>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="glass-surface rounded-xl border border-outline-variant/30 p-6 transition-all duration-200">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-[18px] font-semibold text-on-surface list-none">
+<span>How quickly can our team begin an engagement after contract signing?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Standard technical discovery kicks off within 48 to 72 hours following bilateral SOW signature. Our solutions engineers deploy isolated sandboxes and begin pipeline testing immediately, ensuring zero idle lead time.
+            </p>
+</details>
+</div>
+<!-- FAQ 2 -->
+<div class="glass-surface rounded-xl border border-outline-variant/30 p-6 transition-all duration-200">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-[18px] font-semibold text-on-surface list-none">
+<span>Do Horizon AI systems train on our proprietary business data or schematics?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Strictly no. Horizon adheres to sovereign single-tenant data isolation standards. All embeddings, contextual RAG databases, and transaction records remain fully within your tenant boundary. No enterprise inputs are ever repurposed to train public foundation models.
+            </p>
+</details>
+</div>
+<!-- FAQ 3 -->
+<div class="glass-surface rounded-xl border border-outline-variant/30 p-6 transition-all duration-200">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-[18px] font-semibold text-on-surface list-none">
+<span>What support and SLA coverage are included with fixed-scope rollouts?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Every fixed-scope package includes 90 days of embedded post-deployment warranty support, guaranteed 99.9% uptime uptime SLAs for automated nodes, and continuous oversight from our Tier-3 systems engineering squad.
+            </p>
+</details>
+</div>
+<!-- FAQ 4 -->
+<div class="glass-surface rounded-xl border border-outline-variant/30 p-6 transition-all duration-200">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-[18px] font-semibold text-on-surface list-none">
+<span>Can Horizon integrate directly with our legacy ERP and database infrastructure?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Yes. We maintain native micro-service connectors for SAP, Oracle NetSuite, Microsoft Dynamics 365, as well as on-premise PostgreSQL, MS SQL, and AS400 mainframe message queues with transactional rollback guarantees.
+            </p>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- 7. Footer (Conforming with JSON + Strict House Rules) -->
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/20 mt-20">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-16 space-y-12">
+<!-- Top Grid: Brand + 4 Link Columns + Newsletter -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+<!-- Brand & Description (2 cols) -->
+<div class="lg:col-span-2 space-y-4">
+<div class="font-headline-md text-headline-md font-bold text-on-surface flex items-center gap-2">
+<img alt="Horizon" class="w-7 h-7 rounded-full" src="https://lh3.googleusercontent.com/aida/ALJJyrBIwmn9ztReGE7BPUWCsOazltSba7tnUXfSAWpnyguceuqIe5I2FlBSM_X1TGMnEeOAfU-BOp-CVRpADjHUPKjh3E01CtyNKbami39LpOGXb74XJ8s9qYROlocgMUywQXuV59fTwLa2ZLUh1J09xOOK6wSLaAYKhNnjjknDO6hJRZ9gsXNEFipfHeP-fEJoB9ZCMkk1osYr6UkdIwPuF5z6HaEgrhMk6pcKY01MOmdynYF6rxHXXfBnvNk"/>
+<span>Horizon</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-sm">
+            Next-generation enterprise AI automation and ERP orchestration. Engineering self-governing workflows and high-concurrency decision matrices for complex global organizations.
+          </p>
+<div class="font-body-sm text-body-sm text-on-surface-variant space-y-1">
+<div>Office: <span class="text-on-surface font-medium">[Office address]</span></div>
+<div>Inquiries: <span class="text-on-surface font-medium">[contact email]</span></div>
+<div>Direct: <span class="text-on-surface font-medium">[phone]</span></div>
+</div>
+</div>
+<!-- Links Column 1: Packages -->
+<div class="space-y-3">
+<div class="font-headline-sm text-[16px] font-bold text-on-surface">Packages</div>
+<ul class="space-y-2 font-label-md text-label-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">AI QC Agent</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Exhibition Lead</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">AI Travel Agent</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">ERP Core Engine</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Solutions -->
+<div class="space-y-3">
+<div class="font-headline-sm text-[16px] font-bold text-on-surface">Solutions</div>
+<ul class="space-y-2 font-label-md text-label-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Automated Supply</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Financial Ledger</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Quality Control</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Compliance Engine</a></li>
+</ul>
+</div>
+<!-- Links Column 3: Resources -->
+<div class="space-y-3">
+<div class="font-headline-sm text-[16px] font-bold text-on-surface">Resources</div>
+<ul class="space-y-2 font-label-md text-label-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Architecture Docs</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Security Architecture</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">API Reference</a></li>
+</ul>
+</div>
+<!-- Links Column 4: Connect & Subscription -->
+<div class="space-y-3">
+<div class="font-headline-sm text-[16px] font-bold text-on-surface">Connect</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stay updated with quarterly architectural engineering briefs.</p>
+<form class="space-y-2" onsubmit="event.preventDefault();">
+<input class="w-full px-3 py-2 rounded-[10px] bg-surface-container border border-outline-variant/40 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="[contact email]" type="email"/>
+<button class="w-full py-2 px-4 rounded-[10px] bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all active:scale-[0.99]" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+<!-- Bottom Bar: Copyright & Legal Links -->
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+<div>
+          © 2025 Horizon Automation Inc. All rights reserved. Enterprise AI &amp; ERP Orchestration.
+        </div>
+<div class="flex flex-wrap items-center gap-6 font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Security Architecture</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

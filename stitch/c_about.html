@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Horizon - Enterprise AI Automation &amp; ERP Solutions</title>
+<!-- Plus Jakarta Sans Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#1b1c1a",
+            "primary-fixed": "#ffdad2",
+            "surface-container-low": "#f5f3f0",
+            "tertiary-fixed": "#a1eff8",
+            "on-surface-variant": "#58413c",
+            "on-secondary-fixed-variant": "#364e03",
+            "outline-variant": "#dfbfb8",
+            "surface-container-highest": "#e4e2df",
+            "on-secondary-container": "#536d22",
+            "surface-variant": "#e4e2df",
+            "on-primary-fixed-variant": "#881f06",
+            "surface-container": "#efeeeb",
+            "primary": "#a9371d",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#30312f",
+            "tertiary": "#026971",
+            "background": "#fbf9f6",
+            "inverse-on-surface": "#f2f0ed",
+            "secondary": "#4d661c",
+            "surface-bright": "#fbf9f6",
+            "secondary-container": "#ceee93",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#003d42",
+            "surface": "#fbf9f6",
+            "inverse-primary": "#ffb4a3",
+            "primary-fixed-dim": "#ffb4a3",
+            "on-secondary-fixed": "#131f00",
+            "on-secondary": "#ffffff",
+            "secondary-fixed-dim": "#b3d17a",
+            "primary-container": "#ff7555",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#002023",
+            "surface-container-high": "#eae8e5",
+            "on-surface": "#1b1c1a",
+            "on-tertiary-fixed-variant": "#004f55",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#5dabb4",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dbdad7",
+            "on-primary-container": "#6d1200",
+            "secondary-fixed": "#ceee93",
+            "tertiary-fixed-dim": "#85d3dc",
+            "outline": "#8c716b",
+            "on-primary-fixed": "#3d0600",
+            "surface-tint": "#a9371d"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "margin-sm": "1.25rem",
+            "space-xs": "0.375rem",
+            "gutter": "1.5rem",
+            "space-lg": "2rem",
+            "space-md": "1.25rem",
+            "space-xl": "3.5rem",
+            "gutter-sm": "1rem",
+            "space-sm": "0.75rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Architectural Neo-Glassmorphism rules */
+    .glass-surface {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.70);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.80);
+      box-shadow: 0 8px 32px -4px rgba(235, 120, 90, 0.04), 0 20px 40px -12px rgba(31, 26, 23, 0.03);
+    }
+    .warm-ambient {
+      background: radial-gradient(circle at 18% 12%, rgba(255, 117, 85, 0.08) 0%, transparent 45%),
+                  radial-gradient(circle at 85% 65%, rgba(93, 171, 180, 0.06) 0%, transparent 40%),
+                  radial-gradient(circle at 50% 90%, rgba(206, 238, 147, 0.05) 0%, transparent 35%);
+    }
+    .hero-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(140, 113, 107, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(140, 113, 107, 0.04) 1px, transparent 1px);
+    }
+    .primary-btn-gradient {
+      background: linear-gradient(135deg, #ff7555 0%, #a9371d 100%);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 4px 14px -1px rgba(169, 55, 29, 0.3);
+    }
+    .primary-btn-gradient:hover {
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 8px 24px -2px rgba(169, 55, 29, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Background Ambient Glow -->
+<div class="fixed inset-0 warm-ambient pointer-events-none z-0"></div>
+<div class="fixed inset-0 hero-pattern pointer-events-none opacity-60 z-0"></div>
+<!-- Shared Component: TopNavBar (Exact JSON mapping & house rules: rounded-[14px], no pills) -->
+<nav class="sticky top-4 z-50 flex items-center justify-between px-6 py-3.5 max-w-7xl mx-auto rounded-[14px] bg-surface/80 backdrop-blur-md shadow-sm border border-outline-variant/30 transition-all duration-200 ease-out active:scale-[0.99] relative">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group focus:outline-none" href="#">
+<div class="w-8 h-8 rounded-[8px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-on-primary shadow-sm font-headline-sm text-headline-sm font-bold">
+        H
+      </div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight group-hover:text-primary transition-colors duration-150">Horizon</span>
+</a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-label-lg text-label-lg transition-colors duration-150 hover:text-primary pb-1" href="#">Products</a>
+<a class="text-on-surface-variant font-label-lg text-label-lg transition-colors duration-150 hover:text-primary pb-1" href="#">Solutions</a>
+<a class="text-on-surface-variant font-label-lg text-label-lg transition-colors duration-150 hover:text-primary pb-1" href="#">Case Studies</a>
+<!-- Active Link: About -->
+<a aria-current="page" class="text-primary font-label-lg text-label-lg border-b-2 border-primary pb-1" href="#">About</a>
+<a class="text-on-surface-variant font-label-lg text-label-lg transition-colors duration-150 hover:text-primary pb-1" href="#">Careers</a>
+<a class="text-on-surface-variant font-label-lg text-label-lg transition-colors duration-150 hover:text-primary pb-1" href="#">Contact</a>
+</div>
+<!-- Trailing Action (Strictly 10px radius, NO pill) -->
+<div class="flex items-center gap-4">
+<a class="primary-btn-gradient text-on-primary font-label-lg text-label-lg px-5 py-2.5 rounded-[10px] transition-all duration-150 active:scale-[0.98] inline-flex items-center justify-center" href="#">
+        Book a free demo
+      </a>
+</div>
+</nav>
+<!-- Main Canvas Container -->
+<main class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-12 pb-24 space-y-24">
+<!-- ========================================================================= -->
+<!-- SECTION 1: HERO SECTION -->
+<!-- ========================================================================= -->
+<section class="pt-6 pb-4">
+<div class="max-w-4xl space-y-6">
+<!-- Eyebrow Chip (Strict 6px radius) -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-[6px] bg-primary-fixed/60 border border-outline-variant/40 text-on-primary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">ABOUT HORIZON</span>
+</div>
+<!-- Headline -->
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+          We earn trust through the systems we ship and the deterministic reliability of our software backbones.
+        </h1>
+<!-- Sub-Narrative -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Horizon eliminates brittle enterprise consulting and bloated retainers. We replace fragmented manual coordination with fixed-scope, high-velocity autonomous software workers and unified real-time ERP ledgers designed for cryptographic auditability.
+        </p>
+<!-- Micro-Badges (Strict 6px radius) -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[6px] bg-surface-container-low border border-outline-variant/30 text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-primary text-[16px]">receipt_long</span>
+            Fixed-Scope SOWs
+          </div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[6px] bg-secondary-fixed/50 border border-secondary/20 text-on-secondary-fixed-variant font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+            Deterministic Systems
+          </div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[6px] bg-tertiary-fixed/40 border border-tertiary/20 text-on-tertiary-fixed-variant font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">shield</span>
+            Zero-Hallucination Guardrails
+          </div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 2: COMPANY STORY (Two-Column Editorial Grid) -->
+<!-- ========================================================================= -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<div class="md:col-span-6 glass-card rounded-2xl p-8 md:p-10 flex flex-col justify-between border-t-2 border-t-primary/60">
+<div>
+<div class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold mb-3">Origin &amp; Purpose</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Engineered to eliminate operational fragmentation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+            Modern enterprises rarely fail due to lack of vision; they slow to a crawl because vital institutional intelligence is locked in disconnected spreadsheets, tribal desktop knowledge, and fragile ad-hoc scripts that fail without telemetry.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Horizon was founded on a simple engineering premise: corporate ERP ledgers should update automatically from live operational occurrences. We build software backbones that connect inventory, multi-entity finances, and field dispatches with autonomous AI pipelines that execute tasks without human supervision.
+          </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/30 flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[22px]">account_tree</span>
+<span class="font-label-md text-label-md">Unified schema mapping across legacy relational databases and real-time streams</span>
+</div>
+</div>
+<div class="md:col-span-6 glass-card rounded-2xl p-8 md:p-10 flex flex-col justify-between border-t-2 border-t-tertiary/60">
+<div>
+<div class="font-label-md text-label-md uppercase tracking-wider text-tertiary font-semibold mb-3">Operating Model</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Our dual-delivery velocity framework</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+            We reject the multi-year implementation cycle. Horizon maintains a dual delivery paradigm: we engineer pre-compiled, productized autonomous workers that drop directly into enterprise messaging and webhook buses for instant automated ledger reconciling.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            For multi-facility holding corporations and distributed operations, our dedicated systems engineering groups embed directly alongside your architectural teams. We deliver custom high-throughput data contracts, immutable audit pipelines, and guaranteed sub-second sync intervals.
+          </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/30 flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[22px]">speed</span>
+<span class="font-label-md text-label-md">Calendar weeks to live production deployment with guaranteed schema zero-drift</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 3: ACHIEVEMENTS BAND (Exactly Seven Counters) -->
+<!-- ========================================================================= -->
+<section class="glass-surface rounded-2xl p-8 border border-outline-variant/30">
+<div class="text-center max-w-2xl mx-auto mb-8">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">MEASURABLE ENGINEERING</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Operational Benchmarks Across Global Deployments</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6 divide-y lg:divide-y-0 lg:divide-x divide-outline-variant/30">
+<!-- 1: Projects delivered -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-primary tracking-tight">[00+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Projects delivered</div>
+</div>
+<!-- 2: Project success ratio -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">[00%]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Project success ratio</div>
+</div>
+<!-- 3: Engineering hours -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">[00,000+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Engineering hours</div>
+</div>
+<!-- 4: Years of experience -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-primary tracking-tight">[00+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Years of experience</div>
+</div>
+<!-- 5: Countries served -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">[00+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Countries served</div>
+</div>
+<!-- 6: Team members -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">[00+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Team members</div>
+</div>
+<!-- 7: Happy clients -->
+<div class="pt-4 lg:pt-0 lg:px-3 text-center">
+<div class="font-display-lg text-display-lg font-bold text-primary tracking-tight">[00+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant mt-1">Happy clients</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 4: MISSION, VISION, AND VALUES (6 Distinct Cards) -->
+<!-- ========================================================================= -->
+<section class="space-y-10">
+<!-- Mission & Vision Intro -->
+<div class="glass-card rounded-2xl p-8 md:p-12 relative overflow-hidden">
+<div class="max-w-3xl space-y-4 relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">FOUNDATIONAL THESIS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The paradigm shift to self-synchronizing enterprise systems</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Our mission is to construct software backbones where enterprise balance sheets, inventory levels, and compliance matrices self-reconcile through autonomous validation nodes. We envision an enterprise reality free from data entry backlogs, opaque reporting delays, and error-prone batch reconciliations.
+          </p>
+</div>
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+</div>
+<!-- Values Grid: Exactly 6 Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1. Transparency in the process -->
+<div class="glass-card rounded-2xl p-8 space-y-4 hover:border-outline-variant transition-all duration-200">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transparency in the process</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Clear fixed deliverables, open tracking dashboards, and zero billing ambiguity. You see exact commit milestones, pipeline status, and code health in real-time.
+          </p>
+</div>
+<!-- 2. Agile and adaptive development -->
+<div class="glass-card rounded-2xl p-8 space-y-4 hover:border-outline-variant transition-all duration-200">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">sync_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Agile and adaptive development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Modular packages that evolve smoothly with shifting business rules without breaking foundational schema integrity or causing downstream data lockouts.
+          </p>
+</div>
+<!-- 3. Client-centred strategy -->
+<div class="glass-card rounded-2xl p-8 space-y-4 hover:border-outline-variant transition-all duration-200">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Client-centred strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Architecting specifically around your frontline operational workflows, legacy chart of accounts, and bespoke accounting schemas—never forcing arbitrary toolchains.
+          </p>
+</div>
+<!-- 4. Fast delivery and deployment -->
+<div class="glass-card rounded-2xl p-8 space-y-4 hover:border-outline-variant transition-all duration-200">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fast delivery and deployment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Battle-tested modules delivering live operational runs in calendar weeks, not quarters. We deploy proven automation pipelines with pre-integrated unit verifications.
+          </p>
+</div>
+<!-- 5. Security at the highest level -->
+<div class="glass-card rounded-2xl p-8 space-y-4 hover:border-outline-variant transition-all duration-200">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Security at the highest level</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Encrypted hosting, role-based access, cryptographically verifiable audit trails, and regular automated backups guaranteeing tamper-proof operational logs.
+          </p>
+</div>
+<!-- 6. Scalable by design -->
+<div class="glass-card rounded-2xl p-8 space-y-4 hover:border-outline-variant transition-all duration-200">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">database</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Scalable by design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Distributed architectures capable of orchestrating multi-entity enterprise transactions with sub-second ledger synchrony and infinite horizontal execution buffers.
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 5: HOW WE WORK (Four Core Principles) -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">METHODOLOGY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">How We Work</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Deterministic execution and zero-ambiguity architecture across every phase of software deployment.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Principle 1 -->
+<div class="glass-card rounded-2xl p-8 border-l-4 border-l-primary flex gap-6 items-start">
+<div class="font-display-lg text-display-lg text-primary/40 font-bold shrink-0">01</div>
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">High-quality readable and testable code</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Every workflow automation and ledger sync module is written against strict deterministic schemas. We deploy rigorous end-to-end regression suites and enforce immutable data contracts to prevent silent schema breakage.
+            </p>
+</div>
+</div>
+<!-- Principle 2 -->
+<div class="glass-card rounded-2xl p-8 border-l-4 border-l-secondary flex gap-6 items-start">
+<div class="font-display-lg text-display-lg text-secondary/40 font-bold shrink-0">02</div>
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">An always-available team</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Continuous telemetric monitoring of all autonomous workers. Our dedicated operational engineering escalation paths provide active SLA guarantees with sub-hour resolution for enterprise ERP integration pipelines.
+            </p>
+</div>
+</div>
+<!-- Principle 3 -->
+<div class="glass-card rounded-2xl p-8 border-l-4 border-l-tertiary flex gap-6 items-start">
+<div class="font-display-lg text-display-lg text-tertiary/40 font-bold shrink-0">03</div>
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Agile approach</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Transparent, phased milestones mapped from initial schema inspection to production shadow runs, culminating in a zero-downtime cutover. You maintain full inspection rights at every staging interval.
+            </p>
+</div>
+</div>
+<!-- Principle 4 -->
+<div class="glass-card rounded-2xl p-8 border-l-4 border-l-on-surface-variant flex gap-6 items-start">
+<div class="font-display-lg text-display-lg text-on-surface-variant/40 font-bold shrink-0">04</div>
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Secure working environment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Completely isolated development tenancies and zero customer data used for public model training. All pipeline validations occur inside ephemeral environments enforcing zero-trust data governance.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 6: LEADERSHIP & CORE TEAM GRID (6 Profiles) -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">LEADERSHIP</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Systems Architects &amp; Engineers</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A focused cohort of systems veterans bridging relational database reliability with next-generation autonomous AI tooling.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Leader 1 -->
+<div class="glass-card rounded-2xl p-6 space-y-4">
+<div class="flex items-center gap-4">
+<!-- Avatar placeholder (Strictly rounded-full allowed only for avatars) -->
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-primary-container to-primary flex items-center justify-center text-on-primary font-bold shadow-sm">
+<span class="material-symbols-outlined text-[26px]">person</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">[Name]</h3>
+<div class="font-label-sm text-label-sm text-primary font-medium">Chief Executive Officer &amp; Founder</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Focuses on enterprise operational strategy, productized AI worker architectures, and fixed-fee delivery frameworks.
+          </p>
+</div>
+<!-- Leader 2 -->
+<div class="glass-card rounded-2xl p-6 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-tertiary-container to-tertiary flex items-center justify-center text-on-tertiary font-bold shadow-sm">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">[Name]</h3>
+<div class="font-label-sm text-label-sm text-tertiary font-medium">Chief Technology Officer (AI Systems)</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Directs zero-hallucination verification engines, deterministic reasoning boundaries, and LLM inference pipelines.
+          </p>
+</div>
+<!-- Leader 3 -->
+<div class="glass-card rounded-2xl p-6 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-secondary-container to-secondary flex items-center justify-center text-on-secondary font-bold shadow-sm">
+<span class="material-symbols-outlined text-[26px]">schema</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">[Name]</h3>
+<div class="font-label-sm text-label-sm text-secondary font-medium">Head of Enterprise Architecture (ERP)</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Specializes in multi-entity chart of accounts synchronization, relational database integrity, and legacy ERP migrations.
+          </p>
+</div>
+<!-- Leader 4 -->
+<div class="glass-card rounded-2xl p-6 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-surface-container-high to-on-surface-variant flex items-center justify-center text-surface font-bold shadow-sm">
+<span class="material-symbols-outlined text-[26px]">code</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">[Name]</h3>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">VP of Engineering</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Leads core distributed systems engineering, high-throughput message brokers, and automated regression suites.
+          </p>
+</div>
+<!-- Leader 5 -->
+<div class="glass-card rounded-2xl p-6 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-primary to-on-primary-container flex items-center justify-center text-on-primary font-bold shadow-sm">
+<span class="material-symbols-outlined text-[26px]">encrypted</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">[Name]</h3>
+<div class="font-label-sm text-label-sm text-primary font-medium">Head of Security &amp; Infrastructure</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Oversees zero-trust cloud network meshes, cryptographic audit trails, and isolated customer deployment tenancies.
+          </p>
+</div>
+<!-- Leader 6 -->
+<div class="glass-card rounded-2xl p-6 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-tertiary to-outline flex items-center justify-center text-on-tertiary font-bold shadow-sm">
+<span class="material-symbols-outlined text-[26px]">deployed_code</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">[Name]</h3>
+<div class="font-label-sm text-label-sm text-tertiary font-medium">Head of Product Operations</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Manages rapid customer onboarding pipelines, operational SLA compliance, and plug-and-play worker integrations.
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 7: TECHNOLOGY & PARTNER ECOSYSTEM (Text Labels Only) -->
+<!-- ========================================================================= -->
+<section class="glass-surface rounded-2xl p-8 md:p-10 border border-outline-variant/30 space-y-8">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">INFRASTRUCTURE STACK</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Foundational Technology Standards</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">
+          Deterministic execution relies on transparent open standards. We compile our worker nodes and data pipelines atop battle-proven runtime technologies.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1 -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Core Runtime &amp; Orchestration</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Rust Services</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Python Async Core</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">WebSockets Event Mesh</span>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Database &amp; Real-time Ledgers</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">PostgreSQL</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">ClickHouse</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Kafka Partition Log</span>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Cloud Infrastructure &amp; Deployments</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Docker</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Kubernetes</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Linux Kernel Telemetry</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Tailscale Private Mesh</span>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">AI Model Validation Engines</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Vector Verification Gateways</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">Deterministic Schema Parser</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-surface-container border border-outline-variant/30 text-on-surface font-label-sm text-label-sm">JSON-Schema Enforcers</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 8: GLOBAL OFFICES & DELIVERY HUBS -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">PRESENCE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Global Delivery Hubs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Synchronized engineering windows supporting uninterrupted 24/7 autonomous monitoring.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Americas Hub -->
+<div class="glass-card rounded-2xl p-8 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-primary">AMER</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Americas Regional Hub</h3>
+<div class="text-on-surface-variant font-body-md text-body-md space-y-1">
+<p class="font-medium text-on-surface">[Office address]</p>
+<p class="text-body-sm font-body-sm">Architecture &amp; Executive Direction</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 font-label-sm text-label-sm text-on-surface-variant space-y-1">
+<div>Engineering Window: 08:00 – 20:00 EST</div>
+<div class="text-secondary font-medium">Critical SLA: &lt; 15 mins</div>
+</div>
+</div>
+<!-- EMEA Hub -->
+<div class="glass-card rounded-2xl p-8 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-tertiary">EMEA</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">EMEA Technology Centre</h3>
+<div class="text-on-surface-variant font-body-md text-body-md space-y-1">
+<p class="font-medium text-on-surface">[Office address]</p>
+<p class="text-body-sm font-body-sm">Core Engineering &amp; Compliance</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 font-label-sm text-label-sm text-on-surface-variant space-y-1">
+<div>Engineering Window: 08:00 – 19:00 CET</div>
+<div class="text-secondary font-medium">Critical SLA: &lt; 15 mins</div>
+</div>
+</div>
+<!-- APAC Hub -->
+<div class="glass-card rounded-2xl p-8 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-on-surface-variant">APAC</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">APAC Operations &amp; Support</h3>
+<div class="text-on-surface-variant font-body-md text-body-md space-y-1">
+<p class="font-medium text-on-surface">[Office address]</p>
+<p class="text-body-sm font-body-sm">Operational Telemetry &amp; Support</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 font-label-sm text-label-sm text-on-surface-variant space-y-1">
+<div>Engineering Window: 08:00 – 20:00 SGT</div>
+<div class="text-secondary font-medium">Critical SLA: &lt; 15 mins</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 9: FINAL CALL TO ACTION (Strict 10px radius buttons, rounded-3xl) -->
+<!-- ========================================================================= -->
+<section class="rounded-3xl p-10 md:p-16 bg-gradient-to-br from-primary-container via-primary to-on-primary-container text-on-primary relative overflow-hidden shadow-xl">
+<div class="relative z-10 max-w-3xl space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-on-primary/20 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+          PROJECT SCOPING
+        </div>
+<h2 class="font-display-lg text-display-lg tracking-tight">Let's start a project</h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-2xl leading-relaxed">
+          Connect directly with our solutions engineering team to scope your fixed-fee AI automation or ERP transformation within 48 hours.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<!-- Primary CTA Button (Strict 10px radius) -->
+<a class="px-6 py-3.5 rounded-[10px] bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-md hover:bg-surface-bright transition-all duration-150 inline-flex items-center gap-2 font-semibold" href="#">
+            Book an Architectural Scoping Consultation
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Secondary CTA Button (Strict 10px radius) -->
+<a class="px-6 py-3.5 rounded-[10px] bg-on-primary/10 border border-on-primary/30 text-on-primary font-label-lg text-label-lg hover:bg-on-primary/20 transition-all duration-150 inline-flex items-center gap-2" href="#">
+            Download Platform Overview
+            <span class="material-symbols-outlined text-[18px]">file_download</span>
+</a>
+</div>
+</div>
+<!-- Atmospheric background refraction inside banner -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- SHARED COMPONENT: FOOTER (Exact JSON & House Rules Compliance) -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/40">
+<div class="w-full px-8 py-16 max-w-7xl mx-auto space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+<!-- Brand & Mission Column -->
+<div class="md:col-span-4 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-[6px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-on-primary font-bold text-sm">
+              H
+            </div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Horizon</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Architects of fixed-scope autonomous AI workers and high-velocity modular software systems for modern enterprises.
+          </p>
+<div class="font-body-sm text-body-sm text-on-surface-variant space-y-1 pt-2">
+<div><span class="font-semibold text-on-surface">Hub:</span> [Office address]</div>
+<div><span class="font-semibold text-on-surface">Contact:</span> [contact email]</div>
+<div><span class="font-semibold text-on-surface">Direct:</span> [phone]</div>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="md:col-span-5 grid grid-cols-2 sm:grid-cols-4 gap-6">
+<!-- Packages -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Packages</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Reconciliation</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Field Dispatch</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Multi-Entity</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Audit Mesh</a></li>
+</ul>
+</div>
+<!-- Solutions -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Solutions</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Autonomous ERP</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Zero-Drift Sync</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Logistics AI</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Security Gate</a></li>
+</ul>
+</div>
+<!-- Resources -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Resources</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Documentation</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">API Specs</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Benchmarks</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Architecture</a></li>
+</ul>
+</div>
+<!-- Company -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Company</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-150" href="#">About</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Leadership</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<!-- Newsletter Field Column (Strictly 10px radius) -->
+<div class="md:col-span-3 space-y-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">System Updates</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quarterly engineering whitepapers on deterministic autonomous workflows.
+          </p>
+<form class="space-y-2" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-2">
+<input class="w-full px-3.5 py-2 rounded-[10px] bg-surface-container-lowest border border-outline-variant/60 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" placeholder="work-email@enterprise.com" type="email"/>
+<button class="w-full primary-btn-gradient text-on-primary font-label-md text-label-md py-2 px-4 rounded-[10px] transition-all duration-150 text-center font-semibold" type="submit">
+                Subscribe to Dispatch
+              </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Legal & Security Note (Exact copy requirement) -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+<div>
+          © 2025 Horizon Technologies Inc. Fixed-scope AI &amp; Enterprise Systems. All rights reserved.
+        </div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>encrypted hosting, role-based access and regular backups</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

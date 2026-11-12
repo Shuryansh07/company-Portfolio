@@ -1,0 +1,45 @@
+/* Generated from stitch/pd_payroll-software.html. Scoped to this page. */
+
+    /* Neo-Glassmorphism Ambient Tokens */
+    .pg-payroll .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      box-shadow: 0 8px 32px -4px rgba(235, 120, 90, 0.05), 0 20px 40px -10px rgba(31, 26, 23, 0.03);
+    }
+    .pg-payroll .glass-card-elevated {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(32px);
+      -webkit-backdrop-filter: blur(32px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 12px 40px -6px rgba(235, 120, 90, 0.08), 0 28px 60px -12px rgba(31, 26, 23, 0.06);
+    }
+    .pg-payroll .btn-gradient-primary {
+      background: linear-gradient(135deg, #FF8A65 0%, #FF6B4A 100%);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 4px 14px 0 rgba(255, 107, 74, 0.28);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .pg-payroll .btn-gradient-primary:hover {
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 8px 24px -2px rgba(255, 107, 74, 0.42);
+      transform: translateY(-1px);
+    }
+    .pg-payroll .btn-glass {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      transition: all 0.2s ease;
+    }
+    .pg-payroll .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.95);
+      transform: scale(1.01);
+    }
+    .pg-payroll .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pg-payroll .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+  

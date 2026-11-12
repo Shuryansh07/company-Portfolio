@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Travel Agent — Horizon Enterprise AI</title>
+<!-- Material Symbols & Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms & Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#1b1c1a",
+            "primary-fixed-dim": "#ffb4a3",
+            "on-tertiary-fixed": "#002023",
+            "tertiary-fixed": "#a1eff8",
+            "on-secondary-container": "#536d22",
+            "secondary-container": "#ceee93",
+            "secondary-fixed": "#ceee93",
+            "surface-container-high": "#eae8e5",
+            "background": "#fbf9f6",
+            "inverse-primary": "#ffb4a3",
+            "inverse-surface": "#30312f",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#fbf9f6",
+            "on-tertiary-fixed-variant": "#004f55",
+            "on-primary-fixed": "#3d0600",
+            "primary-container": "#ff7555",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#85d3dc",
+            "surface-container-low": "#f5f3f0",
+            "on-surface": "#1b1c1a",
+            "secondary-fixed-dim": "#b3d17a",
+            "on-primary-fixed-variant": "#881f06",
+            "on-secondary-fixed-variant": "#364e03",
+            "on-surface-variant": "#58413c",
+            "on-tertiary-container": "#003d42",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#dbdad7",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#f2f0ed",
+            "surface-container": "#efeeeb",
+            "on-error": "#ffffff",
+            "surface-bright": "#fbf9f6",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#ffdad2",
+            "surface-variant": "#e4e2df",
+            "surface-tint": "#a9371d",
+            "secondary": "#4d661c",
+            "on-primary": "#ffffff",
+            "outline": "#8c716b",
+            "tertiary": "#026971",
+            "on-primary-container": "#6d1200",
+            "error": "#ba1a1a",
+            "outline-variant": "#dfbfb8",
+            "tertiary-container": "#5dabb4",
+            "primary": "#a9371d",
+            "on-secondary-fixed": "#131f00",
+            "surface-container-highest": "#e4e2df"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "margin-sm": "1.25rem",
+            "gutter-sm": "1rem",
+            "margin": "3rem",
+            "space-xs": "0.375rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Neo-Glassmorphism Ambient Accents & Glows */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      box-shadow: 0 8px 32px -4px rgba(235, 120, 90, 0.05), 0 20px 40px -12px rgba(31, 26, 23, 0.03);
+    }
+    .glass-panel-elevated {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(32px) saturate(190%);
+      -webkit-backdrop-filter: blur(32px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 12px 36px -6px rgba(255, 117, 85, 0.12), 0 24px 48px -12px rgba(31, 26, 23, 0.05);
+    }
+    .coral-gradient-btn {
+      background: linear-gradient(135deg, #FF8A65 0%, #FF6B4A 100%);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 4px 14px -1px rgba(255, 107, 74, 0.35);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .coral-gradient-btn:hover {
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 8px 24px -2px rgba(255, 107, 74, 0.45);
+      transform: translateY(-1px);
+    }
+    .coral-gradient-btn:active {
+      transform: translateY(0);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    /* Strictly suppress rounded capsules */
+    .no-pill {
+      border-radius: 10px !important;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden min-h-screen flex flex-col justify-between">
+<!-- ========================================================================= -->
+<!-- TOP APP BAR / NAVIGATION (DESKTOP) -->
+<!-- ========================================================================= -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-8 py-3.5 max-w-[1600px] mx-auto w-full">
+<nav class="w-full bg-surface-container-lowest/80 dark:bg-inverse-surface/80 backdrop-blur-md rounded-[14px] px-6 py-3.5 border border-outline-variant/30 shadow-sm flex items-center justify-between">
+<!-- Horizon Brand Logo -->
+<a class="flex items-center gap-3 text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight group" href="#">
+<div class="w-9 h-9 rounded-[10px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-on-primary shadow-sm shadow-primary/20">
+<span class="font-black text-body-lg tracking-tighter">H</span>
+</div>
+<span class="text-headline-sm font-bold text-on-surface">Horizon</span>
+</a>
+<!-- Desktop Navigation Links (Products Active) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-semibold text-label-lg font-label-lg flex items-center gap-1" href="#products">
+          Products
+          <span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-label-lg font-label-lg" href="#solutions">Solutions</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-label-lg font-label-lg" href="#case-studies">Case Studies</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-label-lg font-label-lg" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-label-lg font-label-lg" href="#careers">Careers</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-label-lg font-label-lg" href="#contact">Contact</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="coral-gradient-btn text-on-primary font-label-lg text-label-lg px-5 py-2.5 rounded-[10px] flex items-center gap-2" href="#demo-form">
+<span>Book a free demo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- MAIN CANVAS WRAPPER (Max 1600px with 48px Desktop Margins) -->
+<main class="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-6 space-y-24">
+<!-- ========================================================================= -->
+<!-- SECTION 1: BREADCRUMB & HERO SECTION -->
+<!-- ========================================================================= -->
+<section class="pt-4 pb-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2.5 text-label-md font-label-md text-on-surface-variant mb-6">
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Autonomous AI Agents</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">AI Travel Agent</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left Hero Copy & Indicators (7 cols) -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-[6px] text-primary text-label-sm font-label-sm tracking-wide">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>AUTONOMOUS TRAVEL WORKER</span>
+</div>
+<h1 class="text-display-lg font-display-lg text-on-surface leading-[1.08] tracking-tight">
+            AI Travel Agent — <span class="text-primary italic font-normal">Intelligent business travel</span> automation: hotels, flights, and cars booked to your policy.
+          </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+            AI Travel Agent reads CRM trip triggers, automatically evaluates flight and hotel itineraries against corporate travel policy, and books end-to-end without manual back-and-forth.
+          </p>
+<!-- 6 Feature Rectangular Chips (Strictly rounded-[10px] / rounded-[6px] - NO PILLS) -->
+<div class="flex flex-wrap gap-2.5 pt-2">
+<span class="px-3.5 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">hotel</span>
+              AI-powered hotel discovery
+            </span>
+<span class="px-3.5 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+              Policy-aware booking
+            </span>
+<span class="px-3.5 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">meeting_room</span>
+              Intelligent room selection
+            </span>
+<span class="px-3.5 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">flight_takeoff</span>
+              Flight booking built in
+            </span>
+<span class="px-3.5 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_car</span>
+              Car rental to match the trip
+            </span>
+<span class="px-3.5 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">sync_alt</span>
+              CRM-connected from end to end
+            </span>
+</div>
+<!-- Hero Telemetry Metric Counters -->
+<div class="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/30">
+<div class="bg-surface-container-lowest/60 border border-outline-variant/30 p-4 rounded-[10px]">
+<div class="text-headline-lg font-headline-lg text-primary tracking-tight">[00] min</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">avg booking time</div>
+</div>
+<div class="bg-surface-container-lowest/60 border border-outline-variant/30 p-4 rounded-[10px]">
+<div class="text-headline-lg font-headline-lg text-on-surface tracking-tight">[0.00%]</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">policy drift</div>
+</div>
+<div class="bg-surface-container-lowest/60 border border-outline-variant/30 p-4 rounded-[10px]">
+<div class="text-headline-lg font-headline-lg text-tertiary tracking-tight">[00] hr</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">setup &amp; deployment</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Fast-Track Pilot Form Card (5 cols) -->
+<div class="lg:col-span-5" id="demo-form">
+<div class="glass-panel-elevated p-8 rounded-[20px] relative overflow-hidden border border-outline-variant/40">
+<div class="absolute top-0 right-0 w-44 h-44 bg-primary/10 rounded-full blur-2xl pointer-events-none -mr-10 -mt-10"></div>
+<div class="relative z-10 space-y-2 mb-6">
+<div class="inline-block px-2.5 py-1 bg-secondary-container/50 border border-secondary/20 rounded-[6px] text-secondary text-label-sm font-label-sm">
+                FAST-TRACK PILOT PROGRAM
+              </div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Book a free demo</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                See how AI Travel Agent automates enterprise business itineraries under [00] minutes.
+              </p>
+</div>
+<form class="space-y-4 relative z-10" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Full Name</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Sarah Jenkins" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Work Email</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="sarah.jenkins@enterprise.com" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Direct Phone</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="[phone]" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Fleet / Team Size</label>
+<select class="w-full px-4 py-2.5 bg-surface-container-lowest/90 border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+<option>10 - 25 Frequent Flyers</option>
+<option>26 - 100 Frequent Flyers</option>
+<option>100+ Enterprise Mobility</option>
+</select>
+</div>
+<div class="pt-2">
+<button class="w-full coral-gradient-btn text-on-primary py-3.5 rounded-[10px] font-label-lg text-label-lg flex items-center justify-center gap-2" type="submit">
+<span>Request 15-Min Live Demo</span>
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-2 text-center text-label-sm font-label-sm text-on-surface-variant/80 pt-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span>Guaranteed turnaround within 48 business hours • No spam</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 2: PRODUCT LIVE DEMO SECTION -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-tertiary/10 border border-tertiary/20 rounded-[6px] text-tertiary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">radar</span>
+<span>FIELD TELEMETRY &amp; FLIGHT RADAR</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">See the Travel Agent on the job</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Simulated walkthrough of a multi-city enterprise trip booked end-to-end from deal close to car rental handover.</p>
+</div>
+<!-- Dual Panel Interface Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Video / Execution Simulation Frame (6 cols) -->
+<div class="lg:col-span-6 glass-panel rounded-[20px] p-6 flex flex-col justify-between border border-outline-variant/40 relative overflow-hidden bg-gradient-to-b from-surface-container-lowest to-surface-container-low">
+<!-- Frame Topbar -->
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="ml-2 text-label-sm font-label-sm text-on-surface-variant font-mono">Trip Auto-Orchestration Dep #04 (SFO → LHR)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 bg-secondary-container rounded-[6px] text-on-secondary-container text-label-sm font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span>Live booking sync: 0.14s</span>
+</div>
+</div>
+<!-- Video / Simulation Canvas Viewport -->
+<div class="py-12 flex flex-col items-center justify-center relative min-h-[380px]">
+<!-- Radar Flight Trajectory Graphic Representation -->
+<div class="w-full max-w-md p-6 bg-surface-container-lowest/90 border border-outline-variant/40 rounded-[14px] shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md font-bold text-on-surface">SFO Terminal 2</span>
+<span class="material-symbols-outlined text-primary text-[22px]">flight_takeoff</span>
+<span class="text-label-md font-label-md font-bold text-on-surface">LHR Terminal 5</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute left-0 top-0 h-full w-2/3 bg-gradient-to-r from-primary to-primary-container"></div>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Non-Stop • 10h 35m</span>
+<span class="text-secondary font-semibold">Seat 4A Assigned</span>
+<span>BA #284 Confirmed</span>
+</div>
+</div>
+<!-- Simulated Play Button Node -->
+<button class="mt-6 flex items-center gap-3 px-6 py-3 bg-surface-container-lowest border border-outline-variant/50 rounded-[10px] shadow-md hover:bg-surface transition-all group">
+<div class="w-8 h-8 rounded-[6px] bg-primary flex items-center justify-center text-on-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</div>
+<div class="text-left">
+<div class="text-label-md font-label-md text-on-surface font-semibold">Replay Automated Booking Stream</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant">Duration: 18 seconds (1080p Telemetry)</div>
+</div>
+</button>
+</div>
+<!-- Timeline Scrubber & Status Strip -->
+<div class="space-y-2 pt-4 border-t border-outline-variant/30">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>00:14 / 00:18</span>
+<span>CRM Payload Ingested → ERP Dispatched</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-[4px] overflow-hidden">
+<div class="bg-primary h-full w-[78%]"></div>
+</div>
+</div>
+</div>
+<!-- Right: Ultra-Realistic AI Travel Agent Workspace Mockup (6 cols) -->
+<div class="lg:col-span-6 glass-panel rounded-[20px] p-6 border border-outline-variant/40 space-y-5">
+<!-- Mockup Header -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-outline-variant/30">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-label-lg font-label-lg font-bold text-on-surface">Trip #TR-8821 :: SFO → LHR Executive Briefing</span>
+<span class="px-2 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-container text-label-sm font-label-sm">Auto-Locked</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Traveller: <strong class="text-on-surface font-semibold">Marcus Vance</strong> (VP Engineering) • Trigger: <span class="italic">Closed Won: Tier 1 Expansion</span></p>
+</div>
+<span class="text-label-sm font-mono text-outline">[Ref: #TR-8821-X9]</span>
+</div>
+<!-- Policy Evaluation Widget -->
+<div class="p-4 rounded-[10px] bg-surface-container-low border border-outline-variant/30 space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm font-bold text-on-surface uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">gavel</span>
+                Policy Rules Applied (Tier-A Executive)
+              </span>
+<span class="px-2 py-0.5 rounded-[6px] bg-secondary-container text-secondary text-label-sm font-label-sm font-bold">100% Policy Match</span>
+</div>
+<div class="grid grid-cols-3 gap-3 text-label-sm font-label-sm text-on-surface-variant">
+<div>Cap: <strong class="text-on-surface">$350/nt</strong> (Booked: $310)</div>
+<div>Alliance: <strong class="text-on-surface">OneWorld</strong></div>
+<div>Cabin: <strong class="text-on-surface">Business</strong> (&gt;6h flight)</div>
+</div>
+</div>
+<!-- Selected Flight Card -->
+<div class="p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-[8px] bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">airlines</span>
+</div>
+<div>
+<div class="text-label-md font-label-md font-semibold text-on-surface">British Airways BA #284</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">SFO Depart 16:30 → LHR Arrive 10:45 (+1) • Seat 4A</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded-[6px] bg-secondary-container text-secondary font-medium">Synced to ERP</span>
+</div>
+<!-- Selected Hotel Card -->
+<div class="p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-[8px] bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">apartment</span>
+</div>
+<div>
+<div class="text-label-md font-label-md font-semibold text-on-surface">The Bloomsbury London ★ 4.8</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">0.4 mi from client HQ • $310/night • Quiet High Floor</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded-[6px] bg-secondary-container text-secondary font-medium">Direct Corporate Tier</span>
+</div>
+<!-- Connected Car Rental Card -->
+<div class="p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-[8px] bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">electric_car</span>
+</div>
+<div>
+<div class="text-label-md font-label-md font-semibold text-on-surface">Hertz EV Sedan (Polestar 2)</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Pickup LHR T5 @ 11:30 • Wheels-down ready</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded-[6px] bg-secondary-container text-secondary font-medium">Digital Key Ready</span>
+</div>
+<!-- Cryptographic Audit Telemetry Strip -->
+<div class="p-2.5 rounded-[6px] bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-label-sm font-mono text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+<span>Cryptographically verified booking hash: SHA256:7f8e...33b9</span>
+</div>
+<span class="text-secondary font-semibold">Zero-Human Touch</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 3: ABOUT / PROBLEM SECTION -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-error-container/40 border border-error/20 rounded-[6px] text-primary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>THE OPERATIONAL BOTTLENECK</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Built for teams who book travel every week</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-3">
+          Business travel booking means checking policy limits, comparing dozens of hotels and flights, and filling in the same forms by hand. AI Travel Agent reads your CRM trip details, searches hotels, flights and car rental against your company's booking policy, and books the best eligible option automatically.
+        </p>
+</div>
+<!-- Three Key Structured Benefit Checkmark Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 hover:border-primary/40 transition-colors">
+<div class="w-10 h-10 rounded-[10px] bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">CRM Connected</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Connects to your CRM so trip dates, destinations and traveller details are already filled in without human intervention.
+          </p>
+</div>
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 hover:border-primary/40 transition-colors">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Rule Enforcement</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Applies your company's budget, rating and location rules to every search, stopping rogue expense variances before checkout.
+          </p>
+</div>
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 hover:border-primary/40 transition-colors">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Autonomous Booking</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Books hotels, flights and car rental end-to-end, without a human in the loop, routing all invoices straight to central finance.
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 4: FEATURES SECTION (01 - 06) -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 border border-primary/20 rounded-[6px] text-primary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>PRECISION ITINERARY SUITE</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Everything your desk does, automated</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">From trip trigger to booked itinerary, without the back-and-forth.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: 01-06 Interactive List / Grid Selector (7 cols) -->
+<div class="lg:col-span-7 space-y-3">
+<!-- 01 Highlighted Active -->
+<div class="p-5 rounded-[14px] bg-surface-container-lowest border-2 border-primary shadow-sm space-y-2 relative transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="text-label-md font-mono text-primary font-bold">01.</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface font-semibold">AI-Powered Hotel Discovery</h4>
+</div>
+<span class="px-2 py-0.5 rounded-[6px] bg-primary/10 text-primary text-label-sm font-label-sm font-medium">Inspecting Matrix</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant pl-7">
+              Searches hotels against your budget, rating and location rules, and ranks every eligible option automatically based on client distance and comfort indexes.
+            </p>
+</div>
+<!-- 02 -->
+<div class="p-4 rounded-[14px] bg-surface-container-low/60 hover:bg-surface-container-lowest border border-outline-variant/30 space-y-1 transition-all">
+<div class="flex items-center gap-3">
+<span class="text-label-md font-mono text-outline font-bold">02.</span>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Policy-Aware Booking Engine</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-7">
+              Instant ground-truth compliance checking stopping rogue expense reports before checkout.
+            </p>
+</div>
+<!-- 03 -->
+<div class="p-4 rounded-[14px] bg-surface-container-low/60 hover:bg-surface-container-lowest border border-outline-variant/30 space-y-1 transition-all">
+<div class="flex items-center gap-3">
+<span class="text-label-md font-mono text-outline font-bold">03.</span>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Intelligent Room Selection</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-7">
+              Curates optimal rooms near meeting coordinates with automated quiet-floor preferences and high-speed Wi-Fi ratings.
+            </p>
+</div>
+<!-- 04 -->
+<div class="p-4 rounded-[14px] bg-surface-container-low/60 hover:bg-surface-container-lowest border border-outline-variant/30 space-y-1 transition-all">
+<div class="flex items-center gap-3">
+<span class="text-label-md font-mono text-outline font-bold">04.</span>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Flight Booking Built-In</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-7">
+              Synchronizes direct multi-carrier routes with calendar agendas and preferred cabin rules without manual search.
+            </p>
+</div>
+<!-- 05 -->
+<div class="p-4 rounded-[14px] bg-surface-container-low/60 hover:bg-surface-container-lowest border border-outline-variant/30 space-y-1 transition-all">
+<div class="flex items-center gap-3">
+<span class="text-label-md font-mono text-outline font-bold">05.</span>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Destination Car Rental Sync</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-7">
+              Coordinates terminal pickup and seamless drop-off aligned with flight wheels-down times and location coordinates.
+            </p>
+</div>
+<!-- 06 -->
+<div class="p-4 rounded-[14px] bg-surface-container-low/60 hover:bg-surface-container-lowest border border-outline-variant/30 space-y-1 transition-all">
+<div class="flex items-center gap-3">
+<span class="text-label-md font-mono text-outline font-bold">06.</span>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">CRM-Connected Telemetry</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant pl-7">
+              Listens to deal milestones or on-site schedules to trigger itineraries with zero manual data entry.
+            </p>
+</div>
+</div>
+<!-- Right: Live Hotel Scoring Matrix for Feature 01 (5 cols) -->
+<div class="lg:col-span-5 glass-panel rounded-[20px] p-6 border border-outline-variant/40 space-y-5">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div>
+<span class="text-label-sm font-label-sm font-bold text-primary uppercase tracking-wide">Feature 01 Deep-Dive</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Live Hotel Scoring Matrix</h4>
+</div>
+<span class="px-2.5 py-1 bg-surface-container rounded-[6px] text-label-sm font-mono font-medium">32 Options Filtered</span>
+</div>
+<!-- Ranking Matrix Table -->
+<div class="space-y-3">
+<!-- Rank 1 Pick -->
+<div class="p-3.5 bg-surface-container-lowest rounded-[10px] border border-primary/30 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-[4px] bg-primary text-on-primary text-label-sm font-bold flex items-center justify-center">1</span>
+<span class="text-label-md font-label-md font-bold text-on-surface">The Bloomsbury</span>
+</div>
+<span class="text-label-sm font-bold text-secondary">Match: 99.4%</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-label-sm font-label-sm text-on-surface-variant pt-1 border-t border-outline-variant/20">
+<span>Dist: 0.4 mi</span>
+<span>$310 / nt</span>
+<span class="text-right">Policy: Approved</span>
+</div>
+</div>
+<!-- Rank 2 Pick -->
+<div class="p-3.5 bg-surface-container-lowest/70 rounded-[10px] border border-outline-variant/30 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-[4px] bg-surface-container text-on-surface text-label-sm font-bold flex items-center justify-center">2</span>
+<span class="text-label-md font-label-md font-semibold text-on-surface">Kimpton Fitzroy</span>
+</div>
+<span class="text-label-sm font-medium text-on-surface-variant">Match: 94.1%</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-label-sm font-label-sm text-on-surface-variant pt-1 border-t border-outline-variant/20">
+<span>Dist: 0.8 mi</span>
+<span>$340 / nt</span>
+<span class="text-right">Policy: Approved</span>
+</div>
+</div>
+<!-- Rank 3 Pick -->
+<div class="p-3.5 bg-surface-container-lowest/50 rounded-[10px] border border-outline-variant/30 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-[4px] bg-surface-container text-on-surface text-label-sm font-bold flex items-center justify-center">3</span>
+<span class="text-label-md font-label-md font-semibold text-on-surface">The Marylebone</span>
+</div>
+<span class="text-label-sm font-medium text-on-surface-variant">Match: 88.0%</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-label-sm font-label-sm text-on-surface-variant pt-1 border-t border-outline-variant/20">
+<span>Dist: 1.4 mi</span>
+<span>$345 / nt</span>
+<span class="text-right">Policy: Approved</span>
+</div>
+</div>
+</div>
+<!-- Automated Ledger Voucher Preview -->
+<div class="p-4 rounded-[10px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-bold text-on-surface">Automated Ledger Voucher Generated</span>
+<span class="text-secondary font-mono">#INV-2025-8821</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Direct billing token dispatched to central finance via ERP webhook with automatic cost center attribution [GL-6020].
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 5: HOW IT WORKS (4 CONNECTED STEPS) -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary-container/50 border border-secondary/20 rounded-[6px] text-secondary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">account_tree</span>
+<span>WORKFLOW ARCHITECTURE</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">From trip trigger to booked itinerary</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Four steps, almost all of them automatic.</p>
+</div>
+<!-- 4 Sequential Timeline Cards with Connecting Flow Elements -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 01 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-mono font-bold text-primary">01</span>
+<span class="w-8 h-8 rounded-[8px] bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Trip is triggered</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              A new trip request in your CRM kicks off the AI Travel Agent, with dates, destination and traveller details already attached.
+            </p>
+</div>
+<div class="pt-2 text-label-sm font-label-sm text-primary font-semibold flex items-center gap-1">
+<span>Payload synced</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-mono font-bold text-on-surface">02</span>
+<span class="w-8 h-8 rounded-[8px] bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Hotels are found and ranked</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              The agent searches hotels against your booking policy and ranks every eligible option by rating, distance and price.
+            </p>
+</div>
+<div class="pt-2 text-label-sm font-label-sm text-secondary font-semibold flex items-center gap-1">
+<span>Policy checked</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-mono font-bold text-on-surface">03</span>
+<span class="w-8 h-8 rounded-[8px] bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">airplane_ticket</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Flight and room booked</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              The agent selects the best available room and books a matching flight, strictly within your travel policy rules.
+            </p>
+</div>
+<div class="pt-2 text-label-sm font-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span>Direct booking locked</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-mono font-bold text-on-surface">04</span>
+<span class="w-8 h-8 rounded-[8px] bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">car_rental</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Car rental is added</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              A rental car is booked at the destination airport for the trip dates, completing the itinerary automatically.
+            </p>
+</div>
+<div class="pt-2 text-label-sm font-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span>Itinerary delivered</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 6: BENEFITS SECTION -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 border border-primary/20 rounded-[6px] text-primary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>OPERATIONAL IMPACT</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Why use AI Travel Agent</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Less manual booking, fewer policy exceptions, and a clear view of every trip.</p>
+</div>
+<!-- 2x2 Grid Benefits Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="glass-panel p-8 rounded-[20px] border border-outline-variant/40 space-y-3">
+<div class="w-12 h-12 rounded-[10px] bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">hourglass_top</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Hours back every week</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            No more manually comparing hotels and flights across tabs for every trip. Travel coordinators and executives recapture hundreds of operational hours every quarter.
+          </p>
+</div>
+<div class="glass-panel p-8 rounded-[20px] border border-outline-variant/40 space-y-3">
+<div class="w-12 h-12 rounded-[10px] bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">format_image_left</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Policy followed every time</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Budget, rating and location rules are applied automatically, so exceptions and rogue out-of-policy expenses stop happening by accident.
+          </p>
+</div>
+<div class="glass-panel p-8 rounded-[20px] border border-outline-variant/40 space-y-3">
+<div class="w-12 h-12 rounded-[10px] bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">dataset</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">One workflow, every trip</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Hotels, flights and car rental are booked together, from the same trip trigger, eliminating fragmented reservation sheets and lost itineraries.
+          </p>
+</div>
+<div class="glass-panel p-8 rounded-[20px] border border-outline-variant/40 space-y-3">
+<div class="w-12 h-12 rounded-[10px] bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">sync_saved_locally</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Nothing typed twice</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Trip and traveller details come straight from your CRM into every booking, ending typo headaches, misspelled names, and mismatched loyalty numbers.
+          </p>
+</div>
+</div>
+<!-- Three-Item Assurance Row Underneath -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-outline-variant/30">
+<div class="p-4 rounded-[10px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-2 text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+<span>Enterprise-grade security</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Encrypted hosting, role-based access control, and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+          </p>
+</div>
+<div class="p-4 rounded-[10px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-2 text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">payments</span>
+<span>Transparent, scoped pricing</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Every engagement is scoped individually with a fixed price and timeline agreed upfront — book a free consultation for a tailored quote.
+          </p>
+</div>
+<div class="p-4 rounded-[10px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-2 text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">groups</span>
+<span>Built for the whole team</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Role-based views mean owners, managers, and frontline staff each see exactly what they need, nothing more, nothing missing.
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 7: BEFORE & AFTER CONTRAST SECTION -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-high border border-outline-variant/40 rounded-[6px] text-on-surface-variant text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">compare_arrows</span>
+<span>OPERATIONAL CONTRAST</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">The difference in the travel desk</h2>
+</div>
+<!-- Two Contrasting Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<!-- Column 1: Without AI Travel Agent -->
+<div class="p-8 rounded-[20px] bg-surface-container-low/70 border border-outline-variant/50 space-y-6">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<h3 class="text-headline-sm font-headline-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-error">cancel</span>
+<span>Without AI Travel Agent</span>
+</h3>
+<span class="text-label-sm font-label-sm text-outline">Traditional Overhead</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">close</span>
+<span>Someone manually searches hotels and flights across multiple consumer sites and OTAs.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">close</span>
+<span>Booking policy is applied by memory, and exceptions slip through to expense reports.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">close</span>
+<span>Trip and traveller details are retyped into every booking form by hand.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">close</span>
+<span>Hotels, flights and cars are booked separately, on different days with disjointed billing.</span>
+</li>
+</ul>
+</div>
+<!-- Column 2: With AI Travel Agent -->
+<div class="p-8 rounded-[20px] glass-panel-elevated border-2 border-secondary/40 space-y-6 relative overflow-hidden">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>With AI Travel Agent</span>
+</h3>
+<span class="px-2.5 py-0.5 rounded-[6px] bg-secondary-container text-secondary text-label-sm font-label-sm font-bold">Standard of Care</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+<span>Hotels and flights are searched and ranked automatically against your corporate policy.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+<span>Budget, rating and location rules are applied to every booking automatically before commit.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+<span>Trip details come straight from the CRM into every booking with zero data entry.</span>
+</li>
+<li class="flex items-start gap-3 text-body-md font-body-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+<span>Hotels, flights and car rental are booked together, in one unified workflow.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 8: FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION) -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 border border-primary/20 rounded-[6px] text-primary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">help</span>
+<span>ENTERPRISE INQUIRIES</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Frequently Asked Questions</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Clear answers regarding travel policy enforcement, CRM integrations, and data autonomy.</p>
+</div>
+<!-- FAQ Accordions (Vanilla JS interactive) -->
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1: EXPANDED BY DEFAULT -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>Which CRMs does it connect to?</span>
+<span class="material-symbols-outlined faq-icon text-primary transition-transform duration-200 rotate-180">expand_more</span>
+</button>
+<div class="faq-answer px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            AI Travel Agent integrates out-of-the-box with Salesforce, HubSpot, Zoho, and Microsoft Dynamics, as well as proprietary enterprise ERPs via authenticated webhooks. When an opportunity reaches a designated deal stage (e.g., 'On-Site Technical Review') or a trip object is created, traveller coordinates, loyalty profile IDs, and project cost-centers sync immediately with sub-second latency.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>Can it book flights and hotels together?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Yes. Flights, hotels, and airport ground transport are synchronized in a single booking session. The agent ensures the flight arrival time matches hotel check-in availability and reserves the car rental precisely when wheels touch down at the destination terminal.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>How does it enforce our travel policy?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Your policy parameters (nightly rate caps by city tier, minimum hotel star ratings, cabin class by flight duration, and preferred alliances) are codified during deployment. The agent will never present or book an option that violates these rules without generating an automated manager escalation.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>What happens if no hotel matches our policy?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            If high-demand events cause rates to exceed standard caps, the agent isolates the top 3 closest options and sends an instant 1-click Slack or email approval request to the traveller's designated manager showing market surge telemetry.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>Does it book for international trips?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Yes, the platform operates globally across multi-currency ledgers, handling passport expiration validation, corporate tax registration requirements, and local destination regulations seamlessly.
+          </div>
+</div>
+<!-- FAQ 6 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>Can we review bookings before they're confirmed?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Yes. You can toggle between Full Autonomous Mode (where bookings execute instantly upon CRM trigger) and Review Gate Mode (where itineraries are staged and require a 1-tap confirmation from the traveller).
+          </div>
+</div>
+<!-- FAQ 7 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>How long does implementation typically take?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Standard deployments with existing Salesforce or HubSpot instances average [00] hours of engineering time. We configure your travel policy rules, connect your billing vouchers, and test live dummy runs within [00] business days.
+          </div>
+</div>
+<!-- FAQ 8 -->
+<div class="faq-item glass-panel rounded-[14px] border border-outline-variant/40 overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-headline-sm font-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>Is our data secure, and who owns it?</span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Your enterprise data is protected by encrypted hosting, role-based access control, and regular cryptographic backups. Your traveller profiles and enterprise booking data remain 100% yours, exportable at any time, with zero vendor lock-in.
+          </div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 9: "MORE FROM HORIZON" ECOSYSTEM SECTION -->
+<!-- ========================================================================= -->
+<section class="space-y-8">
+<div class="flex flex-wrap items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 border border-primary/20 rounded-[6px] text-primary text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-[14px]">grid_view</span>
+<span>ENTERPRISE ARCHITECTURE SUITE</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">More from the Horizon ecosystem</h2>
+</div>
+<a class="text-primary font-semibold text-label-lg font-label-lg hover:underline flex items-center gap-1" href="#products">
+          Explore all [00+] product packages →
+        </a>
+</div>
+<!-- 4 Related Product Cards (Strictly 10px radii buttons/tags) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 flex flex-col justify-between space-y-4 hover:border-primary/40 transition-colors">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">sailing</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Yacht Charter Management</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Every charter, from the first enquiry to the last owner payout, in one place.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-semibold hover:underline pt-2" href="#">
+            View Package <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 flex flex-col justify-between space-y-4 hover:border-primary/40 transition-colors">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">inventory_2</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Smart Inventory Control</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Know exactly what's on your shelves, in your trucks, and on order — down to the unit, across every warehouse you run.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary font-semibold hover:underline pt-2" href="#">
+            View Package <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 flex flex-col justify-between space-y-4 hover:border-primary/40 transition-colors">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">AI QC Agent</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Centralised installation knowledge, on your technician's phone.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md text-tertiary font-semibold hover:underline pt-2" href="#">
+            View Package <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 4 -->
+<div class="glass-panel p-6 rounded-[20px] border border-outline-variant/40 flex flex-col justify-between space-y-4 hover:border-primary/40 transition-colors">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">warehouse</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Warehouse Operations Platform</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Turn a warehouse floor into a system your pickers, packers and managers can actually see and trust.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-semibold hover:underline pt-2" href="#">
+            View Package <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 10: FINAL CALL-TO-ACTION BAND & SCOPING FORM -->
+<!-- ========================================================================= -->
+<section class="space-y-8 pb-12">
+<!-- Peach-Orange Warm Gradient Banner -->
+<div class="rounded-[24px] bg-gradient-to-r from-primary-container via-[#FF8A65] to-primary p-10 md:p-14 text-white relative overflow-hidden shadow-lg shadow-primary/20">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl space-y-6">
+<div class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-[6px] text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+            Enterprise Deployment Program
+          </div>
+<h2 class="text-display-lg-mobile md:text-headline-lg font-headline-lg font-bold leading-tight">
+            Ready to automate corporate travel with fixed-scope certainty?
+          </h2>
+<p class="text-body-lg font-body-lg text-white/90">
+            Join enterprise operations teams eliminating manual travel overhead. Book an architectural scoping consultation with our deployment engineers.
+          </p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="px-6 py-3.5 bg-surface-container-lowest text-primary font-semibold rounded-[10px] hover:bg-white transition-all shadow-sm text-label-lg font-label-lg" href="#quick-consult">
+              Book an Architectural Scoping Consultation
+            </a>
+<a class="px-6 py-3.5 bg-black/15 hover:bg-black/25 text-white border border-white/30 font-semibold rounded-[10px] transition-all text-label-lg font-label-lg flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Travel Policy Spec Sheet</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Quick Scoping Consultation Form Block -->
+<div class="glass-panel p-8 md:p-10 rounded-[20px] border border-outline-variant/40 max-w-4xl mx-auto space-y-6" id="quick-consult">
+<div class="text-center space-y-2">
+<h3 class="text-headline-md font-headline-md text-on-surface">Book an initial scoping consultation</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">We'll review your travel frequency, CRM setup, and policy rules to structure a fixed-fee pilot.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-4" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Your Name</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Alex Morgan" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Corporate Email</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="alex@company.com" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Traveler Scope</label>
+<select class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-[10px] text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+<option>10 - 50 travelers</option>
+<option>50 - 200 travelers</option>
+<option>200+ enterprise</option>
+</select>
+</div>
+<div class="md:col-span-3 pt-2">
+<button class="w-full coral-gradient-btn text-on-primary py-3.5 rounded-[10px] font-label-lg text-label-lg flex items-center justify-center gap-2" type="submit">
+<span>Submit Scoping Request</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- STANDARDIZED FOOTER -->
+<!-- ========================================================================= -->
+<footer class="w-full border-t border-outline-variant/30 bg-surface-container-low text-on-surface">
+<div class="w-full max-w-[1600px] mx-auto px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-outline-variant/30">
+<!-- Col 1: Brand & Contact Info -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-[10px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="font-black text-body-md">H</span>
+</div>
+<span class="text-headline-md font-headline-md font-bold text-on-surface tracking-tight">Horizon</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm">
+            Autonomous AI agent workflows and high-precision ERP infrastructure engineered for modern operational teams.
+          </p>
+<div class="space-y-1 text-body-sm font-body-sm text-on-surface-variant pt-2">
+<div><strong class="text-on-surface">HQ:</strong> [Office address]</div>
+<div><strong class="text-on-surface">Email:</strong> [contact email]</div>
+<div><strong class="text-on-surface">Direct:</strong> [phone]</div>
+</div>
+</div>
+<!-- Col 2: Products -->
+<div class="space-y-3">
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface uppercase tracking-wider">Products</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">AI Travel Agent</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">ERP Architecture</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">AI Automation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Smart Inventory Control</a></li>
+</ul>
+</div>
+<!-- Col 3: Solutions & Resources -->
+<div class="space-y-3">
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface uppercase tracking-wider">Solutions</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Supply Chain</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Financial Operations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About Horizon</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Col 4: Newsletter -->
+<div class="space-y-3">
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface uppercase tracking-wider">Stay Informed</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Quarterly architectural field notes on enterprise autonomous systems.</p>
+<form class="space-y-2" onsubmit="event.preventDefault();">
+<input class="w-full px-3 py-2 bg-surface-container-lowest border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface focus:outline-none focus:border-primary" placeholder="work@enterprise.com" type="email"/>
+<button class="w-full coral-gradient-btn text-on-primary py-2 rounded-[10px] text-label-sm font-label-sm font-semibold" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 flex flex-wrap items-center justify-between gap-4 text-body-sm font-body-sm text-on-surface-variant">
+<div>
+          © 2025 Horizon Technologies Inc. All rights reserved. • <span class="text-on-surface font-medium">encrypted hosting, role-based access and regular backups</span>
+</div>
+<div class="flex items-center gap-6 text-label-md font-label-md">
+<a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-on-surface transition-colors" href="#">Security</a>
+<a class="hover:text-on-surface transition-colors" href="#">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Inline Vanilla JS for FAQ Micro-Interactions -->
+<script>
+    function toggleFaq(btn) {
+      const container = btn.closest('.faq-item');
+      const answer = container.querySelector('.faq-answer');
+      const icon = btn.querySelector('.faq-icon');
+      
+      const isHidden = answer.classList.contains('hidden');
+      
+      // Close other FAQs
+      document.querySelectorAll('#faq-container .faq-item').forEach(item => {
+        const a = item.querySelector('.faq-answer');
+        const i = item.querySelector('.faq-icon');
+        if (a && i) {
+          a.classList.add('hidden');
+          i.classList.remove('rotate-180', 'text-primary');
+          i.classList.add('text-outline');
+        }
+      });
+
+      if (isHidden) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180', 'text-primary');
+        icon.classList.remove('text-outline');
+      }
+    }
+  </script>
+</body></html>

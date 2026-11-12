@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Case Studies — Horizon Enterprise AI Automation &amp; ERP Solutions</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#6d1200",
+            "tertiary-fixed-dim": "#85d3dc",
+            "outline": "#8c716b",
+            "secondary-fixed": "#ceee93",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#ffdad2",
+            "background": "#fbf9f6",
+            "on-background": "#1b1c1a",
+            "tertiary-fixed": "#a1eff8",
+            "tertiary-container": "#5dabb4",
+            "secondary-container": "#ceee93",
+            "surface-dim": "#dbdad7",
+            "surface-container-lowest": "#ffffff",
+            "tertiary": "#026971",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#536d22",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#3d0600",
+            "primary-container": "#ff7555",
+            "surface-bright": "#fbf9f6",
+            "on-tertiary-fixed-variant": "#004f55",
+            "on-tertiary-fixed": "#002023",
+            "secondary": "#4d661c",
+            "surface": "#fbf9f6",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#131f00",
+            "on-primary": "#ffffff",
+            "inverse-primary": "#ffb4a3",
+            "inverse-on-surface": "#f2f0ed",
+            "on-primary-fixed-variant": "#881f06",
+            "on-surface": "#1b1c1a",
+            "primary-fixed-dim": "#ffb4a3",
+            "surface-container-low": "#f5f3f0",
+            "inverse-surface": "#30312f",
+            "primary": "#a9371d",
+            "on-secondary-fixed-variant": "#364e03",
+            "on-error-container": "#93000a",
+            "surface-variant": "#e4e2df",
+            "surface-tint": "#a9371d",
+            "surface-container-highest": "#e4e2df",
+            "on-error": "#ffffff",
+            "outline-variant": "#dfbfb8",
+            "on-tertiary-container": "#003d42",
+            "surface-container": "#efeeeb",
+            "on-surface-variant": "#58413c",
+            "surface-container-high": "#eae8e5",
+            "secondary-fixed-dim": "#b3d17a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-sm": "0.75rem",
+            "gutter-sm": "1rem",
+            "margin": "3rem",
+            "margin-sm": "1.25rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2rem",
+            "space-md": "1.25rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container/20 selection:text-primary">
+<!-- ========================================================================= -->
+<!-- 1. HEADER: TopNavBar Shared Component Execution                           -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-gutter">
+<div class="w-full max-w-[1600px] mx-auto mt-4 px-6 py-3.5 bg-surface-container-lowest/80 backdrop-blur-xl border border-outline-variant/30 rounded-[14px] shadow-sm flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight flex items-center gap-2" href="#">
+<span class="w-2.5 h-2.5 rounded-[3px] bg-gradient-to-br from-[#FF8A65] to-primary"></span>
+        Horizon
+      </a>
+<!-- Desktop Navigation Links (Case Studies active) -->
+<nav class="hidden md:flex items-center gap-8 font-label-lg text-label-lg">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Products</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Solutions</a>
+<a class="text-primary font-semibold hover:text-primary transition-colors duration-150 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-primary" href="#">Case Studies</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Careers</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Contact</a>
+</nav>
+<!-- Trailing Action Button (Rounded-[10px], strictly no pills) -->
+<div class="flex items-center gap-4">
+<a class="px-5 py-2.5 rounded-[10px] bg-gradient-to-r from-[#FF8A65] to-[#FF6B4A] text-on-primary font-label-lg text-label-lg font-semibold shadow-sm hover:shadow-[0_8px_20px_-2px_rgba(255,107,74,0.35)] transition-all duration-200 active:scale-[0.98]" href="#">
+          Book a free demo
+        </a>
+</div>
+</div>
+</header>
+<!-- Main Canvas Container -->
+<main class="flex-grow pt-32 pb-space-xl">
+<!-- ========================================================================= -->
+<!-- 2. PAGE HERO                                                              -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-16">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-white/90 via-white/50 to-white/20 border border-white/80 p-8 md:p-16 backdrop-blur-2xl shadow-[0_24px_48px_-12px_rgba(31,26,23,0.03)]">
+<!-- Subtle radial warm glow underlay -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl">
+<!-- Eyebrow Badge (rounded-[6px]) -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm uppercase tracking-wider mb-6">
+<span class="w-1.5 h-1.5 rounded-[1px] bg-primary"></span>
+            PROVEN OUTCOMES &amp; CASE STUDIES
+          </div>
+<!-- Headline -->
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface font-bold tracking-tight mb-6">
+            Measurable enterprise velocity, delivered with fixed-scope certainty.
+          </h1>
+<!-- Subhead -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-12">
+            Horizon engineers production-grade AI agents and modernizes ERP foundations across heavily regulated, multi-entity operations. We eradicate execution risk by delivering architectural milestones on deterministic timelines with contractually guaranteed system performance.
+          </p>
+<!-- Quick Proof Stat Row (3 Stats) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30">
+<div class="p-4 rounded-xl bg-surface-container-lowest/60 border border-white/70">
+<div class="font-display-lg text-headline-lg text-primary font-bold tracking-tight mb-1">[00+]</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Deployments across enterprise hubs</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest/60 border border-white/70">
+<div class="font-display-lg text-headline-lg text-primary font-bold tracking-tight mb-1">[00%]</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Average reduction in reconciliation cycles</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest/60 border border-white/70">
+<div class="font-display-lg text-headline-lg text-primary font-bold tracking-tight mb-1">[00] Days</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Typical time-to-value milestone</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. FILTER TABS (rounded-[10px], NO pills)                                -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-12">
+<div class="flex flex-wrap items-center gap-3">
+<button class="px-5 py-2.5 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-150">
+          All
+        </button>
+<button class="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+          AI Automation
+        </button>
+<button class="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+          ERP &amp; CRM
+        </button>
+<button class="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+          Custom SaaS
+        </button>
+<button class="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+          E-commerce
+        </button>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. LARGE FEATURED CASE STUDY                                             -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-16">
+<div class="rounded-2xl bg-surface-container-lowest/85 backdrop-blur-xl border border-white/90 p-8 md:p-12 shadow-[0_16px_36px_-6px_rgba(31,26,23,0.04)]">
+<!-- Top Row Tags -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-[6px] bg-primary-container/15 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+              HEAVY LOGISTICS &amp; FLEET
+            </span>
+<span class="px-3 py-1 rounded-[6px] bg-secondary-container/50 text-secondary font-label-sm text-label-sm font-semibold">
+              [00] Weeks to Go-Live
+            </span>
+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">
+            [Client name] — Global Freight &amp; Fleet Carrier
+          </div>
+</div>
+<!-- Project Title -->
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-8">
+          Autonomous Dispatch Orchestration &amp; Real-Time Fleet Accounting
+        </h2>
+<!-- Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left Column: Challenge & Solution -->
+<div class="lg:col-span-7 space-y-6">
+<div class="p-6 rounded-xl bg-surface/80 border border-outline-variant/20">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="warning">warning</span>
+                The Challenge
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Operating across regional distribution hubs, legacy operations depended on decentralized dispatch spreadsheets, manual telephone driver verification, and fragmented fuel telematics. Driver remittances were delayed by up to 18 business days, inducing high driver churn and severe cash-flow reconciliation lags across carrier settlement ledgers.
+              </p>
+</div>
+<div class="p-6 rounded-xl bg-surface/80 border border-outline-variant/20">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]" data-icon="hub">hub</span>
+                The Horizon Solution
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Horizon architected an event-driven AI dispatch orchestration engine integrated directly with central general ledgers. Telematics ingest pipelines calculate multi-stop route payloads, automatically generate verified fuel settlement vouchers, and balance carrier accounts in real time without human intervention.
+              </p>
+</div>
+<!-- Client Quote Block -->
+<div class="p-6 rounded-xl bg-gradient-to-r from-primary-container/10 to-transparent border-l-4 border-primary">
+<blockquote class="font-body-lg text-body-md italic text-on-surface mb-4">
+                "[Client quote]"
+              </blockquote>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
+                  CQ
+                </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">— [Name, role]</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">[Client name]</div>
+</div>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:shadow-md transition-all duration-150 active:scale-[0.98]" href="#">
+<span>Explore architectural breakdown</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Telemetry Mock & Results -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Telemetry Mock Display -->
+<div class="p-6 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl border border-white/10">
+<div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10B981] animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant font-mono">Live Dispatch Orchestration</span>
+</div>
+<span class="px-2 py-0.5 rounded-[4px] bg-white/10 text-white font-mono text-[11px] font-semibold">Active Node 04</span>
+</div>
+<!-- Stream log -->
+<div class="space-y-3 font-mono text-[12px] text-surface-variant mb-6">
+<div class="flex items-center justify-between p-2 rounded-[6px] bg-white/5">
+<span>TRK-9802 :: Autonomous Route Verified</span>
+<span class="text-tertiary-fixed-dim">0.14s</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-[6px] bg-white/5">
+<span>FUEL-SETTLE :: Ledger Entry Committed</span>
+<span class="text-[#10B981]">OK</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-[6px] bg-white/5">
+<span>DISPATCH-AI :: Congestion Model Reroute</span>
+<span class="text-primary-fixed-dim">SYNCD</span>
+</div>
+</div>
+<!-- Live Stat Strip -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-3 rounded-[8px] bg-white/5">
+<div class="text-[11px] text-surface-variant uppercase font-mono">Payload Throughput</div>
+<div class="text-[18px] font-bold text-white font-mono">[00,000] units/hr</div>
+</div>
+<div class="p-3 rounded-[8px] bg-white/5">
+<div class="text-[11px] text-surface-variant uppercase font-mono">Ledger Drift</div>
+<div class="text-[18px] font-bold text-[#10B981] font-mono">0.00% Zero-Loss</div>
+</div>
+</div>
+</div>
+<!-- Key Results Metrics Row -->
+<div class="grid grid-cols-3 gap-3">
+<div class="p-4 rounded-xl bg-surface border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-primary font-bold">[00%]</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">Idle Dispatch Latency Reduction</div>
+</div>
+<div class="p-4 rounded-xl bg-surface border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-primary font-bold">[00%]</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">Automated Remittance Accuracy</div>
+</div>
+<div class="p-4 rounded-xl bg-surface border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-primary font-bold">[00] hrs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">Saved Per Dispatcher Weekly</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. GRID OF SIX DETAILED CASE STUDY CARDS (3x2 Grid)                      -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<!-- Image Placeholder -->
+<div class="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="A clean architectural schematic and dashboard interface representing financial ledger harmonization, featuring layered frosted glass panels, pristine tabular financial data, and glowing coral accent lines in soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOQnkJ_gTECU5srdkNJ2Jpil7FYZmteXQ1Bc7LmOxLUcPqRC3RekCg58IvbBBjK2-KkPkPusGBRMis-62VLhZL49QaueOxNeaTJx6wQcsZ0FVydFBjO31DOtZFYsMRV04Gqy2O1n7v6nq05izeskex80vVh9A3AvNpGn9QhbexvYpFyvvFJSPVdCfIVWlwKP1aUHOy57Jehx49BgVdVuWtO36GK_fK4y1PSGf1iX3N5qGk1AsjdtK-HOdfKcXQe48HT3u8hNP0C9o"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+                  Financial Services
+                </span>
+</div>
+</div>
+<!-- Content -->
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">[Client name]</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Multi-Entity Ledger Harmonization &amp; Automated Currency Elimination
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+              Fourteen international subsidiaries unified onto Horizon's real-time core ledger without closing active transaction books or pausing inter-company billings.
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">[00%]</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Month-End Close Acceleration</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors" href="#">
+<span>Read case study</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<!-- Image Placeholder -->
+<div class="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="An industrial civil construction workflow dashboard showing real-time jobsite material telemetry, concrete equipment tracking charts, and field work order metrics rendered in a luminous editorial UI style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx0TKjn2zeMlQAwh4NVqgJIcQxdzf8yZwQdbY5j7YDV2DDS7HdznkE68chsybwf8pcnu5AUC7iDnWHhu3avtHzrdM83d6Zd076b1VihTKuBrUDC3fxSrw2G0Rs89_jBox_sl5NHEvWcj1EWKvFf6Zms7qwnQR-ld_G3yeMoAJ53U8n-KyamR7FVE_t_3Cp94C5s5Ywv4aNpfKBBQa0H2uftlyhJ7lDZXvFpvFAqeLr104Jy6Gy-3IOMMmpzY7tYLy3Y2JViXFMzLM"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+                  Construction &amp; Civil
+                </span>
+</div>
+</div>
+<!-- Content -->
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">[Client name]</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Company-Wide ERP Rollout Across [00+] Active Jobsites
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+              Subcontractor procurement, heavy equipment tracking, and field work orders synchronized instantly to central ERP accounting.
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">[00%]</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Reduction in Material Overages</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors" href="#">
+<span>Read case study</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<!-- Image Placeholder -->
+<div class="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="A modern SaaS multi-tenant telemetry console showing event stream pipelines, granular role-based permissions matrix, and consumption-based billing nodes on an off-white glass card." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZYqUADAjUAWzD9pMvaCnV94SOsrDZloKx0HWjHV5KfvINAd3SeNnIEWGwE9cT_ggLscDtwBmdMW9Yx350FwY-zScRHM2y75LgtZg9ws_QfXh3imSa4leFrxLqxdOaOlzMFeJVENflYyDinPbzO7WQeUMhQloVh-hPpVuzwHzm1q1uLtGeqtJWAfDgLPtv-eZRftaoHMnz5NbJsmSQAHzADa3xRz994lebAozs1nP6mwtQgPWv9Z7gEADb1IvtObCbEF4XtwzbXsk"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+                  Tech &amp; SaaS
+                </span>
+</div>
+</div>
+<!-- Content -->
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">[Client name]</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Enterprise-Ready Multi-Tenant SaaS MVP Built in [00] Weeks
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+              Full-stack billing engine, role-based governance, and real-time event pipeline delivered on an immutable fixed-bid schedule.
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">[00] Days</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Contract to Production</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors" href="#">
+<span>Read case study</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<!-- Image Placeholder -->
+<div class="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="High-volume headless commerce dashboard showing real-time inventory nodes, warehouse sync statuses, and fulfillment routing diagrams bathed in gentle ambient sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMCjYAaCsKiFCnNJa8y37KOQvde-B9ens3iAGR1s47L9R_AMKezkLQ3Dyh8QK62Gx9xksg2HQaKhcnF2ffGc0mzHfS5FH8SRSF0tDX1LQCEPzE243KPJyIMlkzCD35cDgFD_1oTz84kqVf3PJOYSZ22gOSX2FUXVSK1kdeya8HK1OUHuKt1vQzxY3W1ubOfJaZiNRzdBkVUt-9GtrDuBGZb_ngkXxRjr_gLo_QzOAxxQFLpjYkVY1dVQ-CnuWzPhZ4xdoTGQabvls"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+                  E-commerce &amp; Retail
+                </span>
+</div>
+</div>
+<!-- Content -->
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">[Client name]</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              High-Volume Headless Storefront Connected to Accounting &amp; WMS
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+              Instant inventory sync across 4 global fulfillment nodes, eliminating phantom stock, overselling, and order discrepancies.
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">[00%]</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Reduction in Stockout Cancellations</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors" href="#">
+<span>Read case study</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<!-- Image Placeholder -->
+<div class="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="Advanced industrial manufacturing scheduler interface displaying robotic constraint parameters, parallel assembly shift allocations, and cycle efficiency graphs in a warm minimalist layout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKH1aiOnFM9TCjWLwoiEYuLVb6Jm94-ZeJsJ7Y2CvVbDYh6HMntNy6DB7V6dOEQHtqvkDBCsN7j-WLrZtXk62PeOXpmOYfwvuY54sybdKHeAnfaE_VFsXJnCFMqs9IwHwpt_ai_mRe-0Z1g7cxpWPQ1HAaQFk94jqf_rRMxLjBcYdZu06afwQHCYQBet68_dvdDrPFxNgdHu_aS-3El1jwxk21OPo40M2t6Ff3DH4jQSqXiEj-uVfxkpkpR3liks7GAQU-Cn0h49I"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+                  Advanced Manufacturing
+                </span>
+</div>
+</div>
+<!-- Content -->
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">[Client name]</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Production Planning &amp; Shift Scheduling System Rollout
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+              Dynamic machine constraint scheduler replacing legacy spreadsheet handoffs across three high-throughput parallel assembly lines.
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">[00%]</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Assembly Line Utilization Lift</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors" href="#">
+<span>Read case study</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+<div>
+<!-- Image Placeholder -->
+<div class="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="A field technician diagnostics application UI detailing high-voltage schematic pinouts, offline audio waveforms, and quality assurance checkpoints rendered with tactile editorial warmth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDsb40ztPVUGBDlJNRhfYOEEGiMAZ71DXrTA2JyU9ipXKifLfT4jylefiWrLhfAi2w21juSHTGVyVc4iVVx46OMAchJxKyIYWivSFrkOzYMG1hGNnamB72_M6e0vpCfra5-8vFGKiUItM6eBC_sRRMIoVjoCIZCFTPflNdVEgQCx-3toTzeejz45fjAAJZYq2fWZia8SIhD9BXpTlkWi0AmSsNIpN-zsBixe5jkqimy8s971e9EQEGCtS511rSZFHGKsKa5dTyF7A"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+                  Field Services
+                </span>
+</div>
+</div>
+<!-- Content -->
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">[Client name]</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Autonomous AI QC Assistant for Remote Bucket Truck Technicians
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+              Schematic-verified mobile voice agent answering high-voltage pinout queries offline in active utility service bays.
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">[00] min</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Saved Per Diagnostics Call</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors" href="#">
+<span>Read case study</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. LOAD MORE ACTION                                                       -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin text-center mb-24">
+<button class="px-8 py-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-label-lg text-label-lg font-semibold shadow-sm hover:border-primary hover:text-primary transition-all duration-150 active:scale-[0.98]">
+        Load more case studies
+      </button>
+</section>
+<!-- ========================================================================= -->
+<!-- 7. MEASUREMENT METHODOLOGY SECTION                                        -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-24">
+<div class="p-8 md:p-12 rounded-2xl bg-surface-container-low/70 border border-outline-variant/30">
+<div class="max-w-2xl mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm uppercase tracking-wider mb-4">
+            GOVERNANCE &amp; VERIFICATION
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Verifiable accountability, built into the deployment contract.
+          </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Milestone Card 1 -->
+<div class="p-8 rounded-xl bg-surface-container-lowest border border-white/80 shadow-sm relative">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/20 text-primary flex items-center justify-center font-bold text-headline-sm mb-6">
+              1
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Baseline Audit (Day 0)
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Precise benchmark measurement of legacy operational bottlenecks, reconciliation lag, exception rates, and manual labor overhead to establish immutable success criteria.
+            </p>
+</div>
+<!-- Milestone Card 2 -->
+<div class="p-8 rounded-xl bg-surface-container-lowest border border-white/80 shadow-sm relative">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/20 text-primary flex items-center justify-center font-bold text-headline-sm mb-6">
+              2
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              Production Go-Live
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Staged cutover with zero downtime, parallel dual-ledger verification, full rollback resilience, and live real-time operational telemetry monitoring.
+            </p>
+</div>
+<!-- Milestone Card 3 -->
+<div class="p-8 rounded-xl bg-surface-container-lowest border border-white/80 shadow-sm relative">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/20 text-primary flex items-center justify-center font-bold text-headline-sm mb-6">
+              3
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
+              90-Day Post-Launch Review
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Formal contractual reconciliation against contracted efficiency targets with ongoing SLA guarantees and continuous model fine-tuning schedules.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 8. TESTIMONIAL STRIP                                                      -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-24">
+<div class="text-center max-w-xl mx-auto mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          Executive Endorsements
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial Card 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-primary mb-6">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-8">
+              "[Client quote]"
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
+                EX
+              </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">[Name, role]</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">[Client name]</div>
+</div>
+</div>
+<span class="px-2 py-1 rounded-[6px] bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
+              Verified
+            </span>
+</div>
+</div>
+<!-- Testimonial Card 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-primary mb-6">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-8">
+              "[Client quote]"
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
+                VP
+              </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">[Name, role]</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">[Client name]</div>
+</div>
+</div>
+<span class="px-2 py-1 rounded-[6px] bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
+              Verified
+            </span>
+</div>
+</div>
+<!-- Testimonial Card 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-primary mb-6">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-8">
+              "[Client quote]"
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
+                CT
+              </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">[Name, role]</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">[Client name]</div>
+</div>
+</div>
+<span class="px-2 py-1 rounded-[6px] bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
+              Verified
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 9. FINAL CALL TO ACTION SECTION                                          -->
+<!-- ========================================================================= -->
+<section class="max-w-[1600px] mx-auto px-margin-sm md:px-margin">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#FF8A65] to-[#FF6B4A] text-on-primary p-10 md:p-16 shadow-lg">
+<!-- Background decorative ambient circles -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-headline-lg text-headline-lg md:text-[40px] md:leading-[48px] font-bold mb-4 text-white">
+            Ready to replace operational friction with fixed-scope certainty?
+          </h2>
+<p class="font-body-lg text-body-lg text-white/90 mb-8 max-w-2xl leading-relaxed">
+            Schedule an architectural scoping consultation with our senior systems engineering team.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="px-6 py-3.5 rounded-[10px] bg-white text-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-surface-container-lowest transition-all duration-150 active:scale-[0.98]" href="#">
+              Book an Architectural Scoping Consultation
+            </a>
+<a class="px-6 py-3.5 rounded-[10px] bg-transparent border border-white/60 text-white font-label-lg text-label-lg font-semibold hover:bg-white/10 transition-all duration-150 active:scale-[0.98]" href="#">
+              Download Capabilities Matrix
+            </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- 10. FOOTER: Footer Shared Component Execution                             -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-auto">
+<div class="w-full max-w-[1600px] mx-auto px-margin-sm md:px-margin py-space-xl">
+<!-- Top Grid: Brand & Link Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
+<!-- Brand Info -->
+<div class="lg:col-span-2 space-y-4">
+<a class="font-headline-sm text-headline-sm text-primary font-bold flex items-center gap-2" href="#">
+<span class="w-2.5 h-2.5 rounded-[3px] bg-primary"></span>
+            Horizon
+          </a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+            Autonomous enterprise execution through verified AI systems and synchronized ERP cores.
+          </p>
+<div class="pt-2">
+<div class="font-label-md text-label-md font-semibold text-on-surface mb-2">Subscribe to Architectural Notes</div>
+<div class="flex items-center gap-2 max-w-md">
+<input class="h-10 px-3 rounded-[10px] bg-surface-container-lowest border border-outline-variant/60 text-on-surface placeholder:text-on-surface-variant/50 text-body-sm w-full focus:outline-none focus:border-primary" placeholder="Enter work email" type="email"/>
+<button class="h-10 px-4 rounded-[10px] bg-primary text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap">
+                Join
+              </button>
+</div>
+</div>
+</div>
+<!-- Links Column 1: Packages -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Packages</div>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Core ERP Sync</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Autonomous Agents</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Enterprise Multi-Tenant</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Custom AI Copilots</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Solutions -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Solutions</div>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Supply Chain &amp; Fleet</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Financial Ledgers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Continuous Field Ops</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">E-Commerce Networks</a></li>
+</ul>
+</div>
+<!-- Links Column 3: Resources -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Resources</div>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><a class="text-primary font-semibold hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Architectural Whitepapers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">System Status</a></li>
+</ul>
+</div>
+<!-- Links Column 4: Connect & Contacts -->
+<div class="space-y-3">
+<div class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Connect</div>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li>[Office address]</li>
+<li><a class="hover:text-primary transition-colors" href="#">[contact email]</a></li>
+<li>[phone]</li>
+<li class="pt-2 flex items-center gap-3">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]" data-icon="share">share</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]" data-icon="terminal">terminal</span></a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Separator & Exact Legal Text -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+<div>
+          © 2025 Horizon Enterprise AI Automation &amp; ERP Solutions. All rights reserved. Encrypted hosting, role-based access and regular backups.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Security Disclosure</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

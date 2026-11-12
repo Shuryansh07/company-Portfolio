@@ -1,0 +1,28 @@
+{
+  "name": "horizon-website",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node scripts/smoke.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "convert": "node scripts/stitch-to-jsx.mjs"
+  },
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "@vitejs/plugin-react": "^6.3.0",
+    "autoprefixer": "^10.6.2",
+    "parse5": "^8.1.1",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.3.8"
+  }
+}

@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Production Planning &amp; Scheduling | Horizon ERP &amp; AI Automation</title>
+<!-- Material Symbols Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Plus Jakarta Sans Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Injected Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-primary": "#ffb4a3",
+            "on-background": "#1b1c1a",
+            "on-secondary-fixed": "#131f00",
+            "on-secondary": "#ffffff",
+            "primary": "#a9371d",
+            "surface-dim": "#dbdad7",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#364e03",
+            "surface-container": "#efeeeb",
+            "surface-variant": "#e4e2df",
+            "primary-container": "#ff7555",
+            "tertiary": "#026971",
+            "secondary": "#4d661c",
+            "on-tertiary-fixed": "#002023",
+            "surface-container-low": "#f5f3f0",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-container": "#003d42",
+            "on-primary-container": "#6d1200",
+            "on-secondary-container": "#536d22",
+            "outline-variant": "#dfbfb8",
+            "tertiary-container": "#5dabb4",
+            "on-error-container": "#93000a",
+            "background": "#fbf9f6",
+            "surface-container-high": "#eae8e5",
+            "outline": "#8c716b",
+            "secondary-fixed": "#ceee93",
+            "on-surface": "#1b1c1a",
+            "inverse-on-surface": "#f2f0ed",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#3d0600",
+            "secondary-container": "#ceee93",
+            "secondary-fixed-dim": "#b3d17a",
+            "surface-tint": "#a9371d",
+            "surface": "#fbf9f6",
+            "surface-container-highest": "#e4e2df",
+            "on-primary-fixed-variant": "#881f06",
+            "on-surface-variant": "#58413c",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#85d3dc",
+            "inverse-surface": "#30312f",
+            "tertiary-fixed": "#a1eff8",
+            "error-container": "#ffdad6",
+            "primary-fixed-dim": "#ffb4a3",
+            "surface-bright": "#fbf9f6",
+            "on-tertiary-fixed-variant": "#004f55",
+            "primary-fixed": "#ffdad2",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1.25rem",
+            "space-sm": "0.75rem",
+            "margin": "3rem",
+            "space-xl": "3.5rem",
+            "space-xs": "0.375rem",
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem",
+            "space-lg": "2rem",
+            "margin-sm": "1.25rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+    /* Specific soft gradient meshes for Neo-Glassmorphism */
+    .hero-glow {
+      background: radial-gradient(circle at 75% 20%, rgba(255, 117, 85, 0.08) 0%, rgba(251, 249, 246, 0) 65%);
+    }
+    .interactive-glow {
+      background: radial-gradient(circle at 30% 50%, rgba(2, 105, 113, 0.05) 0%, rgba(251, 249, 246, 0) 70%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-primary-container/20 selection:text-primary">
+<!-- ================= TOP NAVIGATION BAR (SHARED COMPONENT) ================= -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-8 py-3.5 max-w-[1600px] mx-auto">
+<div class="w-full bg-surface-container-lowest/80 backdrop-blur-md rounded-[14px] border border-outline-variant/30 px-6 py-3.5 shadow-sm flex items-center justify-between">
+<!-- Brand Anchor -->
+<a class="flex items-center gap-2.5 focus:outline-none" href="#">
+<div class="w-8 h-8 rounded-[8px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-on-primary shadow-sm shadow-primary/20">
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+</div>
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight">Horizon</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-semibold text-label-lg font-label-lg transition-colors" href="#">Products</a>
+<a class="text-on-surface-variant hover:text-on-surface text-label-lg font-label-lg transition-colors duration-200" href="#">Solutions</a>
+<a class="text-on-surface-variant hover:text-on-surface text-label-lg font-label-lg transition-colors duration-200" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-on-surface text-label-lg font-label-lg transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant hover:text-on-surface text-label-lg font-label-lg transition-colors duration-200" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-on-surface text-label-lg font-label-lg transition-colors duration-200" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center px-4 py-2.5 rounded-[10px] bg-gradient-to-br from-[#ff8a65] to-[#ff6b4a] text-on-primary text-label-lg font-label-lg font-semibold shadow-sm hover:shadow-md hover:shadow-primary-container/30 transition-all duration-150 active:scale-[0.99]" href="#demo-form">
+          Book a free demo
+        </a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="max-w-[1600px] mx-auto px-6 md:px-12 space-y-24 py-8">
+<!-- ================= SECTION 1: BREADCRUMB & HERO SECTION ================= -->
+<section class="hero-glow pt-4 pb-12">
+<!-- Breadcrumb Bar -->
+<nav class="flex items-center gap-2 mb-8 text-body-sm font-body-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm tracking-wider uppercase font-semibold">
+          MANUFACTURING PLANNING &amp; DISPATCH
+        </span>
+<span class="text-outline-variant/60">/</span>
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<span class="text-outline-variant/60">/</span>
+<a class="hover:text-primary transition-colors" href="#">Operations &amp; Supply Chain</a>
+<span class="text-outline-variant/60">/</span>
+<span class="text-on-surface font-medium">Production Planning &amp; Scheduling</span>
+</nav>
+<!-- Split Hero Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Hero Content Column (7 cols) -->
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-4">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-on-surface tracking-tight leading-tight">
+              Production Planning &amp; Scheduling
+            </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Plan what to make, when, and with what materials, before the shop floor finds out the hard way.
+            </p>
+</div>
+<!-- Six Feature Chips (No capsules: rounded-[10px]) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/30 shadow-xs hover:border-primary-container/50 transition-colors">
+<div class="w-8 h-8 rounded-[8px] bg-primary-container/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Multi-Level Bill of Materials Explosion</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/30 shadow-xs hover:border-primary-container/50 transition-colors">
+<div class="w-8 h-8 rounded-[8px] bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Net Requirements Calculation</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/30 shadow-xs hover:border-primary-container/50 transition-colors">
+<div class="w-8 h-8 rounded-[8px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Finite Capacity Scheduling</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/30 shadow-xs hover:border-primary-container/50 transition-colors">
+<div class="w-8 h-8 rounded-[8px] bg-primary-container/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Demand Forecasting from Historical Sales</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/30 shadow-xs hover:border-primary-container/50 transition-colors">
+<div class="w-8 h-8 rounded-[8px] bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Supplier Lead-Time-Aware Purchase Timing</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/30 shadow-xs hover:border-primary-container/50 transition-colors">
+<div class="w-8 h-8 rounded-[8px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">What-If Scenario Simulation</span>
+</div>
+</div>
+<!-- Stat Highlights Row -->
+<div class="pt-4 border-t border-outline-variant/20 grid grid-cols-3 gap-6">
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg font-bold text-primary tracking-tight">[00%]</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant font-medium">On-Time Job Completion</div>
+</div>
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg font-bold text-secondary tracking-tight">[00%]</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant font-medium">Stockout Reduction</div>
+</div>
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg font-bold text-tertiary tracking-tight">[00] hr</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant font-medium">Faster Reschedule Cycle</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Demo Booking Card (5 cols, rounded-[16px]) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-[16px] border border-outline-variant/35 p-8 shadow-sm backdrop-blur-xl space-y-6" id="demo-form">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-[6px] bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm font-semibold tracking-wide uppercase">Interactive Demo</span>
+<span class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available Today
+              </span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface">Book a live product demo</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              See finite capacity scheduling calibrated to your exact plant layout and ERP data within [00] minutes.
+            </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5">Full Name</label>
+<input class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary-container/30 focus:border-primary-container transition-all" placeholder="e.g. Jordan Vance" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5">Work Email</label>
+<input class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary-container/30 focus:border-primary-container transition-all" placeholder="jordan@manufacturing-corp.com" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5">Phone Number</label>
+<input class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary-container/30 focus:border-primary-container transition-all" placeholder="[phone]" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1.5">Plant / Facility Size</label>
+<select class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container/30 focus:border-primary-container transition-all">
+<option value="small">Single Site (&lt; 50 Work Centers)</option>
+<option value="medium">Multi-Line Facility (50 - 250 Work Centers)</option>
+<option value="enterprise">Global Enterprise Network ([00+] Sites)</option>
+</select>
+</div>
+<button class="w-full h-12 mt-2 rounded-[10px] bg-gradient-to-r from-primary-container to-primary text-on-primary font-semibold text-label-lg font-label-lg shadow-sm hover:shadow-md hover:shadow-primary/20 transition-all flex items-center justify-center gap-2" type="submit">
+<span>Request Live Demonstration</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<div class="pt-2 flex items-center justify-center gap-2 text-on-surface-variant text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>Encrypted hosting, role-based access, and regular backups.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 2: DEMO / TELEMETRY SECTION ================= -->
+<section class="space-y-8">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          INTERACTIVE COCKPIT VIEW
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">See Production Planning &amp; Scheduling in Action</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Real-time finite-capacity routing, multi-level BOM explosion, and dynamic dispatch conflict detection.
+        </p>
+</div>
+<!-- Cockpit Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Dark Sleek Simulation Video Mock (5 cols) -->
+<div class="lg:col-span-5 bg-inverse-surface rounded-[20px] p-6 text-inverse-on-surface flex flex-col justify-between relative overflow-hidden border border-outline/30 min-h-[460px]">
+<!-- Ambient lighting in player -->
+<div class="absolute -top-24 -left-24 w-72 h-72 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Telemetry Header -->
+<div class="relative z-10 flex items-center justify-between border-b border-white/10 pb-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+<span class="text-label-md font-label-md tracking-wide">Main Plant Alpha — Active Dispatch Gantt</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-surface-variant font-mono">
+<span class="material-symbols-outlined text-[14px]">graphic_eq</span>
+<span>LIVE [00] FPS</span>
+</div>
+</div>
+<!-- Center Play Action Overlay -->
+<div class="relative z-10 my-auto text-center space-y-4 py-8">
+<div class="w-16 h-16 rounded-[10px] bg-primary-container text-on-primary-container mx-auto flex items-center justify-center shadow-lg shadow-primary-container/20 cursor-pointer hover:scale-105 transition-transform group">
+<span class="material-symbols-outlined fill text-[32px] group-hover:scale-110 transition-transform">play_arrow</span>
+</div>
+<div class="space-y-1">
+<div class="text-label-lg font-label-lg font-semibold tracking-wide">Interactive Run-Through</div>
+<div class="text-label-sm font-label-sm text-surface-variant">Runtime: [00]:[00] mins • Real-Time Work Center Audio Telemetry</div>
+</div>
+</div>
+<!-- Bottom Control Bar -->
+<div class="relative z-10 border-t border-white/10 pt-4 flex items-center justify-between text-surface-variant text-label-sm font-label-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Dynamic Routing Sandbox</span>
+</div>
+<div class="flex items-center gap-2 font-mono">
+<span>04:12 / [00]:[00]</span>
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</div>
+</div>
+</div>
+<!-- Right: Software Cockpit UI Mockup (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-[20px] border border-outline-variant/40 p-6 shadow-sm space-y-6 flex flex-col justify-between">
+<!-- OS Bar -->
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<div class="flex items-center gap-3">
+<div class="px-2.5 py-1 rounded-[6px] bg-surface-container text-on-surface text-label-sm font-label-sm font-mono font-bold">
+                Horizon Scheduler OS v4.2
+              </div>
+<span class="flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Master Sync Stable
+              </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Active Shift: B (Day 1)</span>
+<span class="px-2 py-0.5 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm font-semibold">4 Cells Active</span>
+</div>
+</div>
+<!-- Dispatch Gantt Rows -->
+<div class="space-y-3">
+<div class="text-label-sm font-label-sm font-semibold text-on-surface-variant tracking-wider uppercase">Live Work Center Dispatch Allocation</div>
+<!-- Row 1: CNC Cell A -->
+<div class="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/25 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2 h-8 rounded-[4px] bg-emerald-500"></div>
+<div>
+<div class="text-label-md font-label-md text-on-surface font-semibold">CNC Cell A (5-Axis Milling)</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">PO #8849: Titanium Flange Batches</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-32 bg-surface-container-high rounded-[6px] h-2.5 overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-[6px]" style="width: 92%"></div>
+</div>
+<span class="text-label-sm font-label-sm font-mono font-semibold text-on-surface">92% Load</span>
+</div>
+</div>
+<!-- Row 2: Robotic Weld Line -->
+<div class="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/25 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2 h-8 rounded-[4px] bg-emerald-500"></div>
+<div>
+<div class="text-label-md font-label-md text-on-surface font-semibold">Robotic Weld Line B</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">PO #8852: Frame Chassis Enclosures</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-32 bg-surface-container-high rounded-[6px] h-2.5 overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-[6px]" style="width: 84%"></div>
+</div>
+<span class="text-label-sm font-label-sm font-mono font-semibold text-on-surface">84% Load</span>
+</div>
+</div>
+<!-- Row 3: Sub-Assembly (Overload Alert) -->
+<div class="p-3 rounded-[10px] bg-error-container/40 border border-error/30 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2 h-8 rounded-[4px] bg-error"></div>
+<div>
+<div class="text-label-md font-label-md text-error font-semibold flex items-center gap-1.5">
+                    Sub-Assembly Station 03
+                    <span class="material-symbols-outlined text-[16px]">warning</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Hydraulic Actuator Fastening (Resource Choke)</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-32 bg-surface-container-high rounded-[6px] h-2.5 overflow-hidden">
+<div class="bg-error h-full rounded-[6px]" style="width: 98%"></div>
+</div>
+<span class="text-label-sm font-label-sm font-mono font-semibold text-error">98% Overload</span>
+</div>
+</div>
+<!-- Row 4: Final Testing & QA -->
+<div class="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/25 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2 h-8 rounded-[4px] bg-emerald-500"></div>
+<div>
+<div class="text-label-md font-label-md text-on-surface font-semibold">Final Testing &amp; QA Cell</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">High-Pressure Valve Calibration</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-32 bg-surface-container-high rounded-[6px] h-2.5 overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-[6px]" style="width: 72%"></div>
+</div>
+<span class="text-label-sm font-label-sm font-mono font-semibold text-on-surface">72% Load</span>
+</div>
+</div>
+</div>
+<!-- Multi-Level BOM & What-if Reschedule Subcards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+<!-- BOM Subcard -->
+<div class="p-3.5 rounded-[12px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm font-bold text-on-surface">Multi-Level BOM Explosion</span>
+<span class="px-1.5 py-0.5 rounded-[6px] bg-secondary-container/40 text-on-secondary-fixed text-label-sm font-label-sm">Allocated</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Hydraulic Actuator Sub-Assemblies: 140/140 components reserved from Bay 4.</div>
+</div>
+<!-- What-if Preview -->
+<div class="p-3.5 rounded-[12px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm font-bold text-on-surface">What-If Reschedule Preview</span>
+<span class="px-1.5 py-0.5 rounded-[6px] bg-primary-container/20 text-on-primary-container text-label-sm font-label-sm font-semibold">Rush Simulation</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Simulating PO #9012 queue jump: Reallocates Station 03 overload to Bay 5 in [00] min.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 3: ABOUT / PROBLEM SECTION ================= -->
+<section class="space-y-10">
+<div class="max-w-3xl space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-error-container text-on-error-container text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          THE OPERATIONAL BOTTLENECK
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          Good scheduling prevents the fires you are currently fighting.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+          Rush orders, material shortages, and overloaded work centers usually trace back to planning that did not account for real capacity. Horizon calculates material requirements, checks capacity against your actual schedule, and lets you resolve conflicts before they hit the floor as an emergency.
+        </p>
+</div>
+<!-- 3 Structured Benefit Cards (rounded-[14px]) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-7 border border-outline-variant/35 shadow-xs space-y-4 hover:border-primary-container/40 transition-all">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+            Material requirements calculated against demand and stock
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Gross customer demand is instantly balanced against free, reserved, and en-route stock so no technician ever begins a job lacking key fasteners or raw billet.
+          </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-7 border border-outline-variant/35 shadow-xs space-y-4 hover:border-primary-container/40 transition-all">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">engineering</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+            Capacity checks against real work-center load
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Say goodbye to infinite-capacity assumptions. Horizon verifies certified technician availability, machine tool lockouts, and true shift fixtures before committing jobs.
+          </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-7 border border-outline-variant/35 shadow-xs space-y-4 hover:border-primary-container/40 transition-all">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+            What-if scheduling before committing to a production plan
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            When VIP customers demand urgent turnaround, simulate insertion ripple effects across every work cell in sandbox isolation before publishing to the floor.
+          </p>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 4: FEATURES LIST & HIGHLIGHTED DETAIL PANEL ================= -->
+<section class="space-y-10">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          ENGINEERED CAPABILITIES
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Planning that accounts for reality</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Six deterministic primitives that connect material planning directly to what your factory floor can actually execute.
+        </p>
+</div>
+<!-- Split Layout: 6 Numbered Cards (Left) & Deep Dive Table (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Side: 6 Cards (6 cols) -->
+<div class="lg:col-span-6 space-y-3.5">
+<!-- 01 Active Card -->
+<div class="p-5 rounded-[12px] bg-surface-container-lowest border-2 border-primary-container shadow-xs space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-headline-sm font-headline-sm font-bold text-primary font-mono">01</span>
+<span class="px-2 py-0.5 rounded-[6px] bg-primary-container text-on-primary text-label-sm font-label-sm font-semibold tracking-wide">
+                ACTIVE DEEP DIVE
+              </span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Multi-Level Bill of Materials Explosion</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              A product's full bill of materials explodes down every sub-assembly automatically, calculating exact input quantities at any production volume.
+            </p>
+</div>
+<!-- 02 Card -->
+<div class="p-5 rounded-[12px] bg-surface-container-lowest border border-outline-variant/30 shadow-xs space-y-2 hover:border-outline-variant/70 transition-colors">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface-variant font-mono">02</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Net Requirements Calculation</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Offsets gross demand against existing inventory, allocated reserves, and scheduled receipts to pinpoint precise net component deficits.
+            </p>
+</div>
+<!-- 03 Card -->
+<div class="p-5 rounded-[12px] bg-surface-container-lowest border border-outline-variant/30 shadow-xs space-y-2 hover:border-outline-variant/70 transition-colors">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface-variant font-mono">03</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Finite Capacity Scheduling</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Dynamically schedules jobs against verified machine uptime, tooling availability, and technician labor shifts without phantom over-allocation.
+            </p>
+</div>
+<!-- 04 Card -->
+<div class="p-5 rounded-[12px] bg-surface-container-lowest border border-outline-variant/30 shadow-xs space-y-2 hover:border-outline-variant/70 transition-colors">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface-variant font-mono">04</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Demand Forecasting from Historical Sales</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Ingests historical ERP shipment data, seasonality, and open client orders to anticipate required manufacturing batches before backlog surges.
+            </p>
+</div>
+<!-- 05 Card -->
+<div class="p-5 rounded-[12px] bg-surface-container-lowest border border-outline-variant/30 shadow-xs space-y-2 hover:border-outline-variant/70 transition-colors">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface-variant font-mono">05</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Supplier Lead-Time-Aware Purchase Timing</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Backward-schedules purchase requisitions so raw stock lands on the loading dock precisely when assembly begins, saving precious floor cash flow.
+            </p>
+</div>
+<!-- 06 Card -->
+<div class="p-5 rounded-[12px] bg-surface-container-lowest border border-outline-variant/30 shadow-xs space-y-2 hover:border-outline-variant/70 transition-colors">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface-variant font-mono">06</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">What-If Scenario Simulation</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Test rush order insertions, machine breakdown reroutes, or delayed raw material arrivals in a sandbox before committing the shop floor.
+            </p>
+</div>
+</div>
+<!-- Right Side: Highlighted Detail Panel for 01 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-[16px] border border-outline-variant/35 p-6 shadow-sm space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<div>
+<span class="text-label-sm font-label-sm text-primary font-semibold tracking-wide uppercase">Feature Deep Dive</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Multi-Level BOM Explosion Engine</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-[6px] bg-surface-container text-on-surface-variant text-label-sm font-label-sm font-mono">Part #HA-904-XL</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Recursive resolution calculates precise component quantities, lead horizon buffers, and scrap multipliers across sub-levels before queuing machine hours.
+          </p>
+<!-- Structured BOM Table -->
+<div class="overflow-x-auto border border-outline-variant/20 rounded-[10px]">
+<table class="w-full text-left text-body-sm font-body-sm">
+<thead class="bg-surface-container-low text-on-surface font-semibold text-label-sm font-label-sm border-b border-outline-variant/20">
+<tr>
+<th class="py-3 px-3">Part #</th>
+<th class="py-3 px-3">Description</th>
+<th class="py-3 px-2">Lvl</th>
+<th class="py-3 px-2">Qty</th>
+<th class="py-3 px-2">Scrap</th>
+<th class="py-3 px-2">Lead</th>
+<th class="py-3 px-3">Inventory Lock</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/15 font-mono text-[12px]">
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-semibold text-on-surface">HA-904-XL</td>
+<td class="py-2.5 px-3 font-sans text-on-surface-variant">Dual-Stage Actuator Assm</td>
+<td class="py-2.5 px-2">0</td>
+<td class="py-2.5 px-2">1</td>
+<td class="py-2.5 px-2">0%</td>
+<td class="py-2.5 px-2">[00]d</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded-[6px] bg-secondary-container/40 text-on-secondary-fixed text-label-sm font-label-sm font-sans">Final Assembly</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-semibold text-on-surface">↳ SUB-102</td>
+<td class="py-2.5 px-3 font-sans text-on-surface-variant">Servo Piston Housing</td>
+<td class="py-2.5 px-2">1</td>
+<td class="py-2.5 px-2">2</td>
+<td class="py-2.5 px-2">1.5%</td>
+<td class="py-2.5 px-2">[00]d</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">100% Reserved</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-semibold text-on-surface">  ↳ RM-441</td>
+<td class="py-2.5 px-3 font-sans text-on-surface-variant">Billet Alum 7075-T6</td>
+<td class="py-2.5 px-2">2</td>
+<td class="py-2.5 px-2">4.2 kg</td>
+<td class="py-2.5 px-2">3%</td>
+<td class="py-2.5 px-2">[00]d</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">Stocked (Bin 12)</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-semibold text-on-surface">↳ SUB-204</td>
+<td class="py-2.5 px-3 font-sans text-on-surface-variant">Modular Seal Cartridge</td>
+<td class="py-2.5 px-2">1</td>
+<td class="py-2.5 px-2">1</td>
+<td class="py-2.5 px-2">0.5%</td>
+<td class="py-2.5 px-2">[00]d</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">100% Reserved</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-semibold text-on-surface">↳ FAST-088</td>
+<td class="py-2.5 px-3 font-sans text-on-surface-variant">Grade 8 Torx Fastener Set</td>
+<td class="py-2.5 px-2">1</td>
+<td class="py-2.5 px-2">16</td>
+<td class="py-2.5 px-2">2%</td>
+<td class="py-2.5 px-2">[00]d</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded-[6px] bg-emerald-100 text-emerald-800 text-label-sm font-label-sm font-sans">Kitted to Station</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-3.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Calculated Lead Compression Buffer: <strong>[00] Days</strong></span>
+<span class="text-secondary font-semibold">Zero Unallocated Shortfalls</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 5: HOW IT WORKS (FOUR CONNECTED STEPS) ================= -->
+<section class="space-y-10">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-secondary-container/40 text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          EXECUTION METHODOLOGY
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          From forecast to committed: Four deterministic stages
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Four steps that turn demand signals into a workable, conflict-free production schedule.
+        </p>
+</div>
+<!-- 4 Connected Cards Grid (rounded-[14px]) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/35 shadow-xs space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-headline-md font-bold text-primary font-mono">01</span>
+<span class="w-8 h-8 rounded-[8px] bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">input</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Feed in Demand</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Demand forecast and open client purchase orders feed directly into the planning engine from your connected ERP and sales pipelines.
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-on-surface font-semibold flex items-center gap-1 text-primary">
+<span>Automated Ingestion</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/35 shadow-xs space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-headline-md font-bold text-secondary font-mono">02</span>
+<span class="w-8 h-8 rounded-[8px] bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Calculate Requirements</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Material requirements and finite capacity needs are calculated against current live inventory, reserved stock, and work-center load.
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-on-surface font-semibold flex items-center gap-1 text-secondary">
+<span>Finite Matching</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/35 shadow-xs space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-headline-md font-bold text-tertiary font-mono">03</span>
+<span class="w-8 h-8 rounded-[8px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Resolve Conflicts</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Planners adjust the schedule using what-if scenarios to resolve machine and shift conflicts before releasing anything to the floor.
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-on-surface font-semibold flex items-center gap-1 text-tertiary">
+<span>Sandbox Simulation</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/35 shadow-xs space-y-4 relative flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-headline-md font-bold text-on-surface font-mono">04</span>
+<span class="w-8 h-8 rounded-[8px] bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">published_with_changes</span>
+</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Release &amp; Trigger Purchasing</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Finalized schedule releases to the floor, with material shortages automatically triggering purchase requisitions according to lead times.
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span>Floor Dispatch</span>
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 6: BENEFITS & OPERATIONAL TRUST ================= -->
+<section class="space-y-10">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          OPERATIONAL IMPACT
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Why planners stop firefighting</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Fewer rush orders, zero surprise shortages, and maximized work-center throughput.
+        </p>
+</div>
+<!-- 4 Primary Benefit Cards (rounded-[14px]) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">timer_off</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Fewer Rush Orders</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Eradicate chaotic mid-week schedule reshuffles caused by poor upstream planning. Provide days of clear advance visibility.
+          </p>
+</div>
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Fewer Shortages</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Prevent mid-production material shortages by linking real-time supplier purchase triggers to BOM lot requirements.
+          </p>
+</div>
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Better Capacity Use</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Eliminate idle bays and bottleneck choke-points with level-loaded work-center dispatching and balanced shift plans.
+          </p>
+</div>
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">handshake</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Clearer Commitments</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Quote reliable customer delivery lead times backed by verified machine availability and deterministic simulation.
+          </p>
+</div>
+</div>
+<!-- 3-Item Horizontal Operational Trust Block (rounded-[14px]) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+<div class="bg-surface-container-low rounded-[14px] p-6 border border-outline-variant/30 space-y-2.5">
+<div class="flex items-center gap-2 text-on-surface font-semibold text-headline-sm font-headline-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<h5>Enterprise-Grade Security</h5>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Encrypted hosting, role-based access control, and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+          </p>
+</div>
+<div class="bg-surface-container-low rounded-[14px] p-6 border border-outline-variant/30 space-y-2.5">
+<div class="flex items-center gap-2 text-on-surface font-semibold text-headline-sm font-headline-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span>
+<h5>Transparent, Scoped Pricing</h5>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Every engagement is scoped individually with a fixed price and timeline agreed upfront — book a free consultation for a tailored quote.
+          </p>
+</div>
+<div class="bg-surface-container-low rounded-[14px] p-6 border border-outline-variant/30 space-y-2.5">
+<div class="flex items-center gap-2 text-on-surface font-semibold text-headline-sm font-headline-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">groups</span>
+<h5>Built for Your Whole Team</h5>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Role-based views mean owners, plant managers, and frontline machine operators each see exactly what they need, nothing more, nothing missing.
+          </p>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 7: BEFORE / AFTER COMPARISON ================= -->
+<section class="space-y-10">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          OPERATIONAL TRANSFORMATION
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">What Changes on Day One</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Transform from reactive panic meetings into deterministic manufacturing orchestration.
+        </p>
+</div>
+<!-- Two Contrasting Cards (rounded-[16px]) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- BEFORE CARD (Red tinted) -->
+<div class="bg-red-50/60 rounded-[16px] border border-red-200/60 p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-[6px] bg-red-100 text-red-800 text-label-sm font-label-sm font-bold uppercase tracking-wider">
+              Before Horizon
+            </span>
+<span class="material-symbols-outlined text-red-500 text-[24px]">cancel</span>
+</div>
+<ul class="space-y-4 text-body-md font-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">close</span>
+<span>Rush orders spring surprises on the whole schedule, displacing existing jobs with zero visibility on collateral delays.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">close</span>
+<span>Material shortages discovered mid-production, leaving machines idle and workers waiting while expediting fees mount.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">close</span>
+<span>Work centers overloaded without anyone noticing early, forcing frantic weekend overtime shifts and burn-out teams.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">close</span>
+<span>Purchasing finds out about shortfalls too late, paying high air-freight premiums to salvage customer delivery dates.</span>
+</li>
+</ul>
+</div>
+<!-- AFTER CARD (Lime/Green tinted) -->
+<div class="bg-lime-50/60 rounded-[16px] border border-lime-200/80 p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-[6px] bg-lime-100 text-lime-900 text-label-sm font-label-sm font-bold uppercase tracking-wider">
+              After Horizon
+            </span>
+<span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+</div>
+<ul class="space-y-4 text-body-md font-body-md text-on-surface">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Rush order impact simulated before it is committed, showing exact secondary ripple effects in seconds.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Requirements calculated against demand and stock upfront, locking inventory so jobs only dispatch when 100% kitted.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Capacity checked against real load before committing, smoothing bottlenecks across secondary work centers.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check</span>
+<span>Shortfalls trigger purchase requisitions automatically with lead times built-in, arriving just-in-time on standard terms.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 8: FREQUENTLY ASKED QUESTIONS (FAQ) ================= -->
+<section class="space-y-10">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+          QUESTIONS &amp; ANSWERS
+        </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Frequently Asked Questions</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Clear answers regarding finite-capacity scheduling, ERP integrations, and shop-floor synchronization.
+        </p>
+</div>
+<!-- Accordion List (rounded-[10px] items) -->
+<div class="space-y-3.5 max-w-4xl">
+<!-- FAQ 1 (EXPANDED by design) -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/40 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>How does it handle a sudden rush order that needs to jump the queue?</span>
+<span class="material-symbols-outlined text-primary text-[20px] transform rotate-180">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/15 pt-3">
+            Horizon's What-If Sandbox automatically duplicates your live schedule in memory without altering frontline dispatch. When an expedite is requested, the engine calculates the ripple effects on every existing job, flagging downstream delays, displaced operator shifts, and material contention. Planners can review the cost and schedule impact side-by-side with sales before committing the change. Once authorized, the updated routing pushes to the floor stations instantly.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>Does it factor in supplier lead times for materials we do not stock?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>Can it plan across multiple production lines or facilities?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>Can it re-plan automatically if a machine goes down?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 5 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>Does it account for planned maintenance windows?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 6 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>Can we compare planned versus actual production after the fact?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 7 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>How long does implementation typically take?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 8 -->
+<div class="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between text-headline-sm font-headline-sm text-on-surface font-semibold hover:text-primary transition-colors" type="button">
+<span>Is our data secure, and who owns it?</span>
+<span class="material-symbols-outlined text-outline text-[20px]">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 9: "MORE FROM HORIZON" ECOSYSTEM ================= -->
+<section class="space-y-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="space-y-3">
+<span class="px-2.5 py-1 rounded-[6px] bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm uppercase tracking-wider font-semibold">
+            CONNECTED ENTERPRISE MODULES
+          </span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Looking for something else?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+            Browse our productized software and autonomous AI workflows engineered for operational velocity.
+          </p>
+</div>
+<a class="text-label-lg font-label-lg font-semibold text-primary hover:text-primary-container transition-colors inline-flex items-center gap-1.5 shrink-0" href="#">
+<span>Explore all [00+] product packages</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 4 Related Product Cards (rounded-[14px]) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Module 1 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 shadow-xs space-y-4 flex flex-col justify-between hover:border-primary-container/50 transition-colors">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+</div>
+<span class="px-2 py-0.5 rounded-[6px] bg-surface-container text-on-surface-variant text-label-sm font-label-sm">INVENTORY</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Smart Inventory Control</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Know exactly what's on your shelves, in your trucks, and on order — down to the unit, across every warehouse you run.
+            </p>
+</div>
+<a class="pt-3 border-t border-outline-variant/15 text-label-sm font-label-sm font-semibold text-primary inline-flex items-center gap-1" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<!-- Module 2 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 shadow-xs space-y-4 flex flex-col justify-between hover:border-secondary transition-colors">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+</div>
+<span class="px-2 py-0.5 rounded-[6px] bg-surface-container text-on-surface-variant text-label-sm font-label-sm">SHOP FLOOR</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Production Floor Management</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Live machine telemetry, shift logs, and real-time station work orders synchronized with stock depletion.
+            </p>
+</div>
+<a class="pt-3 border-t border-outline-variant/15 text-label-sm font-label-sm font-semibold text-secondary inline-flex items-center gap-1" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<!-- Module 3 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 shadow-xs space-y-4 flex flex-col justify-between hover:border-tertiary transition-colors">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">forklift</span>
+</div>
+<span class="px-2 py-0.5 rounded-[6px] bg-surface-container text-on-surface-variant text-label-sm font-label-sm">LOGISTICS</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Warehouse Operations Platform</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Turn a warehouse floor into a system your pickers, packers and managers can actually see and trust.
+            </p>
+</div>
+<a class="pt-3 border-t border-outline-variant/15 text-label-sm font-label-sm font-semibold text-tertiary inline-flex items-center gap-1" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<!-- Module 4 -->
+<div class="bg-surface-container-lowest rounded-[14px] p-6 border border-outline-variant/30 shadow-xs space-y-4 flex flex-col justify-between hover:border-primary-container/50 transition-colors">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<span class="px-2 py-0.5 rounded-[6px] bg-surface-container text-on-surface-variant text-label-sm font-label-sm">QUALITY AI</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">AI QC Agent</h4>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Centralized installation knowledge, schematic verification, and defect auditing on your technician's mobile device.
+            </p>
+</div>
+<a class="pt-3 border-t border-outline-variant/15 text-label-sm font-label-sm font-semibold text-primary inline-flex items-center gap-1" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 10: FINAL CALL-TO-ACTION & FOOTER ================= -->
+<section class="space-y-16">
+<!-- High-Impact CTA Banner (rounded-[20px], no capsules, 10px button radius) -->
+<div class="rounded-[20px] bg-gradient-to-br from-primary-container/15 via-surface-container-low to-background border border-outline-variant/40 p-10 md:p-14 text-center space-y-8 relative overflow-hidden shadow-sm">
+<div class="absolute -top-32 -right-32 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto space-y-4">
+<h2 class="text-headline-lg md:text-[42px] md:leading-[48px] font-bold text-on-surface tracking-tight">
+            Unify your production schedule with fixed-scope certainty.
+          </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+            Retire spreadsheets and whiteboard chaos. Schedule an architectural consultation with our manufacturing systems engineering team within 48 hours.
+          </p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-6 py-3.5 rounded-[10px] bg-gradient-to-r from-primary-container to-primary text-on-primary font-semibold text-label-lg font-label-lg shadow-sm hover:shadow-md hover:shadow-primary/20 transition-all flex items-center justify-center gap-2" href="#demo-form">
+<span>Book an Architectural Scoping Consultation</span>
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</a>
+<a class="w-full sm:w-auto px-6 py-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface font-semibold text-label-lg font-label-lg hover:bg-surface-container-lowest transition-all flex items-center justify-center gap-2" href="#">
+<span>Download Platform Specification</span>
+<span class="material-symbols-outlined text-[18px]">download</span>
+</a>
+</div>
+<div class="relative z-10 flex items-center justify-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>Encrypted hosting, role-based access, and regular backups. Zero technical debt guarantee.</span>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= EDITORIAL MULTI-COLUMN FOOTER (SHARED COMPONENT) ================= -->
+<footer class="w-full border-t border-outline-variant/30 bg-surface-container-low mt-20">
+<div class="w-full max-w-[1600px] mx-auto px-8 py-16 space-y-12">
+<!-- Main Columns Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+<!-- Brand & Address Column (4 cols) -->
+<div class="lg:col-span-4 space-y-4">
+<a class="flex items-center gap-2.5" href="#">
+<div class="w-8 h-8 rounded-[8px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+</div>
+<span class="text-headline-md font-headline-md font-bold text-on-surface tracking-tight">Horizon</span>
+</a>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Deterministic automation, warehouse execution and enterprise ERP backbones built for modern enterprises.
+          </p>
+<div class="pt-2 space-y-1.5 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Office: [Office address]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">mail</span>
+<span>Email: [contact email]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">call</span>
+<span>Phone: [phone]</span>
+</div>
+</div>
+</div>
+<!-- Links: Packages (2 cols) -->
+<div class="lg:col-span-2 space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Packages</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Products</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">ERP Architecture</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">AI Automation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+</ul>
+</div>
+<!-- Links: Solutions (2 cols) -->
+<div class="lg:col-span-2 space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Solutions</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Supply Chain</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Financial Operations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+</ul>
+</div>
+<!-- Links: Resources & Company (2 cols) -->
+<div class="lg:col-span-2 space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Company</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">About Horizon</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security</a></li>
+</ul>
+</div>
+<!-- Newsletter Subscription (2 cols) -->
+<div class="lg:col-span-2 space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Updates</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Engineering memos and dispatch benchmarks.</p>
+<form class="space-y-2" onsubmit="event.preventDefault();">
+<input class="w-full h-9 px-3 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-body-sm font-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Your work email" type="email"/>
+<button class="w-full h-9 rounded-[10px] bg-on-surface text-surface-container-lowest text-label-sm font-label-sm font-semibold hover:bg-on-surface-variant transition-colors" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+<!-- Bottom Bar with Exact Verbatim Copy -->
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-on-surface-variant">
+<div>
+          © 2025 Horizon Enterprise Solutions. Encrypted hosting, role-based access and regular backups.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Security</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

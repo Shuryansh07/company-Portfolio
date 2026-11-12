@@ -1,0 +1,21 @@
+/* Generated from stitch/pd_production-management-software.html. Scoped to this page. */
+
+    .pg-production-floor {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fbf9f6;
+      color: #1b1b1a;
+      -webkit-font-smoothing: antialiased;
+    }
+    .pg-production-floor .frosted-glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .pg-production-floor .mesh-gradient-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(255, 117, 85, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 20% 60%, rgba(224, 247, 246, 0.6) 0%, transparent 60%);
+    }
+    .pg-production-floor .cta-banner-gradient {
+      background: linear-gradient(135deg, #ff7555 0%, #ff8e6b 60%, #ffa588 100%);
+    }
+  

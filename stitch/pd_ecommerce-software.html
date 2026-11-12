@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horizon | Online Store Platform</title>
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Configuration matching Luminous Horizon -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#e4e2df",
+            "on-primary-fixed-variant": "#881f06",
+            "on-primary-container": "#6d1200",
+            "outline": "#8c716b",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "inverse-surface": "#30312f",
+            "on-secondary-container": "#536d22",
+            "on-primary-fixed": "#3d0600",
+            "inverse-primary": "#ffb4a3",
+            "error-container": "#ffdad6",
+            "primary": "#a9371d",
+            "surface-tint": "#a9371d",
+            "tertiary-container": "#5dabb4",
+            "tertiary": "#026971",
+            "primary-container": "#ff7555",
+            "secondary-container": "#ceee93",
+            "on-tertiary-container": "#003d42",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#004f55",
+            "primary-fixed": "#ffdad2",
+            "on-background": "#1b1c1a",
+            "error": "#ba1a1a",
+            "tertiary-fixed": "#a1eff8",
+            "on-surface-variant": "#58413c",
+            "on-error-container": "#93000a",
+            "surface": "#fbf9f6",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#eae8e5",
+            "on-surface": "#1b1c1a",
+            "surface-container-low": "#f5f3f0",
+            "background": "#fbf9f6",
+            "outline-variant": "#dfbfb8",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#002023",
+            "on-secondary-fixed": "#131f00",
+            "surface-bright": "#fbf9f6",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#ffb4a3",
+            "secondary-fixed-dim": "#b3d17a",
+            "surface-container": "#efeeeb",
+            "surface-dim": "#dbdad7",
+            "on-secondary-fixed-variant": "#364e03",
+            "tertiary-fixed-dim": "#85d3dc",
+            "surface-container-highest": "#e4e2df",
+            "secondary": "#4d661c",
+            "secondary-fixed": "#ceee93"
+          },
+          fontFamily: {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-lg": ["54px", { "lineHeight": "62px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fbf9f6;
+      color: #1b1c1a;
+      overflow-x: hidden;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .primary-gradient-btn {
+      background: linear-gradient(135deg, #ff7555 0%, #ff5436 100%);
+      box-shadow: 0 4px 14px -2px rgba(255, 117, 85, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+    .primary-gradient-btn:hover {
+      box-shadow: 0 8px 20px -2px rgba(255, 84, 54, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 32px -4px rgba(31, 26, 23, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+    .glass-card-subtle {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+  <!-- Ambient Glow Backdrop -->
+  <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden opacity-60">
+    <div class="absolute -top-[12%] left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-b from-[#ffdad2]/35 via-[#f5f3f0]/20 to-transparent blur-3xl"></div>
+    <div class="absolute top-[35%] -left-[10%] w-[600px] h-[600px] bg-[#ceee93]/15 rounded-full blur-3xl"></div>
+    <div class="absolute top-[65%] -right-[10%] w-[700px] h-[700px] bg-[#a1eff8]/15 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- Shared TopNavBar (Semantic Shell Lock: Products Active, 14px radius, no capsules) -->
+  <header class="sticky top-0 z-50 px-4 sm:px-8 py-3 w-full">
+    <nav class="w-full max-w-[1600px] mx-auto rounded-[14px] px-6 py-3.5 bg-surface-container-lowest/85 backdrop-blur-xl border border-outline-variant/30 shadow-sm flex items-center justify-between transition-all duration-200">
+      <!-- Horizon Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-9 h-9 rounded-[10px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center shadow-sm text-on-primary group-hover:scale-[1.02] transition-transform">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M5 4v16h2.5v-7h9v7H19V4h-2.5v6.5h-9V4H5z"></path>
+          </svg>
+        </div>
+        <span class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight">Horizon</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#products" class="text-label-lg font-label-lg text-primary font-semibold flex items-center gap-1.5">
+          Products
+          <span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+        </a>
+        <a href="#solutions" class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors">Solutions</a>
+        <a href="#cases" class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors">Case Studies</a>
+        <a href="#about" class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors">About</a>
+        <a href="#careers" class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors">Careers</a>
+        <a href="#contact" class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors">Contact</a>
+      </div>
+
+      <!-- Action Button (10px rounded rectangle) -->
+      <div class="flex items-center gap-3">
+        <button class="primary-gradient-btn text-white text-label-lg font-label-lg font-semibold px-5 py-2.5 rounded-[10px] active:scale-[0.99] transition-all flex items-center gap-2">
+          <span>Book a free demo</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-8 space-y-24 py-6">
+
+    <!-- ========================================== -->
+    <!-- 1. BREADCRUMB & HERO SECTION               -->
+    <!-- ========================================== -->
+    <section class="space-y-8 pt-4">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+        <a href="#" class="hover:text-primary transition-colors">Products</a>
+        <span class="text-outline-variant">/</span>
+        <a href="#" class="hover:text-primary transition-colors">Commerce & Retail</a>
+        <span class="text-outline-variant">/</span>
+        <span class="text-on-surface font-semibold">Online Store Platform</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Hero Content Left (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Category Tag (6px rounded rectangle) -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-[#ffdad2]/50 border border-primary-container/30 text-on-primary-fixed-variant text-label-sm font-label-sm font-bold tracking-wider uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            Unified Digital Commerce Engine
+          </div>
+
+          <!-- Product Headline -->
+          <h1 class="text-display-lg font-display-lg tracking-tight text-on-surface text-balance">
+            Online Store Platform
+          </h1>
+
+          <!-- One-line Promise -->
+          <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Construct high-conversion storefronts, direct your entire product catalog, and fulfill customer orders seamlessly — without gluing together disconnected third-party plugins.
+          </p>
+
+          <!-- Key Quantitative Benchmarks (10px rounded rectangles) -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <div class="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
+              <span class="material-symbols-outlined text-primary text-xl">shopping_cart_checkout</span>
+              <span class="text-label-md font-label-md text-on-surface"><strong class="font-bold text-primary">[00%]</strong> Cart Recovery Rate</span>
+            </div>
+            <div class="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
+              <span class="material-symbols-outlined text-secondary text-xl">sync_saved_locally</span>
+              <span class="text-label-md font-label-md text-on-surface"><strong class="font-bold text-secondary">Zero-Drift</strong> Multi-Channel Stock</span>
+            </div>
+            <div class="glass-card px-4 py-2.5 rounded-[10px] flex items-center gap-2.5 shadow-sm">
+              <span class="material-symbols-outlined text-tertiary text-xl">speed</span>
+              <span class="text-label-md font-label-md text-on-surface"><strong class="font-bold text-tertiary">[0.00]s</strong> Checkout Execution</span>
+            </div>
+          </div>
+
+          <!-- 6 Rectangular Feature Chips (10px rounded rectangles) -->
+          <div class="pt-4 space-y-2">
+            <span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block font-semibold">Core Architectural Primitives</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div class="px-3.5 py-2.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 text-body-sm font-body-sm text-on-surface flex items-center gap-2.5 hover:bg-surface-container transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                <span>Abandoned Cart Recovery Sequences</span>
+              </div>
+              <div class="px-3.5 py-2.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 text-body-sm font-body-sm text-on-surface flex items-center gap-2.5 hover:bg-surface-container transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                <span>Customizable Checkout Flow</span>
+              </div>
+              <div class="px-3.5 py-2.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 text-body-sm font-body-sm text-on-surface flex items-center gap-2.5 hover:bg-surface-container transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                <span>Multi-Currency & Multi-Language Storefronts</span>
+              </div>
+              <div class="px-3.5 py-2.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 text-body-sm font-body-sm text-on-surface flex items-center gap-2.5 hover:bg-surface-container transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                <span>Cross-Sell & Related-Product Placement</span>
+              </div>
+              <div class="px-3.5 py-2.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 text-body-sm font-body-sm text-on-surface flex items-center gap-2.5 hover:bg-surface-container transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                <span>Unified Inventory Across Storefront & Social</span>
+              </div>
+              <div class="px-3.5 py-2.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 text-body-sm font-body-sm text-on-surface flex items-center gap-2.5 hover:bg-surface-container transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                <span>No-Code Storefront Customization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Form Card Right (5 cols) (10px rounded controls) -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-2xl p-7 lg:p-8 space-y-6 relative overflow-hidden shadow-xl border border-white">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-bl-full pointer-events-none"></div>
+            <div class="space-y-1.5">
+              <div class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-bold">
+                <span class="material-symbols-outlined text-sm">storefront</span>
+                COMMERCE ARCHITECTURE BRIEFING
+              </div>
+              <h2 class="text-headline-md font-headline-md text-on-surface">Book a live storefront walk-through</h2>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">See how unified inventory, zero-lag checkouts, and automated recovery streamline your monthly gross volume.</p>
+            </div>
+
+            <form class="space-y-4" onsubmit="event.preventDefault();">
+              <div>
+                <label class="block text-label-md font-label-md text-on-surface mb-1.5">Full Name</label>
+                <input type="text" placeholder="e.g. Jordan Vance" class="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all"/>
+              </div>
+
+              <div>
+                <label class="block text-label-md font-label-md text-on-surface mb-1.5">Work Email</label>
+                <input type="email" placeholder="jordan@merchandisegroup.com" class="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all"/>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-label-md font-label-md text-on-surface mb-1.5">Phone Number</label>
+                  <input type="text" placeholder="[phone]" class="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface placeholder:text-outline/60 outline-none transition-all"/>
+                </div>
+                <div>
+                  <label class="block text-label-md font-label-md text-on-surface mb-1.5">Monthly GMV</label>
+                  <select class="w-full h-12 px-3.5 rounded-[10px] bg-surface-container-lowest/90 border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface outline-none transition-all">
+                    <option>[00k] – [000k] / month</option>
+                    <option>[000k] – [0M] / month</option>
+                    <option>[0M+] Enterprise Volume</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full h-12 primary-gradient-btn text-white text-label-lg font-label-lg font-semibold rounded-[10px] shadow-md hover:brightness-105 active:scale-[0.99] transition-all flex items-center justify-center gap-2 mt-2">
+                <span>Request Live Demo</span>
+                <span class="material-symbols-outlined text-base">calendar_today</span>
+              </button>
+
+              <div class="flex items-center gap-2 text-label-sm font-label-sm text-outline pt-1 justify-center">
+                <span class="material-symbols-outlined text-sm text-secondary">lock</span>
+                <span>Encrypted hosting, role-based access and regular backups.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. PRODUCT DEMO SECTION                    -->
+    <!-- ========================================== -->
+    <section class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">LIVE PLATFORM TELEMETRY</span>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Unified Commerce Control Center</h2>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-surface-container-low border border-outline-variant/40 text-label-md font-label-md text-on-surface-variant">
+            <span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+            Store Instance: <strong>STORE-NORTH-US</strong>
+          </div>
+          <button class="px-4 py-2 rounded-[10px] glass-card text-label-md font-label-md font-semibold text-on-surface hover:bg-white transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-base text-primary">play_circle</span>
+            Watch Storefront Engine [00] min
+          </button>
+        </div>
+      </div>
+
+      <!-- Demo Video Placeholder beside realistic UI mockup -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Video Placeholder Left (5 cols) -->
+        <div class="lg:col-span-5 glass-card rounded-2xl p-6 border border-white/80 shadow-xl flex flex-col justify-between relative overflow-hidden bg-surface-container-lowest">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-[6px] bg-primary text-white text-[11px] font-bold">STREAM DEMO</span>
+              <span class="text-[12px] text-outline font-medium">Resolution: 4K HDR</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">End-to-End Purchase & Fulfillment Flow</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">
+              Observe how a buyer completes a transaction across social commerce channels, triggers stock reservation in real time, and logs immediate fulfillment payloads.
+            </p>
+          </div>
+
+          <!-- Video Screen Simulation -->
+          <div class="my-6 rounded-xl bg-inverse-surface text-surface relative aspect-video flex flex-col items-center justify-center p-6 text-center group cursor-pointer overflow-hidden border border-outline-variant/30">
+            <div class="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/40 to-transparent"></div>
+            <!-- Video Overlay Controls -->
+            <div class="relative z-10 space-y-3">
+              <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shadow-lg mx-auto group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-3xl">play_arrow</span>
+              </div>
+              <div class="text-label-md font-label-md text-white font-semibold tracking-wide">Live Ingestion & Checkout Stream</div>
+              <div class="text-[11px] text-white/70">Click to preview interactive session ([00] mins)</div>
+            </div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-[11px] text-white/60 z-10 border-t border-white/10 pt-2">
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Buffer: Healthy</span>
+              <span>Audio: English</span>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-body-sm font-body-sm">
+            <span class="text-on-surface-variant">Active Checkout Throughput:</span>
+            <span class="font-bold text-primary">[000+] Orders / hr</span>
+          </div>
+        </div>
+
+        <!-- Realistic UI Mockup Right (7 cols) -->
+        <div class="lg:col-span-7 glass-card rounded-2xl p-6 border border-white/80 shadow-2xl space-y-5 bg-surface-container-lowest">
+          <!-- Top Control Header -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-outline-variant/20">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-[8px] bg-primary-container text-white flex items-center justify-center font-bold text-sm">
+                HZ
+              </div>
+              <div>
+                <div class="text-label-md font-label-md font-bold text-on-surface">Flagship Storefront Hub</div>
+                <div class="text-[11px] text-outline">Production Node: us-east-multi-region</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded-[6px] bg-secondary-container text-on-secondary-container text-[11px] font-bold">Catalog Synced</span>
+              <span class="px-2.5 py-1 rounded-[6px] bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-bold">Stripe & PayPal Live</span>
+            </div>
+          </div>
+
+          <!-- KPI Summary Strip -->
+          <div class="grid grid-cols-3 gap-3">
+            <div class="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/30">
+              <div class="text-[11px] text-outline font-medium">Active In-Cart Value</div>
+              <div class="text-headline-sm font-headline-sm text-on-surface font-bold mt-0.5">$[00,000]</div>
+              <div class="text-[11px] text-primary flex items-center gap-1 mt-1">
+                <span class="material-symbols-outlined text-xs">trending_up</span> +[00%] vs benchmark
+              </div>
+            </div>
+            <div class="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/30">
+              <div class="text-[11px] text-outline font-medium">Recovery Sequence Active</div>
+              <div class="text-headline-sm font-headline-sm text-secondary font-bold mt-0.5">[000] Shoppers</div>
+              <div class="text-[11px] text-secondary flex items-center gap-1 mt-1">
+                <span class="material-symbols-outlined text-xs">mail</span> Auto-dispatch tier 1
+              </div>
+            </div>
+            <div class="p-3 rounded-[10px] bg-surface-container-low border border-outline-variant/30">
+              <div class="text-[11px] text-outline font-medium">Global Multi-Currency</div>
+              <div class="text-headline-sm font-headline-sm text-tertiary font-bold mt-0.5">14 Currencies</div>
+              <div class="text-[11px] text-outline mt-1">Live fx rate lock</div>
+            </div>
+          </div>
+
+          <!-- Simulated Order / Live Cart Table -->
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between text-label-sm font-label-sm text-outline px-1">
+              <span>RECENT CHECKOUT ACTIONS</span>
+              <span>UPDATED [00] SECONDS AGO</span>
+            </div>
+
+            <!-- Table Row 1 -->
+            <div class="p-3.5 rounded-[10px] bg-white border border-outline-variant/30 flex items-center justify-between text-body-sm shadow-sm">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-[8px] bg-secondary-container/40 text-secondary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-base">check</span>
+                </div>
+                <div>
+                  <div class="text-label-md font-label-md font-semibold text-on-surface">Order #HZ-89412 — Paid & Confirmed</div>
+                  <div class="text-[11px] text-outline">Express Checkout • USD $284.50 • 3 Items</div>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="px-2 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-container text-[11px] font-bold">Inventory Decremented</span>
+                <div class="text-[11px] text-outline mt-0.5">Dispatched to WMS</div>
+              </div>
+            </div>
+
+            <!-- Table Row 2 -->
+            <div class="p-3.5 rounded-[10px] bg-white border border-outline-variant/30 flex items-center justify-between text-body-sm shadow-sm">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-[8px] bg-primary-fixed/40 text-primary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-base">forward_to_inbox</span>
+                </div>
+                <div>
+                  <div class="text-label-md font-label-md font-semibold text-on-surface">Cart Recovery Triggered #CR-304</div>
+                  <div class="text-[11px] text-outline">Abandoned at Payment Step • Value: $142.00 • Sequence 1/3</div>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="px-2 py-0.5 rounded-[6px] bg-[#ffdad2] text-on-primary-fixed-variant text-[11px] font-bold">Email Dispatched</span>
+                <div class="text-[11px] text-outline mt-0.5">Link valid for 24h</div>
+              </div>
+            </div>
+
+            <!-- Table Row 3 -->
+            <div class="p-3.5 rounded-[10px] bg-white border border-outline-variant/30 flex items-center justify-between text-body-sm shadow-sm">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-[8px] bg-tertiary-fixed/40 text-tertiary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-base">language</span>
+                </div>
+                <div>
+                  <div class="text-label-md font-label-md font-semibold text-on-surface">Multi-Currency Localized Session</div>
+                  <div class="text-[11px] text-outline">Frankfurt, DE • EUR €340.00 • Native Tax Handled</div>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="px-2 py-0.5 rounded-[6px] bg-tertiary-container/30 text-on-tertiary-container text-[11px] font-bold">Zero VAT Friction</span>
+                <div class="text-[11px] text-outline mt-0.5">Compliant routing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. ABOUT / PROBLEM SOLVED                  -->
+    <!-- ========================================== -->
+    <section class="space-y-8">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">YOUR STOREFRONT SHOULD RUN ITSELF BETWEEN SALES</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Stop Stitching Fragile Tools Together</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+          Launching and expanding a modern e-commerce storefront typically devolves into taping together a front-end website template, an isolated payments connector, and fragile inventory spreadsheets. Horizon combines your storefront presentation, catalog logic, checkout mechanics, and order fulfillment into one unified architecture — so every customer transaction completes cleanly, automatically, and without data drift.
+        </p>
+      </div>
+
+      <!-- 3 Key Checkmark Cards (10px rounded shapes) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Checkmark Card 1 -->
+        <div class="glass-card rounded-2xl p-7 space-y-4 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-[10px] bg-primary-fixed/60 text-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-2xl">palette</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">No-code storefront builder with customizable themes</h3>
+          <p class="text-body-md font-body-md text-on-surface-variant">
+            Create distinctive, brand-tailored shopping experiences using responsive drag-and-drop themes without writing custom CSS or relying on external dev agencies.
+          </p>
+          <div class="pt-2 flex items-center gap-2 text-label-md font-label-md font-semibold text-primary">
+            <span class="material-symbols-outlined text-base">check_circle</span>
+            <span>Zero code dependency for visual styling</span>
+          </div>
+        </div>
+
+        <!-- Checkmark Card 2 -->
+        <div class="glass-card rounded-2xl p-7 space-y-4 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-[10px] bg-secondary-container/60 text-secondary flex items-center justify-center">
+            <span class="material-symbols-outlined text-2xl">layers</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Catalog and inventory management built in, not bolted on</h3>
+          <p class="text-body-md font-body-md text-on-surface-variant">
+            Direct your stock levels, complex SKU variants, and product descriptions natively in the core database so you never oversell across storefront or social channels.
+          </p>
+          <div class="pt-2 flex items-center gap-2 text-label-md font-label-md font-semibold text-secondary">
+            <span class="material-symbols-outlined text-base">check_circle</span>
+            <span>Zero inventory lag across all channels</span>
+          </div>
+        </div>
+
+        <!-- Checkmark Card 3 -->
+        <div class="glass-card rounded-2xl p-7 space-y-4 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-[10px] bg-tertiary-fixed/60 text-tertiary flex items-center justify-center">
+            <span class="material-symbols-outlined text-2xl">credit_card</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Secure checkout with multiple payment options</h3>
+          <p class="text-body-md font-body-md text-on-surface-variant">
+            Provide instant, frictionless digital checkouts supporting Apple Pay, credit cards, regional installments, and international currencies with encrypted tokenization.
+          </p>
+          <div class="pt-2 flex items-center gap-2 text-label-md font-label-md font-semibold text-tertiary">
+            <span class="material-symbols-outlined text-base">check_circle</span>
+            <span>Encrypted, multi-gateway protection</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. FEATURES (01–06 LIST & DEEP DIVE PANEL) -->
+    <!-- ========================================== -->
+    <section class="space-y-8">
+      <div class="max-w-3xl space-y-2">
+        <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">FROM CATALOG TO FULFILLMENT, CONNECTED</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Six Capabilities That Remove the Commerce Gaps</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant">
+          Engineered to eradicate the friction between digital storefront presentation, warehouse inventory, and automated payment settlement.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- 01 - 06 Selector List Left (6 cols) -->
+        <div class="lg:col-span-6 space-y-3">
+          <!-- Feature 01 Active State (Highlighted) -->
+          <div class="p-4 rounded-[10px] bg-surface-container-lowest border-2 border-primary/40 shadow-sm cursor-pointer transition-all">
+            <div class="flex items-start gap-3.5">
+              <span class="text-label-lg font-label-lg font-extrabold text-primary">01</span>
+              <div class="space-y-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-headline-sm font-headline-sm text-on-surface">Abandoned Cart Recovery Sequences</h4>
+                  <span class="px-2 py-0.5 rounded-[6px] bg-primary text-white text-[10px] font-bold">FEATURED</span>
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Abandoned carts trigger a scheduled recovery email automatically, converting a share of walked-away shoppers into completed orders.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 02 -->
+          <div class="p-4 rounded-[10px] bg-surface-container-low/70 border border-outline-variant/30 hover:bg-surface-container-lowest hover:border-outline-variant transition-all cursor-pointer">
+            <div class="flex items-start gap-3.5">
+              <span class="text-label-lg font-label-lg font-bold text-outline">02</span>
+              <div class="space-y-1">
+                <h4 class="text-headline-sm font-headline-sm text-on-surface">Customizable Checkout Flow</h4>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Shape every step of checkout to match your exact brand guidelines, remove unnecessary form fields, and offer one-click express payment gateways.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 03 -->
+          <div class="p-4 rounded-[10px] bg-surface-container-low/70 border border-outline-variant/30 hover:bg-surface-container-lowest hover:border-outline-variant transition-all cursor-pointer">
+            <div class="flex items-start gap-3.5">
+              <span class="text-label-lg font-label-lg font-bold text-outline">03</span>
+              <div class="space-y-1">
+                <h4 class="text-headline-sm font-headline-sm text-on-surface">Multi-Currency & Multi-Language Storefronts</h4>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Present localized catalog pricing, automatic currency conversions, and translated product specifications based on the visitor’s geographic region.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 04 -->
+          <div class="p-4 rounded-[10px] bg-surface-container-low/70 border border-outline-variant/30 hover:bg-surface-container-lowest hover:border-outline-variant transition-all cursor-pointer">
+            <div class="flex items-start gap-3.5">
+              <span class="text-label-lg font-label-lg font-bold text-outline">04</span>
+              <div class="space-y-1">
+                <h4 class="text-headline-sm font-headline-sm text-on-surface">Cross-Sell & Related-Product Placement</h4>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Surface intelligent bundle recommendations and dynamic add-on widgets directly within the shopping cart and product detail pages to expand average order values.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 05 -->
+          <div class="p-4 rounded-[10px] bg-surface-container-low/70 border border-outline-variant/30 hover:bg-surface-container-lowest hover:border-outline-variant transition-all cursor-pointer">
+            <div class="flex items-start gap-3.5">
+              <span class="text-label-lg font-label-lg font-bold text-outline">05</span>
+              <div class="space-y-1">
+                <h4 class="text-headline-sm font-headline-sm text-on-surface">Unified Inventory Across Storefront & Social Selling Channels</h4>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Centralize real-time stock balances across your main online website, Instagram shops, and physical showroom locations without duplicate entry or overselling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 06 -->
+          <div class="p-4 rounded-[10px] bg-surface-container-low/70 border border-outline-variant/30 hover:bg-surface-container-lowest hover:border-outline-variant transition-all cursor-pointer">
+            <div class="flex items-start gap-3.5">
+              <span class="text-label-lg font-label-lg font-bold text-outline">06</span>
+              <div class="space-y-1">
+                <h4 class="text-headline-sm font-headline-sm text-on-surface">No-Code Storefront Customization</h4>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Edit site layouts, announcement banners, navigation menus, and typography freely through visual controls designed for rapid merchandising campaigns.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlighted Detail Panel for Feature 01 (6 cols) -->
+        <div class="lg:col-span-6">
+          <div class="glass-card rounded-2xl p-7 lg:p-8 space-y-6 border border-white shadow-lg">
+            <div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-[6px] bg-primary text-white text-label-sm font-label-sm font-bold">DEEP DIVE: 01</span>
+                <span class="text-label-lg font-label-lg font-semibold text-on-surface">Automated Cart Salvage Pipeline</span>
+              </div>
+              <span class="text-label-sm font-label-sm text-secondary font-semibold">Active Sequence #AC-49</span>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="text-headline-sm font-headline-sm text-on-surface">Precision Recovery Trigger Architecture</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                When a buyer adds products to their cart and departs without completing checkout, Horizon executes a deterministic multi-stage email and reminder workflow.
+              </p>
+
+              <!-- Sequence Nodes (10px rounded rectangles) -->
+              <div class="space-y-3 pt-2">
+                <!-- Node 1 -->
+                <div class="flex items-center justify-between p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/30">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                      <span class="material-symbols-outlined text-sm font-bold">timer</span>
+                    </div>
+                    <div>
+                      <div class="text-label-md font-label-md text-on-surface">1. Abandonment Detection (+[00] min)</div>
+                      <div class="text-[11px] text-outline">Session telemetry flags stalled checkout payload</div>
+                    </div>
+                  </div>
+                  <span class="text-[11px] font-semibold text-secondary">Triggered</span>
+                </div>
+
+                <!-- Connector -->
+                <div class="h-3 w-0.5 bg-outline-variant/40 ml-7"></div>
+
+                <!-- Node 2 -->
+                <div class="flex items-center justify-between p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/30">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                      <span class="material-symbols-outlined text-sm font-bold">mail</span>
+                    </div>
+                    <div>
+                      <div class="text-label-md font-label-md text-on-surface">2. Stage 1 Gentle Reminder (+[00] hours)</div>
+                      <div class="text-[11px] text-outline">Automated cart item summary & direct return link</div>
+                    </div>
+                  </div>
+                  <span class="text-[11px] font-semibold text-secondary">[00%] Open Rate</span>
+                </div>
+
+                <!-- Connector -->
+                <div class="h-3 w-0.5 bg-outline-variant/40 ml-7"></div>
+
+                <!-- Node 3 -->
+                <div class="flex items-center justify-between p-3.5 rounded-[10px] bg-surface-container-lowest border-2 border-primary-container">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-primary-container text-white flex items-center justify-center animate-pulse">
+                      <span class="material-symbols-outlined text-sm">loyalty</span>
+                    </div>
+                    <div>
+                      <div class="text-label-md font-label-md text-on-surface font-bold">3. Stage 2 Incentive Dispatch (+[00] hours)</div>
+                      <div class="text-[11px] text-outline">Time-bounded personalized discount code & stock alert</div>
+                    </div>
+                  </div>
+                  <span class="px-2 py-0.5 rounded-[6px] bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-bold">High Conversion</span>
+                </div>
+              </div>
+
+              <!-- Metrics Banner inside card -->
+              <div class="p-3.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-body-sm font-body-sm">
+                <span class="text-on-surface-variant">Average Revenue Salvaged:</span>
+                <span class="font-bold text-primary">+[00%] Recovered GMV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. HOW IT WORKS (FOUR CONNECTED STEPS)     -->
+    <!-- ========================================== -->
+    <section class="space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">FROM LAUNCH TO SHIPPED ORDER</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Four Steps From Setup to Fulfillment</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant">
+          A continuous, deterministic lifecycle engineered to move products from your master catalog to customer hands smoothly.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+        <!-- Step 01 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-white relative z-10 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-[10px] bg-[#ffdad2] text-on-primary-fixed-variant flex items-center justify-center text-label-lg font-label-lg font-extrabold">01</span>
+              <span class="material-symbols-outlined text-outline">web</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Build the Storefront</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Your digital storefront is shaped and customized using responsive themes and visual drag-and-drop merchandising tools.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">tune</span> Rapid setup
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-white relative z-10 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-[10px] bg-[#ceee93] text-on-secondary-fixed-variant flex items-center justify-center text-label-lg font-label-lg font-extrabold">02</span>
+              <span class="material-symbols-outlined text-outline">inventory_2</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Add the Catalog</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Products are uploaded, structured into nested categories, and tied directly to real-time warehouse inventory registers.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-secondary font-semibold flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">hub</span> Unified stock levels
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-white relative z-10 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-[10px] bg-[#a1eff8] text-on-tertiary-fixed-variant flex items-center justify-center text-label-lg font-label-lg font-extrabold">03</span>
+              <span class="material-symbols-outlined text-outline">payments</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Take the Order</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Customers complete transactions swiftly through an encrypted, branded checkout funnel with localized currency handling.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-tertiary font-semibold flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">verified_user</span> 100% tokenized checkout
+          </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-white relative z-10 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-[10px] bg-[#ffdad2] text-on-primary-fixed-variant flex items-center justify-center text-label-lg font-label-lg font-extrabold">04</span>
+              <span class="material-symbols-outlined text-outline">local_shipping</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Fulfill and Ship</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Every confirmed purchase automatically routes to warehouse packing lines and provides real-time carrier tracking dispatch.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">sync</span> Automated logistics link
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. BENEFITS & TRUST ASSURANCE             -->
+    <!-- ========================================== -->
+    <section class="space-y-8">
+      <div class="max-w-3xl space-y-2">
+        <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">WHY BRANDS STOP STITCHING TOOLS TOGETHER</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Engineered for Rapid Launch & Frictionless Commerce</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant">
+          Faster launch velocity, real-time inventory synchrony, and significantly lower cart abandonment across all channels.
+        </p>
+      </div>
+
+      <!-- 4 Benefit Cards (10px rounded rectangles inside, 2xl containers) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card rounded-2xl p-6 space-y-3 border border-white">
+          <div class="w-10 h-10 rounded-[10px] bg-primary-fixed/50 text-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl">rocket_launch</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Faster Launch</h3>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">
+            Deploy a full-fledged enterprise online store without the high expense and multi-month delays of hiring outside frontend developers.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 space-y-3 border border-white">
+          <div class="w-10 h-10 rounded-[10px] bg-secondary-container/50 text-secondary flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl">sync_alt</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Synced Inventory</h3>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">
+            Your stock balances and storefront displays remain strictly synchronized in real time, preventing awkward out-of-stock cancellations.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 space-y-3 border border-white">
+          <div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed/50 text-tertiary flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl">production_quantity_limits</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Fewer Abandoned Carts</h3>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">
+            A frictionless, single-click checkout journey combined with automated follow-ups cuts drop-offs and preserves top-line revenue.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 space-y-3 border border-white">
+          <div class="w-10 h-10 rounded-[10px] bg-primary-fixed/50 text-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl">query_stats</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Built-in SEO</h3>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">
+            Native schema markup, lightning-fast Core Web Vitals, and automated metadata generation eliminate the need for complex SEO plugins.
+          </p>
+        </div>
+      </div>
+
+      <!-- Three-item Assurance Bar (Verbatim standard requirements) -->
+      <div class="glass-card rounded-2xl p-8 border border-white grid grid-cols-1 md:grid-cols-3 gap-8 shadow-sm">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-on-surface font-semibold text-label-lg font-label-lg">
+            <span class="material-symbols-outlined text-primary text-xl">encrypted</span>
+            Enterprise-Grade Security
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Encrypted hosting, role-based access control, and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-on-surface font-semibold text-label-lg font-label-lg">
+            <span class="material-symbols-outlined text-secondary text-xl">price_check</span>
+            Transparent, Scoped Pricing
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Every engagement is scoped individually with a fixed price and timeline agreed upfront — book a free consultation for a tailored quote.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-on-surface font-semibold text-label-lg font-label-lg">
+            <span class="material-symbols-outlined text-tertiary text-xl">groups</span>
+            Built for Your Whole Team
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Role-based views mean owners, managers, and frontline staff each see exactly what they need, nothing more, nothing missing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. BEFORE / AFTER CONTRAST                 -->
+    <!-- ========================================== -->
+    <section class="space-y-8">
+      <div class="max-w-3xl space-y-2">
+        <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">OPERATIONAL TRANSFORMATION</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">What Changes on Day One</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant">
+          Comparing conventional multi-plugin e-commerce headaches against the unified Horizon store backbone.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Before Column (Fragmented Old Way) -->
+        <div class="rounded-2xl p-7 bg-[#ffdad6]/25 border border-error-container space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-[10px] bg-error-container text-on-error-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-lg">close</span>
+            </div>
+            <div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface">The Fragmented Store Stack</h3>
+              <p class="text-label-sm font-label-sm text-outline">Unstable, multi-plugin friction</p>
+            </div>
+          </div>
+          <ul class="space-y-4 text-body-md font-body-md text-on-surface-variant">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-error text-lg mt-0.5 shrink-0">cancel</span>
+              <span>Website, payments and stock stitched from separate tools</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-error text-lg mt-0.5 shrink-0">cancel</span>
+              <span>Catalog updates require touching several places</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-error text-lg mt-0.5 shrink-0">cancel</span>
+              <span>Abandoned carts just disappear without recovery telemetry</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-error text-lg mt-0.5 shrink-0">cancel</span>
+              <span>SEO handled through a separate plugin or costly consultant</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- After Column (Horizon Synchronized Architecture) -->
+        <div class="glass-card rounded-2xl p-7 border-2 border-secondary/40 space-y-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-[10px] bg-secondary-container text-on-secondary-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-lg">check</span>
+            </div>
+            <div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface">The Horizon Store Backbone</h3>
+              <p class="text-label-sm font-label-sm text-secondary font-semibold">Structured, unified precision</p>
+            </div>
+          </div>
+          <ul class="space-y-4 text-body-md font-body-md text-on-surface">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">check_circle</span>
+              <span>Storefront, checkout and stock run from one system</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">check_circle</span>
+              <span>Catalog changes reflect everywhere instantly</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">check_circle</span>
+              <span>Abandoned carts get automatic follow-up and revenue salvage</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">check_circle</span>
+              <span>SEO tools built directly into the storefront core</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 8. FREQUENTLY ASKED QUESTIONS (ACCORDION)  -->
+    <!-- ========================================== -->
+    <section class="space-y-8 max-w-4xl mx-auto">
+      <div class="text-center space-y-2">
+        <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">PRE-ENGAGEMENT GUIDANCE</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Frequently Asked Questions</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant">
+          Clear answers regarding storefront customization, catalog scaling, payment integrations, and data ownership.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- Question 1 (Expanded with complete answer) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm space-y-3">
+          <div class="flex items-center justify-between cursor-pointer">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Do we need coding experience to customize the storefront?</h3>
+            <span class="material-symbols-outlined text-primary text-xl transform rotate-180">expand_more</span>
+          </div>
+          <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-outline-variant/20">
+            No coding experience is required. Horizon features an intuitive visual storefront customizer with pre-tested responsive layouts, drag-and-drop page sections, and granular theme controls. You can update colors, typography, hero banners, product grids, and promotional announcements immediately without writing code or hiring frontend developers. For complex enterprise needs, custom CSS and headless API hooks are also natively supported.
+          </p>
+        </div>
+
+        <!-- Question 2 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Can it handle a large catalog with lots of product variants?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+
+        <!-- Question 3 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Will our stock levels stay accurate if we also sell in a physical store?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+
+        <!-- Question 4 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Can we sell digital products as well as physical ones?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+
+        <!-- Question 5 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Does it support multiple currencies for international customers?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+
+        <!-- Question 6 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Can we run limited-time sales or flash discounts?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+
+        <!-- Question 7 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">How long does implementation typically take?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+
+        <!-- Question 8 (Collapsed) -->
+        <div class="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
+          <h3 class="text-headline-sm font-headline-sm text-on-surface">Is our data secure, and who owns it?</h3>
+          <span class="material-symbols-outlined text-outline text-xl">expand_more</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 9. "MORE FROM HORIZON" ECOSYSTEM           -->
+    <!-- ========================================== -->
+    <section class="space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div class="space-y-1">
+          <span class="text-label-sm font-label-sm font-bold text-primary tracking-wider uppercase block">CONNECTED ENTERPRISE MODULES</span>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">More from the Horizon Ecosystem</h2>
+        </div>
+        <a href="#products" class="text-label-lg font-label-lg font-semibold text-primary hover:text-primary-container transition-colors flex items-center gap-1.5">
+          <span>Browse all [00+] product packages</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Module 1: Smart Inventory Control -->
+        <div class="glass-card rounded-2xl p-6 space-y-3 hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-[10px] bg-primary-fixed/40 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">inventory</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Smart Inventory Control</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">
+              Know exactly what's on your shelves, in your trucks, and on order — down to the unit, across every warehouse you run.
+            </p>
+          </div>
+          <span class="text-label-md font-label-md font-semibold text-primary inline-flex items-center gap-1 pt-3">
+            Explore Module <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+        <!-- Module 2: Retail Point of Sale -->
+        <div class="glass-card rounded-2xl p-6 space-y-3 hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-[10px] bg-secondary-container/40 text-secondary flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">point_of_sale</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Retail Point of Sale</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">
+              Ring up sales, track stock and see what is actually selling, from one checkout till or fifty in complete sync.
+            </p>
+          </div>
+          <span class="text-label-md font-label-md font-semibold text-secondary inline-flex items-center gap-1 pt-3">
+            Explore Module <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+        <!-- Module 3: Ecommerce-to-Finance Sync -->
+        <div class="glass-card rounded-2xl p-6 space-y-3 hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed/40 text-tertiary flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">account_balance</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Ecommerce-to-Finance Sync</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">
+              Every online order updates your books automatically, no exporting spreadsheets to reconcile sales with accounting.
+            </p>
+          </div>
+          <span class="text-label-md font-label-md font-semibold text-tertiary inline-flex items-center gap-1 pt-3">
+            Explore Module <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+        <!-- Module 4: Warehouse Operations Platform -->
+        <div class="glass-card rounded-2xl p-6 space-y-3 hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-[10px] bg-primary-fixed/40 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">warehouse</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Warehouse Operations Platform</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">
+              Turn a warehouse floor into a system your pickers, packers and managers can actually see and trust.
+            </p>
+          </div>
+          <span class="text-label-md font-label-md font-semibold text-primary inline-flex items-center gap-1 pt-3">
+            Explore Module <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 10. FINAL CALL-TO-ACTION BAND              -->
+    <!-- ========================================== -->
+    <section class="rounded-3xl p-10 lg:p-16 relative overflow-hidden bg-gradient-to-br from-[#ff7555] via-[#ff6546] to-[#a9371d] text-white shadow-2xl">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent pointer-events-none"></div>
+      <div class="relative z-10 max-w-3xl space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-white/20 backdrop-blur-md text-white text-label-sm font-label-sm font-bold">
+          <span class="material-symbols-outlined text-sm">verified</span>
+          FIXED-SCOPE COMMERCE DEPLOYMENT
+        </div>
+
+        <h2 class="text-display-lg-mobile md:text-headline-lg font-headline-lg font-bold tracking-tight text-white">
+          Unify your digital storefront with fixed-scope certainty.
+        </h2>
+
+        <p class="text-body-lg font-body-lg text-white/90 max-w-2xl leading-relaxed">
+          Stop struggling with brittle third-party connectors. Launch a customized storefront, automate abandoned cart recovery, and synchronize live inventory within weeks.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <button class="px-6 py-3.5 rounded-[10px] bg-white text-primary text-label-lg font-label-lg font-bold hover:bg-surface-container-low shadow-lg active:scale-[0.99] transition-all flex items-center gap-2">
+            <span>Book an Architectural Consultation</span>
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </button>
+          <button class="px-6 py-3.5 rounded-[10px] bg-white/10 backdrop-blur-md border border-white/30 text-white text-label-lg font-label-lg font-semibold hover:bg-white/20 active:scale-[0.99] transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-base">download</span>
+            <span>Download Storefront Specification</span>
+          </button>
+        </div>
+
+        <p class="text-label-sm font-label-sm text-white/70 pt-2">
+          Encrypted hosting, role-based access and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- SHARED FOOTER (EDITORIAL MULTI-COLUMN)     -->
+  <!-- ========================================== -->
+  <footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-24">
+    <div class="w-full max-w-[1600px] mx-auto px-8 py-16 space-y-12">
+      <!-- Top Grid: Brand & 4 Nav Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Horizon Brand Col (4 cols) -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-[10px] bg-gradient-to-br from-primary-container to-primary flex items-center justify-center text-white">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M5 4v16h2.5v-7h9v7H19V4h-2.5v6.5h-9V4H5z"></path>
+              </svg>
+            </div>
+            <span class="text-headline-md font-headline-md font-bold text-on-surface tracking-tight">Horizon</span>
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Horizon delivers modern, high-precision ERP architecture, candidate pipeline orchestration, and verifiable enterprise workflows for fast-growing global teams.
+          </p>
+          <div class="text-body-sm font-body-sm text-outline space-y-1">
+            <div>[Office address]</div>
+            <div>[contact email] • [phone]</div>
+          </div>
+        </div>
+
+        <!-- Links Col 1: Products (2 cols) -->
+        <div class="md:col-span-2 space-y-3">
+          <span class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider block">Products</span>
+          <ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">ERP Architecture</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">AI Automation</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Integrations</a></li>
+            <li><a href="#" class="hover:text-primary font-medium text-primary">Candidate Tracking</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Col 2: Solutions (2 cols) -->
+        <div class="md:col-span-2 space-y-3">
+          <span class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider block">Solutions</span>
+          <ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Supply Chain</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Financial Operations</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Case Studies</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">About Horizon</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Col 3: Company (2 cols) -->
+        <div class="md:col-span-2 space-y-3">
+          <span class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider block">Company</span>
+          <ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Contact (2 cols) -->
+        <div class="md:col-span-2 space-y-3">
+          <span class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider block">Stay Informed</span>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">Bi-weekly architecture and hiring engineering briefs.</p>
+          <form class="space-y-2" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="name@company.com" class="w-full h-10 px-3 rounded-[10px] bg-white border border-outline-variant/50 text-body-sm font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20"/>
+            <button type="submit" class="w-full h-10 bg-on-surface text-surface text-label-md font-label-md font-semibold rounded-[10px] hover:bg-black transition-colors">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-outline">
+        <div>
+          © 2025 Horizon Enterprise Solutions. Encrypted hosting, role-based access and regular backups.
+        </div>
+        <div class="flex items-center gap-6 text-body-sm font-body-sm">
+          <a href="#" class="hover:text-on-surface transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

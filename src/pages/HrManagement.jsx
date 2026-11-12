@@ -1,0 +1,1274 @@
+// Generated from stitch/pd_hr-management-software.html by scripts/stitch-to-jsx.mjs (npm run convert).
+import { Link } from 'react-router-dom'
+import './HrManagement.css'
+
+export default function HrManagement() {
+  return (
+    <div className="pg-hr-management bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed -mt-20">
+      <title>{"HR Management System — Horizon People Operations"}</title>
+      {' '}
+      {' '}
+      <main className="pt-28 lg:pt-32 overflow-hidden">
+        <section className="relative max-w-7xl mx-auto px-6 lg:px-12 pt-6 pb-20">
+          <div className="absolute -top-24 left-1/4 w-96 h-96 bg-primary-container/15 rounded-full blur-[110px] pointer-events-none -z-10" />
+          <div className="absolute top-12 right-10 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-[100px] pointer-events-none -z-10" />
+          <nav className="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-6">
+            <Link to="/products" className="hover:text-primary transition-colors">
+              Products
+            </Link>
+            {' '}
+            <span className="material-symbols-outlined text-[14px] text-outline">
+              chevron_right
+            </span>
+            {' '}
+            <span className="text-on-surface-variant">
+              People Operations
+            </span>
+            {' '}
+            <span className="material-symbols-outlined text-[14px] text-outline">
+              chevron_right
+            </span>
+            {' '}
+            <span className="text-primary font-semibold">
+              HR Management System
+            </span>
+          </nav>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed/50 border border-outline-variant/40 rounded-[6px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                {' '}
+                <span className="font-label-sm text-label-sm text-on-primary-fixed-variant uppercase tracking-wider font-bold">
+                  PEOPLE OPERATIONS
+                </span>
+              </div>
+              <div className="space-y-4">
+                <h1 className="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight leading-none">
+                  HR Management
+                  {' '}
+                  <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">
+                    System
+                  </span>
+                </h1>
+                <p className="font-headline-sm text-headline-sm text-on-surface-variant font-medium leading-snug">
+                  One record per employee, from day one to departure — attendance, leave, and documentation unified.
+                </p>
+              </div>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Replaces fractured spreadsheets and siloed personnel folders with an immutable single source of truth for headcount, leave policies, and daily attendance.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div className="flex items-center gap-3 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm">
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    badge
+                  </span>
+                  {' '}
+                  <span className="font-label-md text-label-md font-semibold text-on-surface">
+                    Employee Self-Service Portal
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm">
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    calendar_month
+                  </span>
+                  {' '}
+                  <span className="font-label-md text-label-md font-semibold text-on-surface">
+                    Configurable Leave Accrual Policies
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm">
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    target
+                  </span>
+                  {' '}
+                  <span className="font-label-md text-label-md font-semibold text-on-surface">
+                    Goal-Based 360-Degree Appraisals
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm">
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    schedule
+                  </span>
+                  {' '}
+                  <span className="font-label-md text-label-md font-semibold text-on-surface">
+                    Attendance Regularization Workflow
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm">
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    checklist_rtl
+                  </span>
+                  {' '}
+                  <span className="font-label-md text-label-md font-semibold text-on-surface">
+                    Structured Onboarding Checklists
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm">
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    account_tree
+                  </span>
+                  {' '}
+                  <span className="font-label-md text-label-md font-semibold text-on-surface">
+                    Org Chart with Centralized Records
+                  </span>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-outline-variant/30">
+                <div className="space-y-1">
+                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+                    [00]%
+                  </div>
+                  <div className="font-label-sm text-label-sm text-on-surface-variant font-medium">
+                    Attendance Precision
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+                    [00] hrs
+                  </div>
+                  <div className="font-label-sm text-label-sm text-on-surface-variant font-medium">
+                    Saved / Payroll Cycle
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <div className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+                    [00] Days
+                  </div>
+                  <div className="font-label-sm text-label-sm text-on-surface-variant font-medium">
+                    Onboarding Turnaround
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-5" id="demo-form">
+              <div className="glass-panel p-8 rounded-[18px] relative border border-white/80">
+                <div className="absolute -top-3 right-6 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-[6px] font-bold flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                  {' '}
+                  INSTANT ARCHITECTURE SCOPE
+                </div>
+                <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                  Book a live system walk-through
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                  See how Horizon centralizes employee lifecycle records and streamlines approvals under [00] minutes.
+                </p>
+                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                  <div>
+                    <label className="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">
+                      Full Name
+                    </label>
+                    {' '}
+                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="e.g. Alex Morgan" type="text" />
+                  </div>
+                  <div>
+                    <label className="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">
+                      Work Email
+                    </label>
+                    {' '}
+                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="alex@enterprise.com" type="email" />
+                  </div>
+                  <div>
+                    <label className="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">
+                      Phone
+                    </label>
+                    {' '}
+                    <input className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="[phone]" type="tel" />
+                  </div>
+                  <div>
+                    <label className="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">
+                      Company / Headcount Tier
+                    </label>
+                    {' '}
+                    <div className="relative">
+                      <select className="w-full h-11 px-3.5 bg-surface-container-lowest/80 border border-outline-variant/50 rounded-[10px] text-body-sm text-on-surface appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all pr-10">
+                        <option>
+                          [00] - [000] Employees
+                        </option>
+                        <option>
+                          [000] - [0,000] Employees
+                        </option>
+                        <option>
+                          [0,000]+ Enterprise Scale
+                        </option>
+                      </select>
+                      {' '}
+                      <span className="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-outline text-[20px]">
+                        expand_more
+                      </span>
+                    </div>
+                  </div>
+                  {' '}
+                  <button className="w-full py-3.5 px-6 primary-btn-gradient text-on-primary font-label-lg text-label-lg font-bold rounded-[10px] transition-transform active:scale-[0.98] mt-2 flex items-center justify-center gap-2" type="submit">
+                    <span>
+                      Request Live Demo
+                    </span>
+                    {' '}
+                    <span className="material-symbols-outlined text-[18px]">
+                      arrow_forward
+                    </span>
+                  </button>
+                  {' '}
+                  <div className="flex items-center gap-2 pt-2 justify-center text-outline text-[12px]">
+                    <span className="material-symbols-outlined text-[15px] text-secondary">
+                      verified_user
+                    </span>
+                    {' '}
+                    <span className="font-label-sm text-label-sm">
+                      Encrypted hosting, role-based access and regular backups.
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-20 bg-surface-container-low/50 relative border-y border-outline-variant/30">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="max-w-3xl mb-12">
+              <div className="inline-flex items-center px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+                INTERACTIVE CONTROL PLANE
+              </div>
+              <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mb-2">
+                See HR Management System in action
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                Simulated walkthrough of employee self-service time-off, geo-fenced attendance clock-in, and automated manager approval queues.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-5 relative group">
+                <div className="relative bg-inverse-surface rounded-[16px] overflow-hidden shadow-xl aspect-[4/3] flex flex-col justify-between p-6 border border-outline/20">
+                  <div className="flex items-center justify-between z-10">
+                    <div className="flex items-center gap-2 bg-surface-container-lowest/15 backdrop-blur-md px-3 py-1 rounded-[6px] text-[12px] font-mono text-tertiary-fixed">
+                      <span className="w-2 h-2 rounded-full bg-error animate-ping" />
+                      {' '}
+                      <span>
+                        Live Pipeline :: Session #HR-SYNC-LIVE
+                      </span>
+                    </div>
+                    {' '}
+                    <span className="px-2 py-0.5 bg-black/40 text-white text-[11px] font-mono rounded-[4px]">
+                      1080p 60fps
+                    </span>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-[12px] bg-primary/90 text-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-200 cursor-pointer">
+                      <span className="material-symbols-outlined text-[36px] ml-1 fill-1">
+                        play_arrow
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between z-10 text-white/70 text-[12px] font-mono">
+                    <span>
+                      Duration: 04:32
+                    </span>
+                    {' '}
+                    <span>
+                      Interactive Telemetry Engine
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:col-span-7 glass-panel rounded-[20px] p-6 lg:p-7 border border-white">
+                <div className="flex flex-wrap items-center justify-between pb-5 border-b border-outline-variant/30 gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-sm">
+                      SV
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-headline-sm text-[16px] font-bold text-on-surface">
+                          Sarah Vance
+                        </span>
+                        {' '}
+                        <span className="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] rounded-[6px] font-bold">
+                          Active :: Full-Time
+                        </span>
+                      </div>
+                      <div className="font-label-sm text-label-sm text-on-surface-variant">
+                        Lead Systems Architect • #EMP-8492
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 font-mono text-[12px] text-on-surface-variant bg-surface-container-high px-3 py-1.5 rounded-[8px]">
+                    <span className="w-2 h-2 rounded-full bg-secondary" />
+                    {' '}
+                    <span>
+                      v4.2 PeopleLedger Active
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6 border-b border-outline-variant/20 pt-3 pb-3 text-sm">
+                  <span className="text-primary font-bold border-b-2 border-primary pb-3 -mb-3">
+                    Overview
+                  </span>
+                  {' '}
+                  <span className="text-on-surface-variant hover:text-on-surface cursor-pointer">
+                    {"Attendance & Shifts"}
+                  </span>
+                  {' '}
+                  <span className="text-on-surface-variant hover:text-on-surface cursor-pointer">
+                    Leave Balances
+                  </span>
+                  {' '}
+                  <span className="text-on-surface-variant hover:text-on-surface cursor-pointer">
+                    Documents
+                  </span>
+                  {' '}
+                  <span className="text-on-surface-variant hover:text-on-surface cursor-pointer">
+                    Performance
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-5">
+                  <div className="p-3.5 bg-surface-container-lowest/90 border border-outline-variant/30 rounded-[10px]">
+                    <div className="font-label-sm text-label-sm text-on-surface-variant mb-1">
+                      Annual Paid Leave
+                    </div>
+                    <div className="font-headline-sm text-headline-sm font-bold text-on-surface">
+                      18.5
+                      {' '}
+                      <span className="text-xs font-normal text-outline">
+                        / 24 Days
+                      </span>
+                    </div>
+                    <div className="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+                      <div className="bg-primary h-full w-[77%]" />
+                    </div>
+                  </div>
+                  <div className="p-3.5 bg-surface-container-lowest/90 border border-outline-variant/30 rounded-[10px]">
+                    <div className="font-label-sm text-label-sm text-on-surface-variant mb-1">
+                      Sick Leave
+                    </div>
+                    <div className="font-headline-sm text-headline-sm font-bold text-on-surface">
+                      5
+                      {' '}
+                      <span className="text-xs font-normal text-outline">
+                        / 7 Days
+                      </span>
+                    </div>
+                    <div className="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+                      <div className="bg-tertiary h-full w-[71%]" />
+                    </div>
+                  </div>
+                  <div className="p-3.5 bg-surface-container-lowest/90 border border-outline-variant/30 rounded-[10px]">
+                    <div className="font-label-sm text-label-sm text-on-surface-variant mb-1">
+                      Comp-Off
+                    </div>
+                    <div className="font-headline-sm text-headline-sm font-bold text-on-surface">
+                      2
+                      {' '}
+                      <span className="text-xs font-normal text-outline">
+                        Days Pending
+                      </span>
+                    </div>
+                    <div className="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+                      <div className="bg-secondary h-full w-[100%]" />
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-label-md text-label-md font-bold text-on-surface">
+                      Live Check-in Stream
+                    </span>
+                    {' '}
+                    <span className="font-label-sm text-[11px] text-secondary font-semibold">
+                      GEO-FENCE ACTIVE
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between text-body-sm text-on-surface">
+                    <div className="flex items-center gap-2">
+                      <span className="material-symbols-outlined text-[18px] text-tertiary">
+                        location_on
+                      </span>
+                      {' '}
+                      <span>
+                        HQ North Tower — [09:02 AM]
+                      </span>
+                    </div>
+                    {' '}
+                    <span className="px-2 py-0.5 bg-secondary-fixed/50 text-on-secondary-fixed-variant text-[11px] font-mono rounded-[4px]">
+                      Verified GPS / Biometric
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4 bg-primary-fixed/20 border border-primary/20 rounded-[10px]">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="space-y-1">
+                      <div className="font-label-md text-label-md font-bold text-on-primary-fixed-variant flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-[16px] text-primary">
+                          warning
+                        </span>
+                        {' '}
+                        Attendance Regularization Request
+                      </div>
+                      <p className="font-body-sm text-body-sm text-on-surface-variant">
+                        Dec 12 — Missing punch out: Flight travel for Client deployment
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button className="px-3 py-1.5 bg-primary text-on-primary rounded-[8px] font-label-sm text-label-sm font-semibold hover:bg-primary/90 transition-colors">
+                        Approve Regularization
+                      </button>
+                      {' '}
+                      <button className="px-3 py-1.5 bg-surface-container-lowest text-on-surface border border-outline-variant/40 rounded-[8px] font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors">
+                        Request Clarification
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-5 space-y-4">
+              <div className="inline-flex items-center px-3 py-1 bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm rounded-[6px] font-bold">
+                THE OPERATIONAL BOTTLENECK
+              </div>
+              <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+                HR should not live across three different folders.
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                When employee records are scattered between paper files, disparate payroll spreadsheets, and buried email threads, simple operational inquiries — such as real-time leave balances or shift handoffs — turn into tedious administrative friction. Horizon unifies every personnel file, daily attendance log, and leave request into an synchronized portal accessible to HR leads and staff alike.
+              </p>
+            </div>
+            <div className="lg:col-span-7 space-y-4">
+              <div className="glass-panel p-6 rounded-[14px] flex items-start gap-4">
+                <div className="w-10 h-10 rounded-[10px] bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-[24px]">
+                    verified
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-1">
+                    Real-Time Attendance with Multi-Mode Check-In
+                  </h3>
+                  <p className="font-body-md text-body-md text-on-surface-variant">
+                    Mobile check-in, geo-fenced kiosks, and automatic sync into core payroll calculations without manual end-of-month reconciliations.
+                  </p>
+                </div>
+              </div>
+              <div className="glass-panel p-6 rounded-[14px] flex items-start gap-4">
+                <div className="w-10 h-10 rounded-[10px] bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-[24px]">
+                    tune
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-1">
+                    Configurable Leave Accrual with Tiered Routing
+                  </h3>
+                  <p className="font-body-md text-body-md text-on-surface-variant">
+                    Automated multi-stage approval chains based on department, seniority, and leave categories with automatic entitlement tracking.
+                  </p>
+                </div>
+              </div>
+              <div className="glass-panel p-6 rounded-[14px] flex items-start gap-4">
+                <div className="w-10 h-10 rounded-[10px] bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-[24px]">
+                    person_check
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-1">
+                    Autonomous Employee Self-Service
+                  </h3>
+                  <p className="font-body-md text-body-md text-on-surface-variant">
+                    Staff independently review payslips, check remaining time-off balances, and submit updates without querying HR desk.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 bg-surface-container-low/40 border-t border-outline-variant/30">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="max-w-3xl mb-16">
+              <div className="inline-flex items-center px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+                ENGINEERED FOR PEOPLE PRECISION
+              </div>
+              <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mb-3">
+                The mechanics of daily people operations: Six core capabilities
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Purpose-built workflows replacing manual administrative overhead with deterministic data integrity.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-7 space-y-3">
+                <div className="p-5 bg-surface-container-lowest border-2 border-primary/40 rounded-[14px] shadow-sm flex items-start gap-4">
+                  <span className="font-mono text-sm font-bold text-primary px-2.5 py-1 bg-primary-fixed/40 rounded-[6px]">
+                    01
+                  </span>
+                  {' '}
+                  <div>
+                    <h3 className="font-headline-sm text-[17px] font-bold text-on-surface">
+                      Employee Self-Service Portal
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Employees handle time-off filings, payslip downloads, and address amendments directly, eliminating routine HR support tickets.
+                    </p>
+                  </div>
+                </div>
+                <div className="p-5 bg-surface-container-lowest/60 border border-outline-variant/30 rounded-[14px] flex items-start gap-4 hover:bg-surface-container-lowest transition-colors">
+                  <span className="font-mono text-sm font-bold text-outline px-2.5 py-1 bg-surface-container rounded-[6px]">
+                    02
+                  </span>
+                  {' '}
+                  <div>
+                    <h3 className="font-headline-sm text-[17px] font-bold text-on-surface">
+                      Configurable Leave Accrual Policies
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Support complex global holiday calendars, prorated tenure accruals, carryover caps, and automated encashment rules.
+                    </p>
+                  </div>
+                </div>
+                <div className="p-5 bg-surface-container-lowest/60 border border-outline-variant/30 rounded-[14px] flex items-start gap-4 hover:bg-surface-container-lowest transition-colors">
+                  <span className="font-mono text-sm font-bold text-outline px-2.5 py-1 bg-surface-container rounded-[6px]">
+                    03
+                  </span>
+                  {' '}
+                  <div>
+                    <h3 className="font-headline-sm text-[17px] font-bold text-on-surface">
+                      Goal-Based 360-Degree Appraisals
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Align quarterly milestones, continuous peer evaluations, and manager reviews directly with role rubrics.
+                    </p>
+                  </div>
+                </div>
+                <div className="p-5 bg-surface-container-lowest/60 border border-outline-variant/30 rounded-[14px] flex items-start gap-4 hover:bg-surface-container-lowest transition-colors">
+                  <span className="font-mono text-sm font-bold text-outline px-2.5 py-1 bg-surface-container rounded-[6px]">
+                    04
+                  </span>
+                  {' '}
+                  <div>
+                    <h3 className="font-headline-sm text-[17px] font-bold text-on-surface">
+                      Attendance Regularization Workflow
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Seamless dispute resolution enabling staff to rectify missed punches with digital manager sign-offs.
+                    </p>
+                  </div>
+                </div>
+                <div className="p-5 bg-surface-container-lowest/60 border border-outline-variant/30 rounded-[14px] flex items-start gap-4 hover:bg-surface-container-lowest transition-colors">
+                  <span className="font-mono text-sm font-bold text-outline px-2.5 py-1 bg-surface-container rounded-[6px]">
+                    05
+                  </span>
+                  {' '}
+                  <div>
+                    <h3 className="font-headline-sm text-[17px] font-bold text-on-surface">
+                      Structured New-Hire Onboarding Checklists
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Provision equipment, execute non-disclosure agreements, and collect tax forms through automated milestone stages.
+                    </p>
+                  </div>
+                </div>
+                <div className="p-5 bg-surface-container-lowest/60 border border-outline-variant/30 rounded-[14px] flex items-start gap-4 hover:bg-surface-container-lowest transition-colors">
+                  <span className="font-mono text-sm font-bold text-outline px-2.5 py-1 bg-surface-container rounded-[6px]">
+                    06
+                  </span>
+                  {' '}
+                  <div>
+                    <h3 className="font-headline-sm text-[17px] font-bold text-on-surface">
+                      Org Chart with Centralized Records
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Interactive real-time departmental reporting hierarchies synced with contract documents and salary bands.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:col-span-5 sticky top-28">
+                <div className="glass-panel p-7 rounded-[20px] border border-white">
+                  <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30 mb-5">
+                    <div>
+                      <span className="font-label-sm text-[11px] font-bold text-primary tracking-wider uppercase">
+                        FEATURE 01 DEEP INSPECTION
+                      </span>
+                      {' '}
+                      <h4 className="font-headline-sm text-[18px] font-bold text-on-surface">
+                        Self-Service Deflection Metrics
+                      </h4>
+                    </div>
+                    {' '}
+                    <span className="px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-mono text-[11px] rounded-[6px] font-bold">
+                      SYSTEM ACTIVE
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3 mb-6">
+                    <div className="p-4 bg-surface-container-lowest rounded-[12px] border border-outline-variant/20">
+                      <div className="font-label-sm text-label-sm text-on-surface-variant">
+                        Direct Resolution Rate
+                      </div>
+                      <div className="font-headline-md text-headline-md font-bold text-on-surface mt-1">
+                        [00.0%]
+                      </div>
+                      <div className="text-[12px] text-secondary font-medium mt-0.5">
+                        Automated resolution
+                      </div>
+                    </div>
+                    <div className="p-4 bg-surface-container-lowest rounded-[12px] border border-outline-variant/20">
+                      <div className="font-label-sm text-label-sm text-on-surface-variant">
+                        Unassisted Requests
+                      </div>
+                      <div className="font-headline-md text-headline-md font-bold text-on-surface mt-1">
+                        [00,000+]
+                      </div>
+                      <div className="text-[12px] text-tertiary font-medium mt-0.5">
+                        Zero HR intervention
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-surface-container-low/70 border border-outline-variant/30 rounded-[14px] space-y-3">
+                    <div className="flex items-center justify-between text-xs text-on-surface-variant font-mono">
+                      <span>
+                        MEMBER APP TERMINAL
+                      </span>
+                      {' '}
+                      <span>
+                        SYNCED INSTANTLY
+                      </span>
+                    </div>
+                    <div className="p-3 bg-white rounded-[10px] border border-outline-variant/30 flex items-center justify-between">
+                      <div className="flex items-center gap-2.5">
+                        <span className="material-symbols-outlined text-primary text-[20px]">
+                          beach_access
+                        </span>
+                        {' '}
+                        <div>
+                          <div className="font-label-sm text-label-sm font-bold text-on-surface">
+                            1-Click Time Off Request
+                          </div>
+                          <div className="text-[11px] text-on-surface-variant">
+                            {"Auto-calculated balances & routing"}
+                          </div>
+                        </div>
+                      </div>
+                      {' '}
+                      <button className="px-2.5 py-1 bg-primary text-white rounded-[6px] font-label-sm text-[11px] font-semibold">
+                        Apply
+                      </button>
+                    </div>
+                    <div className="p-3 bg-white rounded-[10px] border border-outline-variant/30 flex items-center justify-between">
+                      <div className="flex items-center gap-2.5">
+                        <span className="material-symbols-outlined text-tertiary text-[20px]">
+                          receipt_long
+                        </span>
+                        {' '}
+                        <div>
+                          <div className="font-label-sm text-label-sm font-bold text-on-surface">
+                            Instant Digital Payslip
+                          </div>
+                          <div className="text-[11px] text-on-surface-variant">
+                            Encrypted PDF with tax breakdowns
+                          </div>
+                        </div>
+                      </div>
+                      {' '}
+                      <span className="material-symbols-outlined text-outline text-[18px]">
+                        download
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="inline-flex items-center px-3 py-1 bg-primary-fixed/50 text-on-primary-fixed-variant font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+              LIFECYCLE METHODOLOGY
+            </div>
+            <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mb-2">
+              Four deterministic steps: From onboarding to executive reporting
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between h-full border border-white">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-sm font-bold text-primary px-3 py-1 bg-primary-fixed/30 rounded-[6px]">
+                    STEP 01
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline-variant text-[24px]">
+                    person_add
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-2">
+                  Onboard the Employee
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Personnel data, tax documents, and role permissions are captured once during digital onboarding and encrypted immediately.
+                </p>
+              </div>
+              <div className="pt-4 border-t border-outline-variant/20 mt-4 text-[12px] font-mono text-outline">
+                Phase: Verification
+              </div>
+            </div>
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between h-full border border-white">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-sm font-bold text-primary px-3 py-1 bg-primary-fixed/30 rounded-[6px]">
+                    STEP 02
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline-variant text-[24px]">
+                    timer
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-2">
+                  Capture Attendance Daily
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Clock-in timestamps stream seamlessly via preferred methods (mobile GPS, biometric, web terminal) directly to operational ledgers.
+                </p>
+              </div>
+              <div className="pt-4 border-t border-outline-variant/20 mt-4 text-[12px] font-mono text-outline">
+                Phase: Telemetry Sync
+              </div>
+            </div>
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between h-full border border-white">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-sm font-bold text-primary px-3 py-1 bg-primary-fixed/30 rounded-[6px]">
+                    STEP 03
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline-variant text-[24px]">
+                    alt_route
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-2">
+                  Route Leave for Multi-Tier Approval
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Time-off submissions instantly trigger role-based notifications to department leads and team calendars without friction.
+                </p>
+              </div>
+              <div className="pt-4 border-t border-outline-variant/20 mt-4 text-[12px] font-mono text-outline">
+                Phase: Approval Engine
+              </div>
+            </div>
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between h-full border border-white">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-sm font-bold text-primary px-3 py-1 bg-primary-fixed/30 rounded-[6px]">
+                    STEP 04
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline-variant text-[24px]">
+                    analytics
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface mb-2">
+                  Report on Headcount and Leave
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Executive dashboards generate live audits on labor costs, departmental absenteeism, and remaining leave liabilities.
+                </p>
+              </div>
+              <div className="pt-4 border-t border-outline-variant/20 mt-4 text-[12px] font-mono text-outline">
+                Phase: Executive Insight
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 bg-surface-container-low/50 border-y border-outline-variant/30">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="max-w-3xl mb-14">
+              <div className="inline-flex items-center px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+                BUSINESS RETURNS
+              </div>
+              <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mb-2">
+                Why high-velocity teams abandon HR spreadsheets
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Drastically fewer payroll adjustments, instant approvals, and verifiable compliance records.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="glass-panel p-8 rounded-[16px] border border-white">
+                <div className="w-12 h-12 rounded-[10px] bg-primary-fixed flex items-center justify-center text-primary mb-5">
+                  <span className="material-symbols-outlined text-[26px]">
+                    healing
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                  Fewer Manual Corrections
+                </h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Eliminate discrepancies between time clocks and payroll with automated validation rules and daily shift threshold audits.
+                </p>
+              </div>
+              <div className="glass-panel p-8 rounded-[16px] border border-white">
+                <div className="w-12 h-12 rounded-[10px] bg-secondary-fixed flex items-center justify-center text-secondary mb-5">
+                  <span className="material-symbols-outlined text-[26px]">
+                    flash_on
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                  Rapid Leave Approvals
+                </h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Slash turnaround times from days to seconds with direct mobile approvals and transparent calendar visibility for entire teams.
+                </p>
+              </div>
+              <div className="glass-panel p-8 rounded-[16px] border border-white">
+                <div className="w-12 h-12 rounded-[10px] bg-tertiary-fixed flex items-center justify-center text-tertiary mb-5">
+                  <span className="material-symbols-outlined text-[26px]">
+                    accessibility_new
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                  Employees Self-Serve
+                </h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Staff retrieve tax summaries, leave quotes, and company policies independently 24/7 without burdening HR operations.
+                </p>
+              </div>
+              <div className="glass-panel p-8 rounded-[16px] border border-white">
+                <div className="w-12 h-12 rounded-[10px] bg-surface-container-highest flex items-center justify-center text-on-surface mb-5">
+                  <span className="material-symbols-outlined text-[26px]">
+                    shield
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                  Defensible Audit Trails
+                </h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Cryptographically verifiable logs for all role adjustments, policy changes, and disciplinary notes ensuring zero compliance gaps.
+                </p>
+              </div>
+            </div>
+            <div className="glass-panel rounded-[16px] p-8 border border-white grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-outline-variant/30">
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-primary font-bold">
+                  <span className="material-symbols-outlined text-[20px]">
+                    lock
+                  </span>
+                  {' '}
+                  <h4 className="font-headline-sm text-[16px]">
+                    Enterprise-Grade Security
+                  </h4>
+                </div>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Encrypted hosting, role-based access control, and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+                </p>
+              </div>
+              <div className="space-y-2 md:pl-8 pt-6 md:pt-0">
+                <div className="flex items-center gap-2 text-secondary font-bold">
+                  <span className="material-symbols-outlined text-[20px]">
+                    payments
+                  </span>
+                  {' '}
+                  <h4 className="font-headline-sm text-[16px]">
+                    Transparent, Scoped Pricing
+                  </h4>
+                </div>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Every engagement is scoped individually with a fixed price and timeline agreed upfront — book a free consultation for a tailored quote.
+                </p>
+              </div>
+              <div className="space-y-2 md:pl-8 pt-6 md:pt-0">
+                <div className="flex items-center gap-2 text-tertiary font-bold">
+                  <span className="material-symbols-outlined text-[20px]">
+                    group
+                  </span>
+                  {' '}
+                  <h4 className="font-headline-sm text-[16px]">
+                    Built for Your Whole Team
+                  </h4>
+                </div>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Role-based views mean owners, managers, and frontline staff each see exactly what they need, nothing more, nothing missing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center px-3 py-1 bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+              OPERATIONAL TRANSFORMATION
+            </div>
+            <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mb-2">
+              What changes on day one
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant">
+              Contrast fragmented legacy personnel administration with Horizon's unified HR backbone.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-surface-container-high/60 border border-outline-variant/40 rounded-[18px] p-8 space-y-6">
+              <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface flex items-center gap-2">
+                  <span className="material-symbols-outlined text-error text-[22px]">
+                    cancel
+                  </span>
+                  {' '}
+                  The Fragmented HR Stack
+                </h3>
+                {' '}
+                <span className="px-2.5 py-1 bg-error-container text-on-error-container font-label-sm text-[11px] rounded-[6px] font-bold">
+                  LEGACY STATE
+                </span>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 text-body-md text-on-surface-variant">
+                  <span className="material-symbols-outlined text-error text-[18px] mt-0.5 shrink-0">
+                    close
+                  </span>
+                  {' '}
+                  <span>
+                    Employee records scattered across physical files and unsynced spreadsheets
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-body-md text-on-surface-variant">
+                  <span className="material-symbols-outlined text-error text-[18px] mt-0.5 shrink-0">
+                    close
+                  </span>
+                  {' '}
+                  <span>
+                    Leave queries answered slowly by digging through past manual binders
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-body-md text-on-surface-variant">
+                  <span className="material-symbols-outlined text-error text-[18px] mt-0.5 shrink-0">
+                    close
+                  </span>
+                  {' '}
+                  <span>
+                    Attendance reconciled after friction-filled end-of-month payroll disputes
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-body-md text-on-surface-variant">
+                  <span className="material-symbols-outlined text-error text-[18px] mt-0.5 shrink-0">
+                    close
+                  </span>
+                  {' '}
+                  <span>
+                    Managers constantly bottleneck HR with requests for basic team attendance summaries
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div className="glass-panel border-2 border-secondary/40 rounded-[18px] p-8 space-y-6 shadow-md relative">
+              <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface flex items-center gap-2">
+                  <span className="material-symbols-outlined text-secondary text-[22px]">
+                    check_circle
+                  </span>
+                  {' '}
+                  The Horizon Synchronized Backbone
+                </h3>
+                {' '}
+                <span className="px-2.5 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] rounded-[6px] font-bold">
+                  HORIZON STATE
+                </span>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 text-body-md text-on-surface">
+                  <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">
+                    check
+                  </span>
+                  {' '}
+                  <span>
+                    One single verified record per employee, instantly searchable and up to date
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-body-md text-on-surface">
+                  <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">
+                    check
+                  </span>
+                  {' '}
+                  <span>
+                    Staff view and schedule available leave quotas in real-time from mobile or desktop
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-body-md text-on-surface">
+                  <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">
+                    check
+                  </span>
+                  {' '}
+                  <span>
+                    Attendance logged automatically with optional geo-fenced check-in verification
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-body-md text-on-surface">
+                  <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">
+                    check
+                  </span>
+                  {' '}
+                  <span>
+                    Department managers oversee live attendance and capacity dashboards on demand
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 bg-surface-container-low/40 border-t border-outline-variant/30">
+          <div className="max-w-4xl mx-auto px-6 lg:px-12">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+                ENTERPRISE INQUIRIES
+              </div>
+              <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="space-y-3">
+              <div className="p-6 bg-surface-container-lowest border border-outline-variant/40 rounded-[10px] shadow-sm">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[17px] font-bold text-on-surface">
+                  <span>
+                    Can remote or field employees check in without being at an office?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-primary text-[20px]">
+                    expand_less
+                  </span>
+                </button>
+                {' '}
+                <div className="mt-4 pt-4 border-t border-outline-variant/20 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Yes. The Horizon HR Management System supports flexible attendance validation modes. Employees can clock in using GPS geo-fencing (which verifies coordinates against assigned job sites), IP whitelisting for designated work-from-home subnets, or offline check-in caching that validates time stamps cryptographically as soon as the client device reconnects to a network.
+                </div>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    How flexible are the leave policies we can set up?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    Can managers see their team's attendance without going through HR?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    Can it handle contractors as well as full-time staff?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    Does it support multiple office locations or time zones?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    Can employees request corrections to their attendance record?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    How long does implementation typically take?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">
+                <button className="w-full flex items-center justify-between text-left font-headline-sm text-[16px] font-bold text-on-surface">
+                  <span>
+                    Is our data secure, and who owns it?
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-outline text-[20px]">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+              <div className="inline-flex items-center px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm rounded-[6px] font-bold mb-3">
+                CONNECTED ENTERPRISE MODULES
+              </div>
+              <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mb-2">
+                Looking for something else?
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                Browse the full lineup of productized software and automation packages.
+              </p>
+            </div>
+            {' '}
+            <Link to="/products" className="inline-flex items-center gap-1.5 text-primary font-label-lg text-label-lg font-bold hover:underline shrink-0">
+              <span>
+                Explore all [00+] product packages
+              </span>
+              {' '}
+              <span className="material-symbols-outlined text-[18px]">
+                arrow_forward
+              </span>
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200 border border-white">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-[10px] bg-primary-fixed flex items-center justify-center text-primary">
+                  <span className="material-symbols-outlined text-[22px]">
+                    payments
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface">
+                  Payroll Management System
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Run payroll, withhold taxes, and generate payslips without a spreadsheet full of manual formulas.
+                </p>
+              </div>
+              <div className="pt-5 mt-4 border-t border-outline-variant/20 flex items-center text-primary font-label-sm text-label-sm font-semibold">
+                <span>
+                  Learn more
+                </span>
+                {' '}
+                <span className="material-symbols-outlined text-[16px] ml-1">
+                  chevron_right
+                </span>
+              </div>
+            </div>
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200 border border-white">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-[10px] bg-tertiary-fixed flex items-center justify-center text-tertiary">
+                  <span className="material-symbols-outlined text-[22px]">
+                    how_to_reg
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface">
+                  Applicant Tracking System
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Give every application a status, an owner, and a next step, leaving no candidate wondering.
+                </p>
+              </div>
+              <div className="pt-5 mt-4 border-t border-outline-variant/20 flex items-center text-primary font-label-sm text-label-sm font-semibold">
+                <span>
+                  Learn more
+                </span>
+                {' '}
+                <span className="material-symbols-outlined text-[16px] ml-1">
+                  chevron_right
+                </span>
+              </div>
+            </div>
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200 border border-white">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-[10px] bg-secondary-fixed flex items-center justify-center text-secondary">
+                  <span className="material-symbols-outlined text-[22px]">
+                    receipt
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface">
+                  Employee Expense Management
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Snap a receipt, and let the system handle categorizing, matching, and approving it from there.
+                </p>
+              </div>
+              <div className="pt-5 mt-4 border-t border-outline-variant/20 flex items-center text-primary font-label-sm text-label-sm font-semibold">
+                <span>
+                  Learn more
+                </span>
+                {' '}
+                <span className="material-symbols-outlined text-[16px] ml-1">
+                  chevron_right
+                </span>
+              </div>
+            </div>
+            <div className="glass-panel p-6 rounded-[14px] flex flex-col justify-between hover:-translate-y-1 transition-transform duration-200 border border-white">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-[10px] bg-primary-container/20 flex items-center justify-center text-primary">
+                  <span className="material-symbols-outlined text-[22px]">
+                    layers
+                  </span>
+                </div>
+                <h3 className="font-headline-sm text-[18px] font-bold text-on-surface">
+                  Integrated Business Operations Platform
+                </h3>
+                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                  Sales, inventory, finance, and HR reading from the same numbers, not five disconnected systems.
+                </p>
+              </div>
+              <div className="pt-5 mt-4 border-t border-outline-variant/20 flex items-center text-primary font-label-sm text-label-sm font-semibold">
+                <span>
+                  Learn more
+                </span>
+                {' '}
+                <span className="material-symbols-outlined text-[16px] ml-1">
+                  chevron_right
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="max-w-7xl mx-auto px-6 lg:px-12 pb-24">
+          <div className="relative overflow-hidden rounded-[20px] primary-btn-gradient p-10 lg:p-14 text-white shadow-xl">
+            <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute left-10 -top-10 w-72 h-72 bg-tertiary-fixed/20 rounded-full blur-2xl pointer-events-none" />
+            <div className="relative z-10 max-w-3xl space-y-4">
+              <h2 className="font-headline-lg text-headline-lg text-white font-extrabold tracking-tight">
+                Unify your HR and people operations with fixed-scope certainty.
+              </h2>
+              <p className="font-body-lg text-body-lg text-white/90 leading-relaxed">
+                Connect directly with our solutions engineering team to scope your employee record architecture within 48 hours.
+              </p>
+              <div className="flex flex-wrap items-center gap-4 pt-4">
+                <Link to="/contact" className="px-6 py-3.5 bg-white text-on-primary-container font-label-lg text-label-lg font-bold rounded-[10px] hover:bg-white/90 active:scale-[0.98] transition-all shadow-md">
+                  Book an Architectural Scoping Consultation
+                </Link>
+                {' '}
+                <button className="px-6 py-3.5 bg-black/20 text-white border border-white/40 font-label-lg text-label-lg font-semibold rounded-[10px] hover:bg-black/30 active:scale-[0.98] transition-all">
+                  Download System Architecture Spec
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {' '}
+    </div>
+  )
+}

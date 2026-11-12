@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon | Ship-to-Ship Transfer Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: '#fbf9f6',
+            'surface-dim': '#dbdad7',
+            'surface-bright': '#fbf9f6',
+            'surface-container-lowest': '#ffffff',
+            'surface-container-low': '#f5f3f0',
+            'surface-container': '#efedea',
+            'surface-container-high': '#e9e8e4',
+            'surface-container-highest': '#e3e2de',
+            'on-surface': '#1b1c1b',
+            'on-surface-variant': '#474744',
+            'outline': '#777773',
+            'outline-variant': '#c7c6c1',
+            primary: '#ff7555',
+            'primary-container': '#ffdbd2',
+            'on-primary': '#ffffff',
+            'on-primary-container': '#3b0900',
+            lime: '#e4f7a2',
+            'lime-container': '#f3fae1',
+            'on-lime': '#273b00',
+            cyan: '#d2f3fa',
+            'cyan-container': '#eaf8fc',
+            'on-cyan': '#00363f'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fbf9f6;
+      color: #1b1c1b;
+      -webkit-font-smoothing: antialiased;
+    }
+    .custom-gradient-bg {
+      background: radial-gradient(circle at 50% 0%, rgba(255, 117, 85, 0.12) 0%, rgba(251, 249, 246, 0) 65%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(231, 229, 224, 0.85);
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(220, 218, 212, 0.85);
+    }
+    /* Strictly disable rounded full/capsule */
+    .no-capsule {
+      border-radius: 10px !important;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="sticky top-4 z-50 px-4 sm:px-6 lg:px-8 max-w-[1400px] w-full mx-auto">
+    <nav class="glass-nav rounded-[14px] shadow-sm px-6 py-3.5 flex items-center justify-between transition-all">
+      <div class="flex items-center gap-8">
+        <a href="#" class="flex items-center gap-2.5 group">
+          <span class="w-8 h-8 rounded-[8px] bg-[#1b1c1b] text-white flex items-center justify-center font-bold text-lg tracking-tight">H</span>
+          <span class="font-extrabold text-xl tracking-tight text-[#1b1c1b]">Horizon</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-[14px] font-semibold text-on-surface-variant">
+          <a href="#" class="text-primary transition-colors">Products</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Solutions</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Case Studies</a>
+          <a href="#" class="hover:text-on-surface transition-colors">About</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Careers</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Contact</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#demo-form" class="inline-flex items-center justify-center px-4 py-2 text-[14px] font-semibold text-white bg-primary hover:bg-[#f0613f] transition-all rounded-[10px] shadow-sm active:scale-[0.98]">
+          Book a free demo
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow custom-gradient-bg pt-6 pb-20">
+
+    <!-- ================= 1. BREADCRUMB & HERO SECTION ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-[13px] font-medium text-on-surface-variant mb-6" aria-label="Breadcrumb">
+        <a href="#" class="hover:text-on-surface transition-colors">Products</a>
+        <span class="text-outline-variant text-xs">/</span>
+        <a href="#" class="hover:text-on-surface transition-colors">Maritime Cargo Ops</a>
+        <span class="text-outline-variant text-xs">/</span>
+        <span class="text-on-surface font-semibold">Ship-to-Ship Transfer Management</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <!-- Hero Left Column: Narrative & Feature Chips -->
+        <div class="lg:col-span-7 flex flex-col justify-center">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-lime-container border border-[#d6eda6] rounded-[6px] text-on-lime text-[11px] font-bold tracking-wider uppercase mb-4 self-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#527d00]"></span>
+            Maritime Cargo Ops
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-on-surface leading-[1.12] mb-5">
+            Ship-to-Ship Transfer Management
+          </h1>
+
+          <p class="text-lg sm:text-xl text-on-surface-variant leading-relaxed mb-8 max-w-2xl font-normal">
+            Coordinate cargo transfers between vessels at sea with the same discipline and cryptographic audit trail a premier port terminal demands on land.
+          </p>
+
+          <!-- Metrics summary band -->
+          <div class="grid grid-cols-3 gap-4 p-4 rounded-[16px] bg-white/70 border border-outline-variant/40 mb-8 max-w-2xl">
+            <div>
+              <div class="text-2xl font-black text-on-surface tracking-tight">[00] min</div>
+              <div class="text-[12px] font-medium text-on-surface-variant">Avg. plan sign-off</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-on-surface tracking-tight">[0.00%]</div>
+              <div class="text-[12px] font-medium text-on-surface-variant">Transfer discrepancy</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-on-surface tracking-tight">[00+]</div>
+              <div class="text-[12px] font-medium text-on-surface-variant">Active offshore transfers</div>
+            </div>
+          </div>
+
+          <!-- Six Feature Chips (strictly rectangular 10px radius) -->
+          <div class="space-y-2 mb-6 max-w-2xl">
+            <div class="text-[12px] font-bold text-outline uppercase tracking-wider mb-2">Platform Capabilities</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-white/80 border border-outline-variant/60 rounded-[10px] text-[13px] font-semibold text-on-surface shadow-2xs">
+                <span class="material-symbols-outlined text-primary text-[18px]">assignment_turned_in</span>
+                <span>STS Operation Plan Builder</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-white/80 border border-outline-variant/60 rounded-[10px] text-[13px] font-semibold text-on-surface shadow-2xs">
+                <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+                <span>Pre-Transfer Meeting Checklist & Sign-Off</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-white/80 border border-outline-variant/60 rounded-[10px] text-[13px] font-semibold text-on-surface shadow-2xs">
+                <span class="material-symbols-outlined text-primary text-[18px]">badge</span>
+                <span>Mooring Master & POAC Credential Tracking</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-white/80 border border-outline-variant/60 rounded-[10px] text-[13px] font-semibold text-on-surface shadow-2xs">
+                <span class="material-symbols-outlined text-primary text-[18px]">shield_with_heart</span>
+                <span>Fender Inspection & Certification Register</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-white/80 border border-outline-variant/60 rounded-[10px] text-[13px] font-semibold text-on-surface shadow-2xs">
+                <span class="material-symbols-outlined text-primary text-[18px]">air</span>
+                <span>Weather Window Monitoring Against Limits</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-white/80 border border-outline-variant/60 rounded-[10px] text-[13px] font-semibold text-on-surface shadow-2xs">
+                <span class="material-symbols-outlined text-primary text-[18px]">swap_horiz</span>
+                <span>Cargo Transfer Rate & Volume Reconciliation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Book a Free Demo Form Card -->
+        <div id="demo-form" class="lg:col-span-5">
+          <div class="glass-card rounded-[22px] p-7 shadow-lg border border-outline-variant/50 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 bg-primary/10 text-primary text-[11px] font-bold rounded-[6px] tracking-wide uppercase">
+                Fast-Track Consultation
+              </span>
+              <span class="flex items-center gap-1.5 text-[12px] font-semibold text-on-surface-variant">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available Today
+              </span>
+            </div>
+
+            <h2 class="text-2xl font-extrabold text-on-surface tracking-tight mb-2">Book a live platform demo</h2>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed mb-6">
+              See how Horizon coordinates vessel telemetry, OCIMF compliance logs, and dual-master digital sign-offs in under [00] minutes.
+            </p>
+
+            <form class="space-y-4" onsubmit="event.preventDefault();">
+              <div>
+                <label class="block text-[12px] font-semibold text-on-surface mb-1.5">Full Name</label>
+                <input type="text" placeholder="e.g. Captain Julian Vance" class="w-full px-3.5 py-2.5 bg-white/90 border border-outline-variant/80 rounded-[10px] text-[14px] text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+              </div>
+
+              <div>
+                <label class="block text-[12px] font-semibold text-on-surface mb-1.5">Work Email</label>
+                <input type="email" placeholder="julian@maritime-ops.com" class="w-full px-3.5 py-2.5 bg-white/90 border border-outline-variant/80 rounded-[10px] text-[14px] text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+              </div>
+
+              <div>
+                <label class="block text-[12px] font-semibold text-on-surface mb-1.5">Phone Number</label>
+                <input type="tel" placeholder="[phone]" class="w-full px-3.5 py-2.5 bg-white/90 border border-outline-variant/80 rounded-[10px] text-[14px] text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+              </div>
+
+              <div>
+                <label class="block text-[12px] font-semibold text-on-surface mb-1.5">Fleet / Operation Scale</label>
+                <select class="w-full px-3.5 py-2.5 bg-white/90 border border-outline-variant/80 rounded-[10px] text-[14px] text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+                  <option>1 - 5 Active STS Transfer Operations / Month</option>
+                  <option>6 - 20 Operations / Month (High-Volume Hub)</option>
+                  <option>20+ Operations (Global Tanker & Terminal Ops)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="w-full py-3 px-4 bg-primary hover:bg-[#f0613f] text-white font-bold text-[14px] rounded-[10px] shadow-md transition-all active:scale-[0.99] flex items-center justify-center gap-2 mt-2">
+                <span>Request Live Walkthrough</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+
+              <div class="flex items-center justify-center gap-2 pt-2 text-[11px] text-on-surface-variant font-medium">
+                <span class="material-symbols-outlined text-[14px] text-outline">lock</span>
+                <span>Encrypted hosting, role-based access, and regular backups.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. DEMO SECTION ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-cyan-container border border-[#b2e5f1] rounded-[6px] text-on-cyan text-[11px] font-bold tracking-wider uppercase mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#00839c]"></span>
+          Real-Time Operations Console
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-4">
+          See Ship-to-Ship Transfer Management in Action
+        </h2>
+        <p class="text-base text-on-surface-variant leading-relaxed">
+          Watch automated mooring line tension alerts, dual-master checklist sign-offs, and live manifold telemetry resolve offshore cargo uncertainty in real time.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Video Placeholder Mockup -->
+        <div class="lg:col-span-5 rounded-[20px] bg-[#141517] border border-[#2b2d31] p-6 text-white flex flex-col justify-between shadow-xl relative overflow-hidden group">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+          
+          <div class="relative z-10 flex items-center justify-between border-b border-white/10 pb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+              <span class="text-[12px] font-mono tracking-wider text-white/90 font-bold uppercase">LIVE FEED: GULF STS ZONE [00]</span>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded-[6px] bg-white/10 font-mono text-white/70">LAT: 26°14.2' N</span>
+          </div>
+
+          <!-- Video Play Centerpiece -->
+          <div class="relative z-10 my-16 text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-[12px] bg-primary/90 text-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform cursor-pointer">
+              <span class="material-symbols-outlined text-[36px] ml-1">play_arrow</span>
+            </div>
+            <div class="mt-4 font-semibold text-[15px] tracking-tight">Watch 4-Minute Telemetry Walkthrough</div>
+            <div class="text-[12px] text-white/60 mt-1">VLCC-to-Aframax crude transfer simulation with wave buoy sync</div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/10 flex items-center justify-between text-[12px] text-white/70 font-mono">
+            <span>Manifold Pressure: [00.0] Bar</span>
+            <span class="text-lime font-bold">Mooring Safe: Tier-1</span>
+          </div>
+        </div>
+
+        <!-- Realistic Product UI Mockup Screen -->
+        <div class="lg:col-span-7 glass-card rounded-[20px] p-6 border border-outline-variant/60 shadow-lg flex flex-col justify-between bg-white/85">
+          <!-- Window Chrome -->
+          <div class="flex items-center justify-between pb-4 border-b border-outline-variant/40 mb-5">
+            <div class="flex items-center gap-3">
+              <div class="flex gap-1.5">
+                <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              </div>
+              <span class="text-[13px] font-bold text-on-surface">Horizon Maritime Console v4.8</span>
+              <span class="text-[11px] px-2 py-0.5 rounded-[6px] bg-lime-container text-on-lime font-bold uppercase tracking-wider">Synchronized</span>
+            </div>
+            <div class="text-[12px] font-mono text-on-surface-variant">OPS-REF: [STS-2025-084]</div>
+          </div>
+
+          <!-- UI Cockpit Detail -->
+          <div class="space-y-4">
+            <!-- Vessel Pair Heading & Status -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="p-3.5 rounded-[12px] bg-surface-container-low border border-outline-variant/50">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[11px] font-bold uppercase text-outline">Discharging Vessel (Mother Ship)</span>
+                  <span class="text-[11px] px-2 py-0.2 rounded-[6px] bg-emerald-100 text-emerald-800 font-bold">STABLE</span>
+                </div>
+                <div class="font-extrabold text-[15px] text-on-surface">[Vessel Name 01] · VLCC</div>
+                <div class="text-[12px] text-on-surface-variant font-mono mt-0.5">MMSI: [000000000] · Master: [Master Name 01]</div>
+              </div>
+              <div class="p-3.5 rounded-[12px] bg-surface-container-low border border-outline-variant/50">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[11px] font-bold uppercase text-outline">Receiving Vessel (Daughter Ship)</span>
+                  <span class="text-[11px] px-2 py-0.2 rounded-[6px] bg-emerald-100 text-emerald-800 font-bold">MANIFOLD LOCKED</span>
+                </div>
+                <div class="font-extrabold text-[15px] text-on-surface">[Vessel Name 02] · Suezmax</div>
+                <div class="text-[12px] text-on-surface-variant font-mono mt-0.5">MMSI: [000000000] · Master: [Master Name 02]</div>
+              </div>
+            </div>
+
+            <!-- Real-Time Transfer Metrics Gauges -->
+            <div class="grid grid-cols-4 gap-2.5 text-center">
+              <div class="p-2.5 rounded-[10px] bg-white border border-outline-variant/60">
+                <div class="text-[11px] text-on-surface-variant font-medium">Flow Rate</div>
+                <div class="text-[16px] font-black text-on-surface font-mono">[0,000] m³/h</div>
+                <div class="text-[10px] text-emerald-600 font-bold">Nominal Rate</div>
+              </div>
+              <div class="p-2.5 rounded-[10px] bg-white border border-outline-variant/60">
+                <div class="text-[11px] text-on-surface-variant font-medium">Transferred</div>
+                <div class="text-[16px] font-black text-on-surface font-mono">[00,000] MT</div>
+                <div class="text-[10px] text-on-surface-variant">[00%] of Target</div>
+              </div>
+              <div class="p-2.5 rounded-[10px] bg-white border border-outline-variant/60">
+                <div class="text-[11px] text-on-surface-variant font-medium">Swell Height</div>
+                <div class="text-[16px] font-black text-on-surface font-mono">[0.0] m</div>
+                <div class="text-[10px] text-emerald-600 font-bold">Limit: 2.5m (Safe)</div>
+              </div>
+              <div class="p-2.5 rounded-[10px] bg-white border border-outline-variant/60">
+                <div class="text-[11px] text-on-surface-variant font-medium">Fender Deflection</div>
+                <div class="text-[16px] font-black text-on-surface font-mono">[00%]</div>
+                <div class="text-[10px] text-emerald-600 font-bold">Yokohama Primary</div>
+              </div>
+            </div>
+
+            <!-- Checkpoint Sign-Off Tracker -->
+            <div class="p-3.5 rounded-[12px] bg-white border border-outline-variant/60">
+              <div class="flex items-center justify-between text-[12px] font-bold text-on-surface mb-2">
+                <span>Joint Pre-Transfer Safety Verification (OCIMF Matrix)</span>
+                <span class="text-primary font-mono text-[11px]">18 of 18 Checks Countersigned</span>
+              </div>
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-between text-[12px] py-1 border-b border-outline-variant/30">
+                  <span class="flex items-center gap-2 text-on-surface">
+                    <span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+                    Vapor Balancing & Emergency Shutdown (ESD) Link Tested
+                  </span>
+                  <span class="text-[11px] font-mono text-outline">[Signed: 08:14 UTC]</span>
+                </div>
+                <div class="flex items-center justify-between text-[12px] py-1 border-b border-outline-variant/30">
+                  <span class="flex items-center gap-2 text-on-surface">
+                    <span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+                    POAC & Mooring Master Endorsement Stamped
+                  </span>
+                  <span class="text-[11px] font-mono text-outline">[POAC ID: MM-084]</span>
+                </div>
+                <div class="flex items-center justify-between text-[12px] py-1">
+                  <span class="flex items-center gap-2 text-on-surface">
+                    <span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+                    Continuous Weather Alert Boundary Active (Next check [00] min)
+                  </span>
+                  <span class="text-[11px] font-mono text-emerald-700 font-semibold">[Green Window]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-outline-variant/40 flex items-center justify-between text-[12px] text-on-surface-variant">
+            <span>Cryptographic dual-master audit trail active</span>
+            <span class="font-mono text-[11px] text-outline">Ledger Hash: [0x4f...92d1]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. ABOUT SECTION ================= -->
+    <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="glass-card rounded-[22px] p-8 sm:p-12 border border-outline-variant/60 shadow-md">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-primary/10 rounded-[6px] text-primary text-[11px] font-bold tracking-wider uppercase mb-3">
+            The Operational Bottleneck
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-4">
+            STS Operations Run on Timing, Not Luck
+          </h2>
+          <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed mb-8">
+            Transferring cargo between two vessels alongside each other—whether crude oil, LNG, chemical parcels, or dry bulk cargo—depends on uncompromising scheduling, equipment readiness, and strict adherence to international maritime safety standards. Horizon coordinates the end-to-end operational plan, documentation packages, and compliance checklists so nothing gets missed in high-risk, high-value open-water operations.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-outline-variant/40">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-600 text-[22px] mt-0.5">check_circle</span>
+              <div>
+                <h3 class="text-[15px] font-bold text-on-surface mb-1">Full Operational Planning</h3>
+                <p class="text-[13px] text-on-surface-variant leading-normal">
+                  End-to-end choreography for vessel-to-vessel cargo transfers, from initial anchorage to departure.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-600 text-[22px] mt-0.5">check_circle</span>
+              <div>
+                <h3 class="text-[15px] font-bold text-on-surface mb-1">Compliance Tracking</h3>
+                <p class="text-[13px] text-on-surface-variant leading-normal">
+                  Verifiable compliance tracking against global maritime safety standards and OCIMF/ISGOTT protocols.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-600 text-[22px] mt-0.5">check_circle</span>
+              <div>
+                <h3 class="text-[15px] font-bold text-on-surface mb-1">Centralized Documentation</h3>
+                <p class="text-[13px] text-on-surface-variant leading-normal">
+                  Unified documentation repositories for every transfer, accessible by both vessel masters and port authorities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. FEATURES SECTION (01 - 06) ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-lime-container border border-[#d6eda6] rounded-[6px] text-on-lime text-[11px] font-bold tracking-wider uppercase mb-2">
+            Engineered Maritime Capabilities
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight">
+            Built for the Realities of Open-Water Transfer
+          </h2>
+        </div>
+        <p class="text-[14px] text-on-surface-variant mt-2 md:mt-0 max-w-md">
+          Six deterministic features that systematically eliminate manual oversight, unverified gear, and coordination lag during offshore transfers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Numbered 01-06 List -->
+        <div class="lg:col-span-7 space-y-4">
+          <!-- Feature 01 (Active) -->
+          <div class="glass-card rounded-[16px] p-5 border-l-4 border-l-primary border-outline-variant/60 shadow-sm bg-white">
+            <div class="flex items-baseline justify-between mb-1">
+              <div class="flex items-center gap-3">
+                <span class="text-primary font-mono font-black text-lg">01</span>
+                <h3 class="text-lg font-bold text-on-surface">STS Operation Plan Builder</h3>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-primary px-2 py-0.5 bg-primary/10 rounded-[6px]">Deep Dive</span>
+            </div>
+            <p class="text-[13.5px] text-on-surface-variant leading-relaxed pl-8">
+              Construct complete mooring configurations, fender layouts, and manifold transfer sequences into an immutable digital operations plan. Each plan requires dual-master digital countersignatures before execution can proceed.
+            </p>
+          </div>
+
+          <!-- Feature 02 -->
+          <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 hover:border-primary/40 transition-colors">
+            <div class="flex items-baseline gap-3 mb-1">
+              <span class="text-outline font-mono font-bold text-lg">02</span>
+              <h3 class="text-lg font-bold text-on-surface">Pre-Transfer Meeting Checklist and Sign-Off</h3>
+            </div>
+            <p class="text-[13.5px] text-on-surface-variant leading-relaxed pl-8">
+              Digitize comprehensive safety meetings between both vessel commands, the POAC, and attending mooring masters. Every item—from vapor return tests to ESD link verification—is recorded with timestamped approvals.
+            </p>
+          </div>
+
+          <!-- Feature 03 -->
+          <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 hover:border-primary/40 transition-colors">
+            <div class="flex items-baseline gap-3 mb-1">
+              <span class="text-outline font-mono font-bold text-lg">03</span>
+              <h3 class="text-lg font-bold text-on-surface">Mooring Master and POAC Credential Tracking</h3>
+            </div>
+            <p class="text-[13.5px] text-on-surface-variant leading-relaxed pl-8">
+              Maintain an audited register of Person in Overall Advisory Control (POAC) licenses, pilot endorsements, and simulator currency hours. Automated gate checks prevent uncertified personnel assignment to hazardous transfers.
+            </p>
+          </div>
+
+          <!-- Feature 04 -->
+          <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 hover:border-primary/40 transition-colors">
+            <div class="flex items-baseline gap-3 mb-1">
+              <span class="text-outline font-mono font-bold text-lg">04</span>
+              <h3 class="text-lg font-bold text-on-surface">Fender Inspection and Certification Register</h3>
+            </div>
+            <p class="text-[13.5px] text-on-surface-variant leading-relaxed pl-8">
+              Track pneumatic and foam fender maintenance cycles, pressure tests, and visual inspection logs across the entire equipment pool. Deploys alerts when primary or baby fenders approach inspection expiry.
+            </p>
+          </div>
+
+          <!-- Feature 05 -->
+          <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 hover:border-primary/40 transition-colors">
+            <div class="flex items-baseline gap-3 mb-1">
+              <span class="text-outline font-mono font-bold text-lg">05</span>
+              <h3 class="text-lg font-bold text-on-surface">Weather Window Monitoring Against Operational Limits</h3>
+            </div>
+            <p class="text-[13.5px] text-on-surface-variant leading-relaxed pl-8">
+              Integrate live wave buoy feeds, tide schedules, wind speed forecasts, and swell periods directly against specific hull compatibility envelopes. System automatically flags abort thresholds before critical limits are breached.
+            </p>
+          </div>
+
+          <!-- Feature 06 -->
+          <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 hover:border-primary/40 transition-colors">
+            <div class="flex items-baseline gap-3 mb-1">
+              <span class="text-outline font-mono font-bold text-lg">06</span>
+              <h3 class="text-lg font-bold text-on-surface">Cargo Transfer Rate and Volume Reconciliation</h3>
+            </div>
+            <p class="text-[13.5px] text-on-surface-variant leading-relaxed pl-8">
+              Continuous comparative logging between discharging and receiving vessel flow meters and ullage calculations. Immediately surfaces flow variances or line friction discrepancies to prevent cargo loss disputes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Highlighted Detail Panel for Feature 01 -->
+        <div class="lg:col-span-5 glass-card rounded-[22px] p-6 border border-outline-variant/60 shadow-lg bg-surface-container-low/60 sticky top-24">
+          <div class="flex items-center justify-between pb-3 border-b border-outline-variant/40 mb-4">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-primary">Deep Dive Module</span>
+            <span class="px-2 py-0.5 rounded-[6px] bg-lime-container text-on-lime text-[11px] font-mono font-bold">OCIMF/ISGOTT Verified</span>
+          </div>
+
+          <h3 class="text-xl font-bold text-on-surface mb-2">Digital STS Operation Plan</h3>
+          <p class="text-[13px] text-on-surface-variant mb-5">
+            Every transfer builds a structured operation plan covering mooring patterns, fendering arrangements, and cargo pumping sequences, digitally countersigned by both masters before authorization.
+          </p>
+
+          <div class="space-y-3 bg-white p-4 rounded-[14px] border border-outline-variant/50 text-[12px]">
+            <div class="flex justify-between items-center pb-2 border-b border-outline-variant/30">
+              <span class="text-outline font-medium">Operation Code</span>
+              <span class="font-mono font-bold text-on-surface">STS-OPS-[0000]-W</span>
+            </div>
+            <div class="flex justify-between items-center pb-2 border-b border-outline-variant/30">
+              <span class="text-outline font-medium">Discharging Master Approval</span>
+              <span class="text-emerald-700 font-bold flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">check_circle</span> Verified & Signed
+              </span>
+            </div>
+            <div class="flex justify-between items-center pb-2 border-b border-outline-variant/30">
+              <span class="text-outline font-medium">Receiving Master Approval</span>
+              <span class="text-emerald-700 font-bold flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">check_circle</span> Verified & Signed
+              </span>
+            </div>
+            <div class="flex justify-between items-center pb-2 border-b border-outline-variant/30">
+              <span class="text-outline font-medium">POAC License Verification</span>
+              <span class="text-on-surface font-mono font-semibold">Active (Class-1 Master)</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-outline font-medium">Fender Certificate Expiry</span>
+              <span class="text-on-surface font-mono">[00] Days Remaining</span>
+            </div>
+          </div>
+
+          <div class="mt-4 p-3 rounded-[10px] bg-primary/10 border border-primary/20 text-[12px] text-on-primary-container leading-relaxed">
+            <strong>Deterministic Safeguard:</strong> Mooring release permits are locked until ullage differences are mathematically certified and signed across both vessel bridges.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. HOW IT WORKS (FOUR CONNECTED STEPS) ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-cyan-container border border-[#b2e5f1] rounded-[6px] text-on-cyan text-[11px] font-bold tracking-wider uppercase mb-3">
+          Execution Workflow
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-3">
+          From Request to Closed Operation
+        </h2>
+        <p class="text-[15px] text-on-surface-variant">
+          Four structured steps that govern high-risk open-water cargo transfers from intake to regulatory closeout.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <!-- Step 1 -->
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-[10px] bg-primary/15 text-primary font-mono font-extrabold flex items-center justify-center text-[16px] mb-4">
+              01
+            </div>
+            <h3 class="text-lg font-bold text-on-surface mb-2">Log the Transfer Request</h3>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed">
+              Transfer request is initialized with full mother and daughter vessel specifications, cargo classification, volume requirements, and nominated anchorage coordinates.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-outline-variant/30 text-[11px] font-mono text-outline">
+            Stage 1: Intake & Feasibility
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-[10px] bg-primary/15 text-primary font-mono font-extrabold flex items-center justify-center text-[16px] mb-4">
+              02
+            </div>
+            <h3 class="text-lg font-bold text-on-surface mb-2">Build the Operational Plan</h3>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed">
+              Operational choreography is constructed incorporating tide curves, fender positioning, POAC assignments, and the pre-transfer joint safety checklist.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-outline-variant/30 text-[11px] font-mono text-outline">
+            Stage 2: Plan & Matrix Check
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-[10px] bg-primary/15 text-primary font-mono font-extrabold flex items-center justify-center text-[16px] mb-4">
+              03
+            </div>
+            <h3 class="text-lg font-bold text-on-surface mb-2">Execute with Live Logging</h3>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed">
+              Transfer is executed alongside with continuous telemetry logging of manifold pressures, flow rates, environmental wind limits, and any operational deviations.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-outline-variant/30 text-[11px] font-mono text-outline">
+            Stage 3: Manifold Telemetry
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-[10px] bg-primary/15 text-primary font-mono font-extrabold flex items-center justify-center text-[16px] mb-4">
+              04
+            </div>
+            <h3 class="text-lg font-bold text-on-surface mb-2">Close with Documentation</h3>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed">
+              Post-operation reconciliation report, signed ullage certificates, and compliance documentation are automatically compiled into permanent records for audit.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-outline-variant/30 text-[11px] font-mono text-outline">
+            Stage 4: Compliance Seal
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. BENEFITS SECTION ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-lime-container border border-[#d6eda6] rounded-[6px] text-on-lime text-[11px] font-bold tracking-wider uppercase mb-3">
+          Operational Advantage
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-3">
+          Why Operators Formalize Planning
+        </h2>
+        <p class="text-[15px] text-on-surface-variant">
+          Lower risk, uncompromised documentation, and synchronized bridge-to-shore communication.
+        </p>
+      </div>
+
+      <!-- Four Benefit Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60">
+          <div class="w-10 h-10 rounded-[10px] bg-rose-50 text-rose-600 flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-[22px]">shield</span>
+          </div>
+          <h3 class="text-[16px] font-bold text-on-surface mb-2">Reduced Operational Risk</h3>
+          <p class="text-[13px] text-on-surface-variant leading-relaxed">
+            Eliminate procedural shortcuts through mandatory, structured safety checklists and automated environmental abort boundaries.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60">
+          <div class="w-10 h-10 rounded-[10px] bg-sky-50 text-sky-600 flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-[22px]">fact_check</span>
+          </div>
+          <h3 class="text-[16px] font-bold text-on-surface mb-2">Clear Documentation</h3>
+          <p class="text-[13px] text-on-surface-variant leading-relaxed">
+            Establish a defensible, immutable documentation trail for coastal state port authorities, maritime insurers, and charterers.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60">
+          <div class="w-10 h-10 rounded-[10px] bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-[22px]">hub</span>
+          </div>
+          <h3 class="text-[16px] font-bold text-on-surface mb-2">Better Coordination</h3>
+          <p class="text-[13px] text-on-surface-variant leading-relaxed">
+            Synchronize bridge commands between vessels, service craft, terminal superintendents, and shore-side operations in real time.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-[18px] p-6 border border-outline-variant/60">
+          <div class="w-10 h-10 rounded-[10px] bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-[22px]">bolt</span>
+          </div>
+          <h3 class="text-[16px] font-bold text-on-surface mb-2">Faster Reporting</h3>
+          <p class="text-[13px] text-on-surface-variant leading-relaxed">
+            Generate and dispatch audited post-transfer dossiers within minutes of unmooring instead of assembling paperwork days later.
+          </p>
+        </div>
+      </div>
+
+      <!-- Three-Item Standard Horizon Trust Row -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-outline-variant/40">
+        <div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/50">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+            <h4 class="text-[14px] font-bold text-on-surface">Enterprise-Grade Security</h4>
+          </div>
+          <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+            Encrypted hosting, role-based access control, and regular backups. Your operational data always remains fully yours and exportable, with no lock-in.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/50">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+            <h4 class="text-[14px] font-bold text-on-surface">Transparent, Scoped Pricing</h4>
+          </div>
+          <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+            Every engagement is scoped individually with a fixed price and timeline agreed upfront—book a free consultation for a tailored quote.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/50">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+            <h4 class="text-[14px] font-bold text-on-surface">Built for Your Whole Team</h4>
+          </div>
+          <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+            Role-based views mean owners, managers, mooring masters, and frontline bridge officers each see exactly what they need, nothing more, nothing missing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. BEFORE / AFTER SECTION ================= -->
+    <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-primary/10 rounded-[6px] text-primary text-[11px] font-bold tracking-wider uppercase mb-2">
+          Operational Transformation
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-2">
+          What Changes on Day One
+        </h2>
+        <p class="text-[14px] text-on-surface-variant">
+          Comparing fragmented ad-hoc vessel coordination with the Horizon synchronized standard.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Before Column -->
+        <div class="rounded-[20px] p-7 bg-[#faebe8] border border-[#f5cfc7]">
+          <div class="flex items-center justify-between mb-6 pb-3 border-b border-[#f0c2b8]">
+            <h3 class="text-lg font-bold text-on-surface">The Legacy Transfer Routine</h3>
+            <span class="text-[11px] font-mono font-bold uppercase px-2 py-0.5 rounded-[6px] bg-rose-200 text-rose-900">Fragmented</span>
+          </div>
+          <ul class="space-y-4 text-[13.5px] text-on-surface">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-rose-600 text-[18px] mt-0.5">close</span>
+              <span>Safety checklists tracked on paper binders across two independent vessels with no live sync.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-rose-600 text-[18px] mt-0.5">close</span>
+              <span>Documentation scattered across separate vessel agents, bunkering brokers, and shore operators.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-rose-600 text-[18px] mt-0.5">close</span>
+              <span>Equipment certifications and crew readiness confirmed only by unrecorded radio VHF calls.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-rose-600 text-[18px] mt-0.5">close</span>
+              <span>Post-operation compliance reports laboriously assembled days after the fact from hand-scribbled logs.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- After Column -->
+        <div class="rounded-[20px] p-7 bg-[#f4fae6] border border-[#dcedbe]">
+          <div class="flex items-center justify-between mb-6 pb-3 border-b border-[#d0e6ab]">
+            <h3 class="text-lg font-bold text-on-surface">The Horizon Synchronized Protocol</h3>
+            <span class="text-[11px] font-mono font-bold uppercase px-2 py-0.5 rounded-[6px] bg-lime text-on-lime">Deterministic</span>
+          </div>
+          <ul class="space-y-4 text-[13.5px] text-on-surface">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-700 text-[18px] mt-0.5">check</span>
+              <span>Structured digital checklists tied directly to each operation, requiring dual-bridge verification.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-700 text-[18px] mt-0.5">check</span>
+              <span>Centralized documentation ready for instant regulatory and port state control review.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-700 text-[18px] mt-0.5">check</span>
+              <span>Vessel readiness, certified mooring masters, and inspected fendering logged in one unified plan.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-emerald-700 text-[18px] mt-0.5">check</span>
+              <span>Auditable reports generated automatically from real-time operational telemetry upon hose disconnection.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. FAQ SECTION ================= -->
+    <section class="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-cyan-container border border-[#b2e5f1] rounded-[6px] text-on-cyan text-[11px] font-bold tracking-wider uppercase mb-2">
+          Technical & Regulatory Clarifications
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-2">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-[14px] text-on-surface-variant">
+          Clear answers regarding cargo compatibility, audit readiness, offline bridge access, and data governance.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- Question 1 (Expanded) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 overflow-hidden bg-white shadow-2xs">
+          <div class="p-5 flex items-center justify-between cursor-pointer border-b border-outline-variant/30">
+            <span class="font-bold text-[15px] text-on-surface">Does the system account for different cargo types with different handling requirements?</span>
+            <span class="material-symbols-outlined text-primary text-[20px]">remove</span>
+          </div>
+          <div class="p-5 pt-3 text-[13.5px] text-on-surface-variant leading-relaxed bg-surface/40">
+            Yes. Horizon includes pre-configured operational templates and safety interlocks for crude oil, petroleum products, LNG/LPG cryogenic transfers, bulk chemicals, and dry bulk commodities. Each profile enforces the corresponding OCIMF, SIGTTO, or ISGOTT checklists, vapor pressure thresholds, and emergency shutdown sequence timings.
+          </div>
+        </div>
+
+        <!-- Question 2 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">Can it help demonstrate compliance during a regulatory audit?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+
+        <!-- Question 3 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">Can multiple parties, vessel agents, terminal operators, see the same operational plan?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+
+        <!-- Question 4 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">Can weather delays be logged against an operation?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+
+        <!-- Question 5 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">Is the system usable from a vessel with limited connectivity?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+
+        <!-- Question 6 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">Can shore-side teams monitor an operation in progress?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+
+        <!-- Question 7 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">How long does implementation typically take?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+
+        <!-- Question 8 (Collapsed) -->
+        <div class="glass-card rounded-[14px] border border-outline-variant/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">
+          <span class="font-semibold text-[15px] text-on-surface">Is our data secure, and who owns it?</span>
+          <span class="material-symbols-outlined text-outline text-[20px]">add</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 9. "MORE FROM HORIZON" (FOUR RELATED PRODUCTS) ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex items-center justify-between mb-8 pb-4 border-b border-outline-variant/40">
+        <div>
+          <div class="text-[11px] font-bold text-primary tracking-wider uppercase mb-1">Connected Enterprise Ecosystem</div>
+          <h2 class="text-2xl font-extrabold text-on-surface tracking-tight">Looking for something else?</h2>
+        </div>
+        <a href="#" class="inline-flex items-center gap-1 text-[13px] font-bold text-primary hover:underline">
+          <span>Browse all [00+] product packages</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="w-8 h-8 rounded-[8px] bg-rose-50 text-rose-600 flex items-center justify-center mb-3">
+              <span class="material-symbols-outlined text-[18px]">sailing</span>
+            </div>
+            <div class="text-[11px] font-bold text-outline uppercase tracking-wider mb-1">Maritime & Luxury</div>
+            <h3 class="text-[16px] font-bold text-on-surface mb-2">Yacht Charter Management</h3>
+            <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+              Every charter, from the first inquiry to the last owner payout, unified in one operational ledger.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-1 text-[12px] font-bold text-primary mt-4 pt-3 border-t border-outline-variant/30">
+            <span>Explore Package</span>
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="w-8 h-8 rounded-[8px] bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+              <span class="material-symbols-outlined text-[18px]">inventory_2</span>
+            </div>
+            <div class="text-[11px] font-bold text-outline uppercase tracking-wider mb-1">Supply Chain</div>
+            <h3 class="text-[16px] font-bold text-on-surface mb-2">Smart Inventory Control</h3>
+            <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+              Know exactly what's on your shelves, in your trucks, and on order—down to the unit across every hub.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-1 text-[12px] font-bold text-primary mt-4 pt-3 border-t border-outline-variant/30">
+            <span>Explore Package</span>
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="w-8 h-8 rounded-[8px] bg-cyan-container text-on-cyan flex items-center justify-center mb-3">
+              <span class="material-symbols-outlined text-[18px]">smart_toy</span>
+            </div>
+            <div class="text-[11px] font-bold text-outline uppercase tracking-wider mb-1">Field Intelligence</div>
+            <h3 class="text-[16px] font-bold text-on-surface mb-2">AI QC Agent</h3>
+            <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+              Centralized installation knowledge, schematics, and verification SOPs straight on your technician's mobile device.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-1 text-[12px] font-bold text-primary mt-4 pt-3 border-t border-outline-variant/30">
+            <span>Explore Package</span>
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-card rounded-[16px] p-5 border border-outline-variant/60 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="w-8 h-8 rounded-[8px] bg-amber-50 text-amber-700 flex items-center justify-center mb-3">
+              <span class="material-symbols-outlined text-[18px]">flight_takeoff</span>
+            </div>
+            <div class="text-[11px] font-bold text-outline uppercase tracking-wider mb-1">Autonomous Travel</div>
+            <h3 class="text-[16px] font-bold text-on-surface mb-2">AI Travel Agent</h3>
+            <p class="text-[12.5px] text-on-surface-variant leading-relaxed">
+              Intelligent business travel automation: hotels, flights, and support booked strictly within enterprise policy.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-1 text-[12px] font-bold text-primary mt-4 pt-3 border-t border-outline-variant/30">
+            <span>Explore Package</span>
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 10. FINAL CALL-TO-ACTION BAND ================= -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4">
+      <div class="rounded-[24px] p-10 sm:p-14 bg-gradient-to-r from-[#ff7555] via-[#ff6543] to-[#f45330] text-white shadow-xl relative overflow-hidden">
+        <div class="relative z-10 max-w-3xl">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/20 backdrop-blur-md rounded-[6px] text-white text-[11px] font-extrabold tracking-wider uppercase mb-4">
+            Fixed-Scope Maritime Deployment
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
+            Ready to coordinate your offshore transfers with deterministic certainty?
+          </h2>
+          <p class="text-base sm:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl font-normal">
+            Retire unrecorded radio handshakes and scattered PDF checklists. Schedule an architectural consultation with our maritime systems engineering team within 48 hours.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#demo-form" class="px-6 py-3.5 bg-white text-on-surface font-bold text-[14px] rounded-[10px] shadow hover:bg-neutral-100 transition-all active:scale-[0.98]">
+              Book an Architectural Scoping Consultation
+            </a>
+            <a href="#" class="px-6 py-3.5 bg-white/15 hover:bg-white/25 text-white font-semibold text-[14px] rounded-[10px] backdrop-blur-sm transition-all flex items-center gap-2">
+              <span>Download Platform Specification</span>
+              <span class="material-symbols-outlined text-[18px]">download</span>
+            </a>
+          </div>
+
+          <div class="mt-8 flex items-center gap-2 text-[12px] text-white/80">
+            <span class="material-symbols-outlined text-[16px]">lock</span>
+            <span>Encrypted hosting, role-based access, and regular backups.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-surface-container-low border-t border-outline-variant/40 pt-16 pb-12">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-[8px] bg-[#1b1c1b] text-white flex items-center justify-center font-bold text-base tracking-tight">H</span>
+            <span class="font-extrabold text-xl tracking-tight text-[#1b1c1b]">Horizon</span>
+          </div>
+          <p class="text-[13px] text-on-surface-variant leading-relaxed max-w-sm">
+            Architects of fixed-scope autonomous AI workers and high-velocity modular software systems for modern global enterprises.
+          </p>
+          <div class="text-[12.5px] text-on-surface-variant space-y-1 font-mono pt-2">
+            <div>Office: [Office address]</div>
+            <div>Inquiries: [contact email]</div>
+            <div>Direct: [phone]</div>
+          </div>
+          <div class="flex items-center gap-2 text-[11px] text-outline pt-2">
+            <span class="material-symbols-outlined text-[14px]">lock</span>
+            <span>Encrypted hosting, role-based access and regular backups.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Packages -->
+        <div>
+          <div class="text-[12px] font-bold text-on-surface uppercase tracking-wider mb-4">Packages</div>
+          <ul class="space-y-2.5 text-[13px] text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Products Catalogue</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors text-primary font-semibold">Ship-to-Ship Transfer</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Yacht Charter Management</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Smart Inventory Control</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">AI QC Agent</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Solutions -->
+        <div>
+          <div class="text-[12px] font-bold text-on-surface uppercase tracking-wider mb-4">Solutions</div>
+          <ul class="space-y-2.5 text-[13px] text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Maritime & Logistics</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Supply Chain</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Field Operations</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Financial Ledgers</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Enterprise Auditing</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <div class="text-[12px] font-bold text-on-surface uppercase tracking-wider mb-4">System Bulletins</div>
+          <p class="text-[12px] text-on-surface-variant leading-relaxed mb-3">
+            Receive monthly operational releases and architecture benchmarks.
+          </p>
+          <form class="space-y-2" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="work@enterprise.com" class="w-full px-3 py-2 bg-white border border-outline-variant rounded-[10px] text-[13px] text-on-surface focus:outline-none focus:border-primary">
+            <button type="submit" class="w-full py-2 bg-on-surface hover:bg-neutral-800 text-white font-semibold text-[13px] rounded-[10px] transition-colors">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-on-surface-variant">
+        <div>
+          © 2025 Horizon Enterprise Solutions. Encrypted hosting, role-based access and regular backups.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-on-surface transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-on-surface transition-colors">Security Architecture</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

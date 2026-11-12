@@ -1,0 +1,21 @@
+/* Generated from stitch/pd_accounting-software.html. Scoped to this page. */
+
+    .pg-business-accounting .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pg-business-accounting .specular-border {
+      border: 1px solid rgba(223, 191, 184, 0.4);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.65) 100%);
+      backdrop-filter: blur(20px);
+    }
+    .pg-business-accounting .primary-btn-gradient {
+      background: linear-gradient(135deg, #ff7555 0%, #a9371d 100%);
+      box-shadow: 0 4px 16px -2px rgba(169, 55, 29, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+    }
+    .pg-business-accounting .primary-btn-gradient:hover {
+      box-shadow: 0 8px 24px -2px rgba(169, 55, 29, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    }
+  

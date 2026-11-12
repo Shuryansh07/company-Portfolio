@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Horizon ERP — Integrated Business Operations Platform</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration matching Horizon Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#a9371d",
+            "secondary-fixed": "#ceee93",
+            "on-primary-container": "#6d1200",
+            "surface-container-high": "#eae8e5",
+            "outline": "#8c716b",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#003d42",
+            "surface-variant": "#e4e2df",
+            "on-primary": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#002023",
+            "primary-fixed-dim": "#ffb4a3",
+            "on-secondary": "#ffffff",
+            "surface": "#fbf9f6",
+            "tertiary-container": "#5dabb4",
+            "secondary-container": "#ceee93",
+            "primary-container": "#ff7555",
+            "surface-container": "#efeeeb",
+            "surface-container-low": "#f5f3f0",
+            "inverse-surface": "#30312f",
+            "on-tertiary-fixed-variant": "#004f55",
+            "on-secondary-fixed": "#131f00",
+            "on-secondary-container": "#536d22",
+            "secondary": "#4d661c",
+            "background": "#fbf9f6",
+            "tertiary-fixed-dim": "#85d3dc",
+            "surface-bright": "#fbf9f6",
+            "tertiary-fixed": "#a1eff8",
+            "inverse-primary": "#ffb4a3",
+            "surface-dim": "#dbdad7",
+            "outline-variant": "#dfbfb8",
+            "on-surface": "#1b1c1a",
+            "on-background": "#1b1c1a",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e4e2df",
+            "on-secondary-fixed-variant": "#364e03",
+            "inverse-on-surface": "#f2f0ed",
+            "on-surface-variant": "#58413c",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#881f06",
+            "primary-fixed": "#ffdad2",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#a9371d",
+            "on-primary-fixed": "#3d0600",
+            "tertiary": "#026971",
+            "secondary-fixed-dim": "#b3d17a"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "margin": "3rem",
+            "gutter-sm": "1rem",
+            "space-xs": "0.375rem",
+            "margin-sm": "1.25rem",
+            "space-md": "1.25rem"
+          },
+          fontFamily: {
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "display-lg-mobile": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          fontSize: {
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.025em", fontWeight: "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Ethereal gradient overlays */
+    .bg-aurora {
+      background: radial-gradient(circle at 15% 20%, rgba(255, 117, 85, 0.08) 0%, transparent 45%),
+                  radial-gradient(circle at 85% 60%, rgba(206, 238, 147, 0.12) 0%, transparent 50%),
+                  radial-gradient(circle at 50% 90%, rgba(161, 239, 248, 0.08) 0%, transparent 60%);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed bg-aurora">
+<!-- Top Navigation Bar (Shared Component Anchor) -->
+<header class="sticky top-0 z-50 w-full px-6 py-4">
+<div class="max-w-[1440px] mx-auto bg-surface-container-lowest/80 backdrop-blur-xl border border-outline-variant/40 rounded-[14px] shadow-sm px-6 py-3.5 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3" href="#">
+<img alt="Horizon Brand Logo" class="w-8 h-8 rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida/ALJJyrBIwmn9ztReGE7BPUWCsOazltSba7tnUXfSAWpnyguceuqIe5I2FlBSM_X1TGMnEeOAfU-BOp-CVRpADjHUPKjh3E01CtyNKbami39LpOGXb74XJ8s9qYROlocgMUywQXuV59fTwLa2ZLUh1J09xOOK6wSLaAYKhNnjjknDO6hJRZ9gsXNEFipfHeP-fEJoB9ZCMkk1osYr6UkdIwPuF5z6HaEgrhMk6pcKY01MOmdynYF6rxHXXfBnvNk"/>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Horizon</span>
+</a>
+<nav class="hidden md:flex items-center space-x-7">
+<a class="font-label-lg text-label-lg text-primary font-semibold hover:text-primary transition-colors duration-200" href="#">Products</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Solutions</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Case Studies</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Careers</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-150" title="Language selection">
+<span class="material-symbols-outlined text-[20px]" data-icon="language">language</span>
+</button>
+<a class="hidden sm:inline-block font-label-lg text-label-lg text-on-surface font-medium hover:text-primary transition-colors" href="#">Sign In</a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-[10px] bg-[#ff7555] text-white font-label-lg text-label-lg hover:bg-[#ff623d] active:scale-[0.99] transition-all shadow-sm" href="#demo-form">
+          Book a free demo
+        </a>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-6 space-y-24 py-8">
+<!-- 1. Breadcrumb & Hero Section with Integrated Demo Form -->
+<section class="relative pt-4">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 mb-6 font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Unified Operations</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Integrated Business Operations Platform</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-block px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-sm text-label-sm font-semibold rounded-[6px] uppercase tracking-wider">
+            UNIFIED OPERATIONS
+          </div>
+<h1 class="font-display-lg text-display-lg tracking-tight text-on-surface">
+            Integrated Business Operations Platform
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            A single synchronized operational core where sales, inventory, finance, and human resources run on unified real-time ledger data rather than disconnected spreadsheets.
+          </p>
+<!-- Six Feature rectangular Chips -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-white/80 border border-outline-variant/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="account_balance">account_balance</span>
+<span class="font-label-md text-label-md text-on-surface">Multi-Entity Consolidation &amp; Intercompany Eliminations</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-white/80 border border-outline-variant/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="sync_alt">sync_alt</span>
+<span class="font-label-md text-label-md text-on-surface">Unified Order-to-Cash Automation</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-white/80 border border-outline-variant/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="receipt_long">receipt_long</span>
+<span class="font-label-md text-label-md text-on-surface">Procure-to-Pay with Active Budget Guardrails</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-white/80 border border-outline-variant/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="dashboard_customize">dashboard_customize</span>
+<span class="font-label-md text-label-md text-on-surface">Role-Tailored Live Operational Dashboards</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-white/80 border border-outline-variant/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="alt_route">alt_route</span>
+<span class="font-label-md text-label-md text-on-surface">Cross-Module Configurable Approval Chains</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-[10px] bg-white/80 border border-outline-variant/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="verified_user">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface">Continuous Audit Trails &amp; Immutability Logs</span>
+</div>
+</div>
+<!-- Key Stats Row -->
+<div class="pt-4 grid grid-cols-3 gap-6 border-t border-outline-variant/30">
+<div>
+<p class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">[00%]</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Faster Close Times</p>
+</div>
+<div>
+<p class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">[00+]</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Native Workflows</p>
+</div>
+<div>
+<p class="font-headline-lg text-headline-lg font-bold text-secondary tracking-tight">[00%]</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Real-Time Inventory Sync</p>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: Demo Form Card -->
+<div class="lg:col-span-5 bg-white/90 backdrop-blur-xl border border-outline-variant/40 rounded-[20px] p-8 shadow-xl relative" id="demo-form">
+<div class="mb-6">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Book a live system walk-through</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              See how Horizon unifies multi-entity ledger, inventory, and billing in 30 minutes.
+            </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Walk-through request received.');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Full Name</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition text-on-surface text-body-md" placeholder="e.g. Jordan Vance" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Work Email</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition text-on-surface text-body-md" placeholder="jordan@enterprise.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Phone</label>
+<input class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition text-on-surface text-body-md" placeholder="[phone]" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Entity Count / Fleet Size</label>
+<select class="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition text-on-surface text-body-md">
+<option>Single Operating Entity (Growing)</option>
+<option>2 – 5 Subsidiaries / Locations</option>
+<option>6 – 20 Global Entities</option>
+<option>20+ Multijurisdictional Enterprise</option>
+</select>
+</div>
+<button class="w-full py-3.5 px-6 rounded-[10px] bg-[#ff7555] hover:bg-[#ff623d] text-white font-label-lg text-label-lg font-semibold transition-all shadow-md active:scale-[0.99] mt-2" type="submit">
+              Request Tailored Walk-Through
+            </button>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant pt-2">
+              Guaranteed turnaround within 48 hours • No spam • Fixed-scope quotation
+            </p>
+</form>
+</div>
+</div>
+</section>
+<!-- 2. Product Demonstration Section -->
+<section class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">See the unified operational core in motion</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-3xl">
+          Witness how single transactions trigger instant inventory holds, cross-border general ledger adjustments, and warehouse dispatch without batch sync latency.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Interactive Video Player Mockup -->
+<div class="lg:col-span-6 bg-inverse-surface text-inverse-on-surface rounded-[16px] overflow-hidden p-6 flex flex-col justify-between relative shadow-lg min-h-[420px]">
+<div class="flex items-center justify-between z-10">
+<span class="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded-[6px] text-[11px] font-semibold tracking-wide">1080p 60fps</span>
+<span class="flex items-center gap-1.5 text-xs text-white/80">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Live Playback Ready
+            </span>
+</div>
+<div class="my-auto text-center z-10 py-12">
+<button class="w-16 h-16 rounded-[14px] bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 inline-flex items-center justify-center transition-transform hover:scale-105" title="Play walkthrough">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</button>
+<p class="font-label-lg text-label-lg text-white mt-4 font-medium">Automated Multi-Entity Flow</p>
+<p class="font-body-sm text-body-sm text-white/70">From CRM contract close to multi-warehouse ledger recognition</p>
+</div>
+<div class="space-y-2 z-10">
+<div class="h-1.5 w-full bg-white/20 rounded-[4px] overflow-hidden">
+<div class="h-full bg-primary-container w-2/5"></div>
+</div>
+<div class="flex items-center justify-between text-xs text-white/60 font-mono">
+<span>Live Multi-Warehouse Routing &amp; GL Ledger Event — 02:45</span>
+<span>05:30</span>
+</div>
+</div>
+</div>
+<!-- Right: Ultra-realistic UI Mockup Cockpit -->
+<div class="lg:col-span-6 bg-white/85 backdrop-blur-xl border border-outline-variant/30 rounded-[20px] p-6 shadow-md flex flex-col justify-between">
+<div class="border-b border-outline-variant/30 pb-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Horizon ERP OS v4.2</h4>
+<p class="text-[11px] text-on-surface-variant">All Entity Ledgers Synchronized</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-surface-container rounded-[6px] font-label-sm text-label-sm text-on-surface border border-outline-variant/20">
+                HQ North America (USD) ▾
+              </span>
+<span class="font-mono text-xs text-primary font-medium">[00,000] events/sec</span>
+</div>
+</div>
+<!-- Real-time Event Stream Card -->
+<div class="my-4 space-y-2.5">
+<div class="p-3 bg-surface-container-low rounded-[10px] border border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">INCOMING ORDER #HZ-8921</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">$24,500.00 USD</span>
+</div>
+<div class="space-y-2 text-xs font-mono">
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-sm mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface">Line 1: Order #HZ-8921 verified against inventory at East Hub (auto-reserved 120 units).</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-sm mt-0.5" data-icon="currency_exchange">currency_exchange</span>
+<span class="text-on-surface">Line 2: Intercompany transfer from UK Subsidiary initiated (£18,400 FX locked).</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="receipt">receipt</span>
+<span class="text-on-surface">Line 3: Automated revenue recognition schedule drafted to GAAP standards.</span>
+</div>
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-amber-600 text-sm mt-0.5" data-icon="pending">pending</span>
+<span class="text-on-surface">Line 4: Approval workflow routed to Regional VP of Operations.</span>
+</div>
+</div>
+</div>
+<!-- Mini KPI Tiles -->
+<div class="grid grid-cols-3 gap-3 pt-3 border-t border-outline-variant/20">
+<div class="p-2.5 bg-surface-container-lowest rounded-[10px] border border-outline-variant/20 text-center">
+<span class="text-[10px] text-on-surface-variant block uppercase font-medium">Gross Margin</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">[00.0%]</span>
+</div>
+<div class="p-2.5 bg-surface-container-lowest rounded-[10px] border border-outline-variant/20 text-center">
+<span class="text-[10px] text-on-surface-variant block uppercase font-medium">Unreconciled Var</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">$0.00</span>
+</div>
+<div class="p-2.5 bg-surface-container-lowest rounded-[10px] border border-outline-variant/20 text-center">
+<span class="text-[10px] text-on-surface-variant block uppercase font-medium">DSO Metrics</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">[00] Days</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. About / Problem-Solution Section -->
+<section class="space-y-8">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary font-label-sm text-label-sm font-semibold rounded-[6px] uppercase tracking-wider mb-3">
+          THE ARCHITECTURAL BOTTLENECK
+        </span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          Growth fractures fragmented systems before it breaks business models.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 leading-relaxed">
+          Most enterprises stall not because of bad individual tools, but because sales, supply chain, finance, and people operations each maintain an isolated version of reality. Horizon resolves this friction by operating as a synchronized single core—when an order closes, inventory reserves instantly, accounts receivable updates, and headcount forecasts adapt without manual reconciliations or broken API webhooks.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/20 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-[#e6f4ea] text-[#137333] flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" data-icon="check_circle">check_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Single source of truth across all operational silos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Sales, inventory, general ledger, and personnel records reside within an immutable, interconnected data model without periodic ETL drift.
+          </p>
+</div>
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/20 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-[#e0f2fe] text-[#0284c7] flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" data-icon="analytics">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Live consolidated reporting without export cycles</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Management dashboards synthesize real-time transaction streams rather than stale end-of-month CSV consolidations and fragile spreadsheet links.
+          </p>
+</div>
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/20 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" data-icon="extension">extension</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Modular adoption with guaranteed continuity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Implement critical modules first (order-to-cash or inventory) and activate additional capabilities seamlessly as entity volume expands.
+          </p>
+</div>
+</div>
+</section>
+<!-- 4. Features Section (01 - 06 Deep Dive) -->
+<section class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Engineered for operational continuity: Six core pillars</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Eliminating the operational chasm between disparate enterprise tools.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: 01 to 06 Numbered Cards -->
+<div class="lg:col-span-7 space-y-3">
+<!-- 01 Active Pillar -->
+<div class="p-5 rounded-[12px] bg-white border-2 border-primary shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-primary uppercase">Pillar 01 — Active Highlight</span>
+<span class="px-2 py-0.5 rounded-[6px] bg-primary-fixed text-on-primary-fixed text-[11px] font-semibold">Multi-Entity Core</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Multi-Entity Consolidation with Automated Intercompany Eliminations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Subsidiaries conduct transactions in native local currencies while the central engine eliminates intercompany trades, harmonizes tax jurisdictions, and yields unified financial statements in real time.
+            </p>
+</div>
+<!-- 02 Pillar -->
+<div class="p-5 rounded-[12px] bg-white/70 hover:bg-white border border-outline-variant/30 transition-all space-y-2">
+<span class="font-mono text-xs font-bold text-on-surface-variant uppercase">Pillar 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Unified Order-to-Cash Automation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bridges CRM bookings directly to inventory fulfillment, multi-line automated invoicing, payment gateway capture, and revenue recognition schedules.
+            </p>
+</div>
+<!-- 03 Pillar -->
+<div class="p-5 rounded-[12px] bg-white/70 hover:bg-white border border-outline-variant/30 transition-all space-y-2">
+<span class="font-mono text-xs font-bold text-on-surface-variant uppercase">Pillar 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Procure-to-Pay with Active Budget Guardrails</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Requisitions automatically validate against real-time departmental cost centers, preventing budget overrun before purchase orders are committed.
+            </p>
+</div>
+<!-- 04 Pillar -->
+<div class="p-5 rounded-[12px] bg-white/70 hover:bg-white border border-outline-variant/30 transition-all space-y-2">
+<span class="font-mono text-xs font-bold text-on-surface-variant uppercase">Pillar 04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Role-Based Live Operational Dashboards</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Configurable command centers delivering pertinent metrics for floor supervisors, inventory planners, controllers, and C-suite leadership.
+            </p>
+</div>
+<!-- 05 Pillar -->
+<div class="p-5 rounded-[12px] bg-white/70 hover:bg-white border border-outline-variant/30 transition-all space-y-2">
+<span class="font-mono text-xs font-bold text-on-surface-variant uppercase">Pillar 05</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Configurable Cross-Departmental Approval Workflows</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Flexible conditional routing rules that orchestrate sign-offs across finance, legal, and department heads based on materiality thresholds.
+            </p>
+</div>
+<!-- 06 Pillar -->
+<div class="p-5 rounded-[12px] bg-white/70 hover:bg-white border border-outline-variant/30 transition-all space-y-2">
+<span class="font-mono text-xs font-bold text-on-surface-variant uppercase">Pillar 06</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Full Audit Trail &amp; Cryptographic Change History</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Every ledger adjustment, permission grant, and transaction revision is stamped with immutable timestamps, user telemetry, and field-level diff logs.
+            </p>
+</div>
+</div>
+<!-- Right: Pillar 01 Detailed Hierarchy Visualization -->
+<div class="lg:col-span-5 sticky top-28 bg-white/90 backdrop-blur-xl border border-outline-variant/40 rounded-[18px] p-6 shadow-md space-y-5">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase">Real-Time Hierarchy</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Multi-Entity Matrix</h4>
+</div>
+<span class="px-2.5 py-1 rounded-[6px] bg-[#d9f99d] text-[#2d4a08] font-label-sm text-label-sm font-semibold">
+              Live FX Synced
+            </span>
+</div>
+<!-- HoldCo Node -->
+<div class="p-4 rounded-[12px] bg-surface-container-low border border-outline-variant/30 space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-bold text-on-surface">Parent HoldCo (Delaware Corp)</span>
+<span class="font-mono text-xs text-on-surface-variant">USD base</span>
+</div>
+<p class="text-xs text-on-surface-variant">Global Consolidating General Ledger • Single Chart of Accounts</p>
+</div>
+<!-- Sub Nodes -->
+<div class="pl-6 border-l-2 border-dashed border-outline-variant/40 space-y-3">
+<div class="p-3.5 rounded-[10px] bg-white border border-outline-variant/20 space-y-1">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Horizon Logistics UK Ltd</span>
+<span class="font-mono text-xs text-secondary font-bold">GBP (£)</span>
+</div>
+<p class="text-xs text-on-surface-variant">£2.4M Volume • Auto-Eliminated £420k Intercompany transfer</p>
+</div>
+<div class="p-3.5 rounded-[10px] bg-white border border-outline-variant/20 space-y-1">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Horizon APAC Pte Ltd</span>
+<span class="font-mono text-xs text-tertiary font-bold">SGD (S$)</span>
+</div>
+<p class="text-xs text-on-surface-variant">S$3.8M Volume • Live FX Hedge Sync against USD</p>
+</div>
+</div>
+<!-- Dual Mode Badge -->
+<div class="p-3.5 rounded-[10px] bg-primary/5 border border-primary/20 flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="lock_reset">lock_reset</span>
+<span class="font-medium text-on-surface">Consolidated Variance: <strong>0.00%</strong></span>
+</div>
+<span class="font-mono font-semibold text-primary">GAAP &amp; IFRS Dual Mode</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. How It Works Section -->
+<section class="space-y-8">
+<div>
+<span class="inline-block px-3 py-1 bg-[#d9f99d] text-[#2d4a08] font-label-sm text-label-sm font-semibold rounded-[6px] uppercase tracking-wider mb-2">
+          DEPLOYMENT METHODOLOGY
+        </span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Four predictable stages to unified business intelligence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Stage 01 -->
+<div class="p-6 rounded-[16px] bg-white/70 backdrop-blur-md border border-outline-variant/30 shadow-sm flex flex-col justify-between space-y-4">
+<div>
+<span class="font-mono text-xs font-bold text-primary">STAGE 01</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Entity &amp; Schema Mapping</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+              We analyze existing legacy databases, chart of accounts, and SKU taxonomies, establishing a unified relational schema without operational downtime.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Zero Data Loss Audit
+          </div>
+</div>
+<!-- Stage 02 -->
+<div class="p-6 rounded-[16px] bg-white/70 backdrop-blur-md border border-outline-variant/30 shadow-sm flex flex-col justify-between space-y-4">
+<div>
+<span class="font-mono text-xs font-bold text-primary">STAGE 02</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Automated Cross-Module Flow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+              Event triggers are established so transactions in commerce or procurement instantly trigger dependent records across inventory and accounting.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Event Bus Wiring
+          </div>
+</div>
+<!-- Stage 03 -->
+<div class="p-6 rounded-[16px] bg-white/70 backdrop-blur-md border border-outline-variant/30 shadow-sm flex flex-col justify-between space-y-4">
+<div>
+<span class="font-mono text-xs font-bold text-primary">STAGE 03</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Role-Specific Interface Tuning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+              Granular dashboards and permissions are provisioned so warehouse crews, accountants, and executives access tailored workflows.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> RBAC Security Lock
+          </div>
+</div>
+<!-- Stage 04 -->
+<div class="p-6 rounded-[16px] bg-white/70 backdrop-blur-md border border-outline-variant/30 shadow-sm flex flex-col justify-between space-y-4">
+<div>
+<span class="font-mono text-xs font-bold text-primary">STAGE 04</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Live Operational Reporting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+              Real-time telemetry, automated journal reconciliations, and executive intelligence feeds go live with continuous verification.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Production Switchover
+          </div>
+</div>
+</div>
+</section>
+<!-- 6. Measurable Operational Benefits Section -->
+<section class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Measurable returns from day one of deployment</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]" data-icon="compare_arrows">compare_arrows</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Zero Intercompany Reconciliations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Eliminate frantic month-end spreadsheet matching with algorithmic cross-entity trade elimination.
+          </p>
+</div>
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]" data-icon="bolt">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Sub-Second Reporting Velocity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Replace multi-day financial close processes with instant, audit-ready balance sheet and P&amp;L generation.
+          </p>
+</div>
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary/15 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]" data-icon="travel_explore">travel_explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Frictionless Scalability</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Expand into new territories, launch new business units, or onboard acquisitions in weeks rather than fiscal quarters.
+          </p>
+</div>
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-amber-500/15 text-amber-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]" data-icon="shield">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Minimized Human Discrepancies</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Centralized master data management eliminates duplicate vendor files, misallocated SKUs, and mismatched invoices.
+          </p>
+</div>
+</div>
+<!-- Three-Item Assurance Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+<div class="p-5 rounded-[14px] bg-surface-container-low border border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5" data-icon="verified">verified</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Enterprise-grade security</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Encrypted hosting, role-based access control, and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+            </p>
+</div>
+</div>
+<div class="p-5 rounded-[14px] bg-surface-container-low border border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5" data-icon="price_check">price_check</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Transparent, scoped pricing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Every engagement is scoped individually with a fixed price and timeline agreed upfront — book a free consultation for a tailored quote.
+            </p>
+</div>
+</div>
+<div class="p-5 rounded-[14px] bg-surface-container-low border border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5" data-icon="group">group</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Built for your whole team</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Role-based views mean owners, managers, and frontline staff each see exactly what they need, nothing more, nothing missing.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Before / After Comparison Matrix -->
+<section class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Operational Friction vs. Horizon Enterprise Backbone</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Compare traditional fragmented business stacks against a synchronized operational core.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Fragmented Legacy Stack -->
+<div class="p-8 rounded-[18px] bg-surface-container-low border border-red-200/60 shadow-sm space-y-6">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">The Fragmented Legacy Stack</h3>
+<span class="px-3 py-1 rounded-[6px] bg-red-100 text-red-800 font-label-sm text-label-sm font-semibold">
+              Legacy Disconnected
+            </span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-lg mt-0.5" data-icon="close">close</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Sales, inventory, and finance maintain conflicting data silos across isolated vendor tools.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-lg mt-0.5" data-icon="close">close</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Single orders are re-keyed manually across two or three disconnected administrative consoles.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-lg mt-0.5" data-icon="close">close</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Executive reports require tedious manual CSV downloads, formula debugging, and error-prone consolidation.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-500 text-lg mt-0.5" data-icon="close">close</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Deploying an additional tool requires complex custom middleware and risky migration periods.</p>
+</li>
+</ul>
+</div>
+<!-- Horizon Unified Platform -->
+<div class="p-8 rounded-[18px] bg-white border border-[#ff7555]/40 shadow-md space-y-6">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">The Horizon Unified Platform</h3>
+<span class="px-3 py-1 rounded-[6px] bg-[#d9f99d] text-[#2d4a08] font-label-sm text-label-sm font-semibold">
+              Horizon Standard of Care
+            </span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="check">check</span>
+<p class="font-body-md text-body-md text-on-surface">One synchronized operational core providing consistent real-time truth across all departments.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="check">check</span>
+<p class="font-body-md text-body-md text-on-surface">A single customer event automatically executes inventory deductions, billing, and GL posting.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="check">check</span>
+<p class="font-body-md text-body-md text-on-surface">Executive analytics and ledger reports stream live from unified operational transaction data.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="check">check</span>
+<p class="font-body-md text-body-md text-on-surface">New specialized modules plug directly into existing business schemas without system replacement.</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 8. Frequently Asked Questions (FAQ) Section -->
+<section class="space-y-8 max-w-4xl mx-auto">
+<div class="text-center">
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Frequently Asked Questions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Direct answers regarding deployment architecture, data sovereignty, and module scalability.
+        </p>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- Question 1: Expanded -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>Do we have to implement every module at once?</span>
+<span class="material-symbols-outlined transition-transform duration-200 transform rotate-180" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            No. Horizon is built on a modular decoupled architecture. Most enterprise clients begin by deploying the core accounting and inventory synchronization or the unified order-to-cash pipeline. As your operational teams master the unified workflow, additional modules—such as HR management, field service dispatch, or procurement—can be activated seamlessly without interrupting live operations.
+          </div>
+</div>
+<!-- Question 2 -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>How long does a typical implementation take?</span>
+<span class="material-symbols-outlined transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
+            Because our core schema is pre-architected for multi-entity operations, typical migrations complete in [00] weeks. Our fixed-scope methodology guarantees strict delivery milestones with zero production disruption.
+          </div>
+</div>
+<!-- Question 3 -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>Can it handle multiple business locations or legal entities?</span>
+<span class="material-symbols-outlined transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
+            Yes. Multi-entity architecture is native to Horizon. You can create subsidiary organizations with independent base currencies, tax structures, and local compliance rules while consolidating into one global ledger.
+          </div>
+</div>
+<!-- Question 4 -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>Can we keep using a tool we already like for one specific function?</span>
+<span class="material-symbols-outlined transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
+            Absolutely. Horizon provides high-throughput bidirectional webhook feeds and GraphQL endpoints. If you wish to retain a specialized CRM or warehouse scanner tool, it can ingest into the master ledger in real time.
+          </div>
+</div>
+<!-- Question 5 -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>How is user access and security managed across diverse departments?</span>
+<span class="material-symbols-outlined transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
+            Role-Based Access Control (RBAC) allows field-level security permissions. Inventory clerks, CFOs, and regional managers only view the data, reports, and controls relevant to their authenticated job duties.
+          </div>
+</div>
+<!-- Question 6 -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>How is data consistency preserved if two teams update the same record simultaneously?</span>
+<span class="material-symbols-outlined transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
+            Horizon utilizes an ACID-compliant event stream with optimistic concurrency controls and cryptographic timestamps, ensuring race conditions are resolved cleanly without data overwrites.
+          </div>
+</div>
+<!-- Question 7 -->
+<div class="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex justify-between items-center font-headline-sm text-headline-sm font-semibold text-on-surface" onclick="toggleFaq(this)">
+<span>Is our data secure, and who owns the underlying records?</span>
+<span class="material-symbols-outlined transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
+            You own 100% of your records. Data is housed in isolated enterprise instances with continuous encryption at rest and in transit, complete with on-demand automated backups and zero vendor lock-in.
+          </div>
+</div>
+</div>
+</section>
+<!-- 9. "More from Horizon" Ecosystem Section -->
+<section class="space-y-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">More from the Horizon ecosystem</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+            Productized automation packages and autonomous AI workers built for immediate operational velocity.
+          </p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-[10px] bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-lg text-label-lg font-semibold transition" href="#">
+          Explore all [00+] product packages →
+        </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Package 1 -->
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 hover:shadow-md transition-shadow space-y-3 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-surface-container text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Smart Inventory Control</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Know exactly what's on your shelves, in your trucks, and on order — down to the unit, across every warehouse you run.
+            </p>
+</div>
+<span class="text-xs font-semibold text-primary inline-flex items-center gap-1 pt-2">Learn more →</span>
+</div>
+<!-- Package 2 -->
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 hover:shadow-md transition-shadow space-y-3 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-surface-container text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="warehouse">warehouse</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Warehouse Operations Platform</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Turn a warehouse floor into a system your pickers, packers, and managers can actually see and trust.
+            </p>
+</div>
+<span class="text-xs font-semibold text-primary inline-flex items-center gap-1 pt-2">Learn more →</span>
+</div>
+<!-- Package 3 -->
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 hover:shadow-md transition-shadow space-y-3 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-surface-container text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="hub">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Sales CRM &amp; Pipeline Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              See every deal, contract milestone, and communication in one pipeline without disconnected inbox silos.
+            </p>
+</div>
+<span class="text-xs font-semibold text-primary inline-flex items-center gap-1 pt-2">Learn more →</span>
+</div>
+<!-- Package 4 -->
+<div class="p-6 rounded-[16px] bg-white border border-outline-variant/30 hover:shadow-md transition-shadow space-y-3 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-[10px] bg-surface-container text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="shopping_cart_checkout">shopping_cart_checkout</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Ecommerce-to-Finance Sync</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Every online order updates your books automatically, eliminating manual reconciliation between carts and accounting.
+            </p>
+</div>
+<span class="text-xs font-semibold text-primary inline-flex items-center gap-1 pt-2">Learn more →</span>
+</div>
+</div>
+</section>
+<!-- 10. Final Call-to-Action Band -->
+<section class="relative rounded-[20px] bg-gradient-to-r from-[#ff7555] to-[#ff8a65] text-white p-12 overflow-hidden shadow-xl">
+<div class="max-w-3xl relative z-10 space-y-4">
+<h2 class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">
+          Unify your operational core with fixed-scope certainty.
+        </h2>
+<p class="font-body-lg text-body-lg text-white/90 leading-relaxed">
+          Receive a tailored architectural blueprint, data migration strategy, and fixed-fee proposal within 48 hours.
+        </p>
+<div class="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+<a class="inline-flex items-center justify-center px-6 py-3.5 rounded-[10px] bg-white text-[#ff7555] font-label-lg text-label-lg font-bold hover:bg-white/90 shadow-md active:scale-[0.99] transition" href="#demo-form">
+            Book an Architectural Scoping Consultation
+          </a>
+<span class="text-xs text-white/80 font-medium">
+            No open-ended hourly billing • Fixed delivery milestone • [00]-day average switchover guarantee
+          </span>
+</div>
+</div>
+</section>
+</main>
+<!-- Standardized Horizon Footer (Shared Component Anchor) -->
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-24">
+<div class="max-w-[1440px] mx-auto px-6 py-12 md:py-16 space-y-12">
+<!-- 4-Column Layout & Newsletter -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+<!-- Col 1: Brand Summary -->
+<div class="lg:col-span-2 space-y-4 pr-6">
+<div class="flex items-center gap-3">
+<img alt="Horizon Brand Logo" class="w-7 h-7 rounded-full" src="https://lh3.googleusercontent.com/aida/ALJJyrBIwmn9ztReGE7BPUWCsOazltSba7tnUXfSAWpnyguceuqIe5I2FlBSM_X1TGMnEeOAfU-BOp-CVRpADjHUPKjh3E01CtyNKbami39LpOGXb74XJ8s9qYROlocgMUywQXuV59fTwLa2ZLUh1J09xOOK6wSLaAYKhNnjjknDO6hJRZ9gsXNEFipfHeP-fEJoB9ZCMkk1osYr6UkdIwPuF5z6HaEgrhMk6pcKY01MOmdynYF6rxHXXfBnvNk"/>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Horizon</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Architects of fixed-scope enterprise operational software and autonomous systems.
+          </p>
+<div class="flex items-center gap-2 text-xs font-semibold text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>All Systems Operational</span>
+</div>
+</div>
+<!-- Col 2: Packages -->
+<div class="space-y-3">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Packages</h4>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Platform Overview</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Unified ERP Core</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Custom Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Field Operations Suite</a></li>
+</ul>
+</div>
+<!-- Col 3: Solutions -->
+<div class="space-y-3">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Solutions</h4>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Supply Chain &amp; Logistics</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Finance &amp; Accounting</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Human Resources</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">API &amp; Integrations</a></li>
+</ul>
+</div>
+<!-- Col 4: Resources & Newsletter -->
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Stay Updated</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quarterly operational engineering digests.</p>
+<form class="space-y-2" onsubmit="event.preventDefault(); alert('Subscribed.');">
+<input class="w-full h-10 px-3 rounded-[10px] bg-white border border-outline-variant/50 text-body-sm focus:border-primary outline-none" placeholder="Enter work email" required="" type="email"/>
+<button class="w-full py-2 rounded-[10px] bg-primary text-white font-label-md text-label-md hover:bg-primary/90 transition" type="submit">
+              Subscribe
+            </button>
+</form>
+<div class="space-y-1 text-xs text-on-surface-variant pt-2">
+<p>[Office address]</p>
+<p>[contact email]</p>
+<p>[phone]</p>
+</div>
+</div>
+</div>
+<!-- Security Note -->
+<div class="p-4 rounded-[10px] bg-surface-container border border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+<span>Security Assurance: <strong>encrypted hosting, role-based access and regular backups</strong></span>
+<span>SOC-2 Type II Scoped Architecture</span>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+<p>© 2025 Horizon Technologies Inc. Fixed-scope AI &amp; Enterprise Systems. All rights reserved.</p>
+<div class="flex items-center space-x-6 text-xs">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Security Disclosures</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Inline Script for Accordion micro-interaction -->
+<script>
+    function toggleFaq(button) {
+      const answer = button.nextElementSibling;
+      const icon = button.querySelector('.material-symbols-outlined');
+      const isHidden = answer.classList.contains('hidden');
+      
+      if (isHidden) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        answer.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+</body></html>

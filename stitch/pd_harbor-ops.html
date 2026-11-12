@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yacht Charter Management — Horizon Enterprise Platform</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#a9371d",
+            "on-tertiary-fixed-variant": "#004f55",
+            "on-secondary-fixed": "#131f00",
+            "on-tertiary-fixed": "#002023",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#881f06",
+            "secondary-fixed-dim": "#b3d17a",
+            "outline-variant": "#dfbfb8",
+            "error": "#ba1a1a",
+            "primary-fixed": "#ffdad2",
+            "on-surface-variant": "#58413c",
+            "inverse-surface": "#30312f",
+            "tertiary-fixed": "#a1eff8",
+            "on-background": "#1b1c1a",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#4d661c",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#ffb4a3",
+            "secondary-container": "#ceee93",
+            "primary": "#a9371d",
+            "background": "#fbf9f6",
+            "secondary-fixed": "#ceee93",
+            "surface-dim": "#dbdad7",
+            "on-primary-container": "#6d1200",
+            "on-tertiary-container": "#003d42",
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#fbf9f6",
+            "on-surface": "#1b1c1a",
+            "surface-variant": "#e4e2df",
+            "tertiary": "#026971",
+            "on-primary-fixed": "#3d0600",
+            "tertiary-container": "#5dabb4",
+            "primary-fixed-dim": "#ffb4a3",
+            "surface": "#fbf9f6",
+            "primary-container": "#ff7555",
+            "on-secondary-fixed-variant": "#364e03",
+            "surface-container": "#efeeeb",
+            "on-secondary-container": "#536d22",
+            "surface-container-highest": "#e4e2df",
+            "inverse-on-surface": "#f2f0ed",
+            "tertiary-fixed-dim": "#85d3dc",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#eae8e5",
+            "surface-container-low": "#f5f3f0",
+            "outline": "#8c716b",
+            "on-error": "#ffffff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700" }],
+            "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.025em", fontWeight: "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .coral-gradient {
+      background: linear-gradient(135deg, #ff8a65 0%, #ff6b4a 50%, #e05332 100%);
+    }
+    .coral-soft-gradient {
+      background: linear-gradient(180deg, rgba(255, 117, 85, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    .frosted-card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(223, 191, 184, 0.4);
+    }
+    .frosted-subtle {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TOP APP BAR -->
+<header class="sticky top-0 z-50 px-4 sm:px-8 py-3.5 max-w-[1600px] mx-auto">
+<div class="w-full rounded-[14px] px-6 py-3.5 bg-surface-container-lowest/80 dark:bg-inverse-surface/80 backdrop-blur-md border border-outline-variant/30 dark:border-outline/20 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2.5" href="#">
+<div class="w-8 h-8 rounded-[8px] bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="sailing">sailing</span>
+</div>
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight">Horizon</span>
+</a>
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-label-lg font-label-lg text-primary font-semibold flex items-center gap-1" href="#">
+<span>Products</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="expand_more">expand_more</span>
+</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#">Solutions</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#">Case Studies</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#">Careers</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-3">
+<button class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-[10px] text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors">
+          Sign In
+        </button>
+<button class="inline-flex items-center justify-center px-5 py-2.5 rounded-[10px] coral-gradient text-white text-label-md font-label-md font-semibold shadow-sm hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all">
+          Book a free demo
+        </button>
+</div>
+</div>
+</header>
+<main class="max-w-[1600px] mx-auto px-4 sm:px-8 space-y-24 pt-6 pb-20">
+<!-- 1. BREADCRUMB & HERO -->
+<section class="relative pt-6">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mb-6">
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Maritime &amp; Luxury</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-medium">Yacht Charter Management</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary/10 text-primary border border-primary/20 text-label-sm font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              MARITIME &amp; CHARTER OPERATIONS
+            </div>
+<h1 class="text-display-lg font-display-lg text-on-surface tracking-tight">
+              Yacht Charter Management
+            </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Every charter, from the first enquiry to the last owner payout, unified in one operational ledger.
+            </p>
+</div>
+<!-- Key Quantitative Metrics -->
+<div class="grid grid-cols-3 gap-4 pt-2">
+<div class="p-4 rounded-[12px] bg-white/70 border border-outline-variant/30 shadow-sm">
+<div class="text-headline-md font-headline-md font-bold text-primary">[00] min</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-1">avg response time</div>
+</div>
+<div class="p-4 rounded-[12px] bg-white/70 border border-outline-variant/30 shadow-sm">
+<div class="text-headline-md font-headline-md font-bold text-secondary">[00%]</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-1">zero double-bookings</div>
+</div>
+<div class="p-4 rounded-[12px] bg-white/70 border border-outline-variant/30 shadow-sm">
+<div class="text-headline-md font-headline-md font-bold text-tertiary">[00] hr</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-1">setup &amp; fleet sync</div>
+</div>
+</div>
+<!-- 6 Feature Chips (Strict Rectangular rounded-[10px]) -->
+<div class="space-y-3 pt-2">
+<div class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Included Core Engine Modules:</div>
+<div class="flex flex-wrap gap-2.5">
+<div class="px-3.5 py-2 rounded-[10px] bg-white border border-outline-variant/40 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="auto_awesome">auto_awesome</span>
+                AI Enquiry Inbox
+              </div>
+<div class="px-3.5 py-2 rounded-[10px] bg-white border border-outline-variant/40 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary" data-icon="filter_alt">filter_alt</span>
+                Leads &amp; Deals Pipeline
+              </div>
+<div class="px-3.5 py-2 rounded-[10px] bg-white border border-outline-variant/40 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="task_alt">task_alt</span>
+                Closed-Won in One Step
+              </div>
+<div class="px-3.5 py-2 rounded-[10px] bg-white border border-outline-variant/40 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="account_balance_wallet">account_balance_wallet</span>
+                Automated Payments &amp; Owner Payouts
+              </div>
+<div class="px-3.5 py-2 rounded-[10px] bg-white border border-outline-variant/40 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary" data-icon="calendar_month">calendar_month</span>
+                Unified Fleet Calendar
+              </div>
+<div class="px-3.5 py-2 rounded-[10px] bg-white border border-outline-variant/40 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="shield_person">shield_person</span>
+                Role-Based Access &amp; Historical Import
+              </div>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: Live Demo Form Card -->
+<div class="lg:col-span-5">
+<div class="p-8 rounded-[16px] bg-white/90 backdrop-blur-xl border border-outline-variant/40 shadow-xl space-y-6">
+<div class="space-y-1">
+<span class="px-2 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm font-semibold">Priority Maritime Access</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface pt-2">Book a live product demo</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">See how Horizon synchronizes your yachts, APA deposits, and central broker contracts.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Full Name</label>
+<input class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-low/60 border border-outline-variant/50 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="e.g. Captain Julian Vance" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Work Email</label>
+<input class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-low/60 border border-outline-variant/50 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="julian@monacoyachts.com" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Phone</label>
+<input class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-low/60 border border-outline-variant/50 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="[phone]" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Fleet / Charter Volume</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 rounded-[10px] bg-surface-container-low/60 border border-outline-variant/50 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 appearance-none">
+<option value="1-5">1 - 5 Vessels (Central Agent or Boutique)</option>
+<option value="6-20">6 - 20 Vessels (Mid-sized Charter Brokerage)</option>
+<option value="20+">20+ Superyachts / Megayachts (Global Fleet)</option>
+<option value="broker">Retail Charter Brokerage (Non-managing)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-outline absolute right-3 top-3 pointer-events-none" data-icon="unfold_more">unfold_more</span>
+</div>
+</div>
+<button class="w-full py-3.5 rounded-[10px] coral-gradient text-white text-label-lg font-label-lg font-semibold shadow-md hover:shadow-lg transition-all text-center" type="submit">
+                Request Live Demo
+              </button>
+</form>
+<div class="flex items-center gap-2 pt-2 text-label-sm font-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="verified_user">verified_user</span>
+<span>Encrypted hosting, role-based access and regular backups.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. DEMO SECTION -->
+<section class="space-y-8">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-tertiary/10 text-tertiary border border-tertiary/20 text-label-sm font-label-sm">
+          REAL-TIME TELEMETRY
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Product Live Telemetry &amp; Scheduling Demo</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">
+          Watch automated inquiry extraction, multi-vessel calendar collision checks, and APA ledger reconciliation in real time.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Screencast Video Placeholder -->
+<div class="lg:col-span-6 rounded-[16px] bg-inverse-surface text-inverse-on-surface p-6 flex flex-col justify-between relative overflow-hidden min-h-[460px] border border-stone-800 shadow-xl">
+<!-- Background Ambient Glow -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between border-b border-stone-700/60 pb-4 relative z-10">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="text-label-sm font-label-sm text-stone-300">Live Charter Stream: Mediterranean &amp; Caribbean Fleet [00]:[00]</span>
+</div>
+<div class="px-2 py-0.5 rounded-[6px] bg-stone-800 text-stone-300 text-label-sm font-label-sm border border-stone-700">
+              Latency: 14ms
+            </div>
+</div>
+<!-- Video center overlay -->
+<div class="my-auto text-center space-y-4 relative z-10 py-12">
+<div class="w-16 h-16 rounded-[12px] bg-white/10 backdrop-blur-md border border-white/20 mx-auto flex items-center justify-center text-white cursor-pointer hover:bg-primary transition-colors group">
+<span class="material-symbols-outlined text-[32px] translate-x-0.5 group-hover:scale-110 transition-transform" data-icon="play_arrow">play_arrow</span>
+</div>
+<div class="space-y-1">
+<div class="text-headline-sm font-headline-sm text-white font-medium">Automated Fleet Collision Engine</div>
+<div class="text-body-sm font-body-sm text-stone-400">Click to replay the live broker dispatch sequence</div>
+</div>
+</div>
+<!-- Video footer status -->
+<div class="pt-4 border-t border-stone-700/60 flex items-center justify-between text-label-sm font-label-sm text-stone-400 relative z-10">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span> Outlook API: Syncing</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> AIS Marine Traffic: Linked</span>
+</div>
+<span>Auto-Resolution Active</span>
+</div>
+</div>
+<!-- Right: Operational Console UI Mockup -->
+<div class="lg:col-span-6 rounded-[16px] frosted-card p-6 flex flex-col justify-between shadow-lg space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-[8px] bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="anchor">anchor</span>
+</div>
+<div>
+<div class="text-label-md font-label-md font-bold text-on-surface">Horizon CharterOS v4.2</div>
+<div class="text-label-sm font-label-sm text-outline">Central Agent Production Node</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-[6px] bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm font-semibold">
+              Confirmed &amp; APA Allocated
+            </span>
+</div>
+<div class="space-y-4">
+<div class="p-4 rounded-[12px] bg-white border border-outline-variant/30 space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface font-bold">M/Y Aurelia 52m - Superyacht</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Flag: Cayman Islands • Port of Registry: George Town</div>
+</div>
+<div class="text-right">
+<div class="text-label-sm font-label-sm text-outline">Charter Duration</div>
+<div class="text-label-md font-label-md font-semibold text-primary">Jul 14 - Jul 21 (7 Nights)</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-2 border-t border-outline-variant/20 text-body-sm font-body-sm">
+<div>
+<span class="text-outline">Client:</span>
+<span class="font-medium text-on-surface ml-1">Family Charter / [Client name]</span>
+</div>
+<div>
+<span class="text-outline">Broker Commission:</span>
+<span class="font-medium text-secondary ml-1">15% Cleared</span>
+</div>
+</div>
+</div>
+<!-- Ledger Breakdown -->
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-[12px] bg-white border border-outline-variant/30">
+<div class="text-label-sm font-label-sm text-outline">APA Fund Balance</div>
+<div class="text-headline-md font-headline-md font-bold text-tertiary mt-1">$[00,000]</div>
+<div class="text-label-sm font-label-sm text-tertiary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="check_circle">check_circle</span>
+                  Fuel &amp; Provision Card Active
+                </div>
+</div>
+<div class="p-4 rounded-[12px] bg-white border border-outline-variant/30">
+<div class="text-label-sm font-label-sm text-outline">Owner Net Remittance</div>
+<div class="text-headline-md font-headline-md font-bold text-on-surface mt-1">$[000,000]</div>
+<div class="text-label-sm font-label-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span>
+                  Pending Cutover
+                </div>
+</div>
+</div>
+<!-- Automated Checklist -->
+<div class="p-4 rounded-[12px] bg-surface-container-low border border-outline-variant/30 space-y-2.5">
+<div class="text-label-sm font-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">Automated Charter Milestones:</div>
+<div class="grid grid-cols-2 gap-2 text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_box">check_box</span>
+<span>MYBA Form Generated</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_box">check_box</span>
+<span>Passport &amp; Manifest Signed</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_box">check_box</span>
+<span>Captain APA Credit Disbursed</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]" data-icon="check_box_outline_blank">check_box_outline_blank</span>
+<span class="text-outline">Disembarkation Fuel Finalized</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. ABOUT / PROBLEM SECTION -->
+<section class="space-y-8">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-error-container text-on-error-container text-label-sm font-label-sm font-semibold">
+          THE CHARTER BROKERAGE BOTTLENECK
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          Built specifically for modern yacht charter brokerages and fleet operators.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-4xl leading-relaxed">
+          Luxury charter companies drown in disconnected emails, disparate spreadsheets, PDF contracts, and fragile memory. When high-net-worth clients request seven-figure itineraries on short notice, a slow response or an unrecorded owner hold destroys a deal. Horizon Yacht Charter Management centralizes inquiries, charterers, luxury vessels, reservations, and multi-currency funds into one live workspace.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Problem Card 1 -->
+<div class="p-6 rounded-[16px] frosted-card space-y-4 hover:border-primary/40 transition-all">
+<div class="w-10 h-10 rounded-[10px] bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]" data-icon="quickreply">quickreply</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+            Automated Inquiry Parsing &amp; Availability Matching
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Incoming charter inquiries are parsed, matched against fleet availability and cabin specifications, and prepared for instant broker approval without re-keying vessel specs.
+          </p>
+</div>
+<!-- Problem Card 2 -->
+<div class="p-6 rounded-[16px] frosted-card space-y-4 hover:border-primary/40 transition-all">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]" data-icon="description">description</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+            Tailored Contract Terms &amp; APA Ledgers
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Flexible MYBA / standard maritime agreements, structured instalment plans, APA provisioning, and broker commission splits configured to your exact operating model.
+          </p>
+</div>
+<!-- Problem Card 3 -->
+<div class="p-6 rounded-[16px] frosted-card space-y-4 hover:border-primary/40 transition-all">
+<div class="w-10 h-10 rounded-[10px] bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]" data-icon="date_range">date_range</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+            Deterministic Multi-Vessel Calendars
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Single source of truth per vessel where owner-use weeks, technical refits, sea trials, and booked charter weeks can never be double-sold or miscommunicated.
+          </p>
+</div>
+</div>
+</section>
+<!-- 4. CORE CAPABILITIES (01-06) -->
+<section class="space-y-10">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-primary/10 text-primary text-label-sm font-label-sm font-semibold">
+          ENGINEERED MARITIME CAPABILITIES
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          From incoming charter inquiry to final owner statement: Six core capabilities.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+          Deterministic automation eliminating manual data retyping, booking conflicts, and remittance lag.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: 01-06 List -->
+<div class="lg:col-span-7 space-y-4">
+<!-- 01 -->
+<div class="p-5 rounded-[16px] bg-white border-2 border-primary shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md font-bold text-primary">01. Smart Inbox &amp; Autonomous Ingestion</span>
+<span class="px-2 py-0.5 rounded-[6px] bg-primary-container text-white text-label-sm font-label-sm">Active Deep Dive</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Gmail and Outlook sync reads incoming charter inquiries, dates, guest counts, and target itineraries, checks fleet availability, recommends matching yachts in the same class, and drafts responses for broker sign-off.
+            </p>
+</div>
+<!-- 02 -->
+<div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/30 space-y-2 hover:bg-white transition-colors">
+<span class="text-label-md font-label-md font-bold text-on-surface">02. Multi-Stage Charter Deal Pipeline</span>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Track leads from initial specification to contract signing with custom deal values, guest preference profiles, and broker attribution.
+            </p>
+</div>
+<!-- 03 -->
+<div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/30 space-y-2 hover:bg-white transition-colors">
+<span class="text-label-md font-label-md font-bold text-on-surface">03. One-Step Closed-Won Generation</span>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Instantly generate legally compliant charter agreements, client instalment schedules, APA provisions, and owner payout timelines in one click.
+            </p>
+</div>
+<!-- 04 -->
+<div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/30 space-y-2 hover:bg-white transition-colors">
+<span class="text-label-md font-label-md font-bold text-on-surface">04. Multi-Currency Ledger &amp; Owner Payouts</span>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Track escrow deposits, VAT calculations, advance provisioning allowances (APA), fuel reconciliation, and owner remittances with zero manual spreadsheets.
+            </p>
+</div>
+<!-- 05 -->
+<div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/30 space-y-2 hover:bg-white transition-colors">
+<span class="text-label-md font-label-md font-bold text-on-surface">05. Collision-Proof Fleet Scheduling</span>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Unified visual timeline displaying confirmed bookings, tentative holds, shipyard maintenance windows, and owner-exclusive weeks.
+            </p>
+</div>
+<!-- 06 -->
+<div class="p-5 rounded-[16px] bg-white/70 border border-outline-variant/30 space-y-2 hover:bg-white transition-colors">
+<span class="text-label-md font-label-md font-bold text-on-surface">06. Role-Based Permissions &amp; Legacy Migration</span>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Granular views for brokers, charter managers, captains, and finance controllers with frictionless CSV spreadsheet import.
+            </p>
+</div>
+</div>
+<!-- Right: Detail Panel for 01 -->
+<div class="lg:col-span-5 sticky top-28 p-6 rounded-[16px] frosted-card border border-primary/30 shadow-lg space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="psychology">psychology</span>
+<span class="text-label-md font-label-md font-bold text-on-surface">Feature 01 Deep-Dive: Active AI Dispatch</span>
+</div>
+<span class="px-2 py-0.5 rounded-[6px] bg-tertiary-fixed text-on-tertiary-fixed font-bold text-label-sm font-label-sm">
+              Confidence: [00%]
+            </span>
+</div>
+<!-- Raw Input Parsed -->
+<div class="space-y-2">
+<div class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Source Parsing Sample:</div>
+<div class="p-3.5 rounded-[10px] bg-surface-container-low font-mono text-body-sm font-body-sm text-on-surface-variant border border-outline-variant/20">
+              "Looking for 50m+ yacht in Cyclades for 10 guests, Aug 10-17. Need helipad and master suite on main deck. Budget approx €250k."
+            </div>
+</div>
+<!-- AI Extraction Extraction Tags -->
+<div class="space-y-2">
+<div class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Extracted Telemetry:</div>
+<div class="grid grid-cols-2 gap-2 text-label-sm font-label-sm">
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/30">
+<div class="text-outline">Cruising Region</div>
+<div class="font-bold text-on-surface mt-0.5">Aegean / Cyclades</div>
+</div>
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/30">
+<div class="text-outline">Guests / Cabins</div>
+<div class="font-bold text-on-surface mt-0.5">10 Guests (5 Staterooms)</div>
+</div>
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/30">
+<div class="text-outline">Requested Window</div>
+<div class="font-bold text-primary mt-0.5">Aug 10 - Aug 17 (7 Days)</div>
+</div>
+<div class="p-2.5 rounded-[8px] bg-white border border-outline-variant/30">
+<div class="text-outline">Target Budget</div>
+<div class="font-bold text-secondary mt-0.5">€250,000 + APA</div>
+</div>
+</div>
+</div>
+<!-- Verified Fleet Match -->
+<div class="p-4 rounded-[12px] bg-white border border-secondary-container shadow-xs space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm font-bold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="verified">verified</span>
+                Verified Fleet Match
+              </span>
+<span class="text-label-sm font-label-sm text-outline">100% Availability</span>
+</div>
+<div class="text-label-md font-label-md text-on-surface font-semibold">M/Y Helios Blue (55m Admiral)</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Located in Athens Marina. Pre-approved for fast draft quote.</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-2.5 rounded-[10px] bg-surface-container text-on-surface border border-outline-variant/40 text-label-md font-label-md font-semibold hover:bg-white transition-colors">
+              Inspect AI Dispatch Rules &amp; Prompt Pipeline →
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. HOW IT WORKS (FOUR CONNECTED STEPS) -->
+<section class="space-y-10">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-secondary/10 text-secondary text-label-sm font-label-sm font-semibold">
+          OPERATIONAL WORKFLOW
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          Four deterministic steps from charter inquiry to owner payout.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-[10px] bg-primary text-white flex items-center justify-center font-bold text-label-lg font-label-lg shadow-sm">
+              01
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              Set Up Fleet &amp; Connect Inboxes
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Upload vessel specs, crew profiles, weekly rates, connect corporate email, and import existing charterer records.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="sync">sync</span>
+            Takes under 2 hours
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary text-white flex items-center justify-center font-bold text-label-lg font-label-lg shadow-sm">
+              02
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              Inquiries Automatically Transform
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Incoming requests are parsed for dates, destinations, and guest requirements with auto-matched fleet suggestions and pre-drafted replies.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="bolt">bolt</span>
+            Instant broker notification
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-[10px] bg-secondary text-white flex items-center justify-center font-bold text-label-lg font-label-lg shadow-sm">
+              03
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              Execute &amp; Lock the Contract
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Mark deal as Closed-Won to automatically spin up client invoice schedules, APA escrow ledgers, and owner payout milestones.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="lock">lock</span>
+            Guaranteed zero collisions
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 space-y-4 relative flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-[10px] bg-surface-tint text-white flex items-center justify-center font-bold text-label-lg font-label-lg shadow-sm">
+              04
+            </div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              Track Payments &amp; Reconcile APA
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Record client wire transfers in real time, monitor overdue notices, log voyage expense receipts, and disburse owner payouts.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 text-label-sm font-label-sm text-surface-tint flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="receipt_long">receipt_long</span>
+            Clean owner ledger output
+          </div>
+</div>
+</div>
+</section>
+<!-- 6. BENEFITS & ENTERPRISE VALUES -->
+<section class="space-y-10">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-primary/10 text-primary text-label-sm font-label-sm font-semibold">
+          OPERATIONAL RETURNS
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          Why leading charter brokerages and fleet managers choose Horizon.
+        </h2>
+</div>
+<!-- 4 Benefit Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-7 rounded-[16px] bg-white border border-outline-variant/30 space-y-3 shadow-xs">
+<div class="w-10 h-10 rounded-[10px] bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]" data-icon="speed">speed</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Accelerated Inquiries &amp; Higher Booking Velocity</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Availability checked and quote-ready responses drafted before competitors open the email. Convert high-value charter opportunities before options expire.
+          </p>
+</div>
+<div class="p-7 rounded-[16px] bg-white border border-outline-variant/30 space-y-3 shadow-xs">
+<div class="w-10 h-10 rounded-[10px] bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]" data-icon="event_busy">event_busy</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Zero Double-Bookings or Scheduling Clashes</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Vessel calendars lock out maintenance and owner weeks with zero spreadsheet discrepancy. Central agents and retail brokers see verified real-time availability.
+          </p>
+</div>
+<div class="p-7 rounded-[16px] bg-white border border-outline-variant/30 space-y-3 shadow-xs">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]" data-icon="price_check">price_check</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Complete Financial Transparency &amp; APA Control</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Instantly audit paid deposits, upcoming charter installments, and net owner remittances. Every provisioning dollar is accounted for with itemized receipt logs.
+          </p>
+</div>
+<div class="p-7 rounded-[16px] bg-white border border-outline-variant/30 space-y-3 shadow-xs">
+<div class="w-10 h-10 rounded-[10px] bg-surface-tint/10 flex items-center justify-center text-surface-tint">
+<span class="material-symbols-outlined text-[24px]" data-icon="hub">hub</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Single Shared Brokerage Workspace</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Brokers, fleet managers, captains, and accountants operate with role-appropriate permissions from identical records—eliminating back-and-forth internal emails.
+          </p>
+</div>
+</div>
+<!-- 3-Item Horizontal Trust Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 rounded-[16px] bg-surface-container-low border border-outline-variant/30">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-primary" data-icon="verified_user">verified_user</span>
+            Enterprise-Grade Security
+          </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Encrypted hosting, role-based access control, and regular backups. Your data always remains fully yours and exportable, with no lock-in.
+          </p>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-tertiary" data-icon="request_quote">request_quote</span>
+            Transparent, Scoped Pricing
+          </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Every engagement is scoped individually with a fixed price and timeline agreed upfront — book a free consultation for a tailored quote.
+          </p>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-secondary" data-icon="groups">groups</span>
+            Built for Your Whole Team
+          </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Role-based views mean owners, managers, and frontline staff each see exactly what they need, nothing more, nothing missing.
+          </p>
+</div>
+</div>
+</section>
+<!-- 7. BEFORE / AFTER CONTRAST -->
+<section class="space-y-8">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-primary/10 text-primary text-label-sm font-label-sm font-semibold">
+          OPERATIONAL TRANSFORMATION
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          The difference in the charter office.
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">
+          Comparing disconnected spreadsheet friction against Horizon's unified maritime operational ledger.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Without Column (Dimmed Red Accent) -->
+<div class="p-8 rounded-[16px] bg-surface-container-low border border-error/20 space-y-6">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="text-headline-sm font-headline-sm font-bold text-error flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]" data-icon="cancel">cancel</span>
+              Without Yacht Charter Management
+            </div>
+<span class="px-2.5 py-0.5 rounded-[6px] bg-error-container text-on-error-container text-label-sm font-label-sm">High Friction</span>
+</div>
+<div class="space-y-5 text-body-md font-body-md text-on-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5" data-icon="close">close</span>
+<p>Inquiries sit in chaotic email inboxes while brokers manually consult offline calendars and captains.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5" data-icon="close">close</span>
+<p>Yacht availability and vessel holds reside in personal spreadsheets, leading to painful double-booking risks.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5" data-icon="close">close</span>
+<p>Multi-currency payment plans, APA allocations, and broker splits calculated manually with frequent errors.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5" data-icon="close">close</span>
+<p>Finance teams cannot confirm which charterer payments are settled, overdue, or in bank transit.</p>
+</div>
+</div>
+</div>
+<!-- With Horizon Column (Luminous Green/Coral Accent) -->
+<div class="p-8 rounded-[16px] bg-white border border-secondary/30 shadow-lg space-y-6">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="text-headline-sm font-headline-sm font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]" data-icon="check_circle">check_circle</span>
+              With Horizon Yacht Charter Management
+            </div>
+<span class="px-2.5 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm font-semibold">Zero Double-Bookings</span>
+</div>
+<div class="space-y-5 text-body-md font-body-md text-on-surface">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" data-icon="done_all">done_all</span>
+<p>Inquiries are ingested, parsed, and verified against fleet availability in under <strong class="text-primary font-bold">[00] minutes</strong>.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" data-icon="done_all">done_all</span>
+<p>One central, synchronized fleet calendar where booked, optioned, and refit weeks cannot be sold twice.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" data-icon="done_all">done_all</span>
+<p>One-click Closed-Won automatically builds contract payment schedules, APA escrows, and owner payouts.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" data-icon="done_all">done_all</span>
+<p>Real-time financial dashboard displaying paid, pending, and overdue charter balances across all currencies.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+<section class="space-y-8 max-w-4xl mx-auto">
+<div class="text-center space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-tertiary/10 text-tertiary text-label-sm font-label-sm font-semibold">
+          FREQUENTLY ASKED QUESTIONS
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">
+          Clear answers regarding charter operations, fleet sync, and onboarding.
+        </h2>
+</div>
+<div class="space-y-3">
+<!-- Q1 (Expanded) -->
+<div class="p-6 rounded-[10px] bg-white border border-primary/40 shadow-sm space-y-3">
+<div class="flex items-center justify-between text-headline-sm font-headline-sm font-bold text-on-surface cursor-pointer">
+<span>1. Who is Yacht Charter Management for?</span>
+<span class="material-symbols-outlined text-primary text-[24px]" data-icon="remove">remove</span>
+</div>
+<div class="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-outline-variant/20">
+            Designed for luxury yacht charter brokerages, central agents, fleet management companies, and bareboat/crewed charter operators managing single or multi-vessel fleets who need to replace disjointed spreadsheets and email chains with an auditable operations platform.
+          </div>
+</div>
+<!-- Q2 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>2. Can I try it before buying?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+<!-- Q3 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>3. How does the AI enquiry inbox work?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+<!-- Q4 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>4. Can I bring in my existing data and spreadsheet records?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+<!-- Q5 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>5. Does it handle standard MYBA contracts and Advance Provisioning Allowance (APA)?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+<!-- Q6 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>6. Can each team member, broker, and captain have custom access permissions?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+<!-- Q7 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>7. How long does onboarding and fleet data migration typically take?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+<!-- Q8 -->
+<div class="p-5 rounded-[10px] bg-white/70 border border-outline-variant/30 flex items-center justify-between text-label-lg font-label-lg font-semibold text-on-surface hover:bg-white cursor-pointer">
+<span>8. Is our client and financial data secure, and who owns it?</span>
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="add">add</span>
+</div>
+</div>
+</section>
+<!-- 9. "MORE FROM THE HORIZON ECOSYSTEM" -->
+<section class="space-y-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-primary/10 text-primary text-label-sm font-label-sm font-semibold">
+            CONNECTED ENTERPRISE MODULES
+          </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Looking for something else?</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Browse productized software and autonomous AI workflows engineered for operational velocity.
+          </p>
+</div>
+<a class="text-label-lg font-label-lg font-semibold text-primary hover:underline inline-flex items-center gap-1.5 shrink-0" href="#">
+          Explore all [00+] product packages
+          <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Related 1 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Smart Inventory Control
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Know exactly what's on your shelves, in your trucks, and on order — down to the unit, across every warehouse you run.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center text-label-sm font-label-sm text-primary font-semibold">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Related 2 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              AI Travel Agent
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Corporate travel policy compliance, automated itinerary booking, and live flight disruption rebooking.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center text-label-sm font-label-sm text-primary font-semibold">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Related 3 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="sync_alt">sync_alt</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Ship-to-Ship Transfer Management
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Coordinate cargo transfers between vessels at sea with the same discipline a port operation demands on land.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center text-label-sm font-label-sm text-primary font-semibold">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Related 4 -->
+<div class="p-6 rounded-[16px] frosted-card border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-[10px] bg-surface-variant text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Business Accounting Software
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Invoicing, expenses and bank reconciliation unified into a single real-time ledger.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center text-label-sm font-label-sm text-primary font-semibold">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FINAL CALL-TO-ACTION BAND -->
+<section class="rounded-[20px] coral-gradient text-white p-10 md:p-14 shadow-2xl relative overflow-hidden">
+<!-- Decorative specular highlight -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-white/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl space-y-6 relative z-10">
+<h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-white font-bold leading-tight">
+          Unify your charter operations with fixed-scope certainty.
+        </h2>
+<p class="text-body-lg font-body-lg text-white/90 leading-relaxed">
+          Connect directly with our solutions engineering team to scope your yacht fleet workflows, email integrations, and contract automation within 48 hours.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<button class="px-6 py-3.5 rounded-[10px] bg-white text-on-primary-container font-semibold text-label-lg font-label-lg shadow-lg hover:bg-surface-container-low transition-all">
+            Book an Architectural Scoping Consultation
+          </button>
+<button class="px-6 py-3.5 rounded-[10px] bg-white/15 border border-white/30 text-white font-semibold text-label-lg font-label-lg hover:bg-white/25 transition-all">
+            Download Platform Specification
+          </button>
+</div>
+<div class="pt-6 border-t border-white/20 text-label-sm font-label-sm text-white/80 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="lock">lock</span>
+<span>Encrypted hosting, role-based access and regular backups. Your data always remains fully yours and exportable.</span>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full border-t border-outline-variant/30 bg-surface-container-low">
+<div class="w-full max-w-[1600px] mx-auto px-8 py-16 space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+<!-- Brand & Bulletin Column -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-[8px] bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[18px]" data-icon="sailing">sailing</span>
+</div>
+<span class="text-headline-md font-headline-md font-bold text-on-surface tracking-tight">Horizon</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm">
+            High-assurance operational infrastructure for charter brokerages, fleet managers, and luxury marine enterprises worldwide.
+          </p>
+<!-- Newsletter Form -->
+<div class="space-y-2 pt-2">
+<label class="block text-label-sm font-label-sm font-semibold text-on-surface">System Bulletin Newsletter</label>
+<form class="flex items-center gap-2" onsubmit="event.preventDefault();">
+<input class="h-10 px-3.5 rounded-[10px] bg-white border border-outline-variant/40 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary flex-1" placeholder="Enter work email" type="email"/>
+<button class="h-10 px-4 rounded-[10px] bg-on-surface text-white text-label-sm font-label-sm font-semibold hover:bg-primary transition-colors" type="submit">
+                Subscribe
+              </button>
+</form>
+</div>
+<!-- Contact Placeholders -->
+<div class="pt-3 text-body-sm font-body-sm text-on-surface-variant space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline" data-icon="location_on">location_on</span>
+<span>[Office address]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline" data-icon="mail">mail</span>
+<span>[contact email]</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline" data-icon="call">call</span>
+<span>[phone]</span>
+</div>
+</div>
+</div>
+<!-- Links Column 1: Packages -->
+<div class="space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Packages</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Products</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">ERP Architecture</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">AI Automation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Solutions -->
+<div class="space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Solutions</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Supply Chain</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Financial Operations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Yacht Management</a></li>
+</ul>
+</div>
+<!-- Links Column 3: Resources -->
+<div class="space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Resources</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">API Documentation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">System Status</a></li>
+</ul>
+</div>
+<!-- Links Column 4: Company -->
+<div class="space-y-3">
+<div class="text-label-md font-label-md font-bold text-on-surface uppercase tracking-wider">Company</div>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">About Horizon</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<!-- Footer Bottom Bar -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-on-surface-variant">
+<div>
+          © 2025 Horizon Enterprise Solutions. Encrypted hosting, role-based access and regular backups.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Security</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

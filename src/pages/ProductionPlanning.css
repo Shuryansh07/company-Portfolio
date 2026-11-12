@@ -1,0 +1,19 @@
+/* Generated from stitch/pd_production-planning-software.html. Scoped to this page. */
+
+    .pg-production-planning .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pg-production-planning .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+    /* Specific soft gradient meshes for Neo-Glassmorphism */
+    .pg-production-planning .hero-glow {
+      background: radial-gradient(circle at 75% 20%, rgba(255, 117, 85, 0.08) 0%, rgba(251, 249, 246, 0) 65%);
+    }
+    .pg-production-planning .interactive-glow {
+      background: radial-gradient(circle at 30% 50%, rgba(2, 105, 113, 0.05) 0%, rgba(251, 249, 246, 0) 70%);
+    }
+  

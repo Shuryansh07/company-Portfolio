@@ -1,0 +1,36 @@
+/* Generated from stitch/home.html. Scoped to this page. */
+
+    .pg-home {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fbf9f6;
+      color: #1b1c1a;
+      overflow-x: hidden;
+    }
+    .pg-home .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pg-home .glow-peach {
+      box-shadow: 0 14px 35px -8px rgba(255, 117, 85, 0.42);
+    }
+    .pg-home .neo-glass {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+    }
+    .pg-home .neo-glass-subtle {
+      background: rgba(255, 255, 255, 0.52);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+    .pg-home .ambient-radial {
+      background: radial-gradient(circle at 50% 0%, rgba(255, 117, 85, 0.12) 0%, rgba(251, 249, 246, 0) 65%);
+    }
+    .pg-home .ambient-radial-glow {
+      background: radial-gradient(circle at 80% 30%, rgba(165, 243, 252, 0.2) 0%, rgba(217, 249, 157, 0.12) 30%, rgba(251, 249, 246, 0) 70%);
+    }
+  
