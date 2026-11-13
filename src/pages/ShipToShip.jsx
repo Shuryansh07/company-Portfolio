@@ -5,7 +5,7 @@ import './ShipToShip.css'
 export default function ShipToShip() {
   return (
     <div className="pg-ship-to-ship bg-surface text-[#1b1c1b] antialiased selection:bg-[#ffdbd2] selection:text-[#3b0900] min-h-screen flex flex-col">
-      <title>{"Horizon | Ship-to-Ship Transfer Management"}</title>
+      <title>{"Horizons | Ship-to-Ship Transfer Management"}</title>
       {' '}
       {' '}
       <main className="flex-grow custom-gradient-bg pt-6 pb-20">
@@ -124,7 +124,7 @@ export default function ShipToShip() {
                   Book a live platform demo
                 </h2>
                 <p className="text-[13px] text-[#474744] leading-relaxed mb-6">
-                  See how Horizon coordinates vessel telemetry, OCIMF compliance logs, and dual-master digital sign-offs.
+                  See how Horizons coordinates vessel telemetry, OCIMF compliance logs, and dual-master digital sign-offs.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
@@ -217,7 +217,7 @@ export default function ShipToShip() {
                   </div>
                   {' '}
                   <span className="text-[13px] font-bold text-[#1b1c1b]">
-                    Horizon Maritime Console v4.8
+                    Horizons Maritime Console v4.8
                   </span>
                   {' '}
                   <span className="text-[11px] px-2 py-0.5 rounded-[6px] bg-lime-container text-on-lime font-bold uppercase tracking-wider">
@@ -386,7 +386,7 @@ export default function ShipToShip() {
                 STS Operations Run on Timing, Not Luck
               </h2>
               <p className="text-base sm:text-lg text-[#474744] leading-relaxed mb-8">
-                Transferring cargo between two vessels alongside each other—whether crude oil, LNG, chemical parcels, or dry bulk cargo—depends on uncompromising scheduling, equipment readiness, and strict adherence to international maritime safety standards. Horizon coordinates the end-to-end operational plan, documentation packages, and compliance checklists so nothing gets missed in high-risk, high-value open-water operations.
+                Transferring cargo between two vessels alongside each other—whether crude oil, LNG, chemical parcels, or dry bulk cargo—depends on uncompromising scheduling, equipment readiness, and strict adherence to international maritime safety standards. Horizons coordinates the end-to-end operational plan, documentation packages, and compliance checklists so nothing gets missed in high-risk, high-value open-water operations.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-[#c7c6c1]/40">
                 <div className="flex items-start gap-3">
@@ -822,7 +822,7 @@ export default function ShipToShip() {
               What Changes on Day One
             </h2>
             <p className="text-[14px] text-[#474744]">
-              Comparing fragmented ad-hoc vessel coordination with the Horizon synchronized standard.
+              Comparing fragmented ad-hoc vessel coordination with the Horizons synchronized standard.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -878,7 +878,7 @@ export default function ShipToShip() {
             <div className="rounded-[20px] p-7 bg-[#f4fae6] border border-[#dcedbe]">
               <div className="flex items-center justify-between mb-6 pb-3 border-b border-[#d0e6ab]">
                 <h3 className="text-lg font-bold text-[#1b1c1b]">
-                  The Horizon Synchronized Protocol
+                  The Horizons Synchronized Protocol
                 </h3>
                 {' '}
                 <span className="text-[11px] font-mono font-bold uppercase px-2 py-0.5 rounded-[6px] bg-lime text-on-lime">
@@ -950,7 +950,7 @@ export default function ShipToShip() {
                 </span>
               </div>
               <div className="p-5 pt-3 text-[13.5px] text-[#474744] leading-relaxed bg-surface/40">
-                Yes. Horizon includes pre-configured operational templates and safety interlocks for crude oil, petroleum products, LNG/LPG cryogenic transfers, bulk chemicals, and dry bulk commodities. Each profile enforces the corresponding OCIMF, SIGTTO, or ISGOTT checklists, vapor pressure thresholds, and emergency shutdown sequence timings.
+                Yes. Horizons includes pre-configured operational templates and safety interlocks for crude oil, petroleum products, LNG/LPG cryogenic transfers, bulk chemicals, and dry bulk commodities. Each profile enforces the corresponding OCIMF, SIGTTO, or ISGOTT checklists, vapor pressure thresholds, and emergency shutdown sequence timings.
               </div>
             </div>
             <div className="glass-card rounded-[14px] border border-[#c7c6c1]/60 bg-white shadow-2xs p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-low transition-colors">

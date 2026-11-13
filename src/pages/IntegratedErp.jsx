@@ -5,7 +5,7 @@ import './IntegratedErp.css'
 export default function IntegratedErp() {
   return (
     <div className="pg-integrated-erp bg-surface text-on-surface font-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed bg-aurora">
-      <title>{"Horizon ERP — Integrated Business Operations Platform"}</title>
+      <title>{"Horizons ERP — Integrated Business Operations Platform"}</title>
       {' '}
       {' '}
       <main className="max-w-[1440px] mx-auto px-6 space-y-24 py-8">
@@ -105,7 +105,7 @@ export default function IntegratedErp() {
                   Book a live system walk-through
                 </h2>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">
-                  See how Horizon unifies multi-entity ledger, inventory, and billing in 30 minutes.
+                  See how Horizons unifies multi-entity ledger, inventory, and billing in 30 minutes.
                 </p>
               </div>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -179,7 +179,7 @@ export default function IntegratedErp() {
                   {' '}
                   <div>
                     <h4 className="font-label-lg text-label-lg text-on-surface font-bold">
-                      Horizon ERP OS v4.2
+                      Horizons ERP OS v4.2
                     </h4>
                     <p className="text-[11px] text-on-surface-variant">
                       All Entity Ledgers Synchronized
@@ -287,7 +287,7 @@ export default function IntegratedErp() {
               Growth fractures fragmented systems before it breaks business models.
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mt-4 leading-relaxed">
-              Most enterprises stall not because of bad individual tools, but because sales, supply chain, finance, and people operations each maintain an isolated version of reality. Horizon resolves this friction by operating as a synchronized single core—when an order closes, inventory reserves instantly, accounts receivable updates, and headcount forecasts adapt without manual reconciliations or broken API webhooks.
+              Most enterprises stall not because of bad individual tools, but because sales, supply chain, finance, and people operations each maintain an isolated version of reality. Horizons resolves this friction by operating as a synchronized single core—when an order closes, inventory reserves instantly, accounts receivable updates, and headcount forecasts adapt without manual reconciliations or broken API webhooks.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -455,7 +455,7 @@ export default function IntegratedErp() {
                 <div className="p-3.5 rounded-[10px] bg-white border border-outline-variant/20 space-y-1">
                   <div className="flex justify-between items-center">
                     <span className="font-label-md text-label-md font-semibold text-on-surface">
-                      Horizon Logistics UK Ltd
+                      Horizons Logistics UK Ltd
                     </span>
                     {' '}
                     <span className="font-mono text-xs text-secondary font-bold">
@@ -469,7 +469,7 @@ export default function IntegratedErp() {
                 <div className="p-3.5 rounded-[10px] bg-white border border-outline-variant/20 space-y-1">
                   <div className="flex justify-between items-center">
                     <span className="font-label-md text-label-md font-semibold text-on-surface">
-                      Horizon APAC Pte Ltd
+                      Horizons APAC Pte Ltd
                     </span>
                     {' '}
                     <span className="font-mono text-xs text-tertiary font-bold">
@@ -700,7 +700,7 @@ export default function IntegratedErp() {
         <section className="space-y-8">
           <div>
             <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface">
-              Operational Friction vs. Horizon Enterprise Backbone
+              Operational Friction vs. Horizons Enterprise Backbone
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mt-2">
               Compare traditional fragmented business stacks against a synchronized operational core.
@@ -759,11 +759,11 @@ export default function IntegratedErp() {
             <div className="p-8 rounded-[18px] bg-white border border-[#ff7555]/40 shadow-md space-y-6">
               <div className="flex items-center justify-between pb-4 border-b border-outline-variant/20">
                 <h3 className="font-headline-md text-headline-md font-bold text-on-surface">
-                  The Horizon Unified Platform
+                  The Horizons Unified Platform
                 </h3>
                 {' '}
                 <span className="px-3 py-1 rounded-[6px] bg-[#d9f99d] text-[#2d4a08] font-label-sm text-label-sm font-semibold">
-                  Horizon Standard of Care
+                  Horizons Standard of Care
                 </span>
               </div>
               <ul className="space-y-4">
@@ -829,7 +829,7 @@ export default function IntegratedErp() {
               </button>
               {' '}
               <div className="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                No. Horizon is built on a modular decoupled architecture. Most enterprise clients begin by deploying the core accounting and inventory synchronization or the unified order-to-cash pipeline. As your operational teams master the unified workflow, additional modules—such as HR management, field service dispatch, or procurement—can be activated seamlessly without interrupting live operations.
+                No. Horizons is built on a modular decoupled architecture. Most enterprise clients begin by deploying the core accounting and inventory synchronization or the unified order-to-cash pipeline. As your operational teams master the unified workflow, additional modules—such as HR management, field service dispatch, or procurement—can be activated seamlessly without interrupting live operations.
               </div>
             </div>
             <div className="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
@@ -859,7 +859,7 @@ export default function IntegratedErp() {
               </button>
               {' '}
               <div className="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
-                Yes. Multi-entity architecture is native to Horizon. You can create subsidiary organizations with independent base currencies, tax structures, and local compliance rules while consolidating into one global ledger.
+                Yes. Multi-entity architecture is native to Horizons. You can create subsidiary organizations with independent base currencies, tax structures, and local compliance rules while consolidating into one global ledger.
               </div>
             </div>
             <div className="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
@@ -874,7 +874,7 @@ export default function IntegratedErp() {
               </button>
               {' '}
               <div className="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
-                Absolutely. Horizon provides high-throughput bidirectional webhook feeds and GraphQL endpoints. If you wish to retain a specialized CRM or warehouse scanner tool, it can ingest into the master ledger in real time.
+                Absolutely. Horizons provides high-throughput bidirectional webhook feeds and GraphQL endpoints. If you wish to retain a specialized CRM or warehouse scanner tool, it can ingest into the master ledger in real time.
               </div>
             </div>
             <div className="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
@@ -904,7 +904,7 @@ export default function IntegratedErp() {
               </button>
               {' '}
               <div className="px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed hidden">
-                Horizon utilizes an ACID-compliant event stream with optimistic concurrency controls and cryptographic timestamps, ensuring race conditions are resolved cleanly without data overwrites.
+                Horizons utilizes an ACID-compliant event stream with optimistic concurrency controls and cryptographic timestamps, ensuring race conditions are resolved cleanly without data overwrites.
               </div>
             </div>
             <div className="border border-outline-variant/40 rounded-[10px] bg-white overflow-hidden shadow-sm">
@@ -928,7 +928,7 @@ export default function IntegratedErp() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
               <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface">
-                More from the Horizon ecosystem
+                More from the Horizons ecosystem
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-2">
                 Productized automation packages and autonomous AI workers built for immediate operational velocity.

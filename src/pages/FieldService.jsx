@@ -5,7 +5,7 @@ import './FieldService.css'
 export default function FieldService() {
   return (
     <div className="pg-field-service bg-surface text-on-surface font-body-md antialiased subtle-mesh selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Field Service Management — Horizon Enterprise Solutions"}</title>
+      <title>{"Field Service Management — Horizons Enterprise Solutions"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-4 md:px-8 space-y-24 md:space-y-32 pt-6 pb-20">
@@ -390,7 +390,7 @@ export default function FieldService() {
               Manual Dispatch and Disconnected Inboxes Stagger Field Velocity
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              Field service breaks down when dispatchers juggle spreadsheets, phone calls, and group chats to guess technician availability. Horizon replaces guesswork with deterministic skill matching and live proximity tracking.
+              Field service breaks down when dispatchers juggle spreadsheets, phone calls, and group chats to guess technician availability. Horizons replaces guesswork with deterministic skill matching and live proximity tracking.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -582,7 +582,7 @@ export default function FieldService() {
                 </span>
               </div>
               <p className="text-body-md font-body-md text-on-surface-variant">
-                When a work order enters the queue, Horizon executes a real-time multi-variable scoring model that cross-references required mechanical licenses against technician location, truck inventory, and customer SLA tolerances.
+                When a work order enters the queue, Horizons executes a real-time multi-variable scoring model that cross-references required mechanical licenses against technician location, truck inventory, and customer SLA tolerances.
               </p>
               <div className="p-5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 space-y-4">
                 <div className="flex items-center justify-between">
@@ -906,7 +906,7 @@ export default function FieldService() {
               What Changes on Day One
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
-              Compare legacy manual dispatch bottlenecks with the continuous synchronization delivered by Horizon.
+              Compare legacy manual dispatch bottlenecks with the continuous synchronization delivered by Horizons.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -978,7 +978,7 @@ export default function FieldService() {
                   </span>
                   {' '}
                   <h3 className="text-headline-sm font-headline-sm text-on-surface font-bold">
-                    The Horizon Synchronized Engine
+                    The Horizons Synchronized Engine
                   </h3>
                 </div>
                 {' '}
@@ -1056,10 +1056,10 @@ export default function FieldService() {
               </div>
               <div className="pt-2 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20">
                 <p>
-                  Yes. The Horizon Mobile Client utilizes an embedded local SQLite data store with complete offline-first capability. When a field engineer enters a basement, elevator shaft, or remote industrial facility without cell reception, they retain full access to equipment blueprints, procedural SOP checklists, diagnostic forms, and parts catalogs.
+                  Yes. The Horizons Mobile Client utilizes an embedded local SQLite data store with complete offline-first capability. When a field engineer enters a basement, elevator shaft, or remote industrial facility without cell reception, they retain full access to equipment blueprints, procedural SOP checklists, diagnostic forms, and parts catalogs.
                 </p>
                 <p className="mt-2">
-                  All timestamps, photo uploads, and customer sign-offs are queued locally with cryptographic signatures. The instant cellular or Wi-Fi connectivity is re-established, Horizon triggers an asynchronous background sync with deterministic conflict resolution, preventing data loss or overwrites.
+                  All timestamps, photo uploads, and customer sign-offs are queued locally with cryptographic signatures. The instant cellular or Wi-Fi connectivity is re-established, Horizons triggers an asynchronous background sync with deterministic conflict resolution, preventing data loss or overwrites.
                 </p>
               </div>
             </div>
@@ -1074,7 +1074,7 @@ export default function FieldService() {
                 </span>
               </div>
               <div className="hidden pt-2 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20">
-                The Horizon dispatch engine applies a multi-constraint heuristic scoring algorithm. It examines verified licensing codes (e.g. Master Electrician, HVAC Universal), current turn-by-turn driving distance via live telematics, scheduled shift constraints, and confirmed on-board van spare parts. The highest scoring candidate is surfaced to dispatchers with an audit explanation.
+                The Horizons dispatch engine applies a multi-constraint heuristic scoring algorithm. It examines verified licensing codes (e.g. Master Electrician, HVAC Universal), current turn-by-turn driving distance via live telematics, scheduled shift constraints, and confirmed on-board van spare parts. The highest scoring candidate is surfaced to dispatchers with an audit explanation.
               </div>
             </div>
             <div className="glass-card rounded-[14px] p-6 space-y-3">
@@ -1102,7 +1102,7 @@ export default function FieldService() {
                 </span>
               </div>
               <div className="hidden pt-2 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20">
-                Yes. Horizon includes an embeddable customer booking widget that respects your capacity rules, regional routing boundaries, and lead-time constraints. It only offers time slots that match technician availability within the client’s geographic cluster.
+                Yes. Horizons includes an embeddable customer booking widget that respects your capacity rules, regional routing boundaries, and lead-time constraints. It only offers time slots that match technician availability within the client’s geographic cluster.
               </div>
             </div>
             <div className="glass-card rounded-[14px] p-6 space-y-3">
@@ -1116,7 +1116,7 @@ export default function FieldService() {
                 </span>
               </div>
               <div className="hidden pt-2 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20">
-                Each van operates as a mobile warehouse location inside Horizon's inventory ledger. Technicians scan barcodes on installed replacement components directly via the phone camera. Consumed parts automatically debit van balance and trigger warehouse replenishment pick-lists when stock dips below safety thresholds.
+                Each van operates as a mobile warehouse location inside Horizons' inventory ledger. Technicians scan barcodes on installed replacement components directly via the phone camera. Consumed parts automatically debit van balance and trigger warehouse replenishment pick-lists when stock dips below safety thresholds.
               </div>
             </div>
             <div className="glass-card rounded-[14px] p-6 space-y-3">
@@ -1144,7 +1144,7 @@ export default function FieldService() {
                 </span>
               </div>
               <div className="hidden pt-2 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20">
-                Because Horizon uses fixed-scope engagement modules with pre-engineered ERP connectors, standard deployments for 15 to 100 technicians conclude within a few weeks, including fleet data imports and dispatcher training simulations.
+                Because Horizons uses fixed-scope engagement modules with pre-engineered ERP connectors, standard deployments for 15 to 100 technicians conclude within a few weeks, including fleet data imports and dispatcher training simulations.
               </div>
             </div>
             <div className="glass-card rounded-[14px] p-6 space-y-3">
@@ -1174,7 +1174,7 @@ export default function FieldService() {
                 UNIFIED PLATFORM
               </div>
               <h2 className="text-headline-lg font-headline-lg text-on-surface">
-                More from the Horizon Ecosystem
+                More from the Horizons Ecosystem
               </h2>
               <p className="text-body-md font-body-md text-on-surface-variant">
                 Connect Field Service Management to complementary enterprise modules for end-to-end synchronization.

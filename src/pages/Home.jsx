@@ -5,7 +5,7 @@ import './Home.css'
 export default function Home() {
   return (
     <div className="pg-home bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen relative">
-      <title>{"Horizon — Connected AI Automation & Modular ERP"}</title>
+      <title>{"Horizons — Connected AI Automation & Modular ERP"}</title>
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[650px] bg-gradient-to-b from-[#ffdad2]/40 via-[#ff7555]/10 to-transparent blur-3xl rounded-full" />
         <div className="absolute top-[35%] -left-32 w-[550px] h-[550px] bg-[#a5f3fc]/25 blur-3xl rounded-full" />
@@ -100,8 +100,8 @@ export default function Home() {
                   {' '}
                   <span className="w-3 h-3 rounded-full bg-[#a5f3fc]" />
                   {' '}
-                  <span className="ml-4 text-label-sm font-label-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded-[6px]">
-                    core-ops.horizon.network/production-live
+                  <span className="hidden sm:inline ml-4 text-label-sm font-label-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded-[6px]">
+                    core-ops.horizons.network/production-live
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -250,7 +250,7 @@ export default function Home() {
                         </div>
                         {' '}
                         <span className="text-label-lg font-label-lg font-bold text-on-surface">
-                          Horizon Copilot
+                          Horizons Copilot
                         </span>
                       </div>
                       {' '}
@@ -1017,7 +1017,7 @@ export default function Home() {
                   </span>
                   {' '}
                   <h3 className="text-headline-md font-headline-md text-on-surface">
-                    The Horizon Core
+                    The Horizons Core
                   </h3>
                 </div>
                 <p className="text-body-sm font-body-sm text-on-surface-variant">
@@ -1078,7 +1078,7 @@ export default function Home() {
             </span>
             {' '}
             <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2 tracking-tight">
-              Why Horizon
+              Why Horizons
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant mt-2">
               Enterprise-grade rigor without the legacy consultancies' incentives to bill infinite hours.

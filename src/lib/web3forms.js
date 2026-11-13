@@ -14,7 +14,7 @@ export async function sendContactForm(form) {
     body: JSON.stringify({
       access_key: ACCESS_KEY,
       subject: `New contact request from ${name || 'website visitor'}${data.company ? ` (${data.company})` : ''}`,
-      from_name: 'Horizon website',
+      from_name: 'Horizons website',
       name,
       ...data,
     }),

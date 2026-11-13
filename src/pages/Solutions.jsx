@@ -5,7 +5,7 @@ import './Solutions.css'
 export default function Solutions() {
   return (
     <div className="pg-solutions bg-background text-on-surface font-body-md antialiased warm-mesh-bg min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Solutions & Engineering Services | Horizon"}</title>
+      <title>{"Solutions & Engineering Services | Horizons"}</title>
       {' '}
       {' '}
       <main className="flex-grow max-w-7xl mx-auto px-6 md:px-8 py-10 space-y-24">
@@ -19,7 +19,7 @@ export default function Solutions() {
             Transforming complex business operations into connected, autonomous systems.
           </h1>
           <p className="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed mb-10">
-            Horizon bridges fragmented spreadsheets, legacy databases, and disconnected SaaS silos into unified real-time architectures with embedded AI agents. We engineer fault-tolerant foundations that execute operations autonomously.
+            Horizons bridges fragmented spreadsheets, legacy databases, and disconnected SaaS silos into unified real-time architectures with embedded AI agents. We engineer fault-tolerant foundations that execute operations autonomously.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Link to="/solutions" className="btn-gradient text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] w-full sm:w-auto transition-transform active:scale-[0.99] flex items-center justify-center gap-2">
@@ -1262,7 +1262,7 @@ export default function Solutions() {
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90">
               <summary className="font-headline-sm text-headline-sm font-bold text-on-surface flex justify-between items-center list-none select-none">
                 <span>
-                  How quickly can Horizon begin an engineering engagement after contract signature?
+                  How quickly can Horizons begin an engineering engagement after contract signature?
                 </span>
                 {' '}
                 <span className="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">
@@ -1276,7 +1276,7 @@ export default function Solutions() {
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90" open>
               <summary className="font-headline-sm text-headline-sm font-bold text-on-surface flex justify-between items-center list-none select-none">
                 <span>
-                  Do we own the intellectual property and code developed by Horizon?
+                  Do we own the intellectual property and code developed by Horizons?
                 </span>
                 {' '}
                 <span className="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">
@@ -1290,7 +1290,7 @@ export default function Solutions() {
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90">
               <summary className="font-headline-sm text-headline-sm font-bold text-on-surface flex justify-between items-center list-none select-none">
                 <span>
-                  Can Horizon integrate with our existing legacy ERP or proprietary in-house software?
+                  Can Horizons integrate with our existing legacy ERP or proprietary in-house software?
                 </span>
                 {' '}
                 <span className="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">
@@ -1326,7 +1326,7 @@ export default function Solutions() {
                 </span>
               </summary>
               <div className="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/20 mt-4">
-                We conduct dual-run simulations and parallel ledger verification where your existing system and Horizon run simultaneously until all balances and data points match exactly before final switchover.
+                We conduct dual-run simulations and parallel ledger verification where your existing system and Horizons run simultaneously until all balances and data points match exactly before final switchover.
               </div>
             </details>
             <details className="glass-card rounded-2xl p-6 group cursor-pointer border border-white/90">

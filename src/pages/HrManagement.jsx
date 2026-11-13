@@ -5,7 +5,7 @@ import './HrManagement.css'
 export default function HrManagement() {
   return (
     <div className="pg-hr-management bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed -mt-20">
-      <title>{"HR Management System — Horizon People Operations"}</title>
+      <title>{"HR Management System — Horizons People Operations"}</title>
       {' '}
       {' '}
       <main className="pt-28 lg:pt-32 overflow-hidden">
@@ -125,7 +125,7 @@ export default function HrManagement() {
                   Book a live system walk-through
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6">
-                  See how Horizon centralizes employee lifecycle records and streamlines approvals.
+                  See how Horizons centralizes employee lifecycle records and streamlines approvals.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
@@ -240,7 +240,7 @@ export default function HrManagement() {
                     </span>
                   </div>
                 </div>
-                <div className="flex items-center gap-6 border-b border-outline-variant/20 pt-3 pb-3 text-sm">
+                <div className="flex items-center gap-6 border-b border-outline-variant/20 pt-3 pb-3 text-sm overflow-x-auto whitespace-nowrap">
                   <span className="text-primary font-bold border-b-2 border-primary pb-3 -mb-3">
                     Overview
                   </span>
@@ -335,7 +335,7 @@ export default function HrManagement() {
                   </div>
                 </div>
                 <div className="p-4 bg-primary-fixed/20 border border-primary/20 rounded-[10px]">
-                  <div className="flex items-start justify-between gap-3">
+                  <div className="flex flex-col sm:flex-row items-start justify-between gap-3">
                     <div className="space-y-1">
                       <div className="font-label-md text-label-md font-bold text-on-primary-fixed-variant flex items-center gap-1.5">
                         <span className="material-symbols-outlined text-[16px] text-primary">
@@ -373,7 +373,7 @@ export default function HrManagement() {
                 HR should not live across three different folders.
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                When employee records are scattered between paper files, disparate payroll spreadsheets, and buried email threads, simple operational inquiries — such as real-time leave balances or shift handoffs — turn into tedious administrative friction. Horizon unifies every personnel file, daily attendance log, and leave request into an synchronized portal accessible to HR leads and staff alike.
+                When employee records are scattered between paper files, disparate payroll spreadsheets, and buried email threads, simple operational inquiries — such as real-time leave balances or shift handoffs — turn into tedious administrative friction. Horizons unifies every personnel file, daily attendance log, and leave request into an synchronized portal accessible to HR leads and staff alike.
               </p>
             </div>
             <div className="lg:col-span-7 space-y-4">
@@ -820,7 +820,7 @@ export default function HrManagement() {
               What changes on day one
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Contrast fragmented legacy personnel administration with Horizon's unified HR backbone.
+              Contrast fragmented legacy personnel administration with Horizons' unified HR backbone.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -884,11 +884,11 @@ export default function HrManagement() {
                     check_circle
                   </span>
                   {' '}
-                  The Horizon Synchronized Backbone
+                  The Horizons Synchronized Backbone
                 </h3>
                 {' '}
                 <span className="px-2.5 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] rounded-[6px] font-bold">
-                  HORIZON STATE
+                  HORIZONS STATE
                 </span>
               </div>
               <ul className="space-y-4">
@@ -955,7 +955,7 @@ export default function HrManagement() {
                 </button>
                 {' '}
                 <div className="mt-4 pt-4 border-t border-outline-variant/20 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Yes. The Horizon HR Management System supports flexible attendance validation modes. Employees can clock in using GPS geo-fencing (which verifies coordinates against assigned job sites), IP whitelisting for designated work-from-home subnets, or offline check-in caching that validates time stamps cryptographically as soon as the client device reconnects to a network.
+                  Yes. The Horizons HR Management System supports flexible attendance validation modes. Employees can clock in using GPS geo-fencing (which verifies coordinates against assigned job sites), IP whitelisting for designated work-from-home subnets, or offline check-in caching that validates time stamps cryptographically as soon as the client device reconnects to a network.
                 </div>
               </div>
               <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] hover:bg-surface-container-lowest transition-colors">

@@ -5,7 +5,7 @@ import './RentalFleet.css'
 export default function RentalFleet() {
   return (
     <div className="pg-rental-fleet bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Rental Fleet Management | Horizon Enterprise Platform"}</title>
+      <title>{"Rental Fleet Management | Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-12 pt-8 pb-16">
@@ -194,7 +194,7 @@ export default function RentalFleet() {
                   <div className="w-3 h-3 rounded-[3px] bg-primary" />
                   {' '}
                   <span className="text-label-lg font-label-lg font-bold text-on-surface">
-                    Horizon Fleet Console v4.2
+                    Horizons Fleet Console v4.2
                   </span>
                   {' '}
                   <span className="rounded-[6px] bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 text-label-sm font-label-sm">
@@ -365,7 +365,7 @@ export default function RentalFleet() {
             Double-Bookings Are a Visibility Problem, Not a Demand Problem
           </h2>
           <p className="text-body-lg font-body-lg text-on-surface-variant">
-            When fleet status is fragmented across dispatch desks, disconnected spreadsheets, and paper clipboards, booking promises outpace physical reality. A single unrecorded delay cascades into missed handoffs, customer disputes, and hurried dispatch of uninspected machinery. Horizon replaces guesswork with a deterministic asset state machine.
+            When fleet status is fragmented across dispatch desks, disconnected spreadsheets, and paper clipboards, booking promises outpace physical reality. A single unrecorded delay cascades into missed handoffs, customer disputes, and hurried dispatch of uninspected machinery. Horizons replaces guesswork with a deterministic asset state machine.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -858,7 +858,7 @@ export default function RentalFleet() {
             What Changes on Day One
           </h2>
           <p className="text-body-lg font-body-lg text-on-surface-variant">
-            Compare manual ad-hoc yard coordination with the deterministic Horizon fleet execution core.
+            Compare manual ad-hoc yard coordination with the deterministic Horizons fleet execution core.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -920,11 +920,11 @@ export default function RentalFleet() {
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-secondary/30 mb-6">
                 <span className="text-label-lg font-label-lg font-bold text-on-secondary-fixed-variant">
-                  The Horizon Synchronized Fleet Core
+                  The Horizons Synchronized Fleet Core
                 </span>
                 {' '}
                 <span className="rounded-[6px] bg-secondary-fixed text-on-secondary-fixed-variant px-2.5 py-1 text-label-sm font-label-sm font-semibold">
-                  HORIZON SYSTEM
+                  HORIZONS SYSTEM
                 </span>
               </div>
               <div className="space-y-4">
@@ -982,7 +982,7 @@ export default function RentalFleet() {
             Frequently Asked Questions
           </h2>
           <p className="text-body-lg font-body-lg text-on-surface-variant">
-            Technical and operational details for fleet operators considering the Horizon architecture.
+            Technical and operational details for fleet operators considering the Horizons architecture.
           </p>
         </div>
         <div className="max-w-4xl space-y-4">
@@ -997,7 +997,7 @@ export default function RentalFleet() {
               </span>
             </div>
             <div className="mt-4 pt-4 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
-              Yes. Horizon provides an embeddable, real-time customer booking widget for your website. It syncs directly with physical yard inventory, preventing customer reservations when an asset is currently dispatched, locked in a return inspection, or undergoing scheduled servicing. Customers see deterministic live availability slots and can complete reservations with card pre-authorization without requiring counter intervention.
+              Yes. Horizons provides an embeddable, real-time customer booking widget for your website. It syncs directly with physical yard inventory, preventing customer reservations when an asset is currently dispatched, locked in a return inspection, or undergoing scheduled servicing. Customers see deterministic live availability slots and can complete reservations with card pre-authorization without requiring counter intervention.
             </div>
           </div>
           <div className="rounded-[14px] bg-surface-container-lowest border border-outline-variant/30 p-6 shadow-sm hover:border-outline-variant/60 transition-colors">

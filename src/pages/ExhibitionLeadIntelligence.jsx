@@ -5,7 +5,7 @@ import './ExhibitionLeadIntelligence.css'
 export default function ExhibitionLeadIntelligence() {
   return (
     <div className="pg-exhibition-lead-intelligence bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Exhibition Lead Intelligence | Horizon Autonomous AI Agents"}</title>
+      <title>{"Exhibition Lead Intelligence | Horizons Autonomous AI Agents"}</title>
       {' '}
       {' '}
       <section className="max-w-[1600px] mx-auto px-6 sm:px-12 pt-8 pb-16 lg:pb-24">
@@ -226,7 +226,7 @@ export default function ExhibitionLeadIntelligence() {
                 </div>
                 {' '}
                 <span className="font-label-sm text-label-sm font-semibold text-on-surface">
-                  Horizon ExhibitorOS v4.2 - Live Floor Ingestion
+                  Horizons ExhibitorOS v4.2 - Live Floor Ingestion
                 </span>
               </div>
               {' '}
@@ -818,7 +818,7 @@ export default function ExhibitionLeadIntelligence() {
             OPERATIONAL CONTRAST
           </div>
           <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold mb-3">
-            The Fragmented Show Floor vs. Horizon Exhibition Intelligence
+            The Fragmented Show Floor vs. Horizons Exhibition Intelligence
           </h2>
           <p className="font-body-md text-body-md text-on-surface-variant">
             Evaluate the commercial delta between conventional manual collection and autonomous revenue capture.
@@ -1088,7 +1088,7 @@ export default function ExhibitionLeadIntelligence() {
               MODULAR ENTERPRISE SUITE
             </div>
             <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">
-              More from the Horizon ecosystem
+              More from the Horizons ecosystem
             </h2>
           </div>
           {' '}

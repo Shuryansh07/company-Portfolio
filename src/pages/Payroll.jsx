@@ -5,7 +5,7 @@ import './Payroll.css'
 export default function Payroll() {
   return (
     <div className="pg-payroll bg-background text-on-surface antialiased selection:bg-primary-container/20 selection:text-primary">
-      <title>{"Payroll Management System | Horizon Enterprise Platform"}</title>
+      <title>{"Payroll Management System | Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-6 space-y-24">
@@ -192,7 +192,7 @@ export default function Payroll() {
               </span>
               {' '}
               <h2 className="text-headline-lg font-headline-lg text-on-surface font-bold tracking-tight mt-2">
-                Horizon PayOS v4.2 - Multi-Tier Payroll Engine
+                Horizons PayOS v4.2 - Multi-Tier Payroll Engine
               </h2>
             </div>
             <div className="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
@@ -212,7 +212,7 @@ export default function Payroll() {
                   </div>
                   <div className="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-2 mt-0.5">
                     <span>
-                      Entity: Horizon Core Global LLC
+                      Entity: Horizons Core Global LLC
                     </span>
                     {' '}
                     <span>
@@ -430,7 +430,7 @@ export default function Payroll() {
               Payroll Has No Room for "Close Enough" Formula Errors
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant mt-4">
-              Manual spreadsheets, rogue formula edits, and disjointed time-tracking turn paydays into high-stress cycles of employee disputes and regulatory penalties. When tax withholding changes and attendance adjustments are keyed in by hand, latency accumulates and compliance degrades. Horizon replaces brittle spreadsheets with a deterministic computational pipeline.
+              Manual spreadsheets, rogue formula edits, and disjointed time-tracking turn paydays into high-stress cycles of employee disputes and regulatory penalties. When tax withholding changes and attendance adjustments are keyed in by hand, latency accumulates and compliance degrades. Horizons replaces brittle spreadsheets with a deterministic computational pipeline.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -710,7 +710,7 @@ export default function Payroll() {
             </span>
             {' '}
             <h2 className="text-headline-lg font-headline-lg text-on-surface font-bold tracking-tight">
-              How Horizon Executes Deterministic Payroll
+              How Horizons Executes Deterministic Payroll
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
               Four reliable, automated phases that transform raw timesheets into reconciled disbursements.
@@ -977,7 +977,7 @@ export default function Payroll() {
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-secondary-fixed/30 rounded-full blur-2xl pointer-events-none" />
               <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30">
                 <h3 className="text-headline-sm font-headline-sm font-bold text-on-surface">
-                  The Horizon Synchronized Engine
+                  The Horizons Synchronized Engine
                 </h3>
                 {' '}
                 <span className="px-3 py-1 rounded-[6px] bg-[#D9F99D] text-[#2D4A08] text-label-sm font-label-sm font-semibold">
@@ -1035,7 +1035,7 @@ export default function Payroll() {
               Frequently Asked Questions
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
-              Common architectural and operational questions regarding Horizon Payroll.
+              Common architectural and operational questions regarding Horizons Payroll.
             </p>
           </div>
           <div className="space-y-4">
@@ -1051,7 +1051,7 @@ export default function Payroll() {
               </div>
               <div className="mt-4 pt-4 border-t border-outline-variant/30 text-body-md font-body-md text-on-surface-variant space-y-2">
                 <p>
-                  Horizon employs an automated compliance rule ingest engine. Whenever a regional, state, or federal agency updates statutory withholding schedules, tax brackets, or social security contribution ceilings, the rules are programmatically compiled, audited, and deployed into the platform with zero downtime.
+                  Horizons employs an automated compliance rule ingest engine. Whenever a regional, state, or federal agency updates statutory withholding schedules, tax brackets, or social security contribution ceilings, the rules are programmatically compiled, audited, and deployed into the platform with zero downtime.
                 </p>
                 <p className="text-xs text-on-surface-variant/80">
                   Historical cycles maintain the exact regulatory rules active during their initial run, preventing retroactive drift.
@@ -1145,7 +1145,7 @@ export default function Payroll() {
               </span>
               {' '}
               <h2 className="text-headline-lg font-headline-lg text-on-surface font-bold tracking-tight mt-2">
-                More from the Horizon Ecosystem
+                More from the Horizons Ecosystem
               </h2>
             </div>
             {' '}
@@ -1262,7 +1262,7 @@ export default function Payroll() {
                 Bring deterministic certainty to your payroll operations.
               </h2>
               <p className="text-body-lg font-body-lg text-white/90 max-w-xl">
-                Retire spreadsheets today. Schedule a private architectural session with Horizon payroll systems engineers.
+                Retire spreadsheets today. Schedule a private architectural session with Horizons payroll systems engineers.
               </p>
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <button className="px-6 py-3.5 rounded-[10px] bg-white text-primary font-semibold text-label-lg font-label-lg shadow-lg hover:bg-surface transition-all flex items-center gap-2" type="button">

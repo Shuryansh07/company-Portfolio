@@ -26,7 +26,7 @@ export default function Contact() {
 
   return (
     <div className="pg-contact bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col font-body-md text-body-md relative overflow-x-hidden">
-      <title>{"Contact Us | Horizon - Enterprise AI & ERP Orchestration"}</title>
+      <title>{"Contact Us | Horizons - Enterprise AI & ERP Orchestration"}</title>
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <div className="absolute -top-[20%] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-gradient-to-b from-primary-container/10 via-primary-fixed/20 to-transparent blur-3xl opacity-70" />
         <div className="absolute top-[35%] -left-[10%] w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-3xl opacity-60" />
@@ -186,7 +186,7 @@ export default function Contact() {
                       Company name *
                     </label>
                     {' '}
-                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="company" name="company" placeholder="Horizon Dynamics Ltd." required type="text" />
+                    <input className="w-full h-12 px-4 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md transition-all" id="company" name="company" placeholder="Horizons Dynamics Ltd." required type="text" />
                   </div>
                   <div className="space-y-1.5">
                     <label className="block font-label-md text-label-md text-on-surface font-semibold" htmlFor="team-size">
@@ -494,7 +494,7 @@ export default function Contact() {
               <details className="group cursor-pointer">
                 <summary className="flex justify-between items-center font-headline-sm text-[18px] font-semibold text-on-surface list-none">
                   <span>
-                    Do Horizon AI systems train on our proprietary business data or schematics?
+                    Do Horizons AI systems train on our proprietary business data or schematics?
                   </span>
                   {' '}
                   <span className="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary">
@@ -502,7 +502,7 @@ export default function Contact() {
                   </span>
                 </summary>
                 <p className="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Strictly no. Horizon adheres to sovereign single-tenant data isolation standards. All embeddings, contextual RAG databases, and transaction records remain fully within your tenant boundary. No enterprise inputs are ever repurposed to train public foundation models.
+                  Strictly no. Horizons adheres to sovereign single-tenant data isolation standards. All embeddings, contextual RAG databases, and transaction records remain fully within your tenant boundary. No enterprise inputs are ever repurposed to train public foundation models.
                 </p>
               </details>
             </div>
@@ -526,7 +526,7 @@ export default function Contact() {
               <details className="group cursor-pointer">
                 <summary className="flex justify-between items-center font-headline-sm text-[18px] font-semibold text-on-surface list-none">
                   <span>
-                    Can Horizon integrate directly with our legacy ERP and database infrastructure?
+                    Can Horizons integrate directly with our legacy ERP and database infrastructure?
                   </span>
                   {' '}
                   <span className="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary">

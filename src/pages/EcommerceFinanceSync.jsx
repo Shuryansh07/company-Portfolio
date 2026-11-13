@@ -5,7 +5,7 @@ import './EcommerceFinanceSync.css'
 export default function EcommerceFinanceSync() {
   return (
     <div className="pg-ecommerce-finance-sync bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Ecommerce-to-Finance Sync | Horizon Enterprise Solutions"}</title>
+      <title>{"Ecommerce-to-Finance Sync | Horizons Enterprise Solutions"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-6 md:px-12 py-8 space-y-24">
@@ -188,7 +188,7 @@ export default function EcommerceFinanceSync() {
                   {' '}
                   <div>
                     <h4 className="text-label-lg font-label-lg font-bold text-on-surface">
-                      Horizon Sync Engine v4.2
+                      Horizons Sync Engine v4.2
                     </h4>
                     <p className="text-label-sm font-label-sm text-outline">
                       Connected: Shopify US, Stripe, QuickBooks Online
@@ -359,7 +359,7 @@ export default function EcommerceFinanceSync() {
               Your Storefront and Books Should Not Be Strangers
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-              When your online storefront and financial systems operate in isolation, teams waste days every month manually exporting transaction CSVs and re-typing receipts. Horizon bridges the operational void with bi-directional, cryptographic synchronization across orders, stock levels, gateway fee splits, and local tax schedules.
+              When your online storefront and financial systems operate in isolation, teams waste days every month manually exporting transaction CSVs and re-typing receipts. Horizons bridges the operational void with bi-directional, cryptographic synchronization across orders, stock levels, gateway fee splits, and local tax schedules.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -800,7 +800,7 @@ export default function EcommerceFinanceSync() {
               What Changes on Day One
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              Comparing fragmented ecommerce spreadsheets against the Horizon synchronized ledger engine.
+              Comparing fragmented ecommerce spreadsheets against the Horizons synchronized ledger engine.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -813,7 +813,7 @@ export default function EcommerceFinanceSync() {
                 </div>
                 <div>
                   <span className="text-label-sm font-label-sm text-error font-bold uppercase tracking-wider">
-                    Before Horizon
+                    Before Horizons
                   </span>
                   {' '}
                   <h3 className="text-headline-md font-headline-md text-on-surface">
@@ -893,11 +893,11 @@ export default function EcommerceFinanceSync() {
                 </div>
                 <div>
                   <span className="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider">
-                    With Horizon Engine
+                    With Horizons Engine
                   </span>
                   {' '}
                   <h3 className="text-headline-md font-headline-md text-on-surface">
-                    The Horizon Synchronized Architecture
+                    The Horizons Synchronized Architecture
                   </h3>
                 </div>
               </div>
@@ -991,7 +991,7 @@ export default function EcommerceFinanceSync() {
                 </span>
               </div>
               <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-outline-variant/20">
-                Yes. When a return or refund occurs in your storefront, Horizon automatically generates the appropriate credit memo or refund receipt in your accounting system, adjusts sales tax liabilities, and triggers optional inventory restock journals without manual intervention.
+                Yes. When a return or refund occurs in your storefront, Horizons automatically generates the appropriate credit memo or refund receipt in your accounting system, adjusts sales tax liabilities, and triggers optional inventory restock journals without manual intervention.
               </p>
             </div>
             <div className="glass-card rounded-xl p-5 flex items-center justify-between cursor-pointer hover:bg-surface-container-lowest transition-colors">

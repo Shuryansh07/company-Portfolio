@@ -5,7 +5,7 @@ import './YachtCharter.css'
 export default function YachtCharter() {
   return (
     <div className="pg-yacht-charter bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Yacht Charter Management — Horizon Enterprise Platform"}</title>
+      <title>{"Yacht Charter Management — Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-4 sm:px-8 space-y-24 pt-6 pb-20">
@@ -107,7 +107,7 @@ export default function YachtCharter() {
                     Book a live product demo
                   </h3>
                   <p className="text-body-sm font-body-sm text-on-surface-variant">
-                    See how Horizon synchronizes your yachts, APA deposits, and central broker contracts.
+                    See how Horizons synchronizes your yachts, APA deposits, and central broker contracts.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -199,7 +199,7 @@ export default function YachtCharter() {
                   </div>
                   <div>
                     <div className="text-label-md font-label-md font-bold text-on-surface">
-                      Horizon CharterOS v4.2
+                      Horizons CharterOS v4.2
                     </div>
                     <div className="text-label-sm font-label-sm text-outline">
                       Central Agent Production Node
@@ -340,7 +340,7 @@ export default function YachtCharter() {
               Built specifically for modern yacht charter brokerages and fleet operators.
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant max-w-4xl leading-relaxed">
-              Luxury charter companies drown in disconnected emails, disparate spreadsheets, PDF contracts, and fragile memory. When high-net-worth clients request seven-figure itineraries on short notice, a slow response or an unrecorded owner hold destroys a deal. Horizon Yacht Charter Management centralizes inquiries, charterers, luxury vessels, reservations, and multi-currency funds into one live workspace.
+              Luxury charter companies drown in disconnected emails, disparate spreadsheets, PDF contracts, and fragile memory. When high-net-worth clients request seven-figure itineraries on short notice, a slow response or an unrecorded owner hold destroys a deal. Horizons Yacht Charter Management centralizes inquiries, charterers, luxury vessels, reservations, and multi-currency funds into one live workspace.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -649,7 +649,7 @@ export default function YachtCharter() {
               OPERATIONAL RETURNS
             </div>
             <h2 className="text-headline-lg font-headline-lg text-on-surface">
-              Why leading charter brokerages and fleet managers choose Horizon.
+              Why leading charter brokerages and fleet managers choose Horizons.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -754,7 +754,7 @@ export default function YachtCharter() {
               The difference in the charter office.
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant max-w-3xl">
-              Comparing disconnected spreadsheet friction against Horizon's unified maritime operational ledger.
+              Comparing disconnected spreadsheet friction against Horizons' unified maritime operational ledger.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -818,7 +818,7 @@ export default function YachtCharter() {
                     check_circle
                   </span>
                   {' '}
-                  With Horizon Yacht Charter Management
+                  With Horizons Yacht Charter Management
                 </div>
                 {' '}
                 <span className="px-2.5 py-0.5 rounded-[6px] bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm font-semibold">

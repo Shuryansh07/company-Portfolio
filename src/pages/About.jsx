@@ -5,7 +5,7 @@ import './About.css'
 export default function About() {
   return (
     <div className="pg-about bg-background text-on-background font-body-md text-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"About Us | Horizon - Enterprise AI Automation & ERP Solutions"}</title>
+      <title>{"About Us | Horizons - Enterprise AI Automation & ERP Solutions"}</title>
       <div className="fixed inset-0 warm-ambient pointer-events-none z-0" />
       <div className="fixed inset-0 hero-pattern pointer-events-none opacity-60 z-0" />
       {' '}
@@ -17,14 +17,14 @@ export default function About() {
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
               {' '}
               <span className="font-label-sm text-label-sm uppercase tracking-wider font-semibold">
-                ABOUT HORIZON
+                ABOUT HORIZONS
               </span>
             </div>
             <h1 className="font-display-lg text-display-lg text-on-surface tracking-tight">
               We earn trust through the systems we ship and the deterministic reliability of our software backbones.
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
-              Horizon eliminates brittle enterprise consulting and bloated retainers. We replace fragmented manual coordination with fixed-scope, high-velocity autonomous software workers and unified real-time ERP ledgers designed for cryptographic auditability.
+              Horizons eliminates brittle enterprise consulting and bloated retainers. We replace fragmented manual coordination with fixed-scope, high-velocity autonomous software workers and unified real-time ERP ledgers designed for cryptographic auditability.
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[6px] bg-surface-container-low border border-outline-variant/30 text-on-surface font-label-md text-label-md shadow-xs">
@@ -64,7 +64,7 @@ export default function About() {
                 Modern enterprises rarely fail due to lack of vision; they slow to a crawl because vital institutional intelligence is locked in disconnected spreadsheets, tribal desktop knowledge, and fragile ad-hoc scripts that fail without telemetry.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Horizon was founded on a simple engineering premise: corporate ERP ledgers should update automatically from live operational occurrences. We build software backbones that connect inventory, multi-entity finances, and field dispatches with autonomous AI pipelines that execute tasks without human supervision.
+                Horizons was founded on a simple engineering premise: corporate ERP ledgers should update automatically from live operational occurrences. We build software backbones that connect inventory, multi-entity finances, and field dispatches with autonomous AI pipelines that execute tasks without human supervision.
               </p>
             </div>
             <div className="mt-8 pt-6 border-t border-outline-variant/30 flex items-center gap-4 text-on-surface-variant">
@@ -86,7 +86,7 @@ export default function About() {
                 Our dual-delivery velocity framework
               </h2>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
-                We reject the multi-year implementation cycle. Horizon maintains a dual delivery paradigm: we engineer pre-compiled, productized autonomous workers that drop directly into enterprise messaging and webhook buses for instant automated ledger reconciling.
+                We reject the multi-year implementation cycle. Horizons maintains a dual delivery paradigm: we engineer pre-compiled, productized autonomous workers that drop directly into enterprise messaging and webhook buses for instant automated ledger reconciling.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                 For multi-facility holding corporations and distributed operations, our dedicated systems engineering groups embed directly alongside your architectural teams. We deliver custom high-throughput data contracts, immutable audit pipelines, and guaranteed sub-second sync intervals.

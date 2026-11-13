@@ -5,12 +5,12 @@ import './ProductionPlanning.css'
 export default function ProductionPlanning() {
   return (
     <div className="pg-production-planning bg-background text-on-surface antialiased font-body-md selection:bg-primary-container/20 selection:text-primary">
-      <title>{"Production Planning & Scheduling | Horizon ERP & AI Automation"}</title>
+      <title>{"Production Planning & Scheduling | Horizons ERP & AI Automation"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-24 py-8">
         <section className="hero-glow pt-4 pb-12">
-          <nav className="flex items-center gap-2 mb-8 text-body-sm font-body-sm text-on-surface-variant">
+          <nav className="flex flex-wrap items-center gap-2 mb-8 text-body-sm font-body-sm text-on-surface-variant">
             <span className="px-2 py-0.5 rounded-[6px] bg-primary-container/15 text-primary text-label-sm font-label-sm tracking-wider uppercase font-semibold">
               {"MANUFACTURING PLANNING & DISPATCH"}
             </span>
@@ -218,7 +218,7 @@ export default function ProductionPlanning() {
               <div className="flex items-center justify-between border-b border-outline-variant/20 pb-4">
                 <div className="flex items-center gap-3">
                   <div className="px-2.5 py-1 rounded-[6px] bg-surface-container text-on-surface text-label-sm font-label-sm font-mono font-bold">
-                    Horizon Scheduler OS v4.2
+                    Horizons Scheduler OS v4.2
                   </div>
                   {' '}
                   <span className="flex items-center gap-1.5 text-label-sm font-label-sm text-secondary font-medium">
@@ -377,7 +377,7 @@ export default function ProductionPlanning() {
               Good scheduling prevents the fires you are currently fighting.
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-              Rush orders, material shortages, and overloaded work centers usually trace back to planning that did not account for real capacity. Horizon calculates material requirements, checks capacity against your actual schedule, and lets you resolve conflicts before they hit the floor as an emergency.
+              Rush orders, material shortages, and overloaded work centers usually trace back to planning that did not account for real capacity. Horizons calculates material requirements, checks capacity against your actual schedule, and lets you resolve conflicts before they hit the floor as an emergency.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -404,7 +404,7 @@ export default function ProductionPlanning() {
                 Capacity checks against real work-center load
               </h3>
               <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-                Say goodbye to infinite-capacity assumptions. Horizon verifies certified technician availability, machine tool lockouts, and true shift fixtures before committing jobs.
+                Say goodbye to infinite-capacity assumptions. Horizons verifies certified technician availability, machine tool lockouts, and true shift fixtures before committing jobs.
               </p>
             </div>
             <div className="bg-surface-container-lowest rounded-[14px] p-7 border border-outline-variant/35 shadow-xs space-y-4 hover:border-primary-container/40 transition-all">
@@ -972,7 +972,7 @@ export default function ProductionPlanning() {
             <div className="bg-red-50/60 rounded-[16px] border border-red-200/60 p-8 space-y-6">
               <div className="flex items-center justify-between">
                 <span className="px-2.5 py-1 rounded-[6px] bg-red-100 text-red-800 text-label-sm font-label-sm font-bold uppercase tracking-wider">
-                  Before Horizon
+                  Before Horizons
                 </span>
                 {' '}
                 <span className="material-symbols-outlined text-red-500 text-[24px]">
@@ -1021,7 +1021,7 @@ export default function ProductionPlanning() {
             <div className="bg-lime-50/60 rounded-[16px] border border-lime-200/80 p-8 space-y-6">
               <div className="flex items-center justify-between">
                 <span className="px-2.5 py-1 rounded-[6px] bg-lime-100 text-lime-900 text-label-sm font-label-sm font-bold uppercase tracking-wider">
-                  After Horizon
+                  After Horizons
                 </span>
                 {' '}
                 <span className="material-symbols-outlined text-secondary text-[24px]">
@@ -1095,7 +1095,7 @@ export default function ProductionPlanning() {
               </button>
               {' '}
               <div className="px-5 pb-5 text-body-md font-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/15 pt-3">
-                Horizon's What-If Sandbox automatically duplicates your live schedule in memory without altering frontline dispatch. When an expedite is requested, the engine calculates the ripple effects on every existing job, flagging downstream delays, displaced operator shifts, and material contention. Planners can review the cost and schedule impact side-by-side with sales before committing the change. Once authorized, the updated routing pushes to the floor stations instantly.
+                Horizons' What-If Sandbox automatically duplicates your live schedule in memory without altering frontline dispatch. When an expedite is requested, the engine calculates the ripple effects on every existing job, flagging downstream delays, displaced operator shifts, and material contention. Planners can review the cost and schedule impact side-by-side with sales before committing the change. Once authorized, the updated routing pushes to the floor stations instantly.
               </div>
             </div>
             <div className="bg-surface-container-lowest rounded-[10px] border border-outline-variant/30 shadow-xs overflow-hidden">

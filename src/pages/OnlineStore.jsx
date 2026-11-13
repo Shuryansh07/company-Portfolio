@@ -5,7 +5,7 @@ import './OnlineStore.css'
 export default function OnlineStore() {
   return (
     <div className="pg-online-store bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Horizon | Online Store Platform"}</title>
+      <title>{"Horizons | Online Store Platform"}</title>
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden opacity-60">
         <div className="absolute -top-[12%] left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-b from-[#ffdad2]/35 via-[#f5f3f0]/20 to-transparent blur-3xl" />
         <div className="absolute top-[35%] -left-[10%] w-[600px] h-[600px] bg-[#ceee93]/15 rounded-full blur-3xl" />
@@ -421,7 +421,7 @@ export default function OnlineStore() {
               Stop Stitching Fragile Tools Together
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-              Launching and expanding a modern e-commerce storefront typically devolves into taping together a front-end website template, an isolated payments connector, and fragile inventory spreadsheets. Horizon combines your storefront presentation, catalog logic, checkout mechanics, and order fulfillment into one unified architecture — so every customer transaction completes cleanly, automatically, and without data drift.
+              Launching and expanding a modern e-commerce storefront typically devolves into taping together a front-end website template, an isolated payments connector, and fragile inventory spreadsheets. Horizons combines your storefront presentation, catalog logic, checkout mechanics, and order fulfillment into one unified architecture — so every customer transaction completes cleanly, automatically, and without data drift.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -633,7 +633,7 @@ export default function OnlineStore() {
                     Precision Recovery Trigger Architecture
                   </h3>
                   <p className="text-body-sm font-body-sm text-on-surface-variant">
-                    When a buyer adds products to their cart and departs without completing checkout, Horizon executes a deterministic multi-stage email and reminder workflow.
+                    When a buyer adds products to their cart and departs without completing checkout, Horizons executes a deterministic multi-stage email and reminder workflow.
                   </p>
                   <div className="space-y-3 pt-2">
                     <div className="flex items-center justify-between p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/30">
@@ -952,7 +952,7 @@ export default function OnlineStore() {
               What Changes on Day One
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              Comparing conventional multi-plugin e-commerce headaches against the unified Horizon store backbone.
+              Comparing conventional multi-plugin e-commerce headaches against the unified Horizons store backbone.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1020,7 +1020,7 @@ export default function OnlineStore() {
                 </div>
                 <div>
                   <h3 className="text-headline-sm font-headline-sm text-on-surface">
-                    The Horizon Store Backbone
+                    The Horizons Store Backbone
                   </h3>
                   <p className="text-label-sm font-label-sm text-secondary font-semibold">
                     Structured, unified precision
@@ -1093,7 +1093,7 @@ export default function OnlineStore() {
                 </span>
               </div>
               <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-outline-variant/20">
-                No coding experience is required. Horizon features an intuitive visual storefront customizer with pre-tested responsive layouts, drag-and-drop page sections, and granular theme controls. You can update colors, typography, hero banners, product grids, and promotional announcements immediately without writing code or hiring frontend developers. For complex enterprise needs, custom CSS and headless API hooks are also natively supported.
+                No coding experience is required. Horizons features an intuitive visual storefront customizer with pre-tested responsive layouts, drag-and-drop page sections, and granular theme controls. You can update colors, typography, hero banners, product grids, and promotional announcements immediately without writing code or hiring frontend developers. For complex enterprise needs, custom CSS and headless API hooks are also natively supported.
               </p>
             </div>
             <div className="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
@@ -1169,7 +1169,7 @@ export default function OnlineStore() {
               </span>
               {' '}
               <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-                More from the Horizon Ecosystem
+                More from the Horizons Ecosystem
               </h2>
             </div>
             {' '}

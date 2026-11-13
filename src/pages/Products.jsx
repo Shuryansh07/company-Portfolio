@@ -5,7 +5,7 @@ import './Products.css'
 export default function Products() {
   return (
     <div className="pg-products bg-surface text-on-surface antialiased min-h-screen relative selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Products Catalogue — Horizon Enterprise & AI Systems"}</title>
+      <title>{"Products Catalogue — Horizons Enterprise & AI Systems"}</title>
       <div className="fixed inset-0 pointer-events-none -z-10 ambient-glow-mesh" />
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] pointer-events-none -z-10 ambient-glow-peach" />
       {' '}

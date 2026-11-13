@@ -27,7 +27,7 @@ export default function CaseStudyDetail() {
 
   return (
     <div className="bg-background text-on-background antialiased">
-      <title>{`${cs.title} — Horizon Case Study`}</title>
+      <title>{`${cs.title} — Horizons Case Study`}</title>
       <main className="max-w-7xl mx-auto px-6 md:px-12 pt-12 pb-8 space-y-10">
         <nav className="text-label-md text-on-surface-variant flex items-center gap-2" aria-label="Breadcrumb">
           <Link to="/case-studies" className="hover:text-primary transition-colors">Case Studies</Link>

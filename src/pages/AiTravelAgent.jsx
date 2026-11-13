@@ -5,7 +5,7 @@ import './AiTravelAgent.css'
 export default function AiTravelAgent() {
   return (
     <div className="pg-ai-travel-agent bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden min-h-screen flex flex-col justify-between">
-      <title>{"AI Travel Agent — Horizon Enterprise AI"}</title>
+      <title>{"AI Travel Agent — Horizons Enterprise AI"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-6 space-y-24">
@@ -1189,7 +1189,7 @@ export default function AiTravelAgent() {
                 </span>
               </div>
               <h2 className="text-headline-lg font-headline-lg text-on-surface">
-                More from the Horizon ecosystem
+                More from the Horizons ecosystem
               </h2>
             </div>
             {' '}

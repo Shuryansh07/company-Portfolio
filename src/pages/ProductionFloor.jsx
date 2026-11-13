@@ -5,7 +5,7 @@ import './ProductionFloor.css'
 export default function ProductionFloor() {
   return (
     <div className="pg-production-floor bg-surface text-[#1b1b1a] antialiased selection:bg-[#ff7555]/20 selection:text-[#ff7555]">
-      <title>{"Horizon | Production Floor Management"}</title>
+      <title>{"Horizons | Production Floor Management"}</title>
       {' '}
       {' '}
       <section className="relative pt-10 pb-16 px-6 max-w-7xl mx-auto mesh-gradient-hero">
@@ -120,7 +120,7 @@ export default function ProductionFloor() {
                 Book a free product demo
               </h2>
               <p className="text-xs text-[#474744] mt-1 mb-6 leading-normal">
-                See how Horizon unifies work orders, terminal labor, and machine telemetry in one live dispatch board.
+                See how Horizons unifies work orders, terminal labor, and machine telemetry in one live dispatch board.
               </p>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div>
@@ -902,7 +902,7 @@ export default function ProductionFloor() {
             What Changes on Day One
           </h2>
           <p className="text-sm sm:text-base text-[#474744] mt-2">
-            Comparing fragmented paper travelers against the Horizon synchronized shop floor core.
+            Comparing fragmented paper travelers against the Horizons synchronized shop floor core.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -919,7 +919,7 @@ export default function ProductionFloor() {
               </div>
               {' '}
               <span className="px-2 py-0.5 rounded-[6px] bg-rose-50 text-rose-700 text-[11px] font-semibold">
-                Before Horizon
+                Before Horizons
               </span>
             </div>
             <ul className="space-y-4">
@@ -969,12 +969,12 @@ export default function ProductionFloor() {
                 </span>
                 {' '}
                 <h3 className="text-base font-bold text-[#1b1b1a]">
-                  The Horizon Synchronized Shop Floor
+                  The Horizons Synchronized Shop Floor
                 </h3>
               </div>
               {' '}
               <span className="px-2 py-0.5 rounded-[6px] bg-emerald-50 text-emerald-800 text-[11px] font-semibold">
-                After Horizon
+                After Horizons
               </span>
             </div>
             <ul className="space-y-4">
@@ -1043,7 +1043,7 @@ export default function ProductionFloor() {
             </button>
             {' '}
             <div className="px-5 pb-5 text-xs sm:text-sm text-[#474744] leading-relaxed border-t border-[#c7c6c1]/20 pt-3">
-              Yes. Horizon integrates directly with existing PLC controllers, CNC nodes, MTConnect streams, and OPC-UA servers. For legacy or mechanical work centers without digital outputs, operators utilize ruggedized touch terminals or Bluetooth barcode/RFID scanners to log cycle starts, completions, and downtime codes seamlessly.
+              Yes. Horizons integrates directly with existing PLC controllers, CNC nodes, MTConnect streams, and OPC-UA servers. For legacy or mechanical work centers without digital outputs, operators utilize ruggedized touch terminals or Bluetooth barcode/RFID scanners to log cycle starts, completions, and downtime codes seamlessly.
             </div>
           </div>
           <div className="border border-[#c7c6c1]/40 rounded-xl bg-white overflow-hidden shadow-xs">
@@ -1058,7 +1058,7 @@ export default function ProductionFloor() {
             </button>
             {' '}
             <div className="hidden px-5 pb-5 text-xs sm:text-sm text-[#474744] leading-relaxed border-t border-[#c7c6c1]/20 pt-3">
-              Spreadsheets rely on delayed manual re-typing at the conclusion of shifts, creating stale reporting and undetected bottlenecks. Horizon captures events at the instant of execution, enforces physical hold points, and updates inventory and accounting balances automatically.
+              Spreadsheets rely on delayed manual re-typing at the conclusion of shifts, creating stale reporting and undetected bottlenecks. Horizons captures events at the instant of execution, enforces physical hold points, and updates inventory and accounting balances automatically.
             </div>
           </div>
           <div className="border border-[#c7c6c1]/40 rounded-xl bg-white overflow-hidden shadow-xs">
@@ -1088,7 +1088,7 @@ export default function ProductionFloor() {
             </button>
             {' '}
             <div className="hidden px-5 pb-5 text-xs sm:text-sm text-[#474744] leading-relaxed border-t border-[#c7c6c1]/20 pt-3">
-              Horizon natively orchestrates parallel production lines across multi-bay facilities and multiple geographic plants, allowing centralized plant managers to drill down from global OEE to individual spindle states.
+              Horizons natively orchestrates parallel production lines across multi-bay facilities and multiple geographic plants, allowing centralized plant managers to drill down from global OEE to individual spindle states.
             </div>
           </div>
           <div className="border border-[#c7c6c1]/40 rounded-xl bg-white overflow-hidden shadow-xs">
@@ -1133,7 +1133,7 @@ export default function ProductionFloor() {
             </button>
             {' '}
             <div className="hidden px-5 pb-5 text-xs sm:text-sm text-[#474744] leading-relaxed border-t border-[#c7c6c1]/20 pt-3">
-              Because Horizon deploys pre-compiled shop floor primitives and pre-tested hardware adapters, pilot lines typically go live within weeks, followed by phased facility rollouts on fixed timelines.
+              Because Horizons deploys pre-compiled shop floor primitives and pre-tested hardware adapters, pilot lines typically go live within weeks, followed by phased facility rollouts on fixed timelines.
             </div>
           </div>
           <div className="border border-[#c7c6c1]/40 rounded-xl bg-white overflow-hidden shadow-xs">

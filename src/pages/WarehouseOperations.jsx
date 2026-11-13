@@ -5,7 +5,7 @@ import './WarehouseOperations.css'
 export default function WarehouseOperations() {
   return (
     <div className="pg-warehouse-operations bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Warehouse Operations Platform | Horizon ERP & Automation"}</title>
+      <title>{"Warehouse Operations Platform | Horizons ERP & Automation"}</title>
       {' '}
       {' '}
       <main className="max-w-7xl mx-auto px-6 sm:px-8 space-y-24 py-8">
@@ -187,7 +187,7 @@ export default function WarehouseOperations() {
                 <div className="flex items-start justify-between pb-4 border-b border-outline-variant/20 mb-4">
                   <div>
                     <h4 className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                      Horizon WarehouseOS v4.2
+                      Horizons WarehouseOS v4.2
                     </h4>
                     <p className="font-body-sm text-body-sm text-on-surface-variant">
                       {"Central Picking & Putaway Matrix"}
@@ -303,7 +303,7 @@ export default function WarehouseOperations() {
                 </span>
                 {' '}
                 <span className="font-mono text-[11px] text-outline">
-                  SEC-LOG: #HORIZON-SYNC
+                  SEC-LOG: #HORIZONS-SYNC
                 </span>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function WarehouseOperations() {
               Most warehouse problems are not inventory problems, they are location problems.
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-              Nobody knows which bin has the last three units, pickers walk the same aisle twice, and putaway becomes a guessing game. Horizon assigns every item a precise shelf, rack, or bin so putaway and retrieval stop being a search party.
+              Nobody knows which bin has the last three units, pickers walk the same aisle twice, and putaway becomes a guessing game. Horizons assigns every item a precise shelf, rack, or bin so putaway and retrieval stop being a search party.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -733,7 +733,7 @@ export default function WarehouseOperations() {
               OPERATIONAL TRANSFORMATION
             </div>
             <h2 className="font-headline-lg text-headline-lg text-on-surface tracking-tight">
-              What Changes on Day One: Paper Floor Chaos vs. Horizon WarehouseOS
+              What Changes on Day One: Paper Floor Chaos vs. Horizons WarehouseOS
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -796,7 +796,7 @@ export default function WarehouseOperations() {
                 </span>
                 {' '}
                 <span>
-                  The Horizon Synchronized Floor
+                  The Horizons Synchronized Floor
                 </span>
               </div>
               <p className="font-body-sm text-body-sm text-emerald-900/80">
@@ -864,7 +864,7 @@ export default function WarehouseOperations() {
                 </span>
               </div>
               <div className="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Horizon is hardware-agnostic. It works natively with standard rugged enterprise Android scanners (such as Zebra, Honeywell, and Datalogic), as well as consumer iOS and Android tablets or smartphones via ultra-fast WebAssembly-powered camera barcode reading.
+                Horizons is hardware-agnostic. It works natively with standard rugged enterprise Android scanners (such as Zebra, Honeywell, and Datalogic), as well as consumer iOS and Android tablets or smartphones via ultra-fast WebAssembly-powered camera barcode reading.
               </div>
             </div>
             <details className={"group rounded-xl border border-outline-variant/30 bg-surface-container-low/40 p-6 [&_summary::-webkit-details-marker]:hidden"}>

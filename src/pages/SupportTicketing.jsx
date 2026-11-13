@@ -5,7 +5,7 @@ import './SupportTicketing.css'
 export default function SupportTicketing() {
   return (
     <div className="pg-support-ticketing bg-background text-on-surface antialiased relative selection:bg-primary-fixed selection:text-on-primary-fixed -mt-20">
-      <title>{"Customer Support Ticketing | Horizon Platform"}</title>
+      <title>{"Customer Support Ticketing | Horizons Platform"}</title>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1600px] h-[950px] ambient-glow pointer-events-none -z-10" />
       <div className="absolute top-[1800px] right-0 w-[600px] h-[600px] bg-emerald-100/30 blur-[120px] pointer-events-none -z-10 rounded-full" />
       <div className="absolute top-[3200px] left-0 w-[700px] h-[700px] bg-orange-100/25 blur-[140px] pointer-events-none -z-10 rounded-full" />
@@ -115,7 +115,7 @@ export default function SupportTicketing() {
                     Book a live product demo
                   </h2>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">
-                    See how Horizon unifies ticket queues and eliminates SLA breaches.
+                    See how Horizons unifies ticket queues and eliminates SLA breaches.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -331,7 +331,7 @@ export default function SupportTicketing() {
               Support fails when requests live in five different places.
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-              When email, chat, phone, and social messages arrive in siloed tools, critical requests inevitably get lost, context disappears, and customers wait days for simple resolutions. Horizon consolidates all communication into a single deterministic queue, enforces binding SLA timers so nothing stalls, and embeds automated knowledge bases so your team never answers the same question twice.
+              When email, chat, phone, and social messages arrive in siloed tools, critical requests inevitably get lost, context disappears, and customers wait days for simple resolutions. Horizons consolidates all communication into a single deterministic queue, enforces binding SLA timers so nothing stalls, and embeds automated knowledge bases so your team never answers the same question twice.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
               <div className="p-5 bg-surface-container-lowest/80 border border-outline-variant/30 rounded-[10px] shadow-sm space-y-3">
@@ -539,7 +539,7 @@ export default function SupportTicketing() {
               RESOLUTION METHODOLOGY
             </div>
             <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface">
-              How Horizon processes every request from intake to close
+              How Horizons processes every request from intake to close
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">
               Four deterministic stages guaranteeing full operational visibility across every touchpoint.
@@ -724,7 +724,7 @@ export default function SupportTicketing() {
               OPERATIONAL CONTRAST
             </div>
             <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface">
-              The Fragmented Inbox vs. Horizon Support Ticketing
+              The Fragmented Inbox vs. Horizons Support Ticketing
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -794,7 +794,7 @@ export default function SupportTicketing() {
                     After
                   </h3>
                   <p className="text-xs text-primary font-semibold">
-                    The Horizon Synchronized Standard
+                    The Horizons Synchronized Standard
                   </p>
                 </div>
               </div>
@@ -946,7 +946,7 @@ export default function SupportTicketing() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
               <h2 className="font-headline-lg text-headline-lg font-bold text-on-surface">
-                More from the Horizon ecosystem
+                More from the Horizons ecosystem
               </h2>
               <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
                 Productized automation packages and modular ERP backbones built for immediate velocity.

@@ -16,7 +16,7 @@ export default function Header() {
       <div className="flex justify-between items-center px-6 py-3 w-full">
         <Link to="/" className="flex items-center gap-3 group">
           <img src="/images/logo.jpg" alt="" className="w-9 h-9 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform duration-200" />
-          <span className="text-headline-sm font-bold text-on-surface tracking-tight">Horizon</span>
+          <span className="text-headline-sm font-bold text-on-surface tracking-tight">Horizons</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-label-md" aria-label="Main">
@@ -26,7 +26,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link to="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[10px] text-label-md text-white bg-gradient-to-r from-[#ff7555] to-[#ff9e7a] hover:opacity-95 transition-all duration-200 active:scale-95 glow-peach shadow-sm">
+          <Link to="/contact" className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-[10px] text-label-md text-white bg-gradient-to-r from-[#ff7555] to-[#ff9e7a] hover:opacity-95 transition-all duration-200 active:scale-95 glow-peach shadow-sm">
             <span>Book a free demo</span>
             <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
           </Link>
@@ -41,6 +41,10 @@ export default function Header() {
           {links.map((l) => (
             <NavLink key={l.path} to={l.path} className={(s) => `${linkClass(s)} py-2`}>{l.label}</NavLink>
           ))}
+          <Link to="/contact" className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-[10px] text-label-md text-white bg-gradient-to-r from-[#ff7555] to-[#ff9e7a] glow-peach shadow-sm">
+            <span>Book a free demo</span>
+            <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+          </Link>
         </nav>
       )}
     </header>

@@ -5,7 +5,7 @@ import './ExpenseManagement.css'
 export default function ExpenseManagement() {
   return (
     <div className="pg-expense-management bg-background text-on-surface antialiased font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Employee Expense Management - Horizon"}</title>
+      <title>{"Employee Expense Management - Horizons"}</title>
       {' '}
       {' '}
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-24">
@@ -107,7 +107,7 @@ export default function ExpenseManagement() {
                   Book a live product demo
                 </h2>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-5">
-                  See how Horizon digitizes receipt pipelines and accelerates employee payback.
+                  See how Horizons digitizes receipt pipelines and accelerates employee payback.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
@@ -189,7 +189,7 @@ export default function ExpenseManagement() {
                     </span>
                     {' '}
                     <span className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                      Horizon Expense Hub v4.2
+                      Horizons Expense Hub v4.2
                     </span>
                   </div>
                   {' '}
@@ -282,7 +282,7 @@ export default function ExpenseManagement() {
               Expense reports should not take longer than the business trip.
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-              Chasing crumpled paper receipts and reconciling messy spreadsheets burns hours for travelling employees and finance controllers alike. Horizon captures invoices instantly, syncs with enterprise card feeds, and routes approvals through deterministic rules so legitimate claims get reimbursed in record time.
+              Chasing crumpled paper receipts and reconciling messy spreadsheets burns hours for travelling employees and finance controllers alike. Horizons captures invoices instantly, syncs with enterprise card feeds, and routes approvals through deterministic rules so legitimate claims get reimbursed in record time.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -759,7 +759,7 @@ export default function ExpenseManagement() {
                 </span>
                 {' '}
                 <span className="font-headline-sm text-headline-sm">
-                  The Horizon Synchronized Backbone
+                  The Horizons Synchronized Backbone
                 </span>
               </div>
               <ul className="space-y-3 font-body-sm text-body-sm text-on-surface">
@@ -824,7 +824,7 @@ export default function ExpenseManagement() {
                 </span>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-surface-container-high">
-                Horizon provides an automated missing receipt affidavit workflow. The system matches the merchant name and amount directly against the employee's corporate card feed or bank statement. The employee completes a digitally signed declaration within the portal, and the claim is flagged for an exception-approval routing tree tailored to your policy threshold.
+                Horizons provides an automated missing receipt affidavit workflow. The system matches the merchant name and amount directly against the employee's corporate card feed or bank statement. The employee completes a digitally signed declaration within the portal, and the claim is flagged for an exception-approval routing tree tailored to your policy threshold.
               </p>
             </div>
             <div className="rounded-xl border border-outline-variant/30 bg-surface-container-lowest/60 p-5 flex items-center justify-between hover:bg-surface-container-lowest transition-colors cursor-pointer">
@@ -895,7 +895,7 @@ export default function ExpenseManagement() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="font-headline-md text-headline-md text-on-surface">
-              More from the Horizon ecosystem
+              More from the Horizons ecosystem
             </h2>
             {' '}
             <Link to="/products" className="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary font-semibold hover:underline">

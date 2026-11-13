@@ -5,7 +5,7 @@ import './Recruitment.css'
 export default function Recruitment() {
   return (
     <div className="pg-recruitment bg-background text-on-surface antialiased selection:bg-primary-container/20 selection:text-primary min-h-screen flex flex-col">
-      <title>{"Recruitment Management Platform | Horizon"}</title>
+      <title>{"Recruitment Management Platform | Horizons"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-6 space-y-28 flex-1">
@@ -192,7 +192,7 @@ export default function Recruitment() {
               </span>
               {' '}
               <h2 className="text-3xl font-bold text-on-surface tracking-tight mt-2">
-                Horizon RecruiterOS — Unified Candidate Pipeline in Action
+                Horizons RecruiterOS — Unified Candidate Pipeline in Action
               </h2>
             </div>
             <div className="flex items-center gap-2 text-[13px] text-on-surface-variant">
@@ -479,7 +479,7 @@ export default function Recruitment() {
               Hiring Is a Strategic Pipeline, Not an Unmanaged Inbox
             </h2>
             <p className="text-lg text-on-surface-variant mt-4 leading-relaxed font-normal">
-              When talent pipelines live across cluttered recruiter email chains, conflicting spreadsheets, and forgotten handwritten notes, exceptional candidates slip away to faster competitors. Horizon transforms chaotic candidate intake into an automated, transparent pipeline where recruiters, account managers, and client interviewers collaborate around single, verified candidate profiles.
+              When talent pipelines live across cluttered recruiter email chains, conflicting spreadsheets, and forgotten handwritten notes, exceptional candidates slip away to faster competitors. Horizons transforms chaotic candidate intake into an automated, transparent pipeline where recruiters, account managers, and client interviewers collaborate around single, verified candidate profiles.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -978,7 +978,7 @@ export default function Recruitment() {
               What Changes on Day One
             </h2>
             <p className="text-[15px] text-on-surface-variant">
-              Comparing fragmented inbox recruiting against Horizon's synchronized pipeline.
+              Comparing fragmented inbox recruiting against Horizons' synchronized pipeline.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1035,7 +1035,7 @@ export default function Recruitment() {
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-secondary-fixed/30 rounded-full blur-2xl pointer-events-none" />
               <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30">
                 <h3 className="text-lg font-bold text-on-surface">
-                  The Horizon Synchronized Engine
+                  The Horizons Synchronized Engine
                 </h3>
                 {' '}
                 <span className="px-3 py-1 rounded-[6px] bg-[#D9F99D] text-[#2D4A08] text-[11px] font-semibold">
@@ -1093,7 +1093,7 @@ export default function Recruitment() {
               Frequently Asked Questions
             </h2>
             <p className="text-[15px] text-on-surface-variant">
-              Clear, comprehensive answers regarding Horizon's Recruitment Management Platform.
+              Clear, comprehensive answers regarding Horizons' Recruitment Management Platform.
             </p>
           </div>
           <div className="space-y-3.5">
@@ -1109,7 +1109,7 @@ export default function Recruitment() {
               </div>
               <div className="mt-4 pt-4 border-t border-outline-variant/30 text-[14px] text-on-surface-variant space-y-2 leading-relaxed">
                 <p>
-                  Yes. Horizon supports collaborative evaluation with role-gated interview scorecards. Each interviewer can submit structured ratings, interview notes, and code evaluation files independently. Feedback can be configured to remain blinded until all panel members have submitted their assessments, preventing evaluation bias.
+                  Yes. Horizons supports collaborative evaluation with role-gated interview scorecards. Each interviewer can submit structured ratings, interview notes, and code evaluation files independently. Feedback can be configured to remain blinded until all panel members have submitted their assessments, preventing evaluation bias.
                 </p>
                 <p className="text-[12px] text-on-surface-variant/80">
                   All submitted feedback timestamps and interviewer credentials are preserved permanently in the candidate's immutable activity ledger.
@@ -1203,7 +1203,7 @@ export default function Recruitment() {
               </span>
               {' '}
               <h2 className="text-3xl font-bold text-on-surface tracking-tight mt-2">
-                More from Horizon
+                More from Horizons
               </h2>
             </div>
             {' '}
@@ -1320,7 +1320,7 @@ export default function Recruitment() {
                 Bring deterministic certainty to your recruitment pipeline.
               </h2>
               <p className="text-base md:text-lg text-white/95 max-w-xl font-normal leading-relaxed">
-                Retire fragmented recruiter spreadsheets and disorganized candidate inboxes today. Schedule an architectural walkthrough with Horizon talent systems engineers.
+                Retire fragmented recruiter spreadsheets and disorganized candidate inboxes today. Schedule an architectural walkthrough with Horizons talent systems engineers.
               </p>
               <div className="flex flex-wrap items-center gap-4 pt-3">
                 <Link to="/contact" className="px-6 py-3.5 rounded-[10px] bg-white text-primary font-semibold text-[14px] shadow-lg hover:bg-surface transition-all flex items-center gap-2">

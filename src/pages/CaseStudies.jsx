@@ -5,7 +5,7 @@ import './CaseStudies.css'
 export default function CaseStudies() {
   return (
     <div className="pg-case-studies bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container/20 selection:text-primary -mt-20">
-      <title>{"Case Studies — Horizon Enterprise AI Automation & ERP Solutions"}</title>
+      <title>{"Case Studies — Horizons Enterprise AI Automation & ERP Solutions"}</title>
       {' '}
       {' '}
       <main className="flex-grow pt-32 pb-space-xl">
@@ -22,7 +22,7 @@ export default function CaseStudies() {
                 Measurable enterprise velocity, delivered with fixed-scope certainty.
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
-                Horizon engineers production-grade AI agents and modernizes ERP foundations across heavily regulated, multi-entity operations. We eradicate execution risk by delivering architectural milestones on deterministic timelines with contractually guaranteed system performance.
+                Horizons engineers production-grade AI agents and modernizes ERP foundations across heavily regulated, multi-entity operations. We eradicate execution risk by delivering architectural milestones on deterministic timelines with contractually guaranteed system performance.
               </p>
             </div>
           </div>
@@ -86,10 +86,10 @@ export default function CaseStudies() {
                       hub
                     </span>
                     {' '}
-                    The Horizon Solution
+                    The Horizons Solution
                   </h3>
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                    Horizon architected an event-driven AI dispatch orchestration engine integrated directly with central general ledgers. Telematics ingest pipelines calculate multi-stop route payloads, automatically generate verified fuel settlement vouchers, and balance carrier accounts in real time without human intervention.
+                    Horizons architected an event-driven AI dispatch orchestration engine integrated directly with central general ledgers. Telematics ingest pipelines calculate multi-stop route payloads, automatically generate verified fuel settlement vouchers, and balance carrier accounts in real time without human intervention.
                   </p>
                 </div>
                 <div>
@@ -170,7 +170,7 @@ export default function CaseStudies() {
                   {"Multi-Entity Ledger Harmonization & Automated Currency Elimination"}
                 </h3>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
-                  Fourteen international subsidiaries unified onto Horizon's real-time core ledger without closing active transaction books or pausing inter-company billings.
+                  Fourteen international subsidiaries unified onto Horizons' real-time core ledger without closing active transaction books or pausing inter-company billings.
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">

@@ -5,7 +5,7 @@ import './RetailPos.css'
 export default function RetailPos() {
   return (
     <div className="pg-retail-pos bg-background text-on-surface antialiased selection:bg-primary-container/20 selection:text-primary">
-      <title>{"Retail Point of Sale — Horizon Enterprise Systems"}</title>
+      <title>{"Retail Point of Sale — Horizons Enterprise Systems"}</title>
       {' '}
       {' '}
       <main className="max-w-[1440px] mx-auto px-4 md:px-6">
@@ -108,7 +108,7 @@ export default function RetailPos() {
                     Book a live product demo
                   </h2>
                   <p className="font-body-sm text-body-sm text-stone-600 leading-normal">
-                    See how Horizon POS unifies barcode scanning, hardware peripherals, and multi-location ledgers.
+                    See how Horizons POS unifies barcode scanning, hardware peripherals, and multi-location ledgers.
                   </p>
                 </div>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -345,7 +345,7 @@ export default function RetailPos() {
               The Checkout Counter Is Where Retail Experience Gets Decided
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-              A transaction line should never stall customer momentum or obscure real inventory balances. Horizon Point of Sale eliminates checkout bottlenecks with lightning-fast barcode ingestion, seamless legacy hardware compatibility, and automatic ledger posting so evening reconciliation is finished in minutes, not hours.
+              A transaction line should never stall customer momentum or obscure real inventory balances. Horizons Point of Sale eliminates checkout bottlenecks with lightning-fast barcode ingestion, seamless legacy hardware compatibility, and automatic ledger posting so evening reconciliation is finished in minutes, not hours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -844,7 +844,7 @@ export default function RetailPos() {
               What Changes on Day One
             </h2>
             <p className="font-body-md text-body-md text-stone-600">
-              Comparing disconnected legacy cash drawers against the Horizon synchronized storefront.
+              Comparing disconnected legacy cash drawers against the Horizons synchronized storefront.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -900,11 +900,11 @@ export default function RetailPos() {
             <div className="rounded-[18px] bg-emerald-50/30 border-2 border-emerald-300/80 p-7 relative shadow-sm">
               <div className="flex items-center justify-between pb-4 border-b border-emerald-200/60 mb-6">
                 <div className="font-headline-sm text-[19px] font-bold text-stone-900">
-                  The Horizon Synchronized POS
+                  The Horizons Synchronized POS
                 </div>
                 {' '}
                 <span className="rounded-[6px] bg-emerald-200 text-emerald-900 px-2.5 py-1 text-xs font-bold uppercase tracking-wide">
-                  Horizon Architecture
+                  Horizons Architecture
                 </span>
               </div>
               <ul className="space-y-4 font-body-sm text-stone-800 text-sm">
@@ -978,7 +978,7 @@ export default function RetailPos() {
                 </span>
               </div>
               <div className="mt-4 pt-4 border-t border-stone-100 font-body-md text-stone-600 leading-relaxed text-sm">
-                Yes. Horizon Point of Sale features an embedded local SQLite edge engine on each terminal. If your broadband connection drops, cashiers can continue scanning items, applying promotions, printing paper receipts, and queuing encrypted card authorizations locally. The moment connectivity is restored, all batched transactions automatically synchronize back to your central inventory and accounting ledger with deterministic conflict resolution.
+                Yes. Horizons Point of Sale features an embedded local SQLite edge engine on each terminal. If your broadband connection drops, cashiers can continue scanning items, applying promotions, printing paper receipts, and queuing encrypted card authorizations locally. The moment connectivity is restored, all batched transactions automatically synchronize back to your central inventory and accounting ledger with deterministic conflict resolution.
               </div>
             </div>
             <div className="rounded-[14px] bg-white border border-stone-200/80 p-5 shadow-2xs">

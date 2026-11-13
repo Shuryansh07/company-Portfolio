@@ -5,7 +5,7 @@ import './SalesCrm.css'
 export default function SalesCrm() {
   return (
     <div className="pg-sales-crm bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
-      <title>{"Sales CRM | Horizon Enterprise Systems"}</title>
+      <title>{"Sales CRM | Horizons Enterprise Systems"}</title>
       {' '}
       {' '}
       <main className="flex-grow">
@@ -209,7 +209,7 @@ export default function SalesCrm() {
                           </span>
                         </div>
                         <p className="text-body-sm font-body-sm text-on-surface-variant font-mono">
-                          Horizon SalesOS v4.2 • Deterministic Sync Validated
+                          Horizons SalesOS v4.2 • Deterministic Sync Validated
                         </p>
                       </div>
                     </div>
@@ -331,7 +331,7 @@ export default function SalesCrm() {
               Deals Die in the Gaps Between Follow-Ups.
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-              Most lost enterprise deals are never conceded to competitors—they slip away in unreturned emails, forgotten calendar reminders, and fractured inbox chains. Horizon Sales CRM replaces spreadsheet guesswork with an automated, synchronized pipeline where every rep, account executive, and manager executes with clear visibility.
+              Most lost enterprise deals are never conceded to competitors—they slip away in unreturned emails, forgotten calendar reminders, and fractured inbox chains. Horizons Sales CRM replaces spreadsheet guesswork with an automated, synchronized pipeline where every rep, account executive, and manager executes with clear visibility.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -917,7 +917,7 @@ export default function SalesCrm() {
                   </span>
                   {' '}
                   <span className="text-label-lg font-label-lg font-bold uppercase tracking-wider">
-                    The Horizon Deterministic Pipeline
+                    The Horizons Deterministic Pipeline
                   </span>
                 </div>
                 <ul className="space-y-5 text-body-md font-body-md text-on-surface">
@@ -968,7 +968,7 @@ export default function SalesCrm() {
                 FREQUENTLY ASKED QUESTIONS
               </div>
               <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight mb-3">
-                Clear answers regarding Horizon Sales CRM and enterprise rollout.
+                Clear answers regarding Horizons Sales CRM and enterprise rollout.
               </h2>
               <p className="text-body-md font-body-md text-on-surface-variant">
                 Technical and architectural considerations for systems engineers and sales leaders.
@@ -987,7 +987,7 @@ export default function SalesCrm() {
                 </button>
                 {' '}
                 <div className="px-6 pb-5 pt-1 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 leading-relaxed">
-                  Yes, Horizon integrates natively with Google Workspace, Microsoft 365, Exchange, and IMAP servers, synchronizing emails, calendar events, and attendee responses bi-directionally without requiring third-party plugins.
+                  Yes, Horizons integrates natively with Google Workspace, Microsoft 365, Exchange, and IMAP servers, synchronizing emails, calendar events, and attendee responses bi-directionally without requiring third-party plugins.
                 </div>
               </div>
               <div className="glass-card rounded-[10px] border border-outline-variant/40 overflow-hidden">
@@ -1032,7 +1032,7 @@ export default function SalesCrm() {
                 </button>
                 {' '}
                 <div className="hidden px-6 pb-5 pt-1 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/20 leading-relaxed">
-                  Horizon supports limitless discrete pipelines segmented by region, product group, partner channels, or contract size, rolling up into territory views.
+                  Horizons supports limitless discrete pipelines segmented by region, product group, partner channels, or contract size, rolling up into territory views.
                 </div>
               </div>
               <div className="glass-card rounded-[10px] border border-outline-variant/40 overflow-hidden">

@@ -12,7 +12,7 @@ export const caseStudies = [
     title: 'Autonomous Dispatch Orchestration & Real-Time Fleet Accounting',
     summary: 'An event-driven AI dispatch engine wired straight into the general ledger, so every completed route settles itself.',
     challenge: 'Operating across regional distribution hubs, legacy operations depended on decentralized dispatch spreadsheets, manual telephone driver verification, and fragmented fuel telematics. Driver remittances were delayed by up to 18 business days, inducing high driver churn and severe cash-flow reconciliation lags across carrier settlement ledgers.',
-    approach: 'Horizon architected an event-driven AI dispatch orchestration engine integrated directly with central general ledgers. Telematics ingest pipelines calculate multi-stop route payloads, automatically generate verified fuel settlement vouchers, and balance carrier accounts in real time without human intervention.',
+    approach: 'Horizons architected an event-driven AI dispatch orchestration engine integrated directly with central general ledgers. Telematics ingest pipelines calculate multi-stop route payloads, automatically generate verified fuel settlement vouchers, and balance carrier accounts in real time without human intervention.',
     delivered: [
       'AI dispatch engine that plans multi-stop routes and re-routes around congestion',
       'Telematics ingest pipeline feeding fuel and mileage data into settlement',
@@ -29,9 +29,9 @@ export const caseStudies = [
     client: 'Multi-entity financial services group',
     title: 'Multi-Entity Ledger Harmonization & Automated Currency Elimination',
     image: '/images/e2bd9a9dc0.jpg',
-    summary: "Fourteen international subsidiaries unified onto Horizon's real-time core ledger without closing active transaction books or pausing inter-company billings.",
+    summary: "Fourteen international subsidiaries unified onto Horizons' real-time core ledger without closing active transaction books or pausing inter-company billings.",
     challenge: 'Each subsidiary ran its own chart of accounts and its own close calendar. Inter-company balances and currency differences were eliminated by hand in spreadsheets every month, so group reporting always lagged the books and nobody fully trusted the consolidated numbers.',
-    approach: 'Horizon mapped every subsidiary chart of accounts onto one shared ledger model, then migrated entities in waves while their existing books stayed open. Inter-company transactions are matched automatically and currency eliminations are posted by rule during consolidation.',
+    approach: 'Horizons mapped every subsidiary chart of accounts onto one shared ledger model, then migrated entities in waves while their existing books stayed open. Inter-company transactions are matched automatically and currency eliminations are posted by rule during consolidation.',
     delivered: [
       'Unified multi-entity ledger with a shared chart of accounts',
       'Wave-by-wave migration with books kept open throughout',
@@ -50,7 +50,7 @@ export const caseStudies = [
     image: '/images/de7b97268c.jpg',
     summary: 'Subcontractor procurement, heavy equipment tracking, and field work orders synchronized instantly to central ERP accounting.',
     challenge: 'Every jobsite kept its own purchase records, equipment logs, and work orders. Head office only saw costs once paperwork arrived, which made it hard to spot overruns, idle equipment, or subcontractor invoices that did not match what was delivered.',
-    approach: 'Horizon rolled out one ERP across all active sites with procurement, equipment, and work orders captured in the field and posted straight to central accounting. Sites were brought live one at a time so projects in progress were never interrupted.',
+    approach: 'Horizons rolled out one ERP across all active sites with procurement, equipment, and work orders captured in the field and posted straight to central accounting. Sites were brought live one at a time so projects in progress were never interrupted.',
     delivered: [
       'Subcontractor procurement with approvals tied to project budgets',
       'Heavy equipment tracking across sites, including utilisation and maintenance',
@@ -69,7 +69,7 @@ export const caseStudies = [
     image: '/images/54bdfb1bac.jpg',
     summary: 'Full-stack billing engine, role-based governance, and real-time event pipeline delivered on an immutable fixed-bid schedule.',
     challenge: 'The founding team had early enterprise interest but no product that could pass a security review: no tenant isolation, no role-based access, and no way to bill on usage. Building it in-house would have pushed their first enterprise contract out by months.',
-    approach: 'Horizon scoped a fixed-price MVP around what enterprise buyers ask for first, then built it end to end: isolated tenants, role-based permissions, usage-based billing, and an event pipeline the product team could build on after hand-over.',
+    approach: 'Horizons scoped a fixed-price MVP around what enterprise buyers ask for first, then built it end to end: isolated tenants, role-based permissions, usage-based billing, and an event pipeline the product team could build on after hand-over.',
     delivered: [
       'Multi-tenant architecture with data isolated per customer',
       'Role-based access control and an audit trail of admin actions',
@@ -88,7 +88,7 @@ export const caseStudies = [
     image: '/images/bff1deb7d0.jpg',
     summary: 'Instant inventory sync across 4 global fulfillment nodes, eliminating phantom stock, overselling, and order discrepancies.',
     challenge: 'The storefront, the warehouses, and the accounting system each held a different version of stock. Customers could buy items that were already gone, and finance spent days matching payouts, fees, and refunds back to orders.',
-    approach: 'Horizon rebuilt the storefront on a headless stack and made the warehouse system the single source of stock. Orders, payouts, fees, and refunds flow into accounting automatically, so every sale is reconciled the day it happens.',
+    approach: 'Horizons rebuilt the storefront on a headless stack and made the warehouse system the single source of stock. Orders, payouts, fees, and refunds flow into accounting automatically, so every sale is reconciled the day it happens.',
     delivered: [
       'Headless storefront built for high traffic',
       'Live stock sync across every fulfilment location',
@@ -107,7 +107,7 @@ export const caseStudies = [
     image: '/images/1776a22831.jpg',
     summary: 'Dynamic machine constraint scheduler replacing legacy spreadsheet handoffs across three high-throughput parallel assembly lines.',
     challenge: 'Planners rebuilt the production schedule by hand in spreadsheets every time an order changed or a machine went down. Shift leads worked from printed copies that were often already out of date, so lines sat idle while others were overloaded.',
-    approach: 'Horizon replaced the spreadsheets with a scheduler that knows each machine’s capacity, changeover times, and maintenance windows. When an order or a machine changes, the plan is recalculated and pushed to shift leads on the floor.',
+    approach: 'Horizons replaced the spreadsheets with a scheduler that knows each machine’s capacity, changeover times, and maintenance windows. When an order or a machine changes, the plan is recalculated and pushed to shift leads on the floor.',
     delivered: [
       'Finite-capacity scheduler covering every assembly line',
       'Shift allocation that respects skills, breaks, and maintenance windows',
@@ -126,7 +126,7 @@ export const caseStudies = [
     image: '/images/67b85bfc57.jpg',
     summary: 'Schematic-verified mobile voice agent answering high-voltage pinout queries offline in active utility service bays.',
     challenge: 'Technicians working on bucket trucks had to search long PDF manuals or call a senior engineer whenever they needed a wiring detail. Answers were slow, and on remote sites with no signal they often were not available at all.',
-    approach: 'Horizon built a mobile AI assistant that answers by voice or text using only the company’s own manuals and schematics, cites the page it used, and works offline. Questions it cannot answer are logged for a manager to review and add to the knowledge base.',
+    approach: 'Horizons built a mobile AI assistant that answers by voice or text using only the company’s own manuals and schematics, cites the page it used, and works offline. Questions it cannot answer are logged for a manager to review and add to the knowledge base.',
     delivered: [
       'Voice and text assistant grounded in the company’s own engineering manuals',
       'Answers that cite the manual page and schematic they came from',

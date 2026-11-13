@@ -7,6 +7,8 @@ body {
   background-color: #fbf9f6;
   color: #1b1c1a;
   overflow-x: hidden;
+  /* Long unbroken strings (emails, IDs) wrap instead of spilling out of cards on phones. */
+  overflow-wrap: anywhere;
 }
 
 .material-symbols-outlined {

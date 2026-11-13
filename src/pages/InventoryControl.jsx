@@ -5,7 +5,7 @@ import './InventoryControl.css'
 export default function InventoryControl() {
   return (
     <div className="pg-inventory-control bg-background text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-white">
-      <title>{"Smart Inventory Control — Horizon Enterprise Platform"}</title>
+      <title>{"Smart Inventory Control — Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <main className="flex-grow w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 space-y-24 py-8">
@@ -199,7 +199,7 @@ export default function InventoryControl() {
                     </div>
                     <div>
                       <h4 className="text-label-lg font-label-lg font-bold text-on-surface">
-                        Horizon StockHub v4.2
+                        Horizons StockHub v4.2
                       </h4>
                       <div className="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
                         <span className="w-2 h-2 rounded-full bg-emerald-500" />
@@ -830,7 +830,7 @@ export default function InventoryControl() {
               What Changes on Day One
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
-              Comparing manual spreadsheet reconciliation against Horizon's synchronized inventory architecture.
+              Comparing manual spreadsheet reconciliation against Horizons' synchronized inventory architecture.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -893,11 +893,11 @@ export default function InventoryControl() {
               <div className="flex items-center justify-between pb-4 border-b border-emerald-200/60">
                 <div>
                   <span className="text-label-sm font-label-sm font-bold text-emerald-800 uppercase tracking-wider">
-                    HORIZON ARCHITECTURE
+                    HORIZONS ARCHITECTURE
                   </span>
                   {' '}
                   <h3 className="text-headline-sm font-headline-sm font-bold text-on-surface mt-1">
-                    The Horizon Synchronized Architecture
+                    The Horizons Synchronized Architecture
                   </h3>
                 </div>
                 {' '}

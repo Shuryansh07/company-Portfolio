@@ -5,7 +5,7 @@ import './RestaurantOperations.css'
 export default function RestaurantOperations() {
   return (
     <div className="pg-restaurant-operations bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Restaurant Operations System — Horizon Enterprise Suite"}</title>
+      <title>{"Restaurant Operations System — Horizons Enterprise Suite"}</title>
       <div className="pointer-events-none fixed inset-x-0 top-0 h-[600px] overflow-hidden -z-10">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[550px] bg-gradient-to-b from-[#ffebd8]/60 via-[#ffe4dc]/30 to-transparent blur-3xl opacity-80" />
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#d9f99d]/20 blur-3xl rounded-full" />
@@ -221,7 +221,7 @@ export default function RestaurantOperations() {
                   </div>
                   <div>
                     <h3 className="text-label-lg font-label-lg text-on-surface font-bold">
-                      Horizon KitchenOS v4.2 — Expediter Command Hub
+                      Horizons KitchenOS v4.2 — Expediter Command Hub
                     </h3>
                     <p className="text-body-sm font-body-sm text-on-surface-variant">
                       {"Live pass tickets & station routing"}
@@ -369,7 +369,7 @@ export default function RestaurantOperations() {
               Every Order Touches Three Places. When They Desynchronize, Service Collapses.
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              Dine-in tables, pickup orders, and third-party delivery dispatch hit prep stations asynchronously. When paper chits get stained, modifiers get misheard, and course timing rests on memory, kitchen velocity stalls and table turnaround suffers. Horizon replaces ticket chaos with a unified, deterministic order loop.
+              Dine-in tables, pickup orders, and third-party delivery dispatch hit prep stations asynchronously. When paper chits get stained, modifiers get misheard, and course timing rests on memory, kitchen velocity stalls and table turnaround suffers. Horizons replaces ticket chaos with a unified, deterministic order loop.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -829,7 +829,7 @@ export default function RestaurantOperations() {
           </div>
           <div className="pt-6">
             <p className="text-label-md font-label-md uppercase tracking-wider text-outline mb-4">
-              Horizon Enterprise Commitment
+              Horizons Enterprise Commitment
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-6 rounded-[16px] bg-surface-container-low/70 border border-outline-variant/30 space-y-2">
@@ -885,7 +885,7 @@ export default function RestaurantOperations() {
               </span>
             </div>
             <h2 className="text-headline-lg font-headline-lg text-on-surface">
-              What Changes on Day One: Paper Chit Chaos vs. Horizon Synchronized Floor
+              What Changes on Day One: Paper Chit Chaos vs. Horizons Synchronized Floor
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
               Compare the standard reality of high-volume kitchen strain against deterministic, synchronized operations.
@@ -956,7 +956,7 @@ export default function RestaurantOperations() {
                 </div>
                 <div>
                   <h3 className="text-headline-sm font-headline-sm text-[#2d4a08]">
-                    After: The Horizon Synchronized Architecture
+                    After: The Horizons Synchronized Architecture
                   </h3>
                   <p className="text-body-sm font-body-sm text-on-surface-variant">
                     Unified, sub-second restaurant execution
@@ -1015,7 +1015,7 @@ export default function RestaurantOperations() {
               Frequently Asked Questions: Clear answers regarding floor management, KDS sync, and multi-unit deployments
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
-              Everything technical leaders and restaurateurs need to evaluate Horizon's operational architecture.
+              Everything technical leaders and restaurateurs need to evaluate Horizons' operational architecture.
             </p>
           </div>
           <div className="max-w-4xl space-y-4">
@@ -1030,7 +1030,7 @@ export default function RestaurantOperations() {
                 </span>
               </div>
               <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-outline-variant/20">
-                Yes. Horizon supports dynamic split-billing by seat, item, or custom percentage, including split cash/card payments and multi-card tipping without locking table turnover. Servers can split a shared bottle of wine across six covers or detach a single guest bill in two taps right at the tableside terminal.
+                Yes. Horizons supports dynamic split-billing by seat, item, or custom percentage, including split cash/card payments and multi-card tipping without locking table turnover. Servers can split a shared bottle of wine across six covers or detach a single guest bill in two taps right at the tableside terminal.
               </p>
             </div>
             <div className="glass-card rounded-[14px] p-5 flex items-center justify-between cursor-pointer hover:border-primary/40 transition-colors">

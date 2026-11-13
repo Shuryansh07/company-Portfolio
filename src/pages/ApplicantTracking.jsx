@@ -5,7 +5,7 @@ import './ApplicantTracking.css'
 export default function ApplicantTracking() {
   return (
     <div className="pg-applicant-tracking bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Applicant Tracking System — Horizon Enterprise"}</title>
+      <title>{"Applicant Tracking System — Horizons Enterprise"}</title>
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden opacity-60">
         <div className="absolute -top-[15%] left-1/2 -translate-x-1/2 w-[1200px] h-[650px] bg-gradient-to-b from-[#ffdad2]/35 via-[#f5f3f0]/20 to-transparent blur-3xl" />
         <div className="absolute top-[35%] -left-[10%] w-[600px] h-[600px] bg-[#ceee93]/15 rounded-full blur-3xl" />
@@ -769,7 +769,7 @@ export default function ApplicantTracking() {
                     Deterministic Approval Route Topology
                   </h3>
                   <p className="text-body-sm font-body-sm text-on-surface-variant">
-                    Before a single role is pushed to candidate discovery, Horizon routes budget authorization across four required organizational stakeholders.
+                    Before a single role is pushed to candidate discovery, Horizons routes budget authorization across four required organizational stakeholders.
                   </p>
                   <div className="space-y-3 pt-2">
                     <div className="flex items-center justify-between p-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/30">
@@ -1001,7 +1001,7 @@ export default function ApplicantTracking() {
             </span>
             {' '}
             <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-              Why High-Volume Talent Teams Choose Horizon
+              Why High-Volume Talent Teams Choose Horizons
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
               Built for precision, accountability, and zero candidate attrition across every requisition tier.
@@ -1110,7 +1110,7 @@ export default function ApplicantTracking() {
               What Changes on Day One
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              A definitive comparison between conventional inbox-driven hiring and Horizon's deterministic tracking architecture.
+              A definitive comparison between conventional inbox-driven hiring and Horizons' deterministic tracking architecture.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1178,7 +1178,7 @@ export default function ApplicantTracking() {
                 </div>
                 <div>
                   <h3 className="text-headline-sm font-headline-sm text-on-surface">
-                    Horizon ATS Backbone
+                    Horizons ATS Backbone
                   </h3>
                   <p className="text-label-sm font-label-sm text-secondary font-semibold">
                     Structured, accountable precision
@@ -1247,7 +1247,7 @@ export default function ApplicantTracking() {
                 </span>
               </div>
               <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-2 border-t border-outline-variant/20">
-                Yes, completely. Horizon supports stage hierarchies that can be defined globally or segmented by department, seniority level, or geographic location. For instance, technical engineering roles can mandate code evaluation and systems architecture panels with custom rubrics, while executive requisitions can run through confidentiality-gated partner review loops.
+                Yes, completely. Horizons supports stage hierarchies that can be defined globally or segmented by department, seniority level, or geographic location. For instance, technical engineering roles can mandate code evaluation and systems architecture panels with custom rubrics, while executive requisitions can run through confidentiality-gated partner review loops.
               </p>
             </div>
             <div className="glass-card rounded-[10px] p-5 border border-white shadow-sm flex items-center justify-between cursor-pointer hover:bg-white/90 transition-colors">
@@ -1323,7 +1323,7 @@ export default function ApplicantTracking() {
               </span>
               {' '}
               <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-                More from the Horizon Ecosystem
+                More from the Horizons Ecosystem
               </h2>
             </div>
             {' '}
@@ -1446,7 +1446,7 @@ export default function ApplicantTracking() {
               Bring deterministic certainty to your hiring pipeline
             </h2>
             <p className="text-body-lg font-body-lg text-white/90 max-w-2xl leading-relaxed">
-              Transition off loose inbox resumes today. Configure custom candidate workflows, rubric scorecards, and tamper-proof decision trails with a dedicated Horizon solutions engineer.
+              Transition off loose inbox resumes today. Configure custom candidate workflows, rubric scorecards, and tamper-proof decision trails with a dedicated Horizons solutions engineer.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <button className="px-6 py-3.5 rounded-[10px] bg-white text-primary text-label-lg font-label-lg font-bold hover:bg-surface-container-low shadow-lg active:scale-[0.99] transition-all flex items-center gap-2">

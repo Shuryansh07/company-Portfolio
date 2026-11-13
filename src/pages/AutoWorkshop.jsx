@@ -5,7 +5,7 @@ import './AutoWorkshop.css'
 export default function AutoWorkshop() {
   return (
     <div className="pg-auto-workshop bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed relative overflow-x-hidden min-h-screen">
-      <title>{"Auto Workshop Manager — Horizon Enterprise Solutions"}</title>
+      <title>{"Auto Workshop Manager — Horizons Enterprise Solutions"}</title>
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         <div className="absolute -top-32 left-1/4 w-[600px] h-[600px] bg-primary-fixed/25 rounded-full blur-[140px] transform-gpu" />
         <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-tertiary-fixed/30 rounded-full blur-[160px] transform-gpu" />
@@ -404,7 +404,7 @@ export default function AutoWorkshop() {
                 Independent garages and multi-bay service centers hemorrhage margin every single day on untracked shop supplies, forgotten diagnostic hours, and delayed phone-tag approvals. When job cards live on clipboards resting on dashboards, grease marks replace accountability, customers contest unrecognized repair charges, and mechanics sit idle waiting for manual parts verification.
               </p>
               <p className="text-body-md font-body-md text-on-surface-variant">
-                Horizon Auto Workshop Manager creates a synchronized digital loop that captures every minute spent, itemizes every consumable used, and transmits verifiable photo evidence directly to the car owner’s smartphone before work starts.
+                Horizons Auto Workshop Manager creates a synchronized digital loop that captures every minute spent, itemizes every consumable used, and transmits verifiable photo evidence directly to the car owner’s smartphone before work starts.
               </p>
             </div>
             <div className="lg:col-span-7 space-y-4">
@@ -780,7 +780,7 @@ export default function AutoWorkshop() {
               OPERATIONAL ADVANTAGE
             </div>
             <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-              Why modern service centers replace paper tickets with Horizon.
+              Why modern service centers replace paper tickets with Horizons.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -891,7 +891,7 @@ export default function AutoWorkshop() {
               What Changes on Day One
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant mt-2">
-              Comparing chaotic paper workshop workflows against Horizon Auto Workshop Manager.
+              Comparing chaotic paper workshop workflows against Horizons Auto Workshop Manager.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -951,7 +951,7 @@ export default function AutoWorkshop() {
                 </span>
                 {' '}
                 <span className="text-label-lg font-label-lg font-bold uppercase tracking-wider">
-                  After: The Horizon Synchronized Shop
+                  After: The Horizons Synchronized Shop
                 </span>
               </div>
               <ul className="space-y-4">

@@ -5,7 +5,7 @@ import './AiQcAgent.css'
 export default function AiQcAgent() {
   return (
     <div className="pg-ai-qc-agent bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen relative overflow-x-hidden">
-      <title>{"Horizon AI QC Agent | Field Service Intelligence"}</title>
+      <title>{"Horizons AI QC Agent | Field Service Intelligence"}</title>
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none -z-10 opacity-70 overflow-hidden">
         <div className="absolute -top-32 left-1/4 w-[550px] h-[550px] bg-gradient-to-br from-primary-fixed/40 to-primary-container/20 rounded-full blur-3xl transform -rotate-12" />
         <div className="absolute top-24 right-1/4 w-[450px] h-[450px] bg-gradient-to-tr from-secondary-fixed/40 to-tertiary-fixed/30 rounded-full blur-3xl" />
@@ -198,7 +198,7 @@ export default function AiQcAgent() {
                     </div>
                     <div>
                       <div className="text-label-md font-label-md text-on-surface font-semibold">
-                        Horizon QC Agent
+                        Horizons QC Agent
                       </div>
                       <div className="text-[10px] text-secondary flex items-center gap-1 font-medium">
                         <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
@@ -512,7 +512,7 @@ export default function AiQcAgent() {
           </span>
           {' '}
           <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2">
-            How Horizon QC operates on-site
+            How Horizons QC operates on-site
           </h2>
           <p className="text-body-md font-body-md text-on-surface-variant mt-2">
             Four connected stages connecting field mechanics with head engineering.
@@ -737,7 +737,7 @@ export default function AiQcAgent() {
           </span>
           {' '}
           <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2">
-            The Old Field Operation vs. Horizon
+            The Old Field Operation vs. Horizons
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -789,7 +789,7 @@ export default function AiQcAgent() {
             <div className="absolute -right-12 -top-12 w-32 h-32 bg-primary-fixed/30 rounded-full blur-xl pointer-events-none" />
             <div className="flex items-center justify-between pb-4 border-b border-primary-fixed/50">
               <h3 className="text-headline-sm font-headline-sm text-primary font-bold">
-                With Horizon AI QC Agent
+                With Horizons AI QC Agent
               </h3>
               <span className="px-3 py-1 rounded-[6px] bg-secondary-fixed text-on-secondary-fixed-variant text-label-sm font-label-sm font-semibold">
                 Standard of Care
@@ -854,7 +854,7 @@ export default function AiQcAgent() {
               </span>
             </summary>
             <p className="text-body-md font-body-md text-on-surface-variant mt-4 leading-relaxed border-t border-outline-variant/20 pt-4">
-              Horizon explicitly rejects hallucination. If a pinout or wire gauge specification does not exist in your ingested documentation, the QC Agent informs the technician immediately and triggers a high-priority supervisor escalation ticket. It will never guess or infer unverified electrical connections.
+              Horizons explicitly rejects hallucination. If a pinout or wire gauge specification does not exist in your ingested documentation, the QC Agent informs the technician immediately and triggers a high-priority supervisor escalation ticket. It will never guess or infer unverified electrical connections.
             </p>
           </details>
           <details className="glass-card p-6 group rounded-2xl cursor-pointer">
@@ -868,13 +868,13 @@ export default function AiQcAgent() {
               </span>
             </summary>
             <p className="text-body-md font-body-md text-on-surface-variant mt-4 leading-relaxed border-t border-outline-variant/20 pt-4">
-              Yes. Horizon includes hands-free voice audio note ingestion. Technicians tap once or use the background wake prompt, speak their query normally even in high-noise engine bays, and receive synthesized audio feedback with the diagram automatically queued on screen.
+              Yes. Horizons includes hands-free voice audio note ingestion. Technicians tap once or use the background wake prompt, speak their query normally even in high-noise engine bays, and receive synthesized audio feedback with the diagram automatically queued on screen.
             </p>
           </details>
           <details className="glass-card p-6 group rounded-2xl cursor-pointer">
             <summary className="flex justify-between items-center text-headline-sm font-headline-sm text-on-surface list-none">
               <span>
-                3. Does Horizon train public AI models on our proprietary installation schematics?
+                3. Does Horizons train public AI models on our proprietary installation schematics?
               </span>
               {' '}
               <span className="material-symbols-outlined text-outline transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">
@@ -910,7 +910,7 @@ export default function AiQcAgent() {
               </span>
             </summary>
             <p className="text-body-md font-body-md text-on-surface-variant mt-4 leading-relaxed border-t border-outline-variant/20 pt-4">
-              Horizon runs natively on iOS, iPadOS, Android, and rugged industrial barcode scanners (Zebra, Honeywell). For zero-install deployments, technicians can also interact seamlessly through secure enterprise WhatsApp or direct SMS bridges.
+              Horizons runs natively on iOS, iPadOS, Android, and rugged industrial barcode scanners (Zebra, Honeywell). For zero-install deployments, technicians can also interact seamlessly through secure enterprise WhatsApp or direct SMS bridges.
             </p>
           </details>
           <details className="glass-card p-6 group rounded-2xl cursor-pointer">
@@ -924,7 +924,7 @@ export default function AiQcAgent() {
               </span>
             </summary>
             <p className="text-body-md font-body-md text-on-surface-variant mt-4 leading-relaxed border-t border-outline-variant/20 pt-4">
-              Horizon provides all enterprise solutions as guaranteed, fixed-scope deployments. You pay a single upfront rollout and validation cost followed by predictable flat monthly tiers per active field vehicle, completely immune to token volatility or surge spikes.
+              Horizons provides all enterprise solutions as guaranteed, fixed-scope deployments. You pay a single upfront rollout and validation cost followed by predictable flat monthly tiers per active field vehicle, completely immune to token volatility or surge spikes.
             </p>
           </details>
         </div>
@@ -937,7 +937,7 @@ export default function AiQcAgent() {
             </span>
             {' '}
             <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2">
-              More from the Horizon ecosystem
+              More from the Horizons ecosystem
             </h2>
           </div>
           {' '}

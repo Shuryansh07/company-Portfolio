@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="md:col-span-5 space-y-6">
             <div className="flex items-center gap-3">
               <img src="/images/logo.jpg" alt="" className="w-8 h-8 rounded-full object-cover" />
-              <span className="text-headline-md font-bold text-on-surface">Horizon</span>
+              <span className="text-headline-md font-bold text-on-surface">Horizons</span>
             </div>
             <p className="text-body-md text-on-surface-variant max-w-md">
               AI automation and ERP solutions delivered as fixed-scope, fixed-price packages, plus custom engagements when a package is not the right fit.
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-label-sm text-on-surface-variant">
-          <div>© {new Date().getFullYear()} Horizon. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Horizons. All rights reserved.</div>
           <Link to="/products" className={linkClass}>All products</Link>
         </div>
       </div>

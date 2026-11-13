@@ -5,7 +5,7 @@ import './BusinessAccounting.css'
 export default function BusinessAccounting() {
   return (
     <div className="pg-business-accounting bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Business Accounting Software | Horizon Enterprise Solutions"}</title>
+      <title>{"Business Accounting Software | Horizons Enterprise Solutions"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-4 md:px-8 pt-6 pb-20 space-y-24">
@@ -83,7 +83,7 @@ export default function BusinessAccounting() {
                       Book a live system walk-through
                     </h3>
                     <p className="text-body-sm font-body-sm text-on-surface-variant mt-1">
-                      See how Horizon reconciles bank transactions and accelerates your month-end close.
+                      See how Horizons reconciles bank transactions and accelerates your month-end close.
                     </p>
                   </div>
                   <form className="space-y-4 pt-2" onSubmit={(e) => e.preventDefault()}>
@@ -180,7 +180,7 @@ export default function BusinessAccounting() {
               <div className="flex flex-wrap items-center justify-between pb-4 border-b border-outline-variant/30 gap-3">
                 <div className="flex items-center gap-3">
                   <span className="font-headline-sm text-headline-sm font-bold text-on-surface">
-                    Horizon Books v4.2
+                    Horizons Books v4.2
                   </span>
                   {' '}
                   <span className="text-on-surface-variant text-body-sm font-body-sm">
@@ -349,7 +349,7 @@ export default function BusinessAccounting() {
               Bookkeeping Should Not Feel Like Detective Work
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-              Chasing unpaid client invoices, deciphering crumpled expense receipts across team chat channels, and untangling month-end discrepancies between bank statements and outdated spreadsheets consumes dozens of billable hours. Horizon establishes a synchronized continuous ledger: invoicing auto-triggers, expenses OCR directly into tax buckets, and bank streams reconcile without human latency.
+              Chasing unpaid client invoices, deciphering crumpled expense receipts across team chat channels, and untangling month-end discrepancies between bank statements and outdated spreadsheets consumes dozens of billable hours. Horizons establishes a synchronized continuous ledger: invoicing auto-triggers, expenses OCR directly into tax buckets, and bank streams reconcile without human latency.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
@@ -769,7 +769,7 @@ export default function BusinessAccounting() {
               What Changes on Day One
             </h2>
             <p className="text-body-lg font-body-lg text-on-surface-variant">
-              Comparing traditional fragmented bookkeeping against the Horizon accounting backbone.
+              Comparing traditional fragmented bookkeeping against the Horizons accounting backbone.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
@@ -829,7 +829,7 @@ export default function BusinessAccounting() {
                 </span>
                 {' '}
                 <h3 className="text-headline-md font-headline-md text-on-surface">
-                  The Horizon Synchronized System
+                  The Horizons Synchronized System
                 </h3>
               </div>
               <ul className="space-y-4 text-body-md font-body-md text-on-surface">
@@ -898,7 +898,7 @@ export default function BusinessAccounting() {
                 </span>
               </div>
               <div className="text-body-md font-body-md text-on-surface-variant pt-2 border-t border-outline-variant/20 leading-relaxed">
-                Yes. Horizon includes deterministic historical migration utilities supporting direct CSV, OFX, and QBO format ingestion as well as automated REST API ingestion from legacy platforms. Our deployment engineers verify opening balances, validate schema mapping against your prior chart of accounts, and perform historical checksum balance verifications without data loss or duplicate transaction creation.
+                Yes. Horizons includes deterministic historical migration utilities supporting direct CSV, OFX, and QBO format ingestion as well as automated REST API ingestion from legacy platforms. Our deployment engineers verify opening balances, validate schema mapping against your prior chart of accounts, and perform historical checksum balance verifications without data loss or duplicate transaction creation.
               </div>
             </div>
             <div className="rounded-[14px] border border-outline-variant/30 bg-surface-container-lowest/80 p-5 flex items-center justify-between cursor-pointer hover:border-outline transition-colors">
@@ -970,7 +970,7 @@ export default function BusinessAccounting() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div className="space-y-2">
               <span className="inline-flex items-center px-2.5 py-1 bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider rounded-[6px]">
-                HORIZON ECOSYSTEM
+                HORIZONS ECOSYSTEM
               </span>
               {' '}
               <h2 className="text-headline-lg font-headline-lg text-on-surface">
