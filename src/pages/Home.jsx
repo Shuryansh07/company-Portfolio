@@ -90,413 +90,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-16 max-w-6xl mx-auto relative">
-            <div className="neo-glass rounded-[32px] p-4 md:p-8 shadow-2xl border border-white/80 overflow-hidden">
-              <div className="flex items-center justify-between pb-6 border-b border-surface-container-highest/60">
-                <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-[#ff7555]/80" />
-                  {' '}
-                  <span className="w-3 h-3 rounded-full bg-[#ceee93]" />
-                  {' '}
-                  <span className="w-3 h-3 rounded-full bg-[#a5f3fc]" />
-                  {' '}
-                  <span className="hidden sm:inline ml-4 text-label-sm font-label-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded-[6px]">
-                    core-ops.horizons.network/production-live
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="flex items-center gap-1.5 text-label-sm font-label-sm text-[#2D4A08] bg-[#d9f99d] px-3 py-1 rounded-[6px]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#2D4A08] animate-ping" />
-                    {' '}
-                    System Operational
-                  </span>
-                  {' '}
-                  <span className="text-label-sm font-label-sm text-on-surface-variant hidden sm:inline">
-                    Sync Latency: 14ms
-                  </span>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
-                <div className="lg:col-span-8 space-y-6">
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="p-5 rounded-2xl bg-white/70 border border-white/90 shadow-sm">
-                      <div className="text-label-sm font-label-sm text-on-surface-variant">
-                        Throughput Rate
-                      </div>
-                      <div className="text-headline-md font-headline-md font-bold text-on-surface mt-1">
-                        98.4%
-                      </div>
-                      <div className="flex items-center gap-1 text-label-sm font-label-sm text-[#2D4A08] mt-2">
-                        <span className="material-symbols-outlined text-[16px]">
-                          trending_up
-                        </span>
-                        {' '}
-                        <span>
-                          +4.2% vs baseline
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-5 rounded-2xl bg-white/70 border border-white/90 shadow-sm">
-                      <div className="text-label-sm font-label-sm text-on-surface-variant">
-                        Active Agent Jobs
-                      </div>
-                      <div className="text-headline-md font-headline-md font-bold text-on-surface mt-1">
-                        1,248
-                      </div>
-                      <div className="flex items-center gap-1 text-label-sm font-label-sm text-[#0E4A56] mt-2">
-                        <span className="material-symbols-outlined text-[16px]">
-                          smart_toy
-                        </span>
-                        {' '}
-                        <span>
-                          42 running now
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-5 rounded-2xl bg-white/70 border border-white/90 shadow-sm">
-                      <div className="text-label-sm font-label-sm text-on-surface-variant">
-                        Ledger Integrity
-                      </div>
-                      <div className="text-headline-md font-headline-md font-bold text-on-surface mt-1">
-                        100.0%
-                      </div>
-                      <div className="flex items-center gap-1 text-label-sm font-label-sm text-primary mt-2">
-                        <span className="material-symbols-outlined text-[16px]">
-                          verified
-                        </span>
-                        {' '}
-                        <span>
-                          Auto-reconciled
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6 rounded-2xl bg-white/70 border border-white/90 shadow-sm">
-                    <div className="flex items-center justify-between mb-4">
-                      <h2 className="text-headline-sm font-headline-sm text-on-surface">
-                        {"Live Warehouse & Pipeline Routing"}
-                      </h2>
-                      {' '}
-                      <span className="text-label-sm font-label-sm text-on-surface-variant">
-                        Updated 2s ago
-                      </span>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between p-3 rounded-[3rem] bg-surface-container-low/70 text-body-sm font-body-sm hover:bg-white transition-colors duration-150">
-                        <div className="flex items-center gap-3">
-                          <span className="w-2.5 h-2.5 rounded-full bg-[#d9f99d]" />
-                          {' '}
-                          <span className="font-medium text-on-surface">
-                            Assembly Line 04 (Robotic Cell)
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <span className="px-2.5 py-1 rounded-[6px] text-label-sm font-label-sm bg-[#d9f99d] text-[#2D4A08]">
-                            Optimal Pace
-                          </span>
-                          {' '}
-                          <span className="font-mono text-on-surface-variant">
-                            942 units/hr
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between p-3 rounded-[3rem] bg-surface-container-low/70 text-body-sm font-body-sm hover:bg-white transition-colors duration-150">
-                        <div className="flex items-center gap-3">
-                          <span className="w-2.5 h-2.5 rounded-full bg-[#a5f3fc]" />
-                          {' '}
-                          <span className="font-medium text-on-surface">
-                            QC Vision Inspection (Gate B)
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <span className="px-2.5 py-1 rounded-[6px] text-label-sm font-label-sm bg-[#a5f3fc] text-[#0E4A56]">
-                            AI Self-Calibrating
-                          </span>
-                          {' '}
-                          <span className="font-mono text-on-surface-variant">
-                            0.02% error margin
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between p-3 rounded-[3rem] bg-surface-container-low/70 text-body-sm font-body-sm hover:bg-white transition-colors duration-150">
-                        <div className="flex items-center gap-3">
-                          <span className="w-2.5 h-2.5 rounded-full bg-primary-container" />
-                          {' '}
-                          <span className="font-medium text-on-surface">
-                            Freight Dispatch Staging (West Hub)
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <span className="px-2.5 py-1 rounded-[6px] text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed-variant">
-                            Routing Optimization
-                          </span>
-                          {' '}
-                          <span className="font-mono text-on-surface-variant">
-                            18 trailers queued
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="lg:col-span-4 p-6 rounded-2xl bg-gradient-to-b from-white/90 to-white/70 border border-white/90 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-[#ff7555] to-[#a5f3fc] flex items-center justify-center text-white text-xs font-bold">
-                          <span className="material-symbols-outlined text-[16px]">
-                            neurology
-                          </span>
-                        </div>
-                        {' '}
-                        <span className="text-label-lg font-label-lg font-bold text-on-surface">
-                          Horizons Copilot
-                        </span>
-                      </div>
-                      {' '}
-                      <span className="text-label-sm font-label-sm bg-[#d9f99d] text-[#2D4A08] px-2 py-0.5 rounded-[6px]">
-                        Active
-                      </span>
-                    </div>
-                    <div className="space-y-3 mt-4">
-                      <div className="p-3.5 rounded-2xl bg-surface-container-low text-body-sm font-body-sm text-on-surface">
-                        <p className="font-semibold text-label-md text-primary mb-1">
-                          Autonomous Recommendation
-                        </p>
-                        <p>
-                          Detected 8.4% supply chain latency on Supplier Route Alpha. Auto-rerouted order batch #4401 to secondary logistics partner to guarantee Thursday delivery.
-                        </p>
-                      </div>
-                      <div className="p-3.5 rounded-2xl bg-white border border-[#a5f3fc] text-body-sm font-body-sm text-on-surface">
-                        <div className="flex items-center gap-1.5 text-[#0E4A56] font-semibold text-label-sm mb-1">
-                          <span className="material-symbols-outlined text-[14px]">
-                            tune
-                          </span>
-                          {' '}
-                          <span>
-                            Field Technician AI Agent
-                          </span>
-                        </div>
-                        <p>
-                          3 diagnostic sheets verified automatically. Dispatched parts ahead of schedule for 5 service requests.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-6 pt-4 border-t border-surface-container-highest">
-                    <div className="flex items-center justify-between p-2.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40">
-                      <span className="text-label-sm font-label-sm text-on-surface-variant pl-3">
-                        Ask Copilot or prompt agent...
-                      </span>
-                      {' '}
-                      <button className="w-8 h-8 rounded-[10px] bg-[#ff7555] text-white flex items-center justify-center">
-                        <span className="material-symbols-outlined text-[16px]">
-                          send
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="max-w-7xl mx-auto px-6 md:px-12 py-20" id="solutions">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-label-sm font-label-sm uppercase tracking-wider text-primary font-bold">
-              Comprehensive Capabilities
-            </span>
-            {' '}
-            <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2 tracking-tight">
-              Engineered for absolute business autonomy
-            </h2>
-            <p className="text-body-md font-body-md text-on-surface-variant mt-3">
-              Fixed scopes, battle-tested software modules, and bespoke capabilities built to replace disjointed workflows.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="neo-glass rounded-[32px] p-8 md:p-10 shadow-lg shadow-on-background/5 border border-white/80 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
-              <div>
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#ffdad2] to-[#ff7555]/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-3xl">
-                    smart_toy
-                  </span>
-                </div>
-                {' '}
-                <span className="text-label-sm font-label-sm bg-[#a5f3fc] text-[#0E4A56] px-3 py-1 rounded-[6px] uppercase tracking-wider">
-                  Autonomous Agents
-                </span>
-                {' '}
-                <h3 className="text-headline-md font-headline-md text-on-surface mt-4">
-                  AI Automation
-                </h3>
-                <p className="text-body-md font-body-md text-on-surface-variant mt-3">
-                  Intelligent autonomous agents deployed directly into your operational workflow, slashing manual triage and error rates.
-                </p>
-                <div className="mt-8 space-y-3 pt-6 border-t border-surface-container-highest">
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      AI QC Agent for field technicians
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      AI Travel Agent for business travel
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      {"Exhibition Lead Intelligence & CRM sync"}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <a className="inline-flex items-center gap-2 text-label-md font-label-md text-primary font-semibold hover:gap-3 transition-all duration-200" href="#products">
-                  <span>
-                    View automation suites
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[16px]">
-                    arrow_forward
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div className="neo-glass rounded-[32px] p-8 md:p-10 shadow-lg shadow-on-background/5 border border-white/80 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#d9f99d]/30 blur-2xl pointer-events-none rounded-full" />
-              <div>
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#d9f99d] to-[#b3d17a]/30 flex items-center justify-center text-[#2D4A08] mb-6 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-3xl">
-                    account_tree
-                  </span>
-                </div>
-                {' '}
-                <span className="text-label-sm font-label-sm bg-[#d9f99d] text-[#2D4A08] px-3 py-1 rounded-[6px] uppercase tracking-wider">
-                  Modular Core
-                </span>
-                {' '}
-                <h3 className="text-headline-md font-headline-md text-on-surface mt-4">
-                  {"ERP & Operations"}
-                </h3>
-                <p className="text-body-md font-body-md text-on-surface-variant mt-3">
-                  Modular business backbones engineered for enterprise velocity without legacy overhead or multi-year rollouts.
-                </p>
-                <div className="mt-8 space-y-3 pt-6 border-t border-surface-container-highest">
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-[#2D4A08] text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      {"Real-time inventory & batch control"}
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-[#2D4A08] text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      {"Intelligent warehouse & production floor"}
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-[#2D4A08] text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      {"Unified accounting & reconciled ledgers"}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <Link to="/products" className="inline-flex items-center gap-2 text-label-md font-label-md text-primary font-semibold hover:gap-3 transition-all duration-200">
-                  <span>
-                    Explore modular ERP modules
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[16px]">
-                    arrow_forward
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="neo-glass rounded-[32px] p-8 md:p-10 shadow-lg shadow-on-background/5 border border-white/80 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
-              <div>
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#a5f3fc] to-[#5dabb4]/30 flex items-center justify-center text-[#0E4A56] mb-6 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-3xl">
-                    hub
-                  </span>
-                </div>
-                {' '}
-                <span className="text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-[6px] uppercase tracking-wider">
-                  Tailored Architecture
-                </span>
-                {' '}
-                <h3 className="text-headline-md font-headline-md text-on-surface mt-4">
-                  Custom Engagements
-                </h3>
-                <p className="text-body-md font-body-md text-on-surface-variant mt-3">
-                  Bespoke software architecture engineered for complex or proprietary operational workflows that standard SaaS cannot serve.
-                </p>
-                <div className="mt-8 space-y-3 pt-6 border-t border-surface-container-highest">
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      Dedicated elite staff augmentation
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      {"Complex Zoho & ERP rollouts"}
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-                      check_circle
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
-                      Proprietary custom SaaS software builds
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <Link to="/contact" className="inline-flex items-center gap-2 text-label-md font-label-md text-primary font-semibold hover:gap-3 transition-all duration-200">
-                  <span>
-                    Initiate a custom scope
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[16px]">
-                    arrow_forward
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
         </section>
         <section className="max-w-7xl mx-auto px-6 md:px-12 py-20" id="products">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -811,6 +404,203 @@ export default function Home() {
                   Request Full Spec Sheet
                   {' '}
                   <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="max-w-7xl mx-auto px-6 md:px-12 py-20" id="solutions">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="text-label-sm font-label-sm uppercase tracking-wider text-primary font-bold">
+              Comprehensive Capabilities
+            </span>
+            {' '}
+            <h2 className="text-headline-lg font-headline-lg text-on-surface mt-2 tracking-tight">
+              Engineered for absolute business autonomy
+            </h2>
+            <p className="text-body-md font-body-md text-on-surface-variant mt-3">
+              Fixed scopes, battle-tested software modules, and bespoke capabilities built to replace disjointed workflows.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="neo-glass rounded-[32px] p-8 md:p-10 shadow-lg shadow-on-background/5 border border-white/80 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#ffdad2] to-[#ff7555]/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-3xl">
+                    smart_toy
+                  </span>
+                </div>
+                {' '}
+                <span className="text-label-sm font-label-sm bg-[#a5f3fc] text-[#0E4A56] px-3 py-1 rounded-[6px] uppercase tracking-wider">
+                  Autonomous Agents
+                </span>
+                {' '}
+                <h3 className="text-headline-md font-headline-md text-on-surface mt-4">
+                  AI Automation
+                </h3>
+                <p className="text-body-md font-body-md text-on-surface-variant mt-3">
+                  Intelligent autonomous agents deployed directly into your operational workflow, slashing manual triage and error rates.
+                </p>
+                <div className="mt-8 space-y-3 pt-6 border-t border-surface-container-highest">
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      AI QC Agent for field technicians
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      AI Travel Agent for business travel
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      {"Exhibition Lead Intelligence & CRM sync"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8">
+                <a className="inline-flex items-center gap-2 text-label-md font-label-md text-primary font-semibold hover:gap-3 transition-all duration-200" href="#products">
+                  <span>
+                    View automation suites
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-[16px]">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div className="neo-glass rounded-[32px] p-8 md:p-10 shadow-lg shadow-on-background/5 border border-white/80 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#d9f99d]/30 blur-2xl pointer-events-none rounded-full" />
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#d9f99d] to-[#b3d17a]/30 flex items-center justify-center text-[#2D4A08] mb-6 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-3xl">
+                    account_tree
+                  </span>
+                </div>
+                {' '}
+                <span className="text-label-sm font-label-sm bg-[#d9f99d] text-[#2D4A08] px-3 py-1 rounded-[6px] uppercase tracking-wider">
+                  Modular Core
+                </span>
+                {' '}
+                <h3 className="text-headline-md font-headline-md text-on-surface mt-4">
+                  {"ERP & Operations"}
+                </h3>
+                <p className="text-body-md font-body-md text-on-surface-variant mt-3">
+                  Modular business backbones engineered for enterprise velocity without legacy overhead or multi-year rollouts.
+                </p>
+                <div className="mt-8 space-y-3 pt-6 border-t border-surface-container-highest">
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-[#2D4A08] text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      {"Real-time inventory & batch control"}
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-[#2D4A08] text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      {"Intelligent warehouse & production floor"}
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-[#2D4A08] text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      {"Unified accounting & reconciled ledgers"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8">
+                <Link to="/products" className="inline-flex items-center gap-2 text-label-md font-label-md text-primary font-semibold hover:gap-3 transition-all duration-200">
+                  <span>
+                    Explore modular ERP modules
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-[16px]">
+                    arrow_forward
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="neo-glass rounded-[32px] p-8 md:p-10 shadow-lg shadow-on-background/5 border border-white/80 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#a5f3fc] to-[#5dabb4]/30 flex items-center justify-center text-[#0E4A56] mb-6 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-3xl">
+                    hub
+                  </span>
+                </div>
+                {' '}
+                <span className="text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-[6px] uppercase tracking-wider">
+                  Tailored Architecture
+                </span>
+                {' '}
+                <h3 className="text-headline-md font-headline-md text-on-surface mt-4">
+                  Custom Engagements
+                </h3>
+                <p className="text-body-md font-body-md text-on-surface-variant mt-3">
+                  Bespoke software architecture engineered for complex or proprietary operational workflows that standard SaaS cannot serve.
+                </p>
+                <div className="mt-8 space-y-3 pt-6 border-t border-surface-container-highest">
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      Dedicated elite staff augmentation
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      {"Complex Zoho & ERP rollouts"}
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
+                      check_circle
+                    </span>
+                    {' '}
+                    <span className="text-body-sm font-body-sm text-on-surface font-medium">
+                      Proprietary custom SaaS software builds
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8">
+                <Link to="/contact" className="inline-flex items-center gap-2 text-label-md font-label-md text-primary font-semibold hover:gap-3 transition-all duration-200">
+                  <span>
+                    Initiate a custom scope
+                  </span>
+                  {' '}
+                  <span className="material-symbols-outlined text-[16px]">
                     arrow_forward
                   </span>
                 </Link>
