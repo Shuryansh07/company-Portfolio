@@ -211,47 +211,7 @@ export default function RestaurantOperations() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-            <div className="lg:col-span-5 bg-inverse-surface text-inverse-on-surface rounded-[16px] p-6 flex flex-col justify-between border border-outline/30 relative overflow-hidden min-h-[460px]">
-              <div className="absolute -top-10 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-tertiary-fixed/10 rounded-full blur-3xl pointer-events-none" />
-              <div className="flex items-center justify-between z-10">
-                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-[6px] bg-red-950/80 text-primary-fixed-dim border border-primary/40 text-label-sm font-label-sm">
-                  <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
-                  {' '}
-                  <span>
-                    {"Live Stream: Main Line & Expediter Station"}
-                  </span>
-                </span>
-                {' '}
-                <span className="text-label-sm font-label-sm text-outline-variant font-mono">
-                  PASS_CAM_01
-                </span>
-              </div>
-              <div className="my-auto py-12 flex flex-col items-center justify-center text-center z-10">
-                <button className="w-16 h-16 rounded-[10px] bg-surface-container-lowest/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center hover:scale-105 hover:bg-white/20 transition-all cursor-pointer shadow-lg mb-4">
-                  <span className="material-symbols-outlined text-[32px] ml-1" data-icon="play_arrow">
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <p className="text-label-md font-label-md text-white font-medium">
-                  Interactive Floor Runthrough (04:15)
-                </p>
-                <p className="text-body-sm font-body-sm text-outline-variant max-w-xs mt-1">
-                  Watch 60 covers fired, timed, and expedited with zero voice shouting across stations.
-                </p>
-              </div>
-              <div className="z-10 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-label-sm">
-                <span className="text-secondary-fixed">
-                  Active Kitchen Session: Dinner Rush | Station Verified
-                </span>
-                {' '}
-                <span className="text-outline-variant">
-                  FPS: 60.0 / SYNCD
-                </span>
-              </div>
-            </div>
-            <div className="lg:col-span-7 glass-card rounded-[16px] p-6 space-y-5">
+            <div className="lg:col-span-12 glass-card rounded-[16px] p-6 space-y-5">
               <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-outline-variant/30">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-[8px] bg-primary text-white flex items-center justify-center">

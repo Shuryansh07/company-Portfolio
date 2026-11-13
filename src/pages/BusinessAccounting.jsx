@@ -176,42 +176,7 @@ export default function BusinessAccounting() {
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 bg-inverse-surface rounded-[18px] p-6 text-inverse-on-surface flex flex-col justify-between relative overflow-hidden border border-outline/30 min-h-[420px]">
-              <div className="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none" />
-              <div className="flex items-center justify-between z-10">
-                <span className="px-2.5 py-1 bg-white/10 rounded-[6px] text-label-sm font-label-sm text-white/90">
-                  HD Screencast
-                </span>
-                {' '}
-                <span className="text-label-sm font-label-sm text-white/70">
-                  Product walkthrough
-                </span>
-              </div>
-              <div className="my-auto text-center z-10 py-10">
-                <button className="w-16 h-16 rounded-[14px] bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center mx-auto hover:scale-105 transition-transform text-white group shadow-lg">
-                  <span className="material-symbols-outlined text-[32px] text-primary-fixed group-hover:text-white transition-colors" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <h4 className="text-headline-sm font-headline-sm text-white mt-4 max-w-xs mx-auto">
-                  Reconciliation in Action: Live Multi-Entity Bank Ingestion
-                </h4>
-                <p className="text-body-sm font-body-sm text-white/70 mt-2 max-w-sm mx-auto">
-                  Observe automated matching logic resolving cross-border FX invoices and clearing batch dockets.
-                </p>
-              </div>
-              <div className="flex items-center justify-between text-white/60 text-label-sm font-label-sm pt-4 border-t border-white/10 z-10">
-                <span>
-                  Audio: Professional Narration
-                </span>
-                {' '}
-                <span>
-                  Subtitles: Available
-                </span>
-              </div>
-            </div>
-            <div className="lg:col-span-7 specular-border rounded-[18px] p-6 flex flex-col justify-between shadow-lg">
+            <div className="lg:col-span-12 specular-border rounded-[18px] p-6 flex flex-col justify-between shadow-lg">
               <div className="flex flex-wrap items-center justify-between pb-4 border-b border-outline-variant/30 gap-3">
                 <div className="flex items-center gap-3">
                   <span className="font-headline-sm text-headline-sm font-bold text-on-surface">

@@ -188,33 +188,7 @@ export default function AiQcAgent() {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-7">
-            <div className="glass-card relative overflow-hidden aspect-video rounded-3xl group shadow-lg">
-              <div className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A clean modern commercial automotive fleet installation garage with a white Ford Transit cargo van open at the rear. Modern shop lighting floods the clean epoxy floor, with an aerospace-grade wire harness assembly bench in the background. Bright, warm lighting with minimal reflections and a calm, hyper-organized technical workspace ambiance." style={{"backgroundImage":"url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXABdn8adSpbTkIj4tkvnKJUNzsxs3qeOC59Z1Q1peYWbo26_N1zx4VBYAWaCNr9qY5tCSfScF5iuwIgE0Eb4iak04WSEM7G1l9YL8VjckCII51bmjIXCjuehN_Y6ZEu_c_NLdx50bKZY2FV_yWE0CGiw-rwQ16iTw_tV5UPHejKHqkcG0360HK5k2eXEmIO_C3NySPSyUyUkyt0M5KP8dNwrze8I6e_V9WsUOaNUzutMfJfAy7dgho7DA1GRAI4u-KW25E49Uz5g')"}} />
-              <div className="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/30 to-transparent" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <button className="w-20 h-20 rounded-[10px] bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-2xl transition duration-300 transform group-hover:scale-110 active:scale-95 border border-white">
-                  <span className="material-symbols-outlined text-4xl ml-1" data-icon="play_arrow">
-                    play_arrow
-                  </span>
-                </button>
-                <div className="mt-4 px-4 py-2 rounded-[10px] bg-surface-container-lowest/80 backdrop-blur-md border border-white/60 text-label-md font-label-md font-semibold text-on-surface shadow-md">
-                  Watch field test
-                </div>
-              </div>
-              <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white/90">
-                <div className="text-label-sm font-label-sm flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-secondary-fixed" />
-                  {' '}
-                  Live recording: Fleet Upfitting Depot #04 (Dallas, TX)
-                </div>
-                <div className="text-label-sm font-label-sm bg-black/40 px-2.5 py-1 rounded-[6px] backdrop-blur-sm">
-                  1080p 60fps
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-5 flex justify-center">
+          <div className="lg:col-span-12 flex justify-center">
             <div className="w-full max-w-sm rounded-[40px] p-3 bg-surface-container-highest border border-outline-variant/60 shadow-2xl">
               <div className="rounded-[32px] bg-surface-container-lowest p-5 space-y-4 overflow-hidden border border-outline-variant/30">
                 <div className="flex items-center justify-between pb-3 border-b border-surface-container-high">

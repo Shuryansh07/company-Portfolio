@@ -191,51 +191,7 @@ export default function SalesCrm() {
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-              <div className="lg:col-span-5 bg-inverse-surface rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden shadow-2xl border border-outline/20">
-                <div className="flex items-center justify-between z-10">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-error" />
-                    <div className="w-3 h-3 rounded-full bg-secondary-fixed" />
-                    <div className="w-3 h-3 rounded-full bg-tertiary-fixed" />
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-surface-variant ml-2 font-mono">
-                      live_telemetry_feed_v4.mp4
-                    </span>
-                  </div>
-                  {' '}
-                  <span className="rounded-[6px] px-2 py-0.5 bg-primary/20 text-inverse-primary text-label-sm font-label-sm uppercase font-semibold">
-                    1080p 60fps
-                  </span>
-                </div>
-                <div className="my-16 flex flex-col items-center justify-center text-center z-10">
-                  <div className="w-16 h-16 rounded-[10px] bg-primary-container text-on-primary flex items-center justify-center shadow-lg cursor-pointer transform hover:scale-105 transition-transform">
-                    <span className="material-symbols-outlined text-[36px]" data-icon="play_arrow">
-                      play_arrow
-                    </span>
-                  </div>
-                  <p className="text-body-md font-body-md text-inverse-on-surface mt-4 font-medium">
-                    Click to Play Interactive Guided Runthrough
-                  </p>
-                  <p className="text-body-sm font-body-sm text-surface-variant max-w-xs mt-1">
-                    Multi-tenant live sync breakdown
-                  </p>
-                </div>
-                <div className="z-10 bg-inverse-surface/80 rounded-[10px] p-3 border border-outline/30 flex items-center gap-4">
-                  <span className="material-symbols-outlined text-inverse-on-surface text-[20px]" data-icon="pause">
-                    pause
-                  </span>
-                  {' '}
-                  <div className="flex-grow h-1.5 bg-outline/40 rounded-[4px] overflow-hidden relative">
-                    <div className="absolute left-0 top-0 bottom-0 w-2/5 bg-primary-container" />
-                  </div>
-                  {' '}
-                  <span className="text-label-sm font-label-sm text-surface-variant font-mono">
-                    00:42 / 03:15
-                  </span>
-                </div>
-                <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-              </div>
-              <div className="lg:col-span-7 glass-card rounded-2xl p-6 sm:p-7 border border-outline-variant/40 shadow-xl flex flex-col justify-between">
+              <div className="lg:col-span-12 glass-card rounded-2xl p-6 sm:p-7 border border-outline-variant/40 shadow-xl flex flex-col justify-between">
                 <div>
                   <div className="flex flex-wrap items-center justify-between pb-5 mb-5 border-b border-outline-variant/30 gap-3">
                     <div className="flex items-center gap-3">

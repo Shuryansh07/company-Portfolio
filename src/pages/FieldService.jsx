@@ -209,58 +209,7 @@ export default function FieldService() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 rounded-[20px] bg-inverse-surface text-inverse-on-surface p-6 flex flex-col justify-between relative overflow-hidden shadow-xl border border-inverse-surface/40">
-              <div className="flex items-center justify-between z-10">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-error animate-ping" />
-                  {' '}
-                  <span className="text-label-sm font-label-sm tracking-wide text-white/90">
-                    Live Stream: West Hub Fleet
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 text-label-sm font-label-sm text-white/60">
-                  <span className="px-2 py-0.5 rounded-[6px] bg-white/10">
-                    1080p 60fps
-                  </span>
-                  {' '}
-                  <span>
-                    00:14 / 02:40
-                  </span>
-                </div>
-              </div>
-              <div className="my-12 flex flex-col items-center justify-center text-center space-y-4 z-10">
-                <button className="w-16 h-16 rounded-[10px] bg-primary text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
-                  <span className="material-symbols-outlined text-[32px] ml-0.5" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <div className="space-y-1">
-                  <p className="text-label-md font-label-md text-white font-semibold">
-                    Interactive Workflow Walkthrough
-                  </p>
-                  <p className="text-body-sm font-body-sm text-white/70 max-w-xs">
-                    Observe automatic technician routing when high-priority emergency ticket #HZ-9104 triggers.
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-2 z-10">
-                <div className="w-full bg-white/20 h-1.5 rounded-[4px] overflow-hidden">
-                  <div className="bg-primary h-full w-[28%] rounded-[4px]" />
-                </div>
-                <div className="flex justify-between text-label-sm font-label-sm text-white/50">
-                  <span>
-                    Dynamic Routing Engine v4.2
-                  </span>
-                  {' '}
-                  <span>
-                    Telemetry Node: Active
-                  </span>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none" />
-            </div>
-            <div className="lg:col-span-7 glass-card rounded-[20px] p-6 space-y-6">
+            <div className="lg:col-span-12 glass-card rounded-[20px] p-6 space-y-6">
               <div className="flex items-center justify-between border-b border-outline-variant/20 pb-4">
                 <div className="flex items-center gap-3">
                   <div className="w-9 h-9 rounded-[8px] bg-primary-container/20 text-primary flex items-center justify-center font-bold">

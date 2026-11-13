@@ -211,40 +211,7 @@ export default function HrManagement() {
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-5 relative group">
-                <div className="relative bg-inverse-surface rounded-[16px] overflow-hidden shadow-xl aspect-[4/3] flex flex-col justify-between p-6 border border-outline/20">
-                  <div className="flex items-center justify-between z-10">
-                    <div className="flex items-center gap-2 bg-surface-container-lowest/15 backdrop-blur-md px-3 py-1 rounded-[6px] text-[12px] font-mono text-tertiary-fixed">
-                      <span className="w-2 h-2 rounded-full bg-error animate-ping" />
-                      {' '}
-                      <span>
-                        Live Pipeline :: Session #HR-SYNC-LIVE
-                      </span>
-                    </div>
-                    {' '}
-                    <span className="px-2 py-0.5 bg-black/40 text-white text-[11px] font-mono rounded-[4px]">
-                      1080p 60fps
-                    </span>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-[12px] bg-primary/90 text-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-200 cursor-pointer">
-                      <span className="material-symbols-outlined text-[36px] ml-1 fill-1">
-                        play_arrow
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between z-10 text-white/70 text-[12px] font-mono">
-                    <span>
-                      Duration: 04:32
-                    </span>
-                    {' '}
-                    <span>
-                      Interactive Telemetry Engine
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:col-span-7 glass-panel rounded-[20px] p-6 lg:p-7 border border-white">
+              <div className="lg:col-span-12 glass-panel rounded-[20px] p-6 lg:p-7 border border-white">
                 <div className="flex flex-wrap items-center justify-between pb-5 border-b border-outline-variant/30 gap-4">
                   <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-sm">

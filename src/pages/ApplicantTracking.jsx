@@ -220,14 +220,6 @@ export default function ApplicantTracking() {
                   ENG-2025-084
                 </strong>
               </div>
-              {' '}
-              <button className="px-4 py-2 rounded-[10px] glass-card text-label-md font-label-md font-semibold text-on-surface hover:bg-white transition-all flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-primary">
-                  play_circle
-                </span>
-                {' '}
-                Watch Candidate Journey Walkthrough
-              </button>
             </div>
           </div>
           <div className="glass-card rounded-2xl p-6 border border-white/80 shadow-2xl space-y-6">

@@ -183,47 +183,11 @@ export default function RentalFleet() {
           </span>
           {' '}
           <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-            Watch Rental Fleet Management in Action: Reservation to Inspected Return
+            See Rental Fleet Management in Action: Reservation to Inspected Return
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          <div className="lg:col-span-5 rounded-[20px] bg-surface-container-lowest border border-outline-variant/30 p-6 flex flex-col justify-between shadow-sm relative overflow-hidden">
-            <div className="relative w-full aspect-video rounded-[14px] bg-inverse-surface flex items-center justify-center overflow-hidden group">
-              <img className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="A cinematic widescreen photograph capturing a sleek, modern industrial warehouse filled with heavy construction machinery and digital logistics terminals bathed in warm sunset backlight, creating a high-contrast editorial look with soft peach flares." src="/images/32eb267a1d.jpg" />
-              {' '}
-              <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-transparent" />
-              {' '}
-              <button className="relative z-10 w-16 h-16 rounded-[14px] bg-primary text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-[32px] ml-1">
-                  play_arrow
-                </span>
-              </button>
-              {' '}
-              <div className="absolute bottom-3 left-3 z-10 rounded-[6px] bg-inverse-surface/80 backdrop-blur-md px-2.5 py-1 text-label-sm font-label-sm text-white">
-                Walkthrough
-              </div>
-            </div>
-            <div className="mt-6">
-              <h3 className="text-headline-sm font-headline-sm text-on-surface font-semibold mb-2">
-                {"Automated Fleet Allocation & Conflict Prevention Engine"}
-              </h3>
-              <p className="text-body-sm font-body-sm text-on-surface-variant">
-                Observe how the deterministic dispatch controller evaluates physical yard staging, ongoing repair cycles, and reservation overlaps in micro-seconds.
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-secondary-container border border-secondary" />
-                {' '}
-                Resolution: 4K Telemetry
-              </span>
-              {' '}
-              <span>
-                Audio: Technical Narration
-              </span>
-            </div>
-          </div>
-          <div className="lg:col-span-7 rounded-[20px] bg-surface-container-lowest border border-outline-variant/30 p-6 lg:p-7 shadow-sm flex flex-col justify-between">
+          <div className="lg:col-span-12 rounded-[20px] bg-surface-container-lowest border border-outline-variant/30 p-6 lg:p-7 shadow-sm flex flex-col justify-between">
             <div>
               <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-outline-variant/30">
                 <div className="flex items-center gap-3">

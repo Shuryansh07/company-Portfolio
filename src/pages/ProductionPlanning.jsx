@@ -214,63 +214,7 @@ export default function ProductionPlanning() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 bg-inverse-surface rounded-[20px] p-6 text-inverse-on-surface flex flex-col justify-between relative overflow-hidden border border-outline/30 min-h-[460px]">
-              <div className="absolute -top-24 -left-24 w-72 h-72 bg-primary/20 rounded-full blur-3xl pointer-events-none" />
-              <div className="relative z-10 flex items-center justify-between border-b border-white/10 pb-4">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                  {' '}
-                  <span className="text-label-md font-label-md tracking-wide">
-                    Main Plant Alpha — Active Dispatch Gantt
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 text-label-sm font-label-sm text-surface-variant font-mono">
-                  <span className="material-symbols-outlined text-[14px]">
-                    graphic_eq
-                  </span>
-                  {' '}
-                  <span>
-                    LIVE 30 FPS
-                  </span>
-                </div>
-              </div>
-              <div className="relative z-10 my-auto text-center space-y-4 py-8">
-                <div className="w-16 h-16 rounded-[10px] bg-primary-container text-on-primary-container mx-auto flex items-center justify-center shadow-lg shadow-primary-container/20 cursor-pointer hover:scale-105 transition-transform group">
-                  <span className="material-symbols-outlined fill text-[32px] group-hover:scale-110 transition-transform">
-                    play_arrow
-                  </span>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-label-lg font-label-lg font-semibold tracking-wide">
-                    Interactive Run-Through
-                  </div>
-                  <div className="text-label-sm font-label-sm text-surface-variant">
-                    Real-Time Work Center Audio Telemetry
-                  </div>
-                </div>
-              </div>
-              <div className="relative z-10 border-t border-white/10 pt-4 flex items-center justify-between text-surface-variant text-label-sm font-label-sm">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[18px]">
-                    tune
-                  </span>
-                  {' '}
-                  <span>
-                    Dynamic Routing Sandbox
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 font-mono">
-                  <span>
-                    04:12 / 12:30
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]">
-                    fullscreen
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-7 bg-surface-container-lowest rounded-[20px] border border-outline-variant/40 p-6 shadow-sm space-y-6 flex flex-col justify-between">
+            <div className="lg:col-span-12 bg-surface-container-lowest rounded-[20px] border border-outline-variant/40 p-6 shadow-sm space-y-6 flex flex-col justify-between">
               <div className="flex items-center justify-between border-b border-outline-variant/20 pb-4">
                 <div className="flex items-center gap-3">
                   <div className="px-2.5 py-1 rounded-[6px] bg-surface-container text-on-surface text-label-sm font-label-sm font-mono font-bold">

@@ -201,49 +201,11 @@ export default function ShipToShip() {
               See Ship-to-Ship Transfer Management in Action
             </h2>
             <p className="text-base text-[#474744] leading-relaxed">
-              Watch automated mooring line tension alerts, dual-master checklist sign-offs, and live manifold telemetry resolve offshore cargo uncertainty in real time.
+              See automated mooring line tension alerts, dual-master checklist sign-offs, and live manifold telemetry resolve offshore cargo uncertainty in real time.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 rounded-[20px] bg-[#141517] border border-[#2b2d31] p-6 text-white flex flex-col justify-between shadow-xl relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
-              <div className="relative z-10 flex items-center justify-between border-b border-white/10 pb-4">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping" />
-                  {' '}
-                  <span className="text-[12px] font-mono tracking-wider text-white/90 font-bold uppercase">
-                    LIVE FEED: GULF STS ZONE 04
-                  </span>
-                </div>
-                {' '}
-                <span className="text-[11px] px-2 py-0.5 rounded-[6px] bg-white/10 font-mono text-white/70">
-                  LAT: 26°14.2' N
-                </span>
-              </div>
-              <div className="relative z-10 my-16 text-center flex flex-col items-center">
-                <div className="w-16 h-16 rounded-[12px] bg-[#ff7555]/90 text-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform cursor-pointer">
-                  <span className="material-symbols-outlined text-[36px] ml-1">
-                    play_arrow
-                  </span>
-                </div>
-                <div className="mt-4 font-semibold text-[15px] tracking-tight">
-                  Watch 4-Minute Telemetry Walkthrough
-                </div>
-                <div className="text-[12px] text-white/60 mt-1">
-                  VLCC-to-Aframax crude transfer simulation with wave buoy sync
-                </div>
-              </div>
-              <div className="relative z-10 pt-4 border-t border-white/10 flex items-center justify-between text-[12px] text-white/70 font-mono">
-                <span>
-                  Manifold Pressure: 10.4 Bar
-                </span>
-                {' '}
-                <span className="text-lime font-bold">
-                  Mooring Safe: Tier-1
-                </span>
-              </div>
-            </div>
-            <div className="lg:col-span-7 glass-card rounded-[20px] p-6 border border-[#c7c6c1]/60 shadow-lg flex flex-col justify-between bg-white/85">
+            <div className="lg:col-span-12 glass-card rounded-[20px] p-6 border border-[#c7c6c1]/60 shadow-lg flex flex-col justify-between bg-white/85">
               <div className="flex items-center justify-between pb-4 border-b border-[#c7c6c1]/40 mb-5">
                 <div className="flex items-center gap-3">
                   <div className="flex gap-1.5">

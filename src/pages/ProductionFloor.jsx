@@ -200,64 +200,7 @@ export default function ProductionFloor() {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          <div className="lg:col-span-5 bg-[#e9e7e3] rounded-2xl border border-[#c7c6c1]/40 p-6 flex flex-col justify-between shadow-xs relative overflow-hidden">
-            <div className="flex items-center justify-between text-xs text-[#474744]">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                {' '}
-                <span className="font-semibold text-[#1b1b1a]">
-                  Floor Terminal Walkthrough
-                </span>
-              </div>
-              {' '}
-              <span className="px-2 py-0.5 rounded-[6px] bg-white text-[11px] font-mono font-medium text-[#1b1b1a] border border-[#c7c6c1]/30">
-                HD 1080p
-              </span>
-            </div>
-            <div className="my-8 rounded-xl bg-[#1b1b1a] text-white p-8 flex flex-col items-center justify-center text-center relative overflow-hidden aspect-video">
-              <div className="w-16 h-16 rounded-full bg-[#ff7555]/90 text-white flex items-center justify-center shadow-md cursor-pointer hover:scale-105 transition-transform mb-4">
-                <svg className="w-7 h-7 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-sm font-semibold tracking-wide">
-                Interactive Work Center Feed
-              </p>
-              <p className="text-xs text-surface-dim mt-1 max-w-xs">
-                Observe operator hold-point validation, barcode scan events, and instantaneous ERP synchronizations.
-              </p>
-              <div className="absolute bottom-3 left-4 right-4 flex justify-between text-[10px] text-surface-dim/80 font-mono">
-                <span>
-                  Terminal #04 // CNC Line
-                </span>
-                {' '}
-                <span>
-                  Latency: 14ms
-                </span>
-              </div>
-            </div>
-            <div className="space-y-2 text-xs text-[#474744] border-t border-[#c7c6c1]/30 pt-4">
-              <div className="flex items-center justify-between">
-                <span className="font-medium">
-                  Active Assembly Session
-                </span>
-                {' '}
-                <span className="font-mono text-[#1b1b1a] font-semibold">
-                  WO-4821-B9
-                </span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="font-medium">
-                  Operator Authentication
-                </span>
-                {' '}
-                <span className="px-2 py-0.5 rounded-[6px] bg-accent-lime text-accent-lime-text font-semibold text-[10px]">
-                  Station Verified
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-7 bg-white rounded-2xl border border-[#c7c6c1]/50 p-6 shadow-sm flex flex-col justify-between">
+          <div className="lg:col-span-12 bg-white rounded-2xl border border-[#c7c6c1]/50 p-6 shadow-sm flex flex-col justify-between">
             <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-[#c7c6c1]/30">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-emerald-500" />

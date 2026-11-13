@@ -186,47 +186,7 @@ export default function SupportTicketing() {
             </p>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-stretch">
-            <div className="xl:col-span-5 bg-neutral-900 rounded-2xl p-6 text-white flex flex-col justify-between relative overflow-hidden shadow-2xl min-h-[460px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-900/60 to-transparent" />
-              <div className="relative z-10 flex items-center justify-between">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-red-500/20 text-red-300 border border-red-500/30 rounded-[6px] font-label-sm text-label-sm font-semibold">
-                  <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-                  {' '}
-                  Live Feed: Unified Inbound Stream
-                </span>
-                {' '}
-                <span className="px-2.5 py-1 bg-white/10 rounded-[6px] text-xs font-mono tracking-wider">
-                  1080p 60fps
-                </span>
-              </div>
-              <div className="relative z-10 self-center text-center cursor-pointer group py-12">
-                <div className="w-16 h-16 rounded-[10px] bg-primary flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-105 transition-transform duration-200">
-                  <span className="material-symbols-outlined text-white text-3xl" data-icon="play_arrow">
-                    play_arrow
-                  </span>
-                </div>
-                <p className="font-label-lg text-label-lg font-semibold tracking-wide text-white">
-                  Watch triage demo
-                </p>
-                <p className="font-body-sm text-body-sm text-neutral-400 mt-1">
-                  {"Full walk-through of queue routing & macro dispatch"}
-                </p>
-              </div>
-              <div className="relative z-10 p-4 bg-white/5 backdrop-blur-md rounded-[10px] border border-white/10 flex items-center justify-between text-xs font-mono">
-                <span>
-                  INBOUND: 142 msgs/min
-                </span>
-                {' '}
-                <span className="text-emerald-400">
-                  DISPATCHED: 99.98%
-                </span>
-                {' '}
-                <span>
-                  QUEUE: 0 STALLED
-                </span>
-              </div>
-            </div>
-            <div className="xl:col-span-7 neo-glass rounded-2xl p-6 border border-white/80 shadow-xl flex flex-col justify-between">
+            <div className="xl:col-span-12 neo-glass rounded-2xl p-6 border border-white/80 shadow-xl flex flex-col justify-between">
               <div className="flex flex-wrap items-center justify-between pb-4 border-b border-outline-variant/30 gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-rose-500" />

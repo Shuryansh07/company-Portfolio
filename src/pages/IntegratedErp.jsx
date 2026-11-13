@@ -172,48 +172,7 @@ export default function IntegratedErp() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-6 bg-inverse-surface text-inverse-on-surface rounded-[16px] overflow-hidden p-6 flex flex-col justify-between relative shadow-lg min-h-[420px]">
-              <div className="flex items-center justify-between z-10">
-                <span className="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded-[6px] text-[11px] font-semibold tracking-wide">
-                  1080p 60fps
-                </span>
-                {' '}
-                <span className="flex items-center gap-1.5 text-xs text-white/80">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  {' '}
-                  Live Playback Ready
-                </span>
-              </div>
-              <div className="my-auto text-center z-10 py-12">
-                <button className="w-16 h-16 rounded-[14px] bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 inline-flex items-center justify-center transition-transform hover:scale-105" title="Play walkthrough">
-                  <span className="material-symbols-outlined text-white text-3xl" data-icon="play_arrow" data-weight="fill">
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <p className="font-label-lg text-label-lg text-white mt-4 font-medium">
-                  Automated Multi-Entity Flow
-                </p>
-                <p className="font-body-sm text-body-sm text-white/70">
-                  From CRM contract close to multi-warehouse ledger recognition
-                </p>
-              </div>
-              <div className="space-y-2 z-10">
-                <div className="h-1.5 w-full bg-white/20 rounded-[4px] overflow-hidden">
-                  <div className="h-full bg-primary-container w-2/5" />
-                </div>
-                <div className="flex items-center justify-between text-xs text-white/60 font-mono">
-                  <span>
-                    {"Live Multi-Warehouse Routing & GL Ledger Event — 02:45"}
-                  </span>
-                  {' '}
-                  <span>
-                    05:30
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-6 bg-white/85 backdrop-blur-xl border border-outline-variant/30 rounded-[20px] p-6 shadow-md flex flex-col justify-between">
+            <div className="lg:col-span-12 bg-white/85 backdrop-blur-xl border border-outline-variant/30 rounded-[20px] p-6 shadow-md flex flex-col justify-between">
               <div className="border-b border-outline-variant/30 pb-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />

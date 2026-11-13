@@ -220,14 +220,6 @@ export default function OnlineStore() {
                   STORE-NORTH-US
                 </strong>
               </div>
-              {' '}
-              <button className="px-4 py-2 rounded-[10px] glass-card text-label-md font-label-md font-semibold text-on-surface hover:bg-white transition-all flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-primary">
-                  play_circle
-                </span>
-                {' '}
-                Watch Storefront Engine
-              </button>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
@@ -248,33 +240,6 @@ export default function OnlineStore() {
                 <p className="text-body-sm font-body-sm text-on-surface-variant">
                   Observe how a buyer completes a transaction across social commerce channels, triggers stock reservation in real time, and logs immediate fulfillment payloads.
                 </p>
-              </div>
-              <div className="my-6 rounded-xl bg-inverse-surface text-surface relative aspect-video flex flex-col items-center justify-center p-6 text-center group cursor-pointer overflow-hidden border border-outline-variant/30">
-                <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/40 to-transparent" />
-                <div className="relative z-10 space-y-3">
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shadow-lg mx-auto group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-3xl">
-                      play_arrow
-                    </span>
-                  </div>
-                  <div className="text-label-md font-label-md text-white font-semibold tracking-wide">
-                    {"Live Ingestion & Checkout Stream"}
-                  </div>
-                  <div className="text-[11px] text-white/70">
-                    Click to preview interactive session
-                  </div>
-                </div>
-                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-[11px] text-white/60 z-10 border-t border-white/10 pt-2">
-                  <span className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                    {' '}
-                    Buffer: Healthy
-                  </span>
-                  {' '}
-                  <span>
-                    Audio: English
-                  </span>
-                </div>
               </div>
               <div className="p-3.5 rounded-[10px] bg-surface-container-low border border-outline-variant/30 flex items-center justify-between text-body-sm font-body-sm">
                 <span className="text-on-surface-variant">

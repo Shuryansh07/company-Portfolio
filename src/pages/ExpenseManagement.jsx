@@ -176,65 +176,11 @@ export default function ExpenseManagement() {
               See Employee Expense Management in action
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-              Watch automated OCR parsing, multi-currency conversion, and corporate card matching execute in real time.
+              See automated OCR parsing, multi-currency conversion, and corporate card matching execute in real time.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-6 rounded-xl bg-inverse-surface text-inverse-on-surface p-6 flex flex-col justify-between border border-outline/20 relative overflow-hidden group min-h-[380px]">
-              <div className="flex items-center justify-between z-10">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse" />
-                  {' '}
-                  <span className="font-label-sm text-label-sm font-semibold tracking-wider text-secondary-fixed">
-                    LIVE PIPELINE
-                  </span>
-                </div>
-                <div className="font-label-sm text-label-sm text-surface-dim">
-                  Session: #EXP-SYNC-LIVE
-                </div>
-              </div>
-              <div className="my-auto text-center space-y-4 z-10">
-                <button className="w-16 h-16 rounded-[14px] bg-primary-container/90 text-white flex items-center justify-center mx-auto shadow-lg hover:scale-105 transition-transform">
-                  <span className="material-symbols-outlined text-3xl" data-icon="play_arrow">
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <div className="font-headline-sm text-headline-sm font-semibold">
-                  Watch receipt-to-ledger audit
-                </div>
-                <div className="font-body-sm text-body-sm text-surface-dim">
-                  Demonstrating OCR parsing with auto-match against Amex card feeds
-                </div>
-              </div>
-              <div className="grid grid-cols-3 gap-2 pt-4 border-t border-surface-container-highest/20 z-10 text-center">
-                <div>
-                  <div className="font-label-sm text-label-sm text-surface-dim">
-                    Ingestion
-                  </div>
-                  <div className="font-label-lg text-label-lg font-bold text-inverse-on-surface">
-                    128 rec/min
-                  </div>
-                </div>
-                <div>
-                  <div className="font-label-sm text-label-sm text-surface-dim">
-                    Matched
-                  </div>
-                  <div className="font-label-lg text-label-lg font-bold text-secondary-fixed">
-                    99.4%
-                  </div>
-                </div>
-                <div>
-                  <div className="font-label-sm text-label-sm text-surface-dim">
-                    Pending
-                  </div>
-                  <div className="font-label-lg text-label-lg font-bold text-primary-fixed">
-                    3 claims
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-6 rounded-xl bg-surface-container-lowest border border-outline-variant/40 p-6 flex flex-col justify-between shadow-sm">
+            <div className="lg:col-span-12 rounded-xl bg-surface-container-lowest border border-outline-variant/40 p-6 flex flex-col justify-between shadow-sm">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-surface-container-high">
                   <div className="flex items-center gap-2">

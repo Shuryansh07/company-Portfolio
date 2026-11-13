@@ -181,81 +181,14 @@ export default function InventoryControl() {
               {"LIVE INVENTORY TELEMETRY & DISPATCH ENGINE"}
             </div>
             <h2 className="text-headline-lg font-headline-lg font-bold text-on-surface tracking-tight">
-              Watch Smart Inventory Control in action: Purchase order to verified pallet.
+              See Smart Inventory Control in action: Purchase order to verified pallet.
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant">
               Simulated multi-facility stock allocation across warehouse bays, transit trucks, and storefront channels.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-4">
-            <div className="lg:col-span-6 rounded-[18px] bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between shadow-lg relative overflow-hidden text-neutral-100 min-h-[460px]">
-              <div className="flex items-center justify-between z-10">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                  {' '}
-                  <span className="text-label-sm font-label-sm tracking-wide text-neutral-300 uppercase">
-                    Live Playback Feed
-                  </span>
-                </div>
-                {' '}
-                <span className="text-label-sm font-label-sm bg-neutral-800/80 border border-neutral-700/80 px-2.5 py-1 rounded-[6px] text-neutral-300">
-                  03:15 Walkthrough
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center my-auto z-10 text-center space-y-3 py-10">
-                <button aria-label="Play Walkthrough" className="w-16 h-16 rounded-[12px] bg-gradient-to-tr from-[#ff7555] to-[#ff9068] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
-                  <span className="material-symbols-outlined text-[32px] ml-1" data-icon="play_arrow">
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <p className="text-body-sm font-body-sm text-neutral-400">
-                  Click to run deterministic allocation run
-                </p>
-              </div>
-              <div className="z-10 space-y-2.5 bg-neutral-950/70 p-4 rounded-[12px] border border-neutral-800">
-                <div className="flex items-center justify-between text-label-sm font-label-sm text-neutral-400 border-b border-neutral-800 pb-2">
-                  <span className="text-[#ff7555] font-semibold">
-                    00:45
-                  </span>
-                  {' '}
-                  <span>
-                    {"Inbound barcode scan & serial verification"}
-                  </span>
-                  {' '}
-                  <span className="text-emerald-400">
-                    Verified
-                  </span>
-                </div>
-                <div className="flex items-center justify-between text-label-sm font-label-sm text-neutral-400 border-b border-neutral-800 pb-2">
-                  <span className="text-[#ff7555] font-semibold">
-                    01:30
-                  </span>
-                  {' '}
-                  <span>
-                    Automated multi-facility allocation rule
-                  </span>
-                  {' '}
-                  <span className="text-emerald-400">
-                    Routed
-                  </span>
-                </div>
-                <div className="flex items-center justify-between text-label-sm font-label-sm text-neutral-400">
-                  <span className="text-[#ff7555] font-semibold">
-                    02:50
-                  </span>
-                  {' '}
-                  <span>
-                    Automatic PO generation to primary vendor
-                  </span>
-                  {' '}
-                  <span className="text-cyan-400">
-                    Dispatched
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-6 rounded-[18px] bg-surface-container-lowest border border-neutral-200/90 shadow-md p-6 flex flex-col justify-between">
+            <div className="lg:col-span-12 rounded-[18px] bg-surface-container-lowest border border-neutral-200/90 shadow-md p-6 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-outline-variant/30">
                   <div className="flex items-center gap-2.5">

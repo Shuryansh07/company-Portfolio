@@ -188,71 +188,14 @@ export default function AutoWorkshop() {
               LIVE WORKSHOP DISPATCH ENGINE
             </div>
             <h2 className="text-headline-lg font-headline-lg text-on-surface tracking-tight">
-              Watch Auto Workshop Manager in action: Intake to closed job card
+              See Auto Workshop Manager in action: Intake to closed job card
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant mt-2">
               Experience real-time orchestration across diagnostic bays, digital line-item pricing, and automated inventory sync.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 glass-card rounded-2xl p-6 flex flex-col justify-between border border-white/80 shadow-lg relative overflow-hidden">
-              <div className="relative w-full aspect-video rounded-[10px] overflow-hidden mb-6 bg-surface-container-high border border-outline-variant/30 flex items-center justify-center group cursor-pointer">
-                <img className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A modern, high-tech automotive service bay illuminated with clean overhead LED light tubes. A clean luxury sports car rests on a hydraulic lift while an automotive technician wearing pristine charcoal overalls interacts with a tablet showing diagnostic telemetry. The workshop environment is warm, luminous, and meticulously organized with sleek stainless-steel tool cabinets and warm peach accent highlights reflecting on polished concrete." src="/images/698e51a15f.jpg" />
-                {' '}
-                <div className="absolute inset-0 bg-inverse-surface/30 backdrop-blur-[2px] flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-[10px] brand-gradient flex items-center justify-center text-on-primary shadow-xl group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-[32px] fill-1">
-                      play_arrow
-                    </span>
-                  </div>
-                </div>
-                <div className="absolute top-3 left-3 flex items-center gap-2 bg-inverse-surface/80 text-inverse-on-surface px-2.5 py-1 rounded-[6px] text-label-sm font-label-sm backdrop-blur-md">
-                  <span className="w-2 h-2 rounded-full bg-error animate-ping" />
-                  {' '}
-                  <span>
-                    1080p Telemetry Overlay
-                  </span>
-                </div>
-                <div className="absolute bottom-3 right-3 bg-surface/90 text-on-surface px-2.5 py-0.5 rounded-[6px] text-label-sm font-label-sm font-semibold">
-                  04:18 Walkthrough
-                </div>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-headline-sm font-headline-sm text-on-surface">
-                  Key Walkthrough Milestones
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex items-start gap-3 p-2.5 rounded-[10px] bg-white/60 border border-outline-variant/20">
-                    <span className="text-primary font-bold text-label-md font-label-md mt-0.5">
-                      00:42
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface">
-                      Instant VIN barcode scan and automatic maintenance recall lookup.
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3 p-2.5 rounded-[10px] bg-white/60 border border-outline-variant/20">
-                    <span className="text-primary font-bold text-label-md font-label-md mt-0.5">
-                      01:50
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface">
-                      Technician brake pad photo capture with millimeter laser depth calibration.
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3 p-2.5 rounded-[10px] bg-white/60 border border-outline-variant/20">
-                    <span className="text-primary font-bold text-label-md font-label-md mt-0.5">
-                      03:15
-                    </span>
-                    {' '}
-                    <span className="text-body-sm font-body-sm text-on-surface">
-                      One-click SMS authorization received; auto-requisition sent to parts room.
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-7 glass-card rounded-2xl p-6 lg:p-7 border border-white/80 shadow-xl flex flex-col justify-between">
+            <div className="lg:col-span-12 glass-card rounded-2xl p-6 lg:p-7 border border-white/80 shadow-xl flex flex-col justify-between">
               <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-secondary" />

@@ -8,6 +8,7 @@ import { enhance } from './lib/enhance.js'
 // Every page is its own chunk. Routes come from src/data/pages.js.
 const modules = import.meta.glob('./pages/*.jsx')
 const routes = allPages.map((p) => ({ path: p.path, Page: lazy(modules[`./pages/${p.component}.jsx`]) }))
+routes.push({ path: '/case-studies/:slug', Page: lazy(modules['./pages/CaseStudyDetail.jsx']) })
 
 function Enhanced({ children }) {
   const ref = useRef(null)

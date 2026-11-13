@@ -214,69 +214,7 @@ export default function ExhibitionLeadIntelligence() {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-6 bg-[#161715] rounded-2xl p-5 border border-[#30312f] text-inverse-on-surface shadow-2xl relative group overflow-hidden">
-            <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
-                {' '}
-                <span className="font-label-sm text-label-sm text-white/90 font-mono">
-                  LIVE FEED: TechExpo Hall B Booth #412
-                </span>
-              </div>
-              {' '}
-              <span className="px-2 py-0.5 rounded-[6px] bg-white/10 text-white/70 font-label-sm text-[11px]">
-                1080p 60fps
-              </span>
-            </div>
-            <div className="w-full aspect-video rounded-[10px] bg-gradient-to-tr from-[#1b1c1a] via-[#2a2927] to-[#1e2321] relative flex items-center justify-center overflow-hidden border border-white/5">
-              <div className="absolute inset-0 opacity-20 flex items-center justify-center">
-                <span className="material-symbols-outlined text-[160px] text-white">
-                  storefront
-                </span>
-              </div>
-              <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-[6px] border border-white/10 flex items-center gap-2">
-                <span className="material-symbols-outlined text-[16px] text-primary-container">
-                  qr_code_scanner
-                </span>
-                {' '}
-                <span className="font-label-sm text-[11px] text-white">
-                  Target Locked: VP Procurement Badge
-                </span>
-              </div>
-              {' '}
-              <button className="w-16 h-16 rounded-[10px] bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all">
-                <span className="material-symbols-outlined text-[32px]" style={{"fontVariationSettings":"'FILL' 1"}}>
-                  play_arrow
-                </span>
-              </button>
-              {' '}
-              <div className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-md p-3 rounded-[10px] border border-white/10 flex items-center justify-between text-xs">
-                <div className="flex items-center gap-2 text-white/80">
-                  <span className="material-symbols-outlined text-[16px] text-[#A5F3FC]">
-                    graphic_eq
-                  </span>
-                  {' '}
-                  <span>
-                    Audio memo parsing: "350 seats scheduled Q3 migration"
-                  </span>
-                </div>
-                {' '}
-                <span className="font-mono text-white/50 text-[11px]">
-                  00:48 / 02:15
-                </span>
-              </div>
-            </div>
-            <div className="mt-4 flex items-center justify-between text-white/60 font-body-sm text-xs">
-              <span>
-                Camera stream synced with Mobile Field Companion v4.2
-              </span>
-              {' '}
-              <span className="text-secondary-fixed">
-                Bandwidth: 14.8 Mbps (Low Latency)
-              </span>
-            </div>
-          </div>
-          <div className="lg:col-span-6 glass-panel rounded-2xl p-6 sm:p-7 border border-outline-variant/30">
+          <div className="lg:col-span-12 glass-panel rounded-2xl p-6 sm:p-7 border border-outline-variant/30">
             <div className="flex items-center justify-between pb-4 border-b border-outline-variant/30 mb-5">
               <div className="flex items-center gap-3">
                 <div className="flex gap-1.5">

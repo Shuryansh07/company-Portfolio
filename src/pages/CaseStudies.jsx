@@ -93,7 +93,7 @@ export default function CaseStudies() {
                   </p>
                 </div>
                 <div>
-                  <a className="inline-flex items-center gap-2 px-6 py-3 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:shadow-md transition-all duration-150 active:scale-[0.98]" href="#">
+                  <Link to="/case-studies/autonomous-dispatch-fleet-accounting" className="inline-flex items-center gap-2 px-6 py-3 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:shadow-md transition-all duration-150 active:scale-[0.98]">
                     <span>
                       Explore architectural breakdown
                     </span>
@@ -101,7 +101,7 @@ export default function CaseStudies() {
                     <span className="material-symbols-outlined text-[18px]" data-icon="arrow_forward">
                       arrow_forward
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="lg:col-span-5 space-y-6">
@@ -175,7 +175,7 @@ export default function CaseStudies() {
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
                 {' '}
-                <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
+                <Link to="/case-studies/multi-entity-ledger-harmonization" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
                     Read case study
                   </span>
@@ -206,7 +206,7 @@ export default function CaseStudies() {
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
                 {' '}
-                <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
+                <Link to="/case-studies/construction-erp-rollout" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
                     Read case study
                   </span>
@@ -237,7 +237,7 @@ export default function CaseStudies() {
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
                 {' '}
-                <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
+                <Link to="/case-studies/multi-tenant-saas-mvp" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
                     Read case study
                   </span>
@@ -268,7 +268,7 @@ export default function CaseStudies() {
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
                 {' '}
-                <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
+                <Link to="/case-studies/headless-storefront-accounting-wms" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
                     Read case study
                   </span>
@@ -299,7 +299,7 @@ export default function CaseStudies() {
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
                 {' '}
-                <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
+                <Link to="/case-studies/production-planning-rollout" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
                     Read case study
                   </span>
@@ -330,7 +330,7 @@ export default function CaseStudies() {
               </div>
               <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
                 {' '}
-                <Link to="/case-studies" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
+                <Link to="/case-studies/ai-qc-assistant-field-technicians" className="inline-flex items-center gap-1.5 font-label-lg text-label-lg font-semibold text-primary hover:text-on-primary-container transition-colors">
                   <span>
                     Read case study
                   </span>

@@ -179,35 +179,7 @@ export default function EcommerceFinanceSync() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 glass-card rounded-2xl p-6 flex flex-col justify-between relative group overflow-hidden">
-              <div className="relative w-full aspect-video rounded-xl bg-surface-container-high overflow-hidden border border-outline-variant/40 flex items-center justify-center">
-                <div className="absolute inset-0 bg-cover bg-center" data-alt="High-end studio video still showing an enterprise commerce analytics command center with glowing warm peach charts, dark brushed aluminum laptops, and clear glass office partitions bathed in soft diffused natural sunrise light." style={{"backgroundImage":"url('https://lh3.googleusercontent.com/aida-public/AB6AXuBk53wGQIFyDZo040lwu4I9qd1mr6phkVdL4VWcx8irbitktPJ4R8be98Oe9uImQ54BCli4TNk-B0CXLphRU-TJ73kA2bmTVnrQ7Gi0-6X9oc9WsbyxATlRJqN5jgs8OyDME3D_Qk5leq4Dh8VRb1NAGp9BlZTaSjlClnNkGq49yUpdOLIEKJaXXfBNyhIzYKRHIFdiEQv6zvOSDvINEGG67J2iaVIxBZububF-M-YGpbR6UDIsv8vSGBXD5WBULYTMU8twHD___iY')"}} />
-                <div className="absolute inset-0 bg-inverse-surface/40 backdrop-blur-[2px] transition-all group-hover:bg-inverse-surface/30" />
-                {' '}
-                <button className="relative z-10 w-16 h-16 rounded-full bg-primary-container text-white flex items-center justify-center shadow-lg transition-transform transform group-hover:scale-110">
-                  <span className="material-symbols-outlined fill text-[32px] ml-1">
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-[6px] bg-inverse-surface/80 text-inverse-on-surface text-label-sm font-label-sm font-mono backdrop-blur-md">
-                  1080p walkthrough
-                </div>
-              </div>
-              <div className="mt-6 space-y-2">
-                <span className="text-label-sm font-label-sm text-primary font-bold uppercase tracking-wider">
-                  Video Walkthrough
-                </span>
-                {' '}
-                <h3 className="text-headline-sm font-headline-sm text-on-surface">
-                  Watch Sync in Action: Automated Multi-Store Settlement
-                </h3>
-                <p className="text-body-sm font-body-sm text-on-surface-variant">
-                  Comprehensive 3-minute technical tour demonstrating multi-currency checkout parsing, split payout processing, and automated ledger postings.
-                </p>
-              </div>
-            </div>
-            <div className="lg:col-span-7 glass-card rounded-2xl p-6 space-y-6">
+            <div className="lg:col-span-12 glass-card rounded-2xl p-6 space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-outline-variant/30 gap-2">
                 <div className="flex items-center gap-2.5">
                   <span className="w-3 h-3 rounded-full bg-secondary-container flex items-center justify-center">

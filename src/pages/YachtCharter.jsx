@@ -185,60 +185,11 @@ export default function YachtCharter() {
               {"Product Live Telemetry & Scheduling Demo"}
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant max-w-3xl">
-              Watch automated inquiry extraction, multi-vessel calendar collision checks, and APA ledger reconciliation in real time.
+              See automated inquiry extraction, multi-vessel calendar collision checks, and APA ledger reconciliation in real time.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-6 rounded-[16px] bg-inverse-surface text-inverse-on-surface p-6 flex flex-col justify-between relative overflow-hidden min-h-[460px] border border-stone-800 shadow-xl">
-              <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
-              <div className="flex items-center justify-between border-b border-stone-700/60 pb-4 relative z-10">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping" />
-                  {' '}
-                  <span className="text-label-sm font-label-sm text-stone-300">
-                    {"Live Charter Stream: Mediterranean & Caribbean Fleet"}
-                  </span>
-                </div>
-                <div className="px-2 py-0.5 rounded-[6px] bg-stone-800 text-stone-300 text-label-sm font-label-sm border border-stone-700">
-                  Latency: 14ms
-                </div>
-              </div>
-              <div className="my-auto text-center space-y-4 relative z-10 py-12">
-                <div className="w-16 h-16 rounded-[12px] bg-white/10 backdrop-blur-md border border-white/20 mx-auto flex items-center justify-center text-white cursor-pointer hover:bg-primary transition-colors group">
-                  <span className="material-symbols-outlined text-[32px] translate-x-0.5 group-hover:scale-110 transition-transform" data-icon="play_arrow">
-                    play_arrow
-                  </span>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-headline-sm font-headline-sm text-white font-medium">
-                    Automated Fleet Collision Engine
-                  </div>
-                  <div className="text-body-sm font-body-sm text-stone-400">
-                    Click to replay the live broker dispatch sequence
-                  </div>
-                </div>
-              </div>
-              <div className="pt-4 border-t border-stone-700/60 flex items-center justify-between text-label-sm font-label-sm text-stone-400 relative z-10">
-                <div className="flex items-center gap-4">
-                  <span className="flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-tertiary-fixed" />
-                    {' '}
-                    Outlook API: Syncing
-                  </span>
-                  {' '}
-                  <span className="flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-secondary-fixed" />
-                    {' '}
-                    AIS Marine Traffic: Linked
-                  </span>
-                </div>
-                {' '}
-                <span>
-                  Auto-Resolution Active
-                </span>
-              </div>
-            </div>
-            <div className="lg:col-span-6 rounded-[16px] frosted-card p-6 flex flex-col justify-between shadow-lg space-y-6">
+            <div className="lg:col-span-12 rounded-[16px] frosted-card p-6 flex flex-col justify-between shadow-lg space-y-6">
               <div className="flex items-center justify-between border-b border-outline-variant/30 pb-4">
                 <div className="flex items-center gap-3">
                   <div className="w-7 h-7 rounded-[8px] bg-primary/10 flex items-center justify-center text-primary">

@@ -194,69 +194,7 @@ export default function RetailPos() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-6 rounded-[16px] bg-stone-900 border border-stone-800 relative flex flex-col justify-between p-6 text-white min-h-[460px] shadow-xl overflow-hidden group">
-              <div className="absolute -top-24 -left-24 w-80 h-80 bg-[#ff7555]/15 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
-              <div className="relative z-10 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="rounded-[6px] bg-red-600/90 text-white font-mono text-[11px] font-semibold px-2 py-0.5 tracking-wider flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-                    {' '}
-                    LIVE
-                  </span>
-                  {' '}
-                  <span className="rounded-[6px] bg-stone-800/80 border border-stone-700 text-stone-300 font-mono text-[11px] px-2 py-0.5">
-                    1080p 60FPS
-                  </span>
-                  {' '}
-                  <span className="rounded-[6px] bg-stone-800/80 border border-stone-700 text-stone-300 font-mono text-[11px] px-2 py-0.5">
-                    SESSION: HZ-9941
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 text-emerald-400 font-mono text-xs">
-                  <span className="material-symbols-outlined text-[15px]" data-icon="speed">
-                    speed
-                  </span>
-                  {' '}
-                  <span>
-                    42 ms
-                  </span>
-                </div>
-              </div>
-              <div className="relative z-10 my-auto text-center py-12 flex flex-col items-center">
-                <button className="w-16 h-16 rounded-[14px] bg-white/10 hover:bg-white/20 border-2 border-[#ff7555] flex items-center justify-center transition-all group-hover:scale-110 shadow-lg shadow-[#ff7555]/30">
-                  <span className="material-symbols-outlined text-[32px] text-[#ff7555]" data-icon="play_arrow" data-weight="fill" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    play_arrow
-                  </span>
-                </button>
-                {' '}
-                <div className="mt-4 font-headline-sm text-headline-sm font-semibold tracking-tight">
-                  Interactive Terminal Walkthrough
-                </div>
-                <p className="font-body-sm text-body-sm text-stone-400 mt-1 max-w-sm">
-                  Press to launch an emulated scanner transaction stream or inspect POS ledger dispatch.
-                </p>
-              </div>
-              <div className="relative z-10 pt-4 border-t border-stone-800/80 flex items-center justify-between text-xs text-stone-400 font-mono">
-                <div className="flex items-center gap-3">
-                  <span className="text-stone-300">
-                    HW Bus: USB-C / BLE
-                  </span>
-                  {' '}
-                  <span>
-                    •
-                  </span>
-                  {' '}
-                  <span className="text-stone-300">
-                    Scanner: 2D Imager Code-128
-                  </span>
-                </div>
-                <div className="text-[#ff7555]">
-                  Ledger: Synced
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-6 rounded-[16px] bg-white border border-stone-200/90 p-6 shadow-sm flex flex-col justify-between">
+            <div className="lg:col-span-12 rounded-[16px] bg-white border border-stone-200/90 p-6 shadow-sm flex flex-col justify-between">
               <div>
                 <div className="flex flex-wrap items-center justify-between pb-4 border-b border-stone-200/70 gap-3">
                   <div>
