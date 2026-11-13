@@ -1293,16 +1293,6 @@ export default function RestaurantOperations() {
                     calendar_month
                   </span>
                 </Link>
-                {' '}
-                <a className="bg-surface-container-lowest/80 text-on-surface hover:bg-white font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] border border-outline-variant/50 inline-flex items-center gap-2 transition-all" href="#">
-                  <span className="material-symbols-outlined text-[18px]" data-icon="download">
-                    download
-                  </span>
-                  {' '}
-                  <span>
-                    Download Platform Specification
-                  </span>
-                </a>
               </div>
             </div>
           </div>

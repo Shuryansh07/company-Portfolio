@@ -1310,16 +1310,6 @@ export default function RetailPos() {
                     calendar_today
                   </span>
                 </Link>
-                {' '}
-                <a className="rounded-[10px] border border-white/60 hover:bg-white/10 text-white font-label-lg text-label-lg font-medium px-5 py-3.5 transition-colors inline-flex items-center gap-2" href="#">
-                  <span className="material-symbols-outlined text-[18px]" data-icon="description">
-                    description
-                  </span>
-                  {' '}
-                  <span>
-                    Download Platform Specification
-                  </span>
-                </a>
               </div>
               <div className="flex items-center gap-2 text-xs text-white/80 font-medium">
                 <span className="material-symbols-outlined text-[16px]" data-icon="verified_user">

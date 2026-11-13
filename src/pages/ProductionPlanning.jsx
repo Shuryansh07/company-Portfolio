@@ -1407,16 +1407,6 @@ export default function ProductionPlanning() {
                   calendar_month
                 </span>
               </Link>
-              {' '}
-              <a className="w-full sm:w-auto px-6 py-3.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface font-semibold text-label-lg font-label-lg hover:bg-surface-container-lowest transition-all flex items-center justify-center gap-2" href="#">
-                <span>
-                  Download Platform Specification
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[18px]">
-                  download
-                </span>
-              </a>
             </div>
             <div className="relative z-10 flex items-center justify-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
               <span className="material-symbols-outlined text-[16px] text-tertiary">

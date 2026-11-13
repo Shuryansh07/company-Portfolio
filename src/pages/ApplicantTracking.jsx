@@ -1466,16 +1466,6 @@ export default function ApplicantTracking() {
                   arrow_forward
                 </span>
               </button>
-              {' '}
-              <button className="px-6 py-3.5 rounded-[10px] bg-white/10 backdrop-blur-md border border-white/30 text-white text-label-lg font-label-lg font-semibold hover:bg-white/20 active:scale-[0.99] transition-all flex items-center gap-2">
-                <span className="material-symbols-outlined text-base">
-                  download
-                </span>
-                {' '}
-                <span>
-                  Download ATS Architecture Brief
-                </span>
-              </button>
             </div>
             <p className="text-label-sm font-label-sm text-white/70 pt-2">
               Encrypted hosting, role-based access and regular backups. Your data always remains fully yours and exportable, with no lock-in.

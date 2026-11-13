@@ -29,28 +29,28 @@ export default function CaseStudies() {
         </section>
         <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-12">
           <div className="flex flex-wrap items-center gap-3">
-            <button className="px-5 py-2.5 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-150">
+            <button type="button" data-filter="all" className="px-5 py-2.5 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-150">
               All
             </button>
             {' '}
-            <button className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+            <button type="button" data-filter="ai" className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
               AI Automation
             </button>
             {' '}
-            <button className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+            <button type="button" data-filter="erp" className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
               {"ERP & CRM"}
             </button>
             {' '}
-            <button className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+            <button type="button" data-filter="saas" className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
               Custom SaaS
             </button>
             {' '}
-            <button className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
+            <button type="button" data-filter="ecommerce" className="px-5 py-2.5 rounded-[10px] bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label-lg text-label-lg font-medium transition-all duration-150">
               E-commerce
             </button>
           </div>
         </section>
-        <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-16">
+        <section data-dept="ai" className="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-16">
           <div className="rounded-2xl bg-surface-container-lowest/85 backdrop-blur-xl border border-white/90 p-8 md:p-12 shadow-[0_16px_36px_-6px_rgba(31,26,23,0.04)]">
             <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
               <div className="flex items-center gap-3">
@@ -60,7 +60,7 @@ export default function CaseStudies() {
                 {' '}
               </div>
               <div className="font-label-md text-label-md text-on-surface-variant">
-                {"[Client name] — Global Freight & Fleet Carrier"}
+                {"Global Freight & Fleet Carrier"}
               </div>
             </div>
             <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-8">
@@ -91,24 +91,6 @@ export default function CaseStudies() {
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Horizon architected an event-driven AI dispatch orchestration engine integrated directly with central general ledgers. Telematics ingest pipelines calculate multi-stop route payloads, automatically generate verified fuel settlement vouchers, and balance carrier accounts in real time without human intervention.
                   </p>
-                </div>
-                <div className="p-6 rounded-xl bg-gradient-to-r from-primary-container/10 to-transparent border-l-4 border-primary">
-                  <blockquote className="font-body-lg text-body-md italic text-on-surface mb-4">
-                    "[Client quote]"
-                  </blockquote>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
-                      CQ
-                    </div>
-                    <div>
-                      <div className="font-label-md text-label-md font-semibold text-on-surface">
-                        — [Name, role]
-                      </div>
-                      <div className="font-body-sm text-body-sm text-on-surface-variant">
-                        [Client name]
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div>
                   <a className="inline-flex items-center gap-2 px-6 py-3 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:shadow-md transition-all duration-150 active:scale-[0.98]" href="#">
@@ -166,24 +148,6 @@ export default function CaseStudies() {
                       </span>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-3 pt-2">
-                    <div className="p-3 rounded-[8px] bg-white/5">
-                      <div className="text-[11px] text-surface-variant uppercase font-mono">
-                        Payload Throughput
-                      </div>
-                      <div className="text-[18px] font-bold text-white font-mono">
-                        12,400 units/hr
-                      </div>
-                    </div>
-                    <div className="p-3 rounded-[8px] bg-white/5">
-                      <div className="text-[11px] text-surface-variant uppercase font-mono">
-                        Ledger Drift
-                      </div>
-                      <div className="text-[18px] font-bold text-[#10B981] font-mono">
-                        0.00% Zero-Loss
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -191,7 +155,7 @@ export default function CaseStudies() {
         </section>
         <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+            <article data-dept="erp" className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="A clean architectural schematic and dashboard interface representing financial ledger harmonization, featuring layered frosted glass panels, pristine tabular financial data, and glowing coral accent lines in soft natural light." src="/images/e2bd9a9dc0.jpg" />
@@ -201,9 +165,6 @@ export default function CaseStudies() {
                       Financial Services
                     </span>
                   </div>
-                </div>
-                <div className="font-label-md text-label-md text-on-surface-variant mb-1">
-                  [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
                   {"Multi-Entity Ledger Harmonization & Automated Currency Elimination"}
@@ -225,7 +186,7 @@ export default function CaseStudies() {
                 </Link>
               </div>
             </article>
-            <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+            <article data-dept="erp" className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="An industrial civil construction workflow dashboard showing real-time jobsite material telemetry, concrete equipment tracking charts, and field work order metrics rendered in a luminous editorial UI style." src="/images/de7b97268c.jpg" />
@@ -235,9 +196,6 @@ export default function CaseStudies() {
                       {"Construction & Civil"}
                     </span>
                   </div>
-                </div>
-                <div className="font-label-md text-label-md text-on-surface-variant mb-1">
-                  [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
                   Company-Wide ERP Rollout Across Multiple Active Jobsites
@@ -259,7 +217,7 @@ export default function CaseStudies() {
                 </Link>
               </div>
             </article>
-            <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+            <article data-dept="saas" className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="A modern SaaS multi-tenant telemetry console showing event stream pipelines, granular role-based permissions matrix, and consumption-based billing nodes on an off-white glass card." src="/images/54bdfb1bac.jpg" />
@@ -269,9 +227,6 @@ export default function CaseStudies() {
                       {"Tech & SaaS"}
                     </span>
                   </div>
-                </div>
-                <div className="font-label-md text-label-md text-on-surface-variant mb-1">
-                  [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
                   Enterprise-Ready Multi-Tenant SaaS MVP Built in Weeks
@@ -293,7 +248,7 @@ export default function CaseStudies() {
                 </Link>
               </div>
             </article>
-            <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+            <article data-dept="ecommerce" className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="High-volume headless commerce dashboard showing real-time inventory nodes, warehouse sync statuses, and fulfillment routing diagrams bathed in gentle ambient sunlight." src="/images/bff1deb7d0.jpg" />
@@ -303,9 +258,6 @@ export default function CaseStudies() {
                       {"E-commerce & Retail"}
                     </span>
                   </div>
-                </div>
-                <div className="font-label-md text-label-md text-on-surface-variant mb-1">
-                  [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
                   {"High-Volume Headless Storefront Connected to Accounting & WMS"}
@@ -327,10 +279,8 @@ export default function CaseStudies() {
                 </Link>
               </div>
             </article>
-            <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+            <article data-dept="erp" className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
-                <img src="/images/products/production-planning.jpg" alt="" loading="lazy" className="w-full h-44 object-cover rounded-2xl mb-6" />
-                {' '}
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="Advanced industrial manufacturing scheduler interface displaying robotic constraint parameters, parallel assembly shift allocations, and cycle efficiency graphs in a warm minimalist layout." src="/images/1776a22831.jpg" />
                   {' '}
@@ -339,9 +289,6 @@ export default function CaseStudies() {
                       Advanced Manufacturing
                     </span>
                   </div>
-                </div>
-                <div className="font-label-md text-label-md text-on-surface-variant mb-1">
-                  [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
                   {"Production Planning & Shift Scheduling System Rollout"}
@@ -363,7 +310,7 @@ export default function CaseStudies() {
                 </Link>
               </div>
             </article>
-            <article className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
+            <article data-dept="ai" className="flex flex-col justify-between rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 p-8 shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(31,26,23,0.06)] hover:-translate-y-1 transition-all duration-200">
               <div>
                 <div className="h-48 rounded-xl bg-surface-container overflow-hidden mb-6 relative">
                   <img className="w-full h-full object-cover" data-alt="A field technician diagnostics application UI detailing high-voltage schematic pinouts, offline audio waveforms, and quality assurance checkpoints rendered with tactile editorial warmth." src="/images/67b85bfc57.jpg" />
@@ -373,9 +320,6 @@ export default function CaseStudies() {
                       Field Services
                     </span>
                   </div>
-                </div>
-                <div className="font-label-md text-label-md text-on-surface-variant mb-1">
-                  [Client name]
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">
                   Autonomous AI QC Assistant for Remote Bucket Truck Technicians
@@ -398,11 +342,6 @@ export default function CaseStudies() {
               </div>
             </article>
           </div>
-        </section>
-        <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin text-center mb-24">
-          <button className="px-8 py-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-label-lg text-label-lg font-semibold shadow-sm hover:border-primary hover:text-primary transition-all duration-150 active:scale-[0.98]">
-            Load more case studies
-          </button>
         </section>
         <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-24">
           <div className="p-8 md:p-12 rounded-2xl bg-surface-container-low/70 border border-outline-variant/30">
@@ -451,156 +390,6 @@ export default function CaseStudies() {
             </div>
           </div>
         </section>
-        <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin mb-24">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">
-              Executive Endorsements
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-1.5 text-primary mb-6">
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                </div>
-                <p className="font-body-md text-body-md text-on-surface italic mb-8">
-                  "[Client quote]"
-                </p>
-              </div>
-              <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
-                    EX
-                  </div>
-                  <div>
-                    <div className="font-label-md text-label-md font-semibold text-on-surface">
-                      [Name, role]
-                    </div>
-                    <div className="font-body-sm text-body-sm text-on-surface-variant">
-                      [Client name]
-                    </div>
-                  </div>
-                </div>
-                {' '}
-                <span className="px-2 py-1 rounded-[6px] bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
-                  Verified
-                </span>
-              </div>
-            </div>
-            <div className="p-8 rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-1.5 text-primary mb-6">
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                </div>
-                <p className="font-body-md text-body-md text-on-surface italic mb-8">
-                  "[Client quote]"
-                </p>
-              </div>
-              <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
-                    VP
-                  </div>
-                  <div>
-                    <div className="font-label-md text-label-md font-semibold text-on-surface">
-                      [Name, role]
-                    </div>
-                    <div className="font-body-sm text-body-sm text-on-surface-variant">
-                      [Client name]
-                    </div>
-                  </div>
-                </div>
-                {' '}
-                <span className="px-2 py-1 rounded-[6px] bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
-                  Verified
-                </span>
-              </div>
-            </div>
-            <div className="p-8 rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl border border-white/80 shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-1.5 text-primary mb-6">
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="star" style={{"fontVariationSettings":"'FILL' 1"}}>
-                    star
-                  </span>
-                </div>
-                <p className="font-body-md text-body-md text-on-surface italic mb-8">
-                  "[Client quote]"
-                </p>
-              </div>
-              <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary text-label-md">
-                    CT
-                  </div>
-                  <div>
-                    <div className="font-label-md text-label-md font-semibold text-on-surface">
-                      [Name, role]
-                    </div>
-                    <div className="font-body-sm text-body-sm text-on-surface-variant">
-                      [Client name]
-                    </div>
-                  </div>
-                </div>
-                {' '}
-                <span className="px-2 py-1 rounded-[6px] bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
-                  Verified
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="max-w-[1600px] mx-auto px-margin-sm md:px-margin">
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#FF8A65] to-[#FF6B4A] text-on-primary p-10 md:p-16 shadow-lg">
             <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-white/10 rounded-full blur-2xl pointer-events-none" />
@@ -615,10 +404,6 @@ export default function CaseStudies() {
                 <Link to="/contact" className="px-6 py-3.5 rounded-[10px] bg-white text-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-surface-container-lowest transition-all duration-150 active:scale-[0.98]">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <a className="px-6 py-3.5 rounded-[10px] bg-transparent border border-white/60 text-white font-label-lg text-label-lg font-semibold hover:bg-white/10 transition-all duration-150 active:scale-[0.98]" href="#">
-                  Download Capabilities Matrix
-                </a>
               </div>
             </div>
           </div>

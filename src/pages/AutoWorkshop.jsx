@@ -1294,10 +1294,6 @@ export default function AutoWorkshop() {
                 <Link to="/contact" className="bg-white text-on-primary-container hover:bg-surface transition-colors font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] font-bold shadow-md">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <a className="bg-white/10 hover:bg-white/20 text-white border border-white/40 transition-colors font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] font-semibold" href="#">
-                  Download Platform Specification
-                </a>
               </div>
               <p className="text-label-sm font-label-sm text-white/80 flex items-center gap-2">
                 <span className="material-symbols-outlined text-[18px]">

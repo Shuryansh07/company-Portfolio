@@ -1208,16 +1208,6 @@ export default function ShipToShip() {
                 <Link to="/contact" className="px-6 py-3.5 bg-white text-[#1b1c1b] font-bold text-[14px] rounded-[10px] shadow hover:bg-neutral-100 transition-all active:scale-[0.98]">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <a href="#" className="px-6 py-3.5 bg-white/15 hover:bg-white/25 text-white font-semibold text-[14px] rounded-[10px] backdrop-blur-sm transition-all flex items-center gap-2">
-                  <span>
-                    Download Platform Specification
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]">
-                    download
-                  </span>
-                </a>
               </div>
               <div className="mt-8 flex items-center gap-2 text-[12px] text-white/80">
                 <span className="material-symbols-outlined text-[16px]">

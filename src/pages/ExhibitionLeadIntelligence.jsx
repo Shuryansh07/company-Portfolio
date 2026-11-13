@@ -1265,10 +1265,6 @@ export default function ExhibitionLeadIntelligence() {
               <Link to="/contact" className="h-12 px-6 rounded-[10px] bg-white text-on-surface font-label-lg text-label-lg font-bold flex items-center justify-center shadow-md hover:bg-surface-bright transition-all">
                 Book an Architectural Scoping Consultation
               </Link>
-              {' '}
-              <a className="h-12 px-6 rounded-[10px] bg-black/20 hover:bg-black/30 text-white font-label-lg text-label-lg font-semibold flex items-center justify-center border border-white/30 backdrop-blur-sm transition-all" href="#">
-                Download Platform Specification
-              </a>
             </div>
           </div>
         </div>

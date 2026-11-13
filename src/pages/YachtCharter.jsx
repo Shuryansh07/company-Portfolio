@@ -1138,10 +1138,6 @@ export default function YachtCharter() {
               <button className="px-6 py-3.5 rounded-[10px] bg-white text-on-primary-container font-semibold text-label-lg font-label-lg shadow-lg hover:bg-surface-container-low transition-all">
                 Book an Architectural Scoping Consultation
               </button>
-              {' '}
-              <button className="px-6 py-3.5 rounded-[10px] bg-white/15 border border-white/30 text-white font-semibold text-label-lg font-label-lg hover:bg-white/25 transition-all">
-                Download Platform Specification
-              </button>
             </div>
             <div className="pt-6 border-t border-white/20 text-label-sm font-label-sm text-white/80 flex items-center gap-2">
               <span className="material-symbols-outlined text-[16px]" data-icon="lock">

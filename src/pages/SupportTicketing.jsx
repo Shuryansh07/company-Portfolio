@@ -1064,10 +1064,6 @@ export default function SupportTicketing() {
               <button className="px-6 py-3.5 bg-white text-on-surface font-label-lg text-label-lg font-bold rounded-[10px] shadow-lg hover:bg-neutral-50 transition active:scale-[0.98]">
                 Book an Architectural Scoping Consultation
               </button>
-              {' '}
-              <button className="px-6 py-3.5 bg-black/20 text-white border border-white/40 font-label-lg text-label-lg font-semibold rounded-[10px] hover:bg-black/30 transition">
-                Download Platform Overview
-              </button>
             </div>
           </div>
         </section>

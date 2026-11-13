@@ -1348,12 +1348,6 @@ export default function Payroll() {
                     arrow_forward
                   </span>
                 </button>
-                {' '}
-                <button className="btn-glass px-6 py-3.5 rounded-[10px] text-white font-medium text-label-lg font-label-lg" type="button">
-                  <span>
-                    Download Platform Specification
-                  </span>
-                </button>
               </div>
               <div className="text-xs text-white/80 pt-2 flex items-center gap-2">
                 <span className="material-symbols-outlined text-sm">

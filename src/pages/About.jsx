@@ -389,14 +389,6 @@ export default function About() {
                 </span>
               </Link>
               {' '}
-              {' '}
-              <a className="px-6 py-3.5 rounded-[10px] bg-on-primary/10 border border-on-primary/30 text-on-primary font-label-lg text-label-lg hover:bg-on-primary/20 transition-all duration-150 inline-flex items-center gap-2" href="#">
-                Download Platform Overview
-                {' '}
-                <span className="material-symbols-outlined text-[18px]">
-                  file_download
-                </span>
-              </a>
             </div>
           </div>
           <div className="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-white/10 blur-2xl pointer-events-none" />

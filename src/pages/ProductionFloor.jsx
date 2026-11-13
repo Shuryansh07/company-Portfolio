@@ -1355,10 +1355,6 @@ export default function ProductionFloor() {
             <Link to="/contact" className="w-full sm:w-auto text-center px-6 py-3.5 rounded-[10px] bg-white text-[#ff7555] font-bold text-sm hover:bg-surface-container-low transition-colors shadow-sm">
               Book an Architectural Scoping Consultation
             </Link>
-            {' '}
-            <a href="#" className="w-full sm:w-auto text-center px-6 py-3.5 rounded-[10px] bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-sm transition-colors">
-              Download Platform Specification
-            </a>
           </div>
         </div>
       </section>

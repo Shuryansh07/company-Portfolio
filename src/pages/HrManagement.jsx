@@ -1209,10 +1209,6 @@ export default function HrManagement() {
                 <Link to="/contact" className="px-6 py-3.5 bg-white text-on-primary-container font-label-lg text-label-lg font-bold rounded-[10px] hover:bg-white/90 active:scale-[0.98] transition-all shadow-md">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <button className="px-6 py-3.5 bg-black/20 text-white border border-white/40 font-label-lg text-label-lg font-semibold rounded-[10px] hover:bg-black/30 active:scale-[0.98] transition-all">
-                  Download System Architecture Spec
-                </button>
               </div>
             </div>
           </div>

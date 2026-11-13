@@ -1133,10 +1133,6 @@ export default function WarehouseOperations() {
                 <Link to="/contact" className="w-full sm:w-auto text-center px-6 py-3 rounded-[10px] bg-white text-on-primary-fixed font-label-lg text-label-lg font-semibold shadow hover:bg-surface transition-all active:scale-[0.99]">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <a className="w-full sm:w-auto text-center px-6 py-3 rounded-[10px] border border-white/40 bg-white/10 hover:bg-white/20 text-white font-label-lg text-label-lg font-semibold transition-all" href="#">
-                  Download Platform Specification
-                </a>
               </div>
               <div className="pt-4 border-t border-white/20 text-xs text-white/80 flex items-center gap-1.5">
                 <span>

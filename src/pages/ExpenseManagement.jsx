@@ -1056,10 +1056,6 @@ export default function ExpenseManagement() {
             <Link to="/contact" className="px-6 py-3 rounded-[10px] bg-white text-on-surface font-label-lg text-label-lg font-semibold shadow-md hover:bg-surface-container-lowest transition-all">
               Book an Architectural Scoping Consultation
             </Link>
-            {' '}
-            <a className="px-6 py-3 rounded-[10px] border border-white/40 bg-white/10 backdrop-blur-sm text-white font-label-lg text-label-lg font-semibold hover:bg-white/20 transition-all" href="#">
-              Download Platform Overview
-            </a>
           </div>
         </section>
       </main>

@@ -1287,16 +1287,6 @@ export default function SalesCrm() {
                     calendar_today
                   </span>
                 </Link>
-                {' '}
-                <a className="w-full sm:w-auto rounded-[10px] px-6 py-3.5 bg-white/15 border border-white/40 text-white font-label-lg text-label-lg font-semibold hover:bg-white/25 transition-all active:scale-[0.99] flex items-center justify-center gap-2" href="#">
-                  <span>
-                    Download Platform Specification
-                  </span>
-                  {' '}
-                  <span className="material-symbols-outlined text-[18px]" data-icon="file_download">
-                    file_download
-                  </span>
-                </a>
               </div>
             </div>
           </div>

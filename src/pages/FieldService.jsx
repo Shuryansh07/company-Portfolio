@@ -1382,16 +1382,6 @@ export default function FieldService() {
                   calendar_today
                 </span>
               </Link>
-              {' '}
-              <button className="px-6 py-3.5 rounded-[10px] bg-surface-container-lowest border border-outline-variant/40 text-on-surface text-label-lg font-label-lg hover:border-primary/40 transition-colors inline-flex items-center gap-2">
-                <span>
-                  Download Platform Specification
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[18px]">
-                  download
-                </span>
-              </button>
             </div>
           </div>
         </section>

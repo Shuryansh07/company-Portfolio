@@ -1223,16 +1223,6 @@ export default function EcommerceFinanceSync() {
                   calendar_month
                 </span>
               </Link>
-              {' '}
-              <button className="h-12 px-6 rounded-[10px] bg-white/15 border border-white/40 text-white text-label-lg font-label-lg font-semibold hover:bg-white/25 transition-all flex items-center gap-2">
-                <span>
-                  Download Platform Specification
-                </span>
-                {' '}
-                <span className="material-symbols-outlined text-[18px]">
-                  download
-                </span>
-              </button>
             </div>
           </div>
         </section>

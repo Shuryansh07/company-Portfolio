@@ -1406,12 +1406,6 @@ export default function Recruitment() {
                     arrow_forward
                   </span>
                 </Link>
-                {' '}
-                <button type="button" className="btn-glass px-6 py-3.5 rounded-[10px] text-white font-medium text-[14px]">
-                  <span>
-                    Download Platform Specification
-                  </span>
-                </button>
               </div>
               <div className="text-[12px] text-white/80 pt-2 flex items-center gap-2">
                 <span className="material-symbols-outlined text-sm">

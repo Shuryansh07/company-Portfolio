@@ -1114,10 +1114,6 @@ export default function BusinessAccounting() {
               <button className="primary-btn-gradient text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-[10px] font-semibold transition-transform active:scale-[0.99]">
                 Book an Architectural Scoping Consultation
               </button>
-              {' '}
-              <button className="bg-surface-container-lowest/90 border border-outline-variant/60 text-on-surface hover:bg-white font-label-lg text-label-lg px-6 py-3 rounded-[10px] font-semibold transition-colors shadow-sm">
-                Download Platform Specification
-              </button>
             </div>
           </div>
         </section>

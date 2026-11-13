@@ -1226,10 +1226,6 @@ export default function InventoryControl() {
                 <Link to="/contact" className="rounded-[10px] bg-white text-neutral-900 font-label-lg font-label-lg px-6 py-3.5 shadow-sm hover:bg-neutral-100 transition-all active:scale-[0.99]">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <a className="rounded-[10px] bg-white/20 hover:bg-white/30 text-white font-label-lg font-label-lg px-6 py-3.5 border border-white/30 transition-all active:scale-[0.99]" href="#">
-                  Download Platform Specification
-                </a>
               </div>
               <p className="text-label-sm font-label-sm text-white/80 pt-2">
                 Encrypted hosting, role-based access, and regular backups. Your data always remains fully yours and exportable.

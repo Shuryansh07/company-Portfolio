@@ -1248,10 +1248,6 @@ export default function RentalFleet() {
               <Link to="/contact" className="w-full sm:w-auto rounded-[10px] bg-white text-primary font-semibold px-6 py-3.5 text-label-lg font-label-lg shadow-sm hover:bg-surface-container-low transition-colors">
                 Book an Architectural Scoping Consultation
               </Link>
-              {' '}
-              <a className="w-full sm:w-auto rounded-[10px] bg-white/15 border border-white/30 text-white font-medium px-6 py-3.5 text-label-lg font-label-lg hover:bg-white/25 backdrop-blur-sm transition-colors" href="#">
-                Download Platform Specification
-              </a>
             </div>
             <div className="text-label-sm font-label-sm text-white/80 flex items-center gap-1.5">
               <span className="material-symbols-outlined text-[16px]">

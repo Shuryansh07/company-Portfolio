@@ -1394,16 +1394,6 @@ export default function AiTravelAgent() {
                 <Link to="/contact" className="px-6 py-3.5 bg-surface-container-lowest text-primary font-semibold rounded-[10px] hover:bg-white transition-all shadow-sm text-label-lg font-label-lg">
                   Book an Architectural Scoping Consultation
                 </Link>
-                {' '}
-                <Link to="/contact" className="px-6 py-3.5 bg-black/15 hover:bg-black/25 text-white border border-white/30 font-semibold rounded-[10px] transition-all text-label-lg font-label-lg flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[18px]">
-                    download
-                  </span>
-                  {' '}
-                  <span>
-                    Download Travel Policy Spec Sheet
-                  </span>
-                </Link>
               </div>
             </div>
           </div>
