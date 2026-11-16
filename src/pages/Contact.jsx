@@ -26,7 +26,6 @@ export default function Contact() {
 
   return (
     <div className="pg-contact bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col font-body-md text-body-md relative overflow-x-hidden">
-      <title>{"Contact Us | Horizons - Enterprise AI & ERP Orchestration"}</title>
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <div className="absolute -top-[20%] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-gradient-to-b from-primary-container/10 via-primary-fixed/20 to-transparent blur-3xl opacity-70" />
         <div className="absolute top-[35%] -left-[10%] w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-3xl opacity-60" />

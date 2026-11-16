@@ -5,7 +5,6 @@ import './Solutions.css'
 export default function Solutions() {
   return (
     <div className="pg-solutions bg-background text-on-surface font-body-md antialiased warm-mesh-bg min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Solutions & Engineering Services | Horizons"}</title>
       {' '}
       {' '}
       <main className="flex-grow max-w-7xl mx-auto px-6 md:px-8 py-10 space-y-24">

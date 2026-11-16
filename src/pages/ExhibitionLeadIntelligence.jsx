@@ -5,7 +5,6 @@ import './ExhibitionLeadIntelligence.css'
 export default function ExhibitionLeadIntelligence() {
   return (
     <div className="pg-exhibition-lead-intelligence bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Exhibition Lead Intelligence | Horizons Autonomous AI Agents"}</title>
       {' '}
       {' '}
       <section className="max-w-[1600px] mx-auto px-6 sm:px-12 pt-8 pb-16 lg:pb-24">

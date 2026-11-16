@@ -5,7 +5,6 @@ import './SalesCrm.css'
 export default function SalesCrm() {
   return (
     <div className="pg-sales-crm bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
-      <title>{"Sales CRM | Horizons Enterprise Systems"}</title>
       {' '}
       {' '}
       <main className="flex-grow">

@@ -5,7 +5,6 @@ import './SupportTicketing.css'
 export default function SupportTicketing() {
   return (
     <div className="pg-support-ticketing bg-background text-on-surface antialiased relative selection:bg-primary-fixed selection:text-on-primary-fixed -mt-20">
-      <title>{"Customer Support Ticketing | Horizons Platform"}</title>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1600px] h-[950px] ambient-glow pointer-events-none -z-10" />
       <div className="absolute top-[1800px] right-0 w-[600px] h-[600px] bg-emerald-100/30 blur-[120px] pointer-events-none -z-10 rounded-full" />
       <div className="absolute top-[3200px] left-0 w-[700px] h-[700px] bg-orange-100/25 blur-[140px] pointer-events-none -z-10 rounded-full" />

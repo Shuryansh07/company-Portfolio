@@ -5,7 +5,6 @@ import './BusinessAccounting.css'
 export default function BusinessAccounting() {
   return (
     <div className="pg-business-accounting bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Business Accounting Software | Horizons Enterprise Solutions"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-4 md:px-8 pt-6 pb-20 space-y-24">

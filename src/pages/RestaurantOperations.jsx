@@ -5,7 +5,6 @@ import './RestaurantOperations.css'
 export default function RestaurantOperations() {
   return (
     <div className="pg-restaurant-operations bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Restaurant Operations System — Horizons Enterprise Suite"}</title>
       <div className="pointer-events-none fixed inset-x-0 top-0 h-[600px] overflow-hidden -z-10">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[550px] bg-gradient-to-b from-[#ffebd8]/60 via-[#ffe4dc]/30 to-transparent blur-3xl opacity-80" />
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#d9f99d]/20 blur-3xl rounded-full" />

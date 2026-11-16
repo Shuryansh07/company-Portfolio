@@ -5,7 +5,6 @@ import './ProductionPlanning.css'
 export default function ProductionPlanning() {
   return (
     <div className="pg-production-planning bg-background text-on-surface antialiased font-body-md selection:bg-primary-container/20 selection:text-primary">
-      <title>{"Production Planning & Scheduling | Horizons ERP & AI Automation"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-24 py-8">

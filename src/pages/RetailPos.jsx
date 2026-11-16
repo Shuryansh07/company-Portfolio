@@ -5,7 +5,6 @@ import './RetailPos.css'
 export default function RetailPos() {
   return (
     <div className="pg-retail-pos bg-background text-on-surface antialiased selection:bg-primary-container/20 selection:text-primary">
-      <title>{"Retail Point of Sale — Horizons Enterprise Systems"}</title>
       {' '}
       {' '}
       <main className="max-w-[1440px] mx-auto px-4 md:px-6">

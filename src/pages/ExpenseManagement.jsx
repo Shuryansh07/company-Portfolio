@@ -5,7 +5,6 @@ import './ExpenseManagement.css'
 export default function ExpenseManagement() {
   return (
     <div className="pg-expense-management bg-background text-on-surface antialiased font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Employee Expense Management - Horizons"}</title>
       {' '}
       {' '}
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-24">

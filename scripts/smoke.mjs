@@ -1,29 +1,37 @@
-// Smoke test: every page in src/data/pages.js must render to HTML without throwing,
-// and every router link inside it must point at a route that exists.
+// Smoke test: every route renders through the real app (src/entry-server.jsx, the same path the prerender uses)
+// without throwing, every router link points at a route that exists, and every page has its own title.
+// Everything React-related loads inside Vite's module graph, so there is only one copy of React
+// (importing react-dom here directly can load a second copy on Windows, where c:\ and C:\ differ).
 import assert from 'node:assert/strict'
-import { createElement } from 'react'
-import { renderToString } from 'react-dom/server'
-import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { createServer } from 'vite'
-import { allPages } from '../src/data/pages.js'
-import { caseStudies } from '../src/data/caseStudies.js'
-
-const details = caseStudies.map((c) => ({ path: `/case-studies/${c.slug}`, component: 'CaseStudyDetail' }))
-const pages = [...allPages, ...details]
-const paths = new Set(pages.map((p) => p.path))
-assert.equal(paths.size, pages.length, 'duplicate route paths')
 
 const vite = await createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' })
 try {
-  for (const p of pages) {
-    const { default: Page } = await vite.ssrLoadModule(`/src/pages/${p.component}.jsx`)
-    const html = renderToString(createElement(MemoryRouter, { initialEntries: [p.path] }, createElement(Routes, null, createElement(Route, { path: p.component === 'CaseStudyDetail' ? '/case-studies/:slug' : '*', element: createElement(Page) }))))
-    assert.ok(html.length > 5000, `${p.component} rendered almost nothing`)
-    for (const [, href] of html.matchAll(/href="(\/[^"]*)"/g)) {
-      assert.ok(paths.has(href) || href.startsWith('/images/'), `${p.component} links to unknown route ${href}`)
+  const { render, routePaths, seoFor } = await vite.ssrLoadModule('/src/entry-server.jsx')
+  const paths = new Set(routePaths)
+  assert.equal(paths.size, routePaths.length, 'duplicate route paths')
+
+  const titles = new Set()
+  for (const p of routePaths) {
+    const html = await render(p)
+    assert.ok(html.length > 5000, `${p} rendered almost nothing`)
+    assert.ok(!html.includes('<title'), `${p} renders its own <title>; titles belong in src/data/pages.js`)
+    for (const [, href] of html.matchAll(/href="(\/[^"#?]*)/g)) {
+      assert.ok(paths.has(href) || href.startsWith('/images/'), `${p} links to unknown route ${href}`)
     }
+    const seo = seoFor(p)
+    assert.ok(seo.title && !seo.noindex, `${p} has no title or is marked noindex`)
+    assert.ok(!titles.has(seo.title), `${p} reuses the title "${seo.title}"`)
+    titles.add(seo.title)
   }
-  console.log(`ok: ${pages.length} pages render and all internal links resolve`)
+
+  assert.deepEqual(seoFor('/about/'), seoFor('/about'), 'a trailing slash must not change the page tags')
+
+  for (const p of ['/no-such-page', '/case-studies/no-such-study']) {
+    assert.match(await render(p), /This page doesn&#x27;t exist/, `${p} should render the 404 page`)
+    assert.equal(seoFor(p).noindex, true, `${p} should be noindex`)
+  }
+  console.log(`ok: ${routePaths.length} pages render with unique titles, internal links resolve, unknown URLs show the 404 page`)
 } finally {
   await vite.close()
 }

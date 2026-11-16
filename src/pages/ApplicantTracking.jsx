@@ -5,7 +5,6 @@ import './ApplicantTracking.css'
 export default function ApplicantTracking() {
   return (
     <div className="pg-applicant-tracking bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Applicant Tracking System — Horizons Enterprise"}</title>
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden opacity-60">
         <div className="absolute -top-[15%] left-1/2 -translate-x-1/2 w-[1200px] h-[650px] bg-gradient-to-b from-[#ffdad2]/35 via-[#f5f3f0]/20 to-transparent blur-3xl" />
         <div className="absolute top-[35%] -left-[10%] w-[600px] h-[600px] bg-[#ceee93]/15 rounded-full blur-3xl" />

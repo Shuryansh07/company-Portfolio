@@ -5,7 +5,6 @@ import './RentalFleet.css'
 export default function RentalFleet() {
   return (
     <div className="pg-rental-fleet bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Rental Fleet Management | Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <section className="max-w-[1440px] mx-auto px-6 lg:px-12 pt-8 pb-16">

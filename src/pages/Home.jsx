@@ -5,7 +5,6 @@ import './Home.css'
 export default function Home() {
   return (
     <div className="pg-home bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen relative">
-      <title>{"Horizons | AI Automation, AI Agents & Custom ERP Software Company"}</title>
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[650px] bg-gradient-to-b from-[#ffdad2]/40 via-[#ff7555]/10 to-transparent blur-3xl rounded-full" />
         <div className="absolute top-[35%] -left-32 w-[550px] h-[550px] bg-[#a5f3fc]/25 blur-3xl rounded-full" />

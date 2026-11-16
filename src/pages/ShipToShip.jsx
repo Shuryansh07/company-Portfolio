@@ -5,7 +5,6 @@ import './ShipToShip.css'
 export default function ShipToShip() {
   return (
     <div className="pg-ship-to-ship bg-surface text-[#1b1c1b] antialiased selection:bg-[#ffdbd2] selection:text-[#3b0900] min-h-screen flex flex-col">
-      <title>{"Horizons | Ship-to-Ship Transfer Management"}</title>
       {' '}
       {' '}
       <main className="flex-grow custom-gradient-bg pt-6 pb-20">

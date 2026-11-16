@@ -5,7 +5,6 @@ import './AutoWorkshop.css'
 export default function AutoWorkshop() {
   return (
     <div className="pg-auto-workshop bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed relative overflow-x-hidden min-h-screen">
-      <title>{"Auto Workshop Manager — Horizons Enterprise Solutions"}</title>
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         <div className="absolute -top-32 left-1/4 w-[600px] h-[600px] bg-primary-fixed/25 rounded-full blur-[140px] transform-gpu" />
         <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-tertiary-fixed/30 rounded-full blur-[160px] transform-gpu" />

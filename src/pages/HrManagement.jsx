@@ -5,7 +5,6 @@ import './HrManagement.css'
 export default function HrManagement() {
   return (
     <div className="pg-hr-management bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed -mt-20">
-      <title>{"HR Management System — Horizons People Operations"}</title>
       {' '}
       {' '}
       <main className="pt-28 lg:pt-32 overflow-hidden">

@@ -5,7 +5,6 @@ import './InventoryControl.css'
 export default function InventoryControl() {
   return (
     <div className="pg-inventory-control bg-background text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-white">
-      <title>{"Smart Inventory Control — Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <main className="flex-grow w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 space-y-24 py-8">

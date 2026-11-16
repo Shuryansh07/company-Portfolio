@@ -5,7 +5,6 @@ import './EcommerceFinanceSync.css'
 export default function EcommerceFinanceSync() {
   return (
     <div className="pg-ecommerce-finance-sync bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Ecommerce-to-Finance Sync | Horizons Enterprise Solutions"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-6 md:px-12 py-8 space-y-24">

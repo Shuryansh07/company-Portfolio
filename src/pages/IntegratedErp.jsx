@@ -5,7 +5,6 @@ import './IntegratedErp.css'
 export default function IntegratedErp() {
   return (
     <div className="pg-integrated-erp bg-surface text-on-surface font-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed bg-aurora">
-      <title>{"Horizons ERP — Integrated Business Operations Platform"}</title>
       {' '}
       {' '}
       <main className="max-w-[1440px] mx-auto px-6 space-y-24 py-8">

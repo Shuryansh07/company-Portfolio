@@ -5,7 +5,6 @@ import './AiQcAgent.css'
 export default function AiQcAgent() {
   return (
     <div className="pg-ai-qc-agent bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen relative overflow-x-hidden">
-      <title>{"Horizons AI QC Agent | Field Service Intelligence"}</title>
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none -z-10 opacity-70 overflow-hidden">
         <div className="absolute -top-32 left-1/4 w-[550px] h-[550px] bg-gradient-to-br from-primary-fixed/40 to-primary-container/20 rounded-full blur-3xl transform -rotate-12" />
         <div className="absolute top-24 right-1/4 w-[450px] h-[450px] bg-gradient-to-tr from-secondary-fixed/40 to-tertiary-fixed/30 rounded-full blur-3xl" />

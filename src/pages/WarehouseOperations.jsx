@@ -5,7 +5,6 @@ import './WarehouseOperations.css'
 export default function WarehouseOperations() {
   return (
     <div className="pg-warehouse-operations bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Warehouse Operations Platform | Horizons ERP & Automation"}</title>
       {' '}
       {' '}
       <main className="max-w-7xl mx-auto px-6 sm:px-8 space-y-24 py-8">

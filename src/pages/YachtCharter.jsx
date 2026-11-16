@@ -5,7 +5,6 @@ import './YachtCharter.css'
 export default function YachtCharter() {
   return (
     <div className="pg-yacht-charter bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Yacht Charter Management — Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <main className="max-w-[1600px] mx-auto px-4 sm:px-8 space-y-24 pt-6 pb-20">

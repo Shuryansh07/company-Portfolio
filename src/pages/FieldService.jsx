@@ -5,7 +5,6 @@ import './FieldService.css'
 export default function FieldService() {
   return (
     <div className="pg-field-service bg-surface text-on-surface font-body-md antialiased subtle-mesh selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"Field Service Management — Horizons Enterprise Solutions"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-4 md:px-8 space-y-24 md:space-y-32 pt-6 pb-20">

@@ -5,7 +5,6 @@ import './Recruitment.css'
 export default function Recruitment() {
   return (
     <div className="pg-recruitment bg-background text-on-surface antialiased selection:bg-primary-container/20 selection:text-primary min-h-screen flex flex-col">
-      <title>{"Recruitment Management Platform | Horizons"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-6 space-y-28 flex-1">

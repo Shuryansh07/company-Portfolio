@@ -5,7 +5,6 @@ import './CaseStudies.css'
 export default function CaseStudies() {
   return (
     <div className="pg-case-studies bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container/20 selection:text-primary -mt-20">
-      <title>{"Case Studies — Horizons Enterprise AI Automation & ERP Solutions"}</title>
       {' '}
       {' '}
       <main className="flex-grow pt-32 pb-space-xl">

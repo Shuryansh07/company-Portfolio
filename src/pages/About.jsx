@@ -5,7 +5,6 @@ import './About.css'
 export default function About() {
   return (
     <div className="pg-about bg-background text-on-background font-body-md text-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <title>{"About Us | Horizons - Enterprise AI Automation & ERP Solutions"}</title>
       <div className="fixed inset-0 warm-ambient pointer-events-none z-0" />
       <div className="fixed inset-0 hero-pattern pointer-events-none opacity-60 z-0" />
       {' '}

@@ -5,7 +5,6 @@ import './Payroll.css'
 export default function Payroll() {
   return (
     <div className="pg-payroll bg-background text-on-surface antialiased selection:bg-primary-container/20 selection:text-primary">
-      <title>{"Payroll Management System | Horizons Enterprise Platform"}</title>
       {' '}
       {' '}
       <main className="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-6 space-y-24">

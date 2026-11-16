@@ -5,7 +5,6 @@ import './ProductionFloor.css'
 export default function ProductionFloor() {
   return (
     <div className="pg-production-floor bg-surface text-[#1b1b1a] antialiased selection:bg-[#ff7555]/20 selection:text-[#ff7555]">
-      <title>{"Horizons | Production Floor Management"}</title>
       {' '}
       {' '}
       <section className="relative pt-10 pb-16 px-6 max-w-7xl mx-auto mesh-gradient-hero">

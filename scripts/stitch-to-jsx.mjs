@@ -243,7 +243,7 @@ for (const page of allPages) {
   const inner = body.childNodes.map((c) => serialise(c, ctx, 3)).join('')
   // Pages designed around a fixed header already reserve space for it; the shared header is in flow.
   const rootClass = [scope.slice(1), ctx.fixClass(attr(body, 'class') ?? ''), /\bfixed\b/.test(headerClass) ? '-mt-20' : ''].filter(Boolean).join(' ')
-  const title = (html.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? page.name ?? page.label).replace(/&amp;/g, '&').trim()
+  // No <title> here: page titles live in src/data/pages.js (applied by src/lib/seo.js).
   const css = [...html.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)].map((m) => m[1]).join('\n')
 
   fs.writeFileSync(path.join(OUT, page.component + '.css'), `/* Generated from stitch/${page.key}.html. Scoped to this page. */\n${scopeCss(css, scope)}\n`)
@@ -253,7 +253,6 @@ ${ctx.usesLink ? "import { Link } from 'react-router-dom'\n" : ''}import './${pa
 export default function ${page.component}() {
   return (
     <div className=${lit(rootClass)}>
-      <title>{${JSON.stringify(title)}}</title>
 ${inner}    </div>
   )
 }
