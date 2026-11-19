@@ -163,6 +163,7 @@ function wireLinks(body) {
     if (n.tagName === 'a') {
       const href = attr(n, 'href') ?? '#'
       if (!href.startsWith('#')) return // mailto:, tel:, external
+      if (href.length > 1 && ids.has(href.slice(1))) return // in-page anchor to a section that exists: keep it
       let card = null
       for (let p = n.parentNode, i = 0; p && i < 4 && !card; p = p.parentNode, i++) { const h = isEl(p) && find(p, (x) => /^h[2-5]$/.test(x.tagName)); if (h) card = productFor(textOf(h)) }
       const product = productFor(text) ?? (/learn more|view product|explore|details/i.test(text) ? card : null)

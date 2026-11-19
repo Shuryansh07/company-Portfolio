@@ -21,7 +21,7 @@ export default function Solutions() {
             Horizons bridges fragmented spreadsheets, legacy databases, and disconnected SaaS silos into unified real-time architectures with embedded AI agents. We engineer fault-tolerant foundations that execute operations autonomously.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Link to="/solutions" className="btn-gradient text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] w-full sm:w-auto transition-transform active:scale-[0.99] flex items-center justify-center gap-2">
+            <a href="#services-grid" className="btn-gradient text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] w-full sm:w-auto transition-transform active:scale-[0.99] flex items-center justify-center gap-2">
               <span>
                 Explore Our Services
               </span>
@@ -29,7 +29,7 @@ export default function Solutions() {
               <span className="material-symbols-outlined text-base">
                 arrow_downward
               </span>
-            </Link>
+            </a>
             {' '}
             <Link to="/contact" className="bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface border border-outline-variant/60 font-label-lg text-label-lg px-6 py-3.5 rounded-[10px] w-full sm:w-auto transition-colors shadow-sm flex items-center justify-center gap-2">
               <span>
