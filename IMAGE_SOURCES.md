@@ -27,3 +27,12 @@ All from Pexels (free to use under the Pexels licence, no attribution required).
 - `yacht-charter-management.jpg`: https://www.pexels.com/photo/42091/
 - `ship-to-ship-transfer.jpg`: https://www.pexels.com/photo/27275198/
 - `integrated-erp.jpg`: https://www.pexels.com/photo/577210/
+
+# Zoho app icons
+
+`public/images/zoho/*.svg` are Zoho Corporation's official product logos, downloaded from
+`https://www.zohowebstatic.com/sites/zweb/images/productlogos/<name>.svg`. Each file is unchanged
+artwork except that its viewBox is cropped to show only the product icon (the wordmark sits outside
+the visible area), so the icons line up at the same size. They are Zoho trademarks, used on the Zoho
+page only to identify the Zoho apps we work with; follow Zoho's brand guidelines (no altering,
+recolouring or implying endorsement). Zoho Tasks has no logo there and is not listed.

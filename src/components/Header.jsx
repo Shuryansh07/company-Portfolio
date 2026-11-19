@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { sitePages } from '../data/pages.js'
 
-const links = sitePages.filter((p) => p.path !== '/')
+const links = sitePages.filter((p) => p.path !== '/' && p.inHeader !== false)
 const linkClass = ({ isActive }) =>
   `transition-colors duration-200 hover:text-primary ${isActive ? 'text-primary font-semibold' : 'text-on-surface-variant font-medium'}`
 

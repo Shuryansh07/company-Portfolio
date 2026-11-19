@@ -72,7 +72,7 @@ export default function Contact() {
                       {"Inquiries & RFCs"}
                     </div>
                     <div className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                      shuryansh.dev.work@gmail.com
+                      info@horizons.consulting
                     </div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                       Direct Line
                     </div>
                     <div className="font-headline-sm text-headline-sm font-semibold text-on-surface">
-                      9026139959
+                      +91 9026139959
                     </div>
                   </div>
                 </div>
@@ -220,6 +220,9 @@ export default function Contact() {
                       </option>
                       <option value={"ERP & CRM Solutions"}>
                         {"ERP & CRM Solutions"}
+                      </option>
+                      <option value="Zoho Implementation & Customization">
+                        {"Zoho Implementation & Customization"}
                       </option>
                       <option value="Custom Software Development">
                         Custom Software Development

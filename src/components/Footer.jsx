@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="w-full bg-surface-container-low border-t border-outline-variant/30 mt-20 relative z-10">
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-outline-variant/20">
-          <div className="md:col-span-5 space-y-6">
+          <div className="md:col-span-4 space-y-6">
             <div className="flex items-center gap-3">
               <img src="/images/logo.jpg" alt="" className="w-8 h-8 rounded-full object-cover" />
               <span className="text-headline-md font-bold text-on-surface">Horizons</span>
@@ -24,7 +24,8 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8 text-label-sm">
+          {/* Last column (Connect) sizes to its content so the email stays on one line. */}
+          <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-[repeat(3,minmax(0,1fr))_auto] md:grid-cols-2 lg:grid-cols-[repeat(3,minmax(0,1fr))_auto] gap-8 text-label-sm">
             {columns.map((col) => (
               <div key={col.title} className="space-y-3">
                 <div className="font-bold text-on-surface uppercase tracking-wider text-xs">{col.title}</div>
@@ -35,12 +36,11 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
-            <div className="space-y-3">
+            <div className="space-y-3 col-span-2 sm:col-span-1">
               <div className="font-bold text-on-surface uppercase tracking-wider text-xs">Connect</div>
-                            <ul className="space-y-2 text-on-surface-variant text-body-sm">
-                <li><a href={`mailto:${contact.email}`} className={`${linkClass} break-all`}>{contact.email}</a></li>
-                <li><a href={`tel:${contact.phone}`} className={linkClass}>{contact.phone}</a></li>
-            
+              <ul className="space-y-2 text-on-surface-variant text-body-sm">
+                <li><a href={`mailto:${contact.email}`} className={`${linkClass} whitespace-nowrap`}>{contact.email}</a></li>
+                <li><a href={`tel:${contact.phone.replace(/\s/g, '')}`} className={`${linkClass} whitespace-nowrap`}>{contact.phone}</a></li>
               </ul>
             </div>
           </div>

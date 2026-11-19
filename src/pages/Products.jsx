@@ -1,5 +1,7 @@
 // Generated from stitch/products.html by scripts/stitch-to-jsx.mjs (npm run convert).
+// Hand edits: Zoho filter (default) and its section; re-apply them if this file is regenerated.
 import { Link } from 'react-router-dom'
+import ZohoOrbits from '../components/ZohoApps.jsx'
 import './Products.css'
 
 export default function Products() {
@@ -28,8 +30,8 @@ export default function Products() {
         </p>
         <div className="w-fit max-w-full mx-auto bg-surface-container-lowest/70 backdrop-blur-xl rounded-[10px] p-2 border border-white/90 shadow-xl shadow-on-surface/5 flex items-center">
           <div className="flex items-center gap-1.5 overflow-x-auto min-w-0 scrollbar-none" id="filterContainer">
-            <button className="filter-pill px-4 py-1.5 rounded-[10px] text-label-md font-label-md bg-gradient-to-r from-[#FF8A65] to-[#FF6B4A] text-white shadow-sm transition-all whitespace-nowrap" data-filter="all">
-              All
+            <button className="filter-pill px-4 py-1.5 rounded-[10px] text-label-md font-label-md bg-gradient-to-r from-[#FF8A65] to-[#FF6B4A] text-white shadow-sm transition-all whitespace-nowrap" data-filter="zoho">
+              Zoho
             </button>
             <button className="filter-pill px-3.5 py-1.5 rounded-[10px] text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-filter="ai-agents">
               AI Agents
@@ -52,7 +54,7 @@ export default function Products() {
           </div>
         </div>
       </section>
-      <section className="max-w-7xl mx-auto px-6 md:px-12 py-12" id="ai-agents-section">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 py-12" id="ai-agents-section" style={{ display: 'none' }}>
         <div className="mb-10 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-primary-fixed/30 border border-primary-fixed-dim/40 mb-3">
             <span className="material-symbols-outlined text-primary text-[16px]">
@@ -184,7 +186,21 @@ export default function Products() {
         </div>
       </section>
       <main className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-20">
-        <section className="catalogue-category" id="category-operations">
+        {/* Zoho: the default filter. Hand-added (not from stitch/products.html). */}
+        <section className="catalogue-category" id="category-zoho">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4 pb-3 border-b border-surface-container-high">
+            <div>
+              <h2 className="text-headline-md font-headline-md text-on-surface font-bold tracking-tight">Zoho apps we implement</h2>
+              <p className="text-body-md text-on-surface-variant mt-1">Hover a category to see its Zoho apps. We set up, customize and connect any of them.</p>
+            </div>
+            <Link to="/zoho" className="inline-flex items-center gap-2 text-label-md font-label-md font-bold text-primary hover:translate-x-1 transition-transform shrink-0">
+              Explore Zoho services
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
+          </div>
+          <ZohoOrbits />
+        </section>
+        <section className="catalogue-category" id="category-operations" style={{ display: 'none' }}>
           <div className="flex items-center justify-between mb-8 pb-3 border-b border-surface-container-high">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-[#FF7555]/15 flex items-center justify-center">
@@ -338,7 +354,7 @@ export default function Products() {
             </Link>
           </div>
         </section>
-        <section className="catalogue-category" id="category-finance">
+        <section className="catalogue-category" id="category-finance" style={{ display: 'none' }}>
           <div className="flex items-center justify-between mb-8 pb-3 border-b border-surface-container-high">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-secondary-fixed/50 flex items-center justify-center">
@@ -465,7 +481,7 @@ export default function Products() {
             </Link>
           </div>
         </section>
-        <section className="catalogue-category" id="category-people">
+        <section className="catalogue-category" id="category-people" style={{ display: 'none' }}>
           <div className="flex items-center justify-between mb-8 pb-3 border-b border-surface-container-high">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-tertiary-fixed/40 flex items-center justify-center">
@@ -565,7 +581,7 @@ export default function Products() {
             </Link>
           </div>
         </section>
-        <section className="catalogue-category" id="category-sales-service">
+        <section className="catalogue-category" id="category-sales-service" style={{ display: 'none' }}>
           <div className="flex items-center justify-between mb-8 pb-3 border-b border-surface-container-high">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-[#FF7555]/15 flex items-center justify-center">
@@ -665,7 +681,7 @@ export default function Products() {
             </Link>
           </div>
         </section>
-        <section className="catalogue-category" id="category-industry">
+        <section className="catalogue-category" id="category-industry" style={{ display: 'none' }}>
           <div className="flex items-center justify-between mb-8 pb-3 border-b border-surface-container-high">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-secondary-fixed/50 flex items-center justify-center">

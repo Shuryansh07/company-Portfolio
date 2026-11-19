@@ -1,0 +1,173 @@
+/* Zoho page: category orbits. Plain CSS (not Tailwind classes) so the layout does not depend on
+   Tailwind regenerating new utility classes.
+   Each category is a circle (--tint = its colour, --n = number of apps). On hover/focus its apps
+   move out from the centre to evenly spaced points on the circle's edge, each in its own small circle. */
+
+.zoho-orbits {
+  --size: 200px;   /* category circle diameter */
+  --bubble: 46px;  /* app circle diameter */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--size) + var(--bubble) + 24px), 1fr));
+  justify-items: center;
+  row-gap: 64px;
+  column-gap: 16px;
+  padding: 32px 0;
+}
+@media (max-width: 640px) {
+  .zoho-orbits { --size: 180px; --bubble: 42px; }
+}
+
+.zoho-orbit {
+  --tint-text: color-mix(in srgb, var(--tint) 72%, #1f1a17);
+  --tint-soft: color-mix(in srgb, var(--tint) 10%, transparent);
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  outline: none;
+}
+
+/* The category circle */
+.zoho-orbit__circle {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 26px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid rgba(31, 26, 23, 0.08);
+  box-shadow: 0 0 0 4px var(--tint-soft), 0 10px 24px -10px rgba(31, 26, 23, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  cursor: pointer;
+}
+.zoho-orbit:hover .zoho-orbit__circle,
+.zoho-orbit:focus-within .zoho-orbit__circle {
+  transform: scale(0.92);
+  background: color-mix(in srgb, var(--tint) 5%, #fff);
+  box-shadow: 0 0 0 4px var(--tint), 0 16px 36px -12px rgba(31, 26, 23, 0.25);
+}
+.zoho-orbit:focus-visible .zoho-orbit__circle { outline: 3px solid var(--tint-text); outline-offset: 6px; }
+
+.zoho-orbit__icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tint-text);
+  background: var(--tint-soft);
+}
+.zoho-orbit__blurb {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 140px;
+}
+.zoho-orbit__count {
+  margin-top: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--tint-text);
+  background: var(--tint-soft);
+}
+
+/* App circles around the edge */
+.zoho-orbit__apps {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+}
+.zoho-orbit__app {
+  /* Evenly spaced around the circle, starting at the top. */
+  --angle: calc(360deg / var(--n) * var(--i) - 90deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--bubble);
+  height: var(--bubble);
+  margin: calc(var(--bubble) / -2) 0 0 calc(var(--bubble) / -2);
+  z-index: 1;
+  opacity: 0;
+  transform: rotate(var(--angle)) translateX(0) rotate(calc(var(--angle) * -1)) scale(0.3);
+  transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1), opacity 0.25s ease;
+  transition-delay: calc(var(--i) * 30ms);
+}
+.zoho-orbit:hover .zoho-orbit__app,
+.zoho-orbit:focus-within .zoho-orbit__app {
+  opacity: 1;
+  pointer-events: auto;
+  transform: rotate(var(--angle)) translateX(calc(var(--size) / 2)) rotate(calc(var(--angle) * -1)) scale(1);
+}
+.zoho-orbit__bubble {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid var(--tint-soft);
+  box-shadow: 0 6px 16px -6px rgba(31, 26, 23, 0.3);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.zoho-orbit__bubble img { width: 56%; height: 56%; }
+.zoho-orbit__app:hover { z-index: 5; }
+.zoho-orbit__app:hover .zoho-orbit__bubble { transform: scale(1.15); border-color: var(--tint); }
+
+/* App name tooltip, shown when hovering an app circle */
+.zoho-orbit__label {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translate(-50%, 4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #1f1a17;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1.3;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+}
+.zoho-orbit__label strong { font-weight: 700; }
+.zoho-orbit__label span { color: rgba(255, 255, 255, 0.75); }
+.zoho-orbit__app:hover .zoho-orbit__label {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+}
+
+/* Touch screens cannot hover: keep the app circles out on the edge all the time. */
+@media (hover: none) {
+  .zoho-orbit__app {
+    opacity: 1;
+    transform: rotate(var(--angle)) translateX(calc(var(--size) / 2)) rotate(calc(var(--angle) * -1)) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zoho-orbit__circle,
+  .zoho-orbit__app,
+  .zoho-orbit__bubble,
+  .zoho-orbit__label { transition: none; }
+}

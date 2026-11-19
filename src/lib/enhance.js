@@ -7,9 +7,9 @@ export function enhance(root) {
   const idleClass = filters[1]?.className
 
   const applyFilter = (key) => {
-    // Products catalogue filters whole category sections.
+    // Products catalogue filters whole category sections (only ones with an id; the closing banner always shows).
     const wanted = key === 'ai-agents' ? 'ai-agents-section' : `category-${key}`
-    root.querySelectorAll('.catalogue-category, #ai-agents-section').forEach((s) => {
+    root.querySelectorAll('.catalogue-category[id], #ai-agents-section').forEach((s) => {
       s.style.display = key === 'all' || s.id === wanted ? '' : 'none'
     })
     root.querySelectorAll('[data-dept]').forEach((c) => {

@@ -1,5 +1,7 @@
 // Single source of truth for routes. Used by the app (routing, links) and by scripts/stitch-to-jsx.mjs.
 // `key` is the Stitch export file name in /stitch, `component` the generated file in src/pages.
+// `handwritten: true` pages have no Stitch export; scripts/stitch-to-jsx.mjs skips them.
+// `inHeader: false` keeps a page out of the main header menu (it still appears in the footer).
 
 export const sitePages = [
   { key: 'home', title: 'Horizons | AI Automation, AI Agents & Custom ERP Software', path: '/', component: 'Home', label: 'Home', description: 'Horizons builds AI automation, AI agents and custom ERP software for growing businesses: fixed-scope, fixed-price packages that go live in weeks.' },
@@ -7,6 +9,7 @@ export const sitePages = [
   { key: 'c_solutions', title: 'Custom Software, ERP & AI Automation Services | Horizons', path: '/solutions', component: 'Solutions', label: 'Solutions', description: 'Custom software development, ERP and CRM implementation, AI automation, mobile apps and system integration, delivered at a fixed scope and price.' },
   { key: 'c_casestudies', title: 'AI Automation & ERP Case Studies | Horizons', path: '/case-studies', component: 'CaseStudies', label: 'Case Studies', description: 'Case studies of AI automation, ERP rollouts, SaaS builds and e-commerce integrations delivered by Horizons for logistics, finance, manufacturing and retail.' },
   { key: 'c_about', title: 'About Horizons | AI Automation & ERP Software Company', path: '/about', component: 'About', label: 'About', description: 'Horizons is an AI automation and ERP software company that ships fixed-scope, fixed-price business systems. Meet the team and how we work.' },
+  { key: 'zoho', handwritten: true, inHeader: false, title: 'Zoho Consultant: Implementation & Customization | Horizons', path: '/zoho', component: 'Zoho', label: 'Zoho', description: 'Zoho implementation, customization and integration: Zoho One, CRM, Books, Inventory, Creator and Desk set up around how your business works, at a fixed price.' },
   { key: 'c_contact', title: 'Contact Horizons | Book a Free Demo', path: '/contact', component: 'Contact', label: 'Contact', description: 'Talk to Horizons about AI automation, ERP or custom software. Book a free demo or get a fixed-price scoping document within 48 hours.' },
 ]
 
@@ -41,6 +44,6 @@ export const products = [
   { key: 'pd_erp', title: 'ERP Software for Growing Businesses | Horizons', slug: 'integrated-erp', component: 'IntegratedErp', name: 'Integrated Business Operations Platform', aliases: ['integrated business operations', 'integrated erp', 'integrated enterprise'], description: 'ERP software that connects sales, inventory, finance and HR in one system, with multi-entity accounting and live dashboards.' },
 ].map((p) => ({ ...p, path: `/products/${p.slug}` }))
 
-export const contact = { email: 'shuryansh.dev.work@gmail.com', phone: '9026139959' }
+export const contact = { email: 'info@horizons.consulting', phone: '+91 9026139959' }
 
 export const allPages = [...sitePages, ...products]

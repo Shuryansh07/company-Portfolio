@@ -6,7 +6,10 @@ import path from 'node:path'
 import crypto from 'node:crypto'
 import { parse } from 'parse5'
 import postcss from 'postcss'
-import { allPages, contact, products } from '../src/data/pages.js'
+import { allPages as registry, contact, products } from '../src/data/pages.js'
+
+// Hand-written pages (e.g. Zoho) have no Stitch export and are never regenerated.
+const allPages = registry.filter((p) => !p.handwritten)
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const SRC = path.join(ROOT, 'stitch'), OUT = path.join(ROOT, 'src/pages'), IMG = path.join(ROOT, 'public/images')
